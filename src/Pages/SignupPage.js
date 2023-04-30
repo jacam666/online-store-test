@@ -63,7 +63,7 @@ function SignupPage() {
           <p className="or">or</p>
           <div className="login-link-container">
             <Link className="login-link" to="/LoginPage">
-              Login Page
+              Login
             </Link>
           </div>
         </form>
