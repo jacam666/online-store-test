@@ -90,9 +90,9 @@ li {
 
 .login-container, .signUp-container {
   width: 25vw;
-  height: 80vh;
+  height: 70vh;
   border: 1px solid #fff;
-  margin: 40px auto;
+  margin: 65px auto;
   border-radius: 40px;
   background: linear-gradient(
     to bottom right,
@@ -107,7 +107,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  height: 100vh;
+  height: 80vh;
 }
 
 .signUp-header, .login-header {
@@ -168,6 +168,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 20px;
 }
 
 .card-container {
@@ -198,16 +199,15 @@ li {
     border-radius: 7px;
   }
 
-.navbar li:first-child {
-  border-left: none;
-}
+  /*.navbar li:first-child {
+    border-left: none;
+  }*/
 
 .navbar li:nth-child(1) a,
 .navbar li:nth-child(2) a,
-.navbar li:nth-child(3) a,
-.navbar li:nth-child(4) a {
+.navbar li:nth-child(3) a {
   font-weight: bold;
-  color: rgb(243, 237, 237);
+  color: rgb(250, 246, 246);
   text-decoration: none;
 }
 
@@ -223,6 +223,7 @@ li {
   border: solid 1px #077d34;
   border-radius: 20px;
   width: 200px;
+  height: 65vh;
   margin: 20px 0 20px 0;
   background: linear-gradient(
     to left,
@@ -234,39 +235,66 @@ li {
   position: relative;
 }
 
-#only-whey:hover:after {
+/*#only-whey:hover:after {
   content: '';
   position:absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-image: url('../public/images/only-whey-nutritional-info.jpeg');
   background-size:contain;
-  opacity: 1;
+  background-repeat: no-repeat;
   border-radius: 20px 20px 0 0;
 }
+*/
+
+.onlyWheyPageImage {
+  height: 70vh;
+  width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
 #b4-train:hover:after {
   content: '';
   position:absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 100%;
   background-image: url('../public/images/b4-train-nutri-info.jpeg');
   background-size:contain;
+  background-repeat: no-repeat;
   opacity: 1;
   border-radius: 20px 20px 0 0;
 }
-#after-train:hover:after {
+#after-train1:hover:after,
+#after-train2:hover:after,
+#after-train3:hover:after,
+#after-train4:hover:after {
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0.5;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/images/after-train-nutri-info.jpeg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  border-radius: 20px 20px 0 0;
+}
+#stage-ripped:hover:after {
   content: '';
   position:absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 84%;
-  background-image: url('../public/images/after-train-nutri-info.jpeg');
+  background-image: url('../public/images/staged-ripped-info.jpeg');
   background-size:contain;
+  background-repeat: no-repeat;
   opacity: 1;
   border-radius: 20px 20px 0 0;
 }
@@ -278,8 +306,13 @@ header {
   padding: 10px;
 }
 
-img {
+.cardImage {
   width: 200px;
   height: 200px;
   padding: 20px 0;
 }
+/*img {
+  width: 200px;
+  height: 200px;
+  padding: 20px 0;
+}*/
