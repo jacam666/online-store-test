@@ -13,62 +13,135 @@
   );
 }  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-body {
-	line-height: 1;
-  background: linear-gradient(
-    to left,
-    rgb(5, 18, 56) 0%,
-    rgb(38, 65, 65) 100%
-  );
+
+/*body {
+  line-height: 1;
+  background: linear-gradient(to left,
+      rgb(5, 18, 56) 0%,
+      rgb(38, 65, 65) 100%);
+}  */
+html {
+  line-height: 1;
+  background: linear-gradient(to left,
+      rgb(5, 18, 56) 0%,
+      rgb(38, 65, 65) 100%);
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  background: linear-gradient(
-    to left,
-    rgb(5, 18, 56) 0%,
-    rgb(38, 65, 65) 100%
-  );
+  background: linear-gradient(to left,
+      rgb(5, 18, 56) 0%,
+      rgb(38, 65, 65) 100%);
   list-style: none;
   margin-top: 0;
-  
+
 }
 
 li {
@@ -83,41 +156,44 @@ li {
   position: absolute;
   padding: 20px;
   margin-bottom: 5px;
-  top: 3.5%; 
-  left: 88%; 
+  top: 3.5%;
+  left: 88%;
   transform: translate(-50%, -50%);
 }
 
-.login-container, .signUp-container {
+.login-container,
+.signUp-container {
   width: 25vw;
   height: 70vh;
   border: 1px solid #fff;
   margin: 65px auto;
   border-radius: 40px;
-  background: linear-gradient(
-    to bottom right,
-    /*rgb(5, 18, 56) 30%,*/
-    rgb(34, 61, 61) 40%,
-    rgb(14, 29, 77) 60%
-  );
+  background: linear-gradient(to bottom right,
+      /*rgb(5, 18, 56) 30%,*/
+      rgb(34, 61, 61) 40%,
+      rgb(14, 29, 77) 60%);
 }
 
-.signUp-Form, .login-form {
+.signUp-Form,
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   height: 80vh;
 }
 
-.signUp-header, .login-header {
+.signUp-header,
+.login-header {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.signUp-Email, .signUp-Password,
-.login-password, .login-email {
+.signUp-Email,
+.signUp-Password,
+.login-password,
+.login-email {
   margin-bottom: 1rem;
   width: 15vw;
   padding: 0.5rem;
@@ -136,7 +212,8 @@ li {
   font-size: 1.3rem;
 }
 
-.login-link, .signup-link {
+.login-link,
+.signup-link {
   color: rgb(239, 239, 245);
   text-decoration: none;
   font-size: 1.3rem;
@@ -177,29 +254,33 @@ li {
   justify-content: space-evenly;
 }
 
+.card {
+  height: 400px;
+}
 
-  .basketChoice {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 6px 0;
-  }
 
-  .addToBasket {
-    border-radius: 8px;
-  }
+.basketChoice {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6px 0;
+}
 
-  .amountChoice {
-    width: 25px;
-    border-radius: 7px;
-  }
+.addToBasket {
+  border-radius: 8px;
+}
 
-  /*.navbar li:first-child {
+.amountChoice {
+  width: 25px;
+  border-radius: 7px;
+}
+
+/*.navbar li:first-child {
     border-left: none;
   }*/
 
@@ -225,11 +306,9 @@ li {
   width: 200px;
   height: 65vh;
   margin: 20px 0 20px 0;
-  background: linear-gradient(
-    to left,
-    rgb(16, 35, 93) 0%,
-    rgb(43, 103, 103) 100%
-  );
+  background: linear-gradient(to left,
+      rgb(16, 35, 93) 0%,
+      rgb(43, 103, 103) 100%);
   background-size: contain;
   background-position: center;
   position: relative;
@@ -249,55 +328,58 @@ li {
 }
 */
 
-.onlyWheyPageImage {
+/*.onlyWheyPageImage {
   height: 70vh;
   width: 50vw;
   position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-}
+}  */
 
-#b4-train:hover:after {
+/*#b4-train:hover:after {
   content: '';
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url('../public/images/b4-train-nutri-info.jpeg');
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
   border-radius: 20px 20px 0 0;
 }
+
 #after-train1:hover:after,
 #after-train2:hover:after,
 #after-train3:hover:after,
 #after-train4:hover:after {
   content: '';
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0.5;
   width: 100%;
   height: 100%;
   background-image: url('../public/images/after-train-nutri-info.jpeg');
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
   border-radius: 20px 20px 0 0;
 }
+
 #stage-ripped:hover:after {
   content: '';
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   background-image: url('../public/images/staged-ripped-info.jpeg');
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   opacity: 1;
   border-radius: 20px 20px 0 0;
 }
+*/
 
 header {
   color: #fff;
@@ -311,8 +393,15 @@ header {
   height: 200px;
   padding: 20px 0;
 }
+
 /*img {
   width: 200px;
   height: 200px;
   padding: 20px 0;
 }*/
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 70vw;
+  }
+}

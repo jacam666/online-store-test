@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     background: linear-gradient(to bottom right,
             rgb(5, 18, 56) 30%,
             rgb(64, 67, 67) 70%);
+    background-repeat: no-repeat;
 }
 
 .product-card {
@@ -18,12 +19,12 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 
 .product-card-image {
-    width: 40vw;
+    /*width: 40vw;*/
     margin-right: 20px;
 }
 
@@ -47,11 +48,25 @@ h2 {
     font-size: 3rem;
 }
 
+/*.product-card-details {
+    max-width: 100%;
+}*/
+
 .product-card-options {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+    width: 18rem;
+    margin-bottom: 1rem;
     color: #ccc;
+}
+
+.product-description {
+    width: 36rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.product-description h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
 }
 
 .product-card-checkboxes {
@@ -69,10 +84,73 @@ h2 {
 
 .product-card-amount select {
     margin-left: 5px;
+    margin-top: 7px;
     width: 3vw;
     height: 3.45vh;
 }
 
 .product-card-amount {
     color: #ccc;
+}
+
+.amount-ingredients-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.ingredient-info {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .product-card-options {
+        width: 100%;
+    }
+
+    .product-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-card-details h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .product-card-image {
+        height: 90vh;
+        width: 40vw;
+    }
+
+    .product-card-image img {
+        margin-right: 30px;
+        height: 300px;
+        width: 200px;
+    }
+
+    .product-card-checkboxes {}
+
+    .product-card-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        padding: 1rem 0;
+        width: 40nw;
+    }
+
+    .product-card-options {
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
 }
