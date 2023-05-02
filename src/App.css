@@ -438,15 +438,36 @@ header {
   .card {
     height: 50vh;
   }
+  @media screen and (orientation: landscape) {
+    .card-container {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .card {
     height: 60vh;
   }
+  @media screen and (orientation: landscape) {
+    .card-container {
+      width: 100%;
+      flex-direction: row;
+    }
+  }
 }
+
+
 @media screen and (min-width: 992px) and (max-width: 1600px) {
   .card {
     height: 65vh;
+  }
+
+  @media screen and (orientation: landscape) {
+    .card-container {
+      width: 80%;
+      flex-direction: row;
+    }
   }
 }
