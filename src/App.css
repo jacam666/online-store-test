@@ -250,14 +250,11 @@ li {
 
 .card-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0 60px;
 }
-
-.card {
-  height: 400px;
-}
-
 
 .basketChoice {
   position: absolute;
@@ -304,7 +301,7 @@ li {
   border: solid 1px #077d34;
   border-radius: 20px;
   width: 200px;
-  height: 65vh;
+  height: 75vh;
   margin: 20px 0 20px 0;
   background: linear-gradient(to left,
       rgb(16, 35, 93) 0%,
@@ -402,6 +399,38 @@ header {
 
 @media screen and (max-width: 768px) {
   .logo {
-    width: 70vw;
+    width: 80vw;
+    height: 15vh;
   }
+
+  .card {
+    height: 60vh;
+  }
+
+  .login-container,
+  .signUp-container {
+    width: 50vw;
+    height: 60vh;
+  }
+
+  .signUp-Form,
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    margin-top: 130px;
+  }
+
+}
+
+@media screen and (max-width: 391px) {
+  .card {
+    height: 45vh;
+  }
+
+  .card-container {
+    margin-top: 30px;
+  }
+
 }
