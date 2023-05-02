@@ -404,7 +404,7 @@ header {
   }
 
   .card {
-    height: 60vh;
+    height: 55vh;
   }
 
   .login-container,
@@ -426,11 +426,16 @@ header {
 
 @media screen and (max-width: 391px) {
   .card {
-    height: 45vh;
+    height: 50vh;
   }
 
   .card-container {
     margin-top: 30px;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    height: 55vh;
+  }
 }

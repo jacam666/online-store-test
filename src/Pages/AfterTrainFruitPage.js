@@ -1,10 +1,10 @@
 import React from "react";
 import ProductCard from "../components/ProductCard.js";
 
-function AfterTrain() {
+function AfterTrainFruit() {
   const product = {
-    image: "./images/apple-aftertrain-300x300.png",
-    name: ["AFTER TRAIN APPLE",<br/>, "POST WORKOUT"],
+    image: "./images/1After_Train_Fruit_Punch-1-300x300.png",
+    name: "AFTER TRAIN FRUIT PUNCH POST WORKOUT",
     price: "£24.99",
     description:
       "After Train has been specially formulated to aid recovery straight after a workout. with its 50/50 ratio of isolate and carbs combined with creatine and glutamine makes this a great all in one recovery drink. Easy to mix formula and superb flavours it is amazingly refreshing and easy to drink after them hard gruelling workouts. After Train is produced to iso 22000 standards, batch tested and made in an informed sport approved facility. Suitable for vegetarians",
@@ -19,5 +19,5 @@ function AfterTrain() {
   return <ProductCard product={product} />;
 }
 
-export default AfterTrain;
+export default AfterTrainFruit;
 

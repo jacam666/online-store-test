@@ -12,7 +12,7 @@ function OnlyWhey() {
         </div>
         <div className="product-card-details">
           <h1>
-            THE ONLY WHEY 2.2KG <span>74 SERVINGS</span>
+            THE ONLY WHEY 2.2KG 
           </h1>
           <h2>£39.99</h2>
           <div className="options-description-container">
@@ -52,6 +52,10 @@ function OnlyWhey() {
                 <select id="amount" name="amount"></select>
                 <button>Add to basket</button>
               </div>
+            </div>
+            <h4>74 SERVINGS</h4>
+            <div>
+
             </div>
             <div className="product-description">
               <h1>Description</h1>

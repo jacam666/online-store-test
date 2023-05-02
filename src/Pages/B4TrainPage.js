@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard.js";
 function B4Train() {
   const product = {
     image: "./images/B4-Rio-berry-300x300.png",
-    name: "B4 TRAIN RI-BERRY PRE-WORKOUT",
+    name: ["B4 TRAIN",<br/>, "RIO-BERRY",<br />, "PRE-WORKOUT"],
     price: "£24.99",
     description: [
       "DIRECTIONS FOR USE",

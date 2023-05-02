@@ -17,7 +17,8 @@ function ProductCard(props) {
         </div>
         <div className="product-card-details">
           <h1>
-            {name} <span>{options && options.servings}</span>
+            {/*{name} <span>{options && options.servings}</span>*/}
+            {name}
           </h1>
           <h2>{price}</h2>
           {options && (
@@ -37,15 +38,40 @@ function ProductCard(props) {
                   <button>Add to basket</button>
                   {options.ingredients && (
                     <div className="ingredient-info">
+                      <h3>Ingredient Information:</h3>
                       <p>{options.ingredients}</p>
                     </div>
                   )}
                 </div>
               </div>
+              <div>
+                {options.servings && (
+                  <div className="servings-info">
+                    <p>{options.servings}</p>
+                  </div>
+                )}
+              </div>
               <div className="product-description">
+                {description && (
+                  <div className="servings-info">
+                    <h1>Description:</h1>
+                    <p>{description}</p>
+                  </div>
+                )}
+              </div>
+              <div className="product-description">
+                {options.directions && (
+                  <div className="directions-info">
+                    <h1>Directions of use:</h1>
+                    <p>{options.directions}</p>
+                  </div>
+                )}
+              </div>
+
+              {/*<div className="product-description">
                 <h1>Description</h1>
                 <p>{description}</p>
-              </div>
+              </div>*/}
             </div>
           )}
         </div>

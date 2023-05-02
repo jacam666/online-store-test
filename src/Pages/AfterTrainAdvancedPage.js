@@ -43,7 +43,6 @@ function AfterTrainAdvanced() {
       advice:
         "Keep out of reach of children, Once mixed keep chilled and consume within 3 hours. Manufactured on equipment which processes products containing cereals, milk, egg, soya, shellfish.",
       storage: "Close tub after use. Store in a cool dry place.",
-      flavors: ["Apple", "chocolate"],
     },
   };
 

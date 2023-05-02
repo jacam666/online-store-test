@@ -27,17 +27,18 @@ function AfterTrain() {
 export default AfterTrain; */
 
 import React from "react";
-import ProductCard from "../components/ProductCard.js";
+import ProductCard from "./ProductCard.js";
 
 function StageRipped() {
   const product = {
     image: "/images/Stage-Ripped-CGI-300x300.png",
     name: "STAGE RIPPED 60 caps",
-    price: "£24.99",
+    price: "£29.99",
     description:
-    "Stage Ripped has been especially formulated to aid in weight loss, giving energy, suppressing appetite and increasing body temperature for burning fat. For best results take on a calorie reduced diet.",   
+      "Stage Ripped has been especially formulated to aid in weight loss, giving energy, suppressing appetite and increasing body temperature for burning fat. For best results take on a calorie reduced diet.",
     options: {
-        ingredients: "INGREDIENT INFORMATION 1 Capsule: Caffenine Anhydrous 225mg, Kola Nut Extract 3% Caffeine, 2% Theobromine 200mg, Guarana Seed Extract125mg, 5-HTP 5-Hydroxytophan 75mg, Hordenine HCL 75mg, Paradoxine Grains of paradise. Std. to 12.5% 6- paradol 40mg, Vitamin B3 5mg 25%, Vitamin B6 as Pyridoxine HCL 5mg 357% Chromium Picolinate 100mcg 250% "
+      ingredients: "INGREDIENT INFORMATION 1 Capsule: Caffenine Anhydrous 225mg, Kola Nut Extract 3% Caffeine, 2% Theobromine 200mg, Guarana Seed Extract125mg, 5-HTP 5-Hydroxytophan 75mg, Hordenine HCL 75mg, Paradoxine Grains of paradise. Std. to 12.5% 6- paradol 40mg, Vitamin B3 5mg 25%, Vitamin B6 as Pyridoxine HCL 5mg 357% Chromium Picolinate 100mcg 250% ",
+      servings: "60 caps"
     },
   };
 
@@ -46,7 +47,7 @@ function StageRipped() {
     <ProductCard product={product}>
       <div className="ingredient-info">{product.options.ingredients}</div>
     </ProductCard>
-    );
+  );
 }
 
 export default StageRipped;

@@ -22,6 +22,15 @@ body {
     margin-top: 1.5rem;
 }
 
+h4 {
+    color: #ccc;
+}
+
+.servings-info {
+    color: #ccc;
+    margin: 20px 0;
+}
+
 
 .product-card-image {
     /*width: 40vw;*/
@@ -65,7 +74,7 @@ h2 {
 }
 
 .product-description h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 20px 0;
 }
 
@@ -100,11 +109,17 @@ h2 {
     align-items: flex-start;
 }
 
+.directions-info h1 {
+    font-size: 2rem;
+}
 
 .ingredient-info {
     font-size: 14px;
     line-height: 1.5;
     margin-top: 10px;
+}
+.ingredient-info h3 {
+    font-size: 1.5rem;
 }
 
 

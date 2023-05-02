@@ -14,21 +14,10 @@ const Card = () => {
                 </Link>
                 <header>THE ONLY WHEY 2.2KG 74 servings</header>
                 <p className="price">£39.99</p>
-                {/*<div className="basketChoice">
-                    <input
-                        className="amountChoice"
-                        type="number"
-                        min="1"
-                        max="10"
-                        value="1"
-                    />
-                    <button className="addToBasket" onClick="addToBasket()">
-                        Add to basket
-    </button>
-    </div>*/}
             </div>
+
             <div className="card" id="after-train1">
-                <Link to="/AfterTrainPage">
+                <Link to="/AfterTrainFruitPage">
                     <img
                         className="cardImage"
                         alt={"protein"}
@@ -36,21 +25,23 @@ const Card = () => {
                     />
                 </Link>
                 <header>AFTER TRAIN FRUIT PUNCH POST WORKOUT</header>
-                <p className="price">£39.99</p>
+                <p className="price">£24.99</p>
             </div>
+
             <div className="card" id="after-train2">
-                <Link to="/AfterTrainPage">
+                <Link to="/AfterTrainBluePage">
                     <img
                         className="cardImage"
                         alt={"protein"}
                         src={"./images/2After_Train_Raspberry-1-300x300.png"}
                     />
                 </Link>
-                <header>AFTER TRAIN RASPBERRY POST WORKOUT</header>
-                <p className="price">£39.99</p>
+                <header>AFTER TRAIN BLUE RASPBERRY POST WORKOUT</header>
+                <p className="price">£24.99</p>
             </div>
+
             <div className="card" id="after-train3">
-                <Link to="/AfterTrainPage">
+                <Link to="/AfterTrainOrangePage">
                     <img
                         className="cardImage"
                         alt={"protein"}
@@ -58,7 +49,7 @@ const Card = () => {
                     />
                 </Link>
                 <header>AFTER TRAIN ORANGE POST WORKOUT</header>
-                <p className="price">£39.99</p>
+                <p className="price">£24.99</p>
             </div>
 
             <div className="card" id="after-train-advanced">
@@ -81,176 +72,207 @@ const Card = () => {
                         src={"./images/Stage-Ripped-CGI-300x300.png"}
                     />
                 </Link>
-                <header>Stage Ripped</header>
-                <p className="price">£39.99</p>
-                </div>
-
-                <div className="card">
-                    <Link to="/AfterTrainAdvancedPage">
-                        <img
-                            className="cardImage"
-                            alt={"protein"}
-                            src={"./images/AFTER-TRAIN-ADVANCED-300x300.png"}
-                        />
-                    </Link>
-                    <header>After Train Advanced</header>
-                    <p className="price">£39.99</p>
-
-                </div>
-                <div className="card" id="after-train">
-                    <Link to="/AfterTrainPage">
-                        <img
-                            className="cardImage"
-                            alt={"protein"}
-                            src={"./images/apple-aftertrain-300x300.png"}
-                        />
-                    </Link>
-                    <header>AFTER TRAIN RASPBERRY POST WORKOUT</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <Link to="/B4ExtremePage">
-                        <img
-                            className="cardImage"
-                            alt={"protein"}
-                            src={"./images/b4-candy-extreme-300x300.png"}
-                        />
-                    </Link>
-                    <header>B4 Extreme</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card" id="b4-train">
-                    <Link to="/B4TrainPage">
-                        <img
-                            className="cardImage"
-                            alt={"protein"}
-                            src={"./images/B4-Rio-berry-300x300.png"}
-                        />
-                    </Link>
-                    <header>B4-Rio</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card" id="b4-train">
-                    <Link to="/B4TrainGummyPage">
-                        <img
-                            className="cardImage"
-                            alt={"protein"}
-                            src={"./images/B4-tropical-gummy-300x300.png"}
-                        />
-                    </Link>
-                    <header>B4 Tropical</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/Year-round-300x300.png"}
-                    />
-                    <header>Year Round</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/cap-b4pre-blue-300x300.png"}
-                    />
-                    <header>B4 Extreme</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/cap-stagepump-strawberry-lime-300x300.png"}
-                    />
-                    <header>StagePump</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/NO-HUNGER-300x300.png"}
-                    />
-                    <header>No Hunger</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/orange-mango-advanced-aftertrain-for-web-300x300.png"}
-                    />
-                    <header>After Train Advanced</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/PCT-NEW-300x300.png"}
-                    />
-                    <header>PCT</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/RIPPED-EXTREME-300x300.png"}
-                    />
-                    <header>Ripped Extreme</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/STAGE-PUMP-BLUE-FOR-WEB-300x300.png"}
-                    />
-                    <header>Stage Pump</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/620-620-traininngplan-1-300x300.jpg"}
-                    />
-                    <header>Training Plan</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/after-adv-and-b4-bundle-300x300.png"}
-                    />
-                    <header>Bundle-1</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/STAGE-RIPPED-NO-HUNGER-300x300.png"}
-                    />
-                    <header>Bundle-2</header>
-                    <p className="price">£39.99</p>
-                </div>
-                <div className="card">
-                    <img
-                        className="cardImage"
-                        alt={"protein"}
-                        src={"./images/BUNDLE-2-FINAL.png"}
-                    />
-                    <header>Bundle-3</header>
-                    <p className="price">£39.99</p>
-                </div>
+                <header>STAGE RIPPED 60 caps</header>
+                <p className="price">£29.99</p>
             </div>
-            );
+
+            <div className="card">
+                <Link to="/AfterAdvancedBlueCandyPage">
+                    <img
+                        className="cardImage"
+                        alt={"protein"}
+                        src={"./images/AFTER-TRAIN-ADVANCED-300x300.png"}
+                    />
+                </Link>
+                <header>AFTER TRAIN ADVANCED 2KG BLUE CANDY FLAVOUR</header>
+                <p className="price">£39.99</p>
+            </div>
+
+            <div className="card" id="after-train">
+                <Link to="/AfterTrainPage">
+                    <img
+                        className="cardImage"
+                        alt={"protein"}
+                        src={"./images/apple-aftertrain-300x300.png"}
+                    />
+                </Link>
+                <header>AFTER TRAIN APPLE POST WORKOUT</header>
+                <p className="price">£24.99</p>
+            </div>
+            <div className="card">
+                <Link to="/B4ExtremePage">
+                    <img
+                        className="cardImage"
+                        alt={"protein"}
+                        src={"./images/b4-candy-extreme-300x300.png"}
+                    />
+                </Link>
+                <header>B4 EXTREME CANDY FLAVOUR STRONG PRE WORKOUT</header>
+                <p className="price">£24.99</p>
+            </div>
+            <div className="card" id="b4-train">
+                <Link to="/B4TrainPage">
+                    <img
+                        className="cardImage"
+                        alt={"protein"}
+                        src={"./images/B4-Rio-berry-300x300.png"}
+                    />
+                </Link>
+                <header>B4 TRAIN RIO-BERRY PRE-WORKOUT</header>
+                <p className="price">£24.99</p>
+            </div>
+            <div className="card" id="b4-train">
+                <Link to="/B4TrainGummyPage">
+                    <img
+                        className="cardImage"
+                        alt={"protein"}
+                        src={"./images/B4-tropical-gummy-300x300.png"}
+                    />
+                </Link>
+                <header>B4 TRAIN TROPICAL GUMMY FLAVOUR PRE WORKOUT</header>
+                <p className="price">£24.99</p>
+            </div>
+
+            <div className="card">
+            <Link to="/YearRoundPage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/Year-round-300x300.png"}
+                />
+                </Link>
+                <header>YEAR ROUND IMMUNITY SUPPORT 60 caps </header>
+                <p className="price">£19.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/B4ExtremeBluePage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/cap-b4pre-blue-300x300.png"}
+                />
+                </Link>
+                <header>B4 EXTREME BLUE RASPBERRY FLAVOUR STRONG PRE-WORKOUT</header>
+                <p className="price">£24.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/StagePumpStrawberryPage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/cap-stagepump-strawberry-lime-300x300.png"}
+                />
+                </Link>
+                <header>STAGE PUMP STRAWBERRY AND LIME FLAVOUR</header>
+                <p className="price">£29.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/NoMoreHUngerPage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/NO-HUNGER-300x300.png"}
+                />
+                </Link>
+                <header>NO MORE HUNGER 90 caps</header>
+                <p className="price">£24.99</p>
+            </div>
+            <div className="card">
+                <Link to="/AfterAdvancedOrangePage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/orange-mango-advanced-aftertrain-for-web-300x300.png"}
+                />
+                </Link>
+                <header>AFTER TRAIN ADVANCED 2KG ORANGE AND MANGO</header>
+                <p className="price">£39.99</p>
+            </div>
+            <div className="card">
+                <Link to="/Con-TestPage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/PCT-NEW-300x300.png"}
+                />
+                </Link>
+                <header>CON-TEST P.C.T 240 caps</header>
+                <p className="price">£29.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/StageExtremePage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/RIPPED-EXTREME-300x300.png"}
+                />
+                </Link>
+                <header>STAGE RIPPED EXTREME 60 caps</header>
+                <p className="price">£34.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/StagePumpBluePage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/STAGE-PUMP-BLUE-FOR-WEB-300x300.png"}
+                />
+                </Link>
+                <header>STAGE PUMPED BLUE RASPBERRY FLAVOUR</header>
+                <p className="price">£29.99</p>
+            </div>
+            <div className="card">
+                <Link to="/TrainingPlanPage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/620-620-traininngplan-1-300x300.jpg"}
+                />
+                </Link>
+                <header>TRAINING PLAN 1-HOUR ONLINE</header>
+                <p className="price">£30.00</p>
+            </div>
+            <div className="card">
+                <Link to="/BundleDeal1Page">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/after-adv-and-b4-bundle-300x300.png"}
+                />
+                </Link>
+                <header>BUNDLE DEAL-1</header>
+                <p className="price">£59.99</p>
+            </div>
+
+            <div className="card">
+                <Link to="/FatBurnerBundlePage">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/STAGE-RIPPED-NO-HUNGER-300x300.png"}
+                />
+                </Link>
+                <header>FAT BURNER BUNDLE DEAL</header>
+                <p className="price">£44.99</p>
+            </div>
+            <div className="card">
+                <Link to="/BundleDeal2Page">
+                <img
+                    className="cardImage"
+                    alt={"protein"}
+                    src={"./images/BUNDLE-2-FINAL.png"}
+                />
+                </Link>
+                <header>BUNDLE DEAL-2</header>
+                <p className="price">£49.99</p>
+            </div>
+        </div>
+    );
 };
 
-            export default Card;
+export default Card;
