@@ -14,7 +14,7 @@ function Navbar() {
             <Link to="/LoginPage">Log in</Link>
           </li>
           <li>
-            <Link to="/Basket">
+            <Link to="/BasketPage">
               <BasketIcon />
             </Link>
           </li>

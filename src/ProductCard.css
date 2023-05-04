@@ -10,16 +10,17 @@ body {
     background: linear-gradient(to bottom right,
             rgb(5, 18, 56) 30%,
             rgb(64, 67, 67) 70%);
-    background-repeat: no-repeat;
+
 }
 
 .product-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 1.5rem;
+    margin-top: 50px;
+    height: 150vh;
 }
 
 h4 {
@@ -33,17 +34,18 @@ h4 {
 
 
 .product-card-image {
-    /*width: 40vw;*/
-    margin-right: 20px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.product-card-image img {
-    width: 37vw;
-    height: 75vh;
 }
 
 h1 span {
     display: block;
+}
+
+.product-card-details {
+    margin-top: 0;
 }
 
 .product-card-details h1,
@@ -63,14 +65,13 @@ h2 {
 
 .product-card-options {
     width: 18rem;
-    margin-bottom: 1rem;
     color: #ccc;
 }
 
 .product-description {
     width: 36rem;
     color: #ccc;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .product-description h1 {
@@ -94,8 +95,8 @@ h2 {
 .product-card-amount select {
     margin-left: 5px;
     margin-top: 7px;
-    width: 3vw;
-    height: 3.45vh;
+    width: 10vw;
+    height: 3vh;
 }
 
 .product-card-amount {
@@ -118,6 +119,7 @@ h2 {
     line-height: 1.5;
     margin-top: 10px;
 }
+
 .ingredient-info h3 {
     font-size: 1.5rem;
 }

@@ -1,10 +1,11 @@
 import "./App.css";
+import React, { useState} from "react";
 import { Routes, Route } from "react-router-dom"
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
 import SignupPage from "./Pages/SignupPage";
 import OnlyWhey from "./Pages/OnlyWheyPage";
-import Basket from "./Pages/Basket";
+import BasketPage from "./Pages/BasketPage";
 import AfterTrain from "./Pages/AfterTrainPage";
 import AfterTrainAdvanced from "./Pages/AfterTrainAdvancedPage";
 import StageRipped from "./components/StageRippedPage";
@@ -27,16 +28,30 @@ import TrainingPlan from "./Pages/TraingPlanPage";
 import BundleDeal1 from "./Pages/BundleDeal1Page";
 import FatBurnerBundle from "./Pages/FatBurnerBundlePage";
 import BundleDeal2 from "./Pages/BundleDeal2Page";
+//import Basket from "./components/Basket";
+import ProductCard from "./components/ProductCard";
 
 
 function App() {
+  //const { basket } = Basket;
+  /*const [selectedProduct, setSelectedProduct] = useState(null);
+  
+  const handleProductSelection = (product) => {
+    setSelectedProduct(product);
+  };*/
   return (
         <div className="App">
+          {/*{selectedProduct ? (
+        <BasketPage selectedProduct={selectedProduct} />
+      ) : (
+        <ProductCard onProductSelection={handleProductSelection} />
+      )}*/}
+          
           <Routes>
             <Route path="/" element={ <HomePage /> }/>
             <Route path="/LoginPage" element={ <LoginPage /> }/>
             <Route path="/SignupPage" element={ <SignupPage /> }/>
-            <Route path="/Basket" element={ <Basket /> }/>
+            <Route path="/BasketPage" element={ <BasketPage /> }/>
             <Route path="/OnlyWheyPage" element={ <OnlyWhey /> }/>
             <Route path="/AfterTrainPage" element={ <AfterTrain /> }/>
             <Route path="/AfterTrainAdvancedPage" element={ <AfterTrainAdvanced /> }/>
@@ -61,6 +76,9 @@ function App() {
             <Route path="/FatBurnerBundlePage" element={ <FatBurnerBundle /> }/>
             <Route path="/BundleDeal2Page" element={ <BundleDeal2 /> }/>
           </Routes>
+          
+          {/*<BasketPage basket={basket} />*/}
+
             
     </div>
   );

@@ -1,13 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "../ProductCard.css";
 import Navbar from "../Navbar";
+//import Basket from "./Basket";
+
 
 function ProductCard(props) {
   const { name, price, image, description, options } = props.product;
+  const [basket, setBasket] = useState([]);
+  const [selectedAmount, setSelectedAmount] = useState(1);
 
-  if (!props.product) {
+  const addToBasket = () => {
+    const productToAdd = 
+    { ...props.product, 
+      amount: selectedAmount
+    };
+    props.onProductSelection(productToAdd); 
+  };
+
+  
+  const handleAddToBasket = (item) => {
+    addToBasket(item);
+  };
+
+  const handleAmountChange = (e) => {
+    setSelectedAmount(parseInt(e.target.value));
+  };
+
+  const renderAmountOptions = () => {
+    const options = [];
+    for (let i = 1; i <= 10; i++) {
+      options.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
+    }
+    return options;
+  };
+
+  if (!props.product || !basket) {
     return <div>Loading...</div>;
   }
+  
+
   return (
     <div>
       <Navbar />
@@ -16,10 +51,7 @@ function ProductCard(props) {
           <img src={image} alt="protein" />
         </div>
         <div className="product-card-details">
-          <h1>
-            {/*{name} <span>{options && options.servings}</span>*/}
-            {name}
-          </h1>
+          <h1>{name}</h1>
           <h2>{price}</h2>
           {options && (
             <div className="options-description-container">
@@ -34,8 +66,11 @@ function ProductCard(props) {
                 )}
                 <div className="product-card-amount">
                   <label htmlFor="amount">Amount:</label>
-                  <select id="amount" name="amount"></select>
-                  <button>Add to basket</button>
+                  <select id="amount" name="amount" onChange={handleAmountChange}>
+                    {renderAmountOptions()}
+                  </select>
+                  <button onClick={addToBasket}>Add to basket</button>
+
                   {options.ingredients && (
                     <div className="ingredient-info">
                       <h3>Ingredient Information:</h3>
@@ -67,13 +102,8 @@ function ProductCard(props) {
                   </div>
                 )}
               </div>
-
-              {/*<div className="product-description">
-                <h1>Description</h1>
-                <p>{description}</p>
-              </div>*/}
             </div>
-          )}
+          )}   
         </div>
       </div>
     </div>
@@ -81,3 +111,5 @@ function ProductCard(props) {
 }
 
 export default ProductCard;
+
+
