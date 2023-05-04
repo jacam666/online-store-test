@@ -6,7 +6,7 @@ import Navbar from "../Navbar";
 
 function ProductCard(props) {
   const { name, price, image, description, options } = props.product;
-  const [basket, setBasket] = useState([]);
+  const [basket] = useState([]);
   const [selectedAmount, setSelectedAmount] = useState(1);
 
   const addToBasket = () => {
@@ -18,9 +18,7 @@ function ProductCard(props) {
   };
 
   
-  const handleAddToBasket = (item) => {
-    addToBasket(item);
-  };
+
 
   const handleAmountChange = (e) => {
     setSelectedAmount(parseInt(e.target.value));

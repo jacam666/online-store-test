@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState} from "react";
+//import React, { useState} from "react";
 import { Routes, Route } from "react-router-dom"
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
@@ -29,7 +29,7 @@ import BundleDeal1 from "./Pages/BundleDeal1Page";
 import FatBurnerBundle from "./Pages/FatBurnerBundlePage";
 import BundleDeal2 from "./Pages/BundleDeal2Page";
 //import Basket from "./components/Basket";
-import ProductCard from "./components/ProductCard";
+//import ProductCard from "./components/ProductCard";
 
 
 function App() {

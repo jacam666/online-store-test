@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import Navbar from '../Navbar'
 
 function Basket(props) {
@@ -34,30 +34,6 @@ function Basket(props) {
 
 
 export default Basket;  
-*/
 
-// BasketPage.js
 
-import React from 'react';
-import Navbar from '../Navbar';
-//import Basket from '../components/Basket';
-
-const BasketPage = (props) => {
-  const { name, price, image, description, options, amount } = props.selectedProduct;
-
-  return (
-    <div>
-      <Navbar />
-      <h1>Basket</h1>
-      <div>
-        <h2>{name}</h2>
-        <p>Price: {price}</p>
-        <p>Amount: {amount}</p>
-        <img src={image} alt="product" />
-      </div>
-    </div>
-  );
-};
-
-export default BasketPage;
 
