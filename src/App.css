@@ -438,13 +438,13 @@ header {
   }
 }
 
-@media screen and (min-width: 392px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
   .card {
-    height: 50vh;
+    height: 45vh;
   }
   @media screen and (orientation: landscape) {
     .card {
-      height: 60vh;
+      height: 100vh;
     }
   }
 }
@@ -455,7 +455,7 @@ header {
   }
   @media screen and (orientation: landscape) {
     .card {
-      height: 60vh;
+      height: 100vh;
     }
   }
 }
