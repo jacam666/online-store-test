@@ -398,29 +398,40 @@ li {
     width: 40vw;
     padding: 20px;
   }
+  .product-add-button {
+    width: 30vw;
+  }
 }  
-@media screen and (orientation: landscape) and (max-width: 844px) {
+/*@media screen and (orientation: landscape) and (max-width: 844px) {
   .card-container .card {
       height: 110vh;
   }
   img.cardImage {
     padding: 20px;
   }
-}
+}*/
 
 @media screen and (min-width: 392px) and (max-width: 767px) {
   .card-container .card {
-    height: 7vh;
+    height: 100%;
     width: 50vw;
   }
+  .cardImage {
+    height: 30vh;
+    width: 45vw;
+    padding: 10px;
+  }
+  .product-add-button {
+    width: 30vw;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .card {
-    height: 90vh;
-  }
-  @media screen and (orientation: landscape) {
-   
+  .card-container .card {
+    height: 70vh;
+    width: 35%;
   }
 }
 
