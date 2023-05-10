@@ -401,15 +401,7 @@ li {
   .product-add-button {
     width: 30vw;
   }
-}  
-/*@media screen and (orientation: landscape) and (max-width: 844px) {
-  .card-container .card {
-      height: 110vh;
-  }
-  img.cardImage {
-    padding: 20px;
-  }
-}*/
+} 
 
 @media screen and (min-width: 392px) and (max-width: 767px) {
   .card-container .card {

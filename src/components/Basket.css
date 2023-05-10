@@ -139,7 +139,7 @@
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
     .basket-items {
         display: flex;
         flex-direction: column;
@@ -185,8 +185,112 @@
         padding-left: 35%;
     }
 }
-@media screen and (min-width: 391px) and (max-width: 767px) {
-    
+
+@media screen and (min-width: 392px) and (max-width: 767px) {
+    .basket-items {
+        display: flex;
+        flex-direction: column;
+        width: 94vw;
+        height: 100%;
+    }
+
+    .basket-items-header {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    img.basket-items-image {
+        margin: -55px;
+        margin: 15px 0;
+    }
+
+    .basket-items-name {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .basket-item-list {
+        width: 90%;
+    }
+
+    .clear-basket {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .basket-items-price {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .basket-items-total-price-name {
+        margin-top: 15px;
+    }
+
+    .basket-items-total-price {
+        padding-left: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .basket-items {
+        display: flex;
+        flex-direction: column;
+        width: 94vw;
+        height: 100%;
+    }
+
+    .basket-items-header {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    img.basket-items-image {
+        margin: -55px;
+        margin: 15px 0;
+    }
+
+    .basket-items-name {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .basket-item-list {
+        width: 90%;
+    }
+
+    .clear-basket {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .basket-items-price {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .basket-items-total-price-name {
+        margin-top: 15px;
+    }
+
+    .basket-items-total-price {
+        padding-left: 75%;
+    }
 }
 
 
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+    .card {
+        height: 65vh;
+    }
+
+    @media screen and (orientation: landscape) {
+        .card {
+            height: 60vh;
+        }
+    }
+}
