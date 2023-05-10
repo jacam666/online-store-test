@@ -387,7 +387,7 @@ li {
 
 }
 
-@media screen and (min-width: 100px) and (max-width: 390px) {
+@media screen and (min-width: 100px) and (max-width: 391px) {
   .card-container .card {
     height: 100%;
     width: 50vw;
@@ -408,7 +408,7 @@ li {
   }
 }
 
-@media screen and (min-width: 391px) and (max-width: 767px) {
+@media screen and (min-width: 392px) and (max-width: 767px) {
   .card-container .card {
     height: 7vh;
     width: 50vw;
