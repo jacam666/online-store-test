@@ -75,33 +75,28 @@ import Navbar from "../Navbar"; */
   );
 }*/
 
-import React, { useState } from "react";
-import ProductCard from "../components/ProductCard.js";
+//import React, { useState } from "react";
+//import Products from "../components/front/Products/Products";
 
 function OnlyWhey() {
-  const [basketItems, setBasketItems] = useState([]);
 
-  const addToBasket = (item) => {
-    setBasketItems([...basketItems, item]);
-  };
-
-  const product = {
-    image: "/images/only-whey-final-300x300.png",
+  const Products = {
+    id: "1",
     name: "THE ONLY WHEY 2.2KG",
     price: "£39.99",
-    description: ["The Only Whey protein shake has been developed to offer a",<br/>,
+    image: "/images/only-whey-final-300x300.png",
+    
+    /*description: ["The Only Whey protein shake has been developed to offer a",<br/>,
     "premium protein powder which can only be expected of SNC. Each",<br/>,
     "serving delivers up to 24% of protein from instantized whey",<br/>,
     "protein concentrate, Whey protein isolate and Hydrolysed Whey",<br/>,
     "Protein to feed muscle tissue growth and aid recovery for",<br/>,
     "optimum results."],
     options: {
-        flavours: ["Banana Split", "Chocolate/Caramel"]
-    },
-  
+        flavours: ["Banana Split", "Chocolate/Caramel"]*/
   }
-
-  return <ProductCard product={product} addToBasket={addToBasket} />;
-};
+  return <Products productItems={Products } />;
+};  
 
 export default OnlyWhey;
+

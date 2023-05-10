@@ -1,39 +1,70 @@
-import React from 'react'
-import Navbar from '../Navbar'
+import React from "react";
+import "../components/Basket.css";
 
-function Basket(props) {
-  const { basket } = props;
-
-  if (!basket) {
-    return <div>Loading...</div>;
-  }
-  
-
+const BasketPage = ({
+  basketItems,
+  handleAddProduct,
+  handleRemoveProduct,
+  handleBasketClearance,
+}) => {
+  const totalPrice = basketItems.reduce(
+    (price, item) => price + item.quantity * item.price,
+    0
+  );
   return (
-    <div>
-      <Navbar />
-      <h1>Basket</h1>
-      {basket.length === 0 ? (
-        <p>Your basket is empty.</p>
-      ) : (
-        <div>
-          {basket.map((item, index) => (
-            <div key={index}>
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
-              <p>{item.amount} x {item.price}</p>
-            </div>
-          ))}
-          <button>Checkout</button>
-        </div>
+    <div className="basket-items">
+      <h2 className="basket-items-header">Basket Items</h2>
+      <div className="clear-basket">
+        {basketItems.length >= 1 && (
+          <button
+            className="clear-basket-button"
+            onClick={handleBasketClearance}
+          >
+            Clear Basket
+          </button>
+        )}
+      </div>
+
+      {basketItems && basketItems.length === 0 && (
+        <div className="basket-items-empty">No items are added.</div>
       )}
-      <Basket basket={basket} />
+      <div>
+        {basketItems?.map((item) => (
+          <div key={item.id} className="basket-item-list">
+            <img
+              className="basket-items-image"
+              src={item.image}
+              alt={item.name}
+            />
+            <div className="basket-items-name">{item.name}</div>
+            <div className="basket-items-function">
+              <button
+                className="basket-items-add"
+                onClick={() => handleAddProduct(item)}
+              >
+                +
+              </button>
+              <button
+                className="basket-items-remove"
+                onClick={() => handleRemoveProduct(item)}
+              >
+                -
+              </button>
+            </div>
+            <div>
+              <div className="basket-items-price">
+                {item.quantity} * £{item.price}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="basket-items-total-price-name">
+        Total Price
+        <div className="basket-items-total-price">£{totalPrice}</div>
+      </div>
     </div>
   );
-}
+};
 
-
-export default Basket;  
-
-
-
+export default BasketPage;

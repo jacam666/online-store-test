@@ -136,6 +136,7 @@ table {
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  
   background: linear-gradient(to left,
       rgb(5, 18, 56) 0%,
       rgb(38, 65, 65) 100%);
@@ -167,7 +168,7 @@ li {
   height: 70vh;
   border: 1px solid #fff;
   margin: 65px auto;
-  border-radius: 40px;
+  border-radius: 10px;
   background: linear-gradient(to bottom right,
       /*rgb(5, 18, 56) 30%,*/
       rgb(34, 61, 61) 40%,
@@ -219,24 +220,6 @@ li {
   font-size: 1.3rem;
 }
 
-/*.firstName-input,
-.lastName-input,
-.email-input,
-.password-input,
-.submit-button {
-  background-color: rgb(43, 103, 103);
-  border: 1px 0;
-  padding: 10px 20px;
-  color: #fff;
-}
-
-.firstName-input::placeholder,
-.lastName-input::placeholder,
-.email-input::placeholder,
-.password-input::placeholder,
-.submit-button::placeholder {
-  color: #fff;
-}  */
 
 .logo {
   width: 50vw;
@@ -297,11 +280,15 @@ li {
   margin-top: 0;
 }
 
+.card-container .card {
+  height: 85vh;
+}
+
+
 .card {
   border: solid 1px #077d34;
-  border-radius: 20px;
-  width: 200px;
-  height: 75vh;
+  border-radius: 10px;
+  width: 25vw;
   margin: 20px 0 20px 0;
   background: linear-gradient(to left,
       rgb(16, 35, 93) 0%,
@@ -311,78 +298,12 @@ li {
   position: relative;
 }
 
-/*#only-whey:hover:after {
-  content: '';
-  position:absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../public/images/only-whey-nutritional-info.jpeg');
-  background-size:contain;
-  background-repeat: no-repeat;
-  border-radius: 20px 20px 0 0;
-}
-*/
-
-/*.onlyWheyPageImage {
-  height: 70vh;
-  width: 50vw;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-}  */
-
-/*#b4-train:hover:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../public/images/b4-train-nutri-info.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 1;
-  border-radius: 20px 20px 0 0;
-}
-
-#after-train1:hover:after,
-#after-train2:hover:after,
-#after-train3:hover:after,
-#after-train4:hover:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0.5;
-  width: 100%;
-  height: 100%;
-  background-image: url('../public/images/after-train-nutri-info.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 1;
-  border-radius: 20px 20px 0 0;
-}
-
-#stage-ripped:hover:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../public/images/staged-ripped-info.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 1;
-  border-radius: 20px 20px 0 0;
-}
-*/
 .card a {
   text-decoration: none;
 }
 
 
-header {
+.product-name {
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -390,10 +311,48 @@ header {
 }
 
 .cardImage {
-  width: 200px;
-  height: 200px;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  width: 20vw;
+  height: 39vh;
+  padding: 40px 40px 0 40px;
+  
 }
+
+
+
+
+
+.product-add-button {
+  font-weight: 200;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  outline:  none;
+  background: linear-gradient(to left,
+      rgb(26, 41, 85) 0%,
+      rgb(61, 69, 69) 100%);
+  color: #fff;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3),
+              0px 2px 5px 0px rgba(0,0,0,0.2),
+              0px 1px 1px 0px rgba(0,0,0,0.24);
+              text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+
+  width: 30%;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 15px auto;
+}
+
+.product-add-button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+
 
 /*img {
   width: 200px;
@@ -404,7 +363,7 @@ header {
 @media screen and (max-width: 768px) {
   .logo {
     width: 80vw;
-    height: 15vh;
+    height: 10vh;
   }
 
   .card {
@@ -428,35 +387,40 @@ header {
 
 }
 
-@media screen and (min-width: 100px) and (max-width: 391px) {
-  .card {
-    height: 50vh;
+@media screen and (min-width: 100px) and (max-width: 390px) {
+  .card-container .card {
+    height: 100%;
+    width: 50vw;
+    margin-top: 35px;
   }
-
-  .card-container {
-    margin-top: 30px;
+  img.cardImage {
+    height: 25vh;
+    width: 40vw;
+    padding: 20px;
+  }
+}  
+@media screen and (orientation: landscape) and (max-width: 844px) {
+  .card-container .card {
+      height: 110vh;
+  }
+  img.cardImage {
+    padding: 20px;
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
-  .card {
-    height: 45vh;
-  }
-  @media screen and (orientation: landscape) {
-    .card {
-      height: 100vh;
-    }
+@media screen and (min-width: 391px) and (max-width: 767px) {
+  .card-container .card {
+    height: 7vh;
+    width: 50vw;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .card {
-    height: 60vh;
+    height: 90vh;
   }
   @media screen and (orientation: landscape) {
-    .card {
-      height: 100vh;
-    }
+   
   }
 }
 

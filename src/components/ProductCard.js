@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import "../ProductCard.css";
 import Navbar from "../Navbar";
 //import Basket from "./Basket";
@@ -108,6 +108,6 @@ function ProductCard(props) {
   );
 }
 
-export default ProductCard;
+export default ProductCard;  */
 
 

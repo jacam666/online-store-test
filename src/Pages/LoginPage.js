@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import axios from "axios";
-import Navbar from "../Navbar";
+//import Navbar from "../Navbar";
 
 function LoginPage() {
   const history = useNavigate();
@@ -36,7 +36,6 @@ function LoginPage() {
 
   return (
     <div className="login">
-      <Navbar />
       <div className="login-container">
         <form className="login-form" action="POST">
           <h1 className="login-header">Login</h1>
