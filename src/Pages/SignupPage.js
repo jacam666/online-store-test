@@ -45,7 +45,7 @@ function SignupPage() {
             }}
             placeholder="Email"
             name=""
-            id=""
+            id="signup-email"
           ></input>
           <input
             className="signUp-Password"
@@ -55,7 +55,7 @@ function SignupPage() {
             }}
             placeholder="Password"
             name=""
-            id=""
+            id="signup-password"
           ></input>
           <input className="submit-button" type="submit" onClick={submit} />
           <p className="or">or</p>

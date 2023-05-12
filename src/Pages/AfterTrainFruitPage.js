@@ -1,8 +1,8 @@
-import React from "react";
-import ProductCard from "../components/ProductCard.js";
+/*import React from "react";
+import Products from "../components/front/Products/Products";
 
 function AfterTrainFruit() {
-  const product = {
+  const productItems = {
     image: "./images/1After_Train_Fruit_Punch-1-300x300.png",
     name: "AFTER TRAIN FRUIT PUNCH POST WORKOUT",
     price: "£24.99",
@@ -16,8 +16,32 @@ function AfterTrainFruit() {
       }
   };
 
-  return <ProductCard product={product} />;
+  return <Products productItems={productItems} />
 }
 
-export default AfterTrainFruit;
+export default AfterTrainFruit;   */
+import React from "react";
 
+const AfterTrainFruit = () => {
+  const product = {
+    id: "2",
+    name: "AFTER TRAIN FRUIT PUNCH POST WORKOUT",
+    price: 24.99,
+    image: "./images/1After_Train_Fruit_Punch-1-300x300.png",
+    to: "./AfterTrainFruitPage",
+    description: [""],
+  };
+
+  return (
+    <div>
+      <div>
+        <img src={product.image} alt={product.name} />
+        <h2>{product.name}</h2>
+        <p>Price: £{product.price}</p>
+        <p>{product.description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default AfterTrainFruit;

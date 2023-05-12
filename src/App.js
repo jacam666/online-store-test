@@ -4,19 +4,21 @@ import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 import Logo from "./components/Logo";
 import Navbar from "./Navbar";
-//import BasketPage from "./Pages/BasketPage";
 
 const App = () => {
   const { productItems } = data;
-  //const {basketItems, setBasketItems} = useState([]);
   const [basketItems, setBasketItems] = useState([]);
 
   const handleAddProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist) {
-      setBasketItems(basketItems.map((item) => item.id === product.id ?
-        { ...ProductExist, quantity: ProductExist.quantity + 1 } : item)
-      )
+      setBasketItems(
+        basketItems.map((item) =>
+          item.id === product.id
+            ? { ...ProductExist, quantity: ProductExist.quantity + 1 }
+            : item
+        )
+      );
     } else {
       setBasketItems([...basketItems, { ...product, quantity: 1 }]);
     }
@@ -27,29 +29,33 @@ const App = () => {
     if (ProductExist.quantity === 1) {
       setBasketItems(basketItems.filter((item) => item.id !== product.id));
     } else {
-      setBasketItems(basketItems.map((item) => item.id === product.id ?
-        { ...ProductExist, quantity: ProductExist.quantity - 1 } : item)
-      )
+      setBasketItems(
+        basketItems.map((item) =>
+          item.id === product.id
+            ? { ...ProductExist, quantity: ProductExist.quantity - 1 }
+            : item
+        )
+      );
     }
-  }
+  };
 
   const handleBasketClearance = () => {
     setBasketItems([]);
-  }
+  };
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar basketItems={basketItems} />
       <Logo />
-      <AppRoutes productItems={productItems}
+      <AppRoutes
+        productItems={productItems}
         basketItems={basketItems}
         handleAddProduct={handleAddProduct}
         handleRemoveProduct={handleRemoveProduct}
         handleBasketClearance={handleBasketClearance}
       />
-      {/*<BasketPage basketItems={basketItems} />*/}
     </div>
-  )
-}
+  );
+};
 
 export default App;
