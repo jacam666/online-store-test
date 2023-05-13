@@ -69,7 +69,7 @@ const AppRoutes = ({
             <Route path="/B4ExtremePage" element={<B4Extreme />} />
             <Route path="/B4TrainPage" element={<B4Train />} />
             <Route path="/B4TrainGummyPage" element={<B4TrainGummy />} />
-            <Route path="./Pages/AfterTrainFruitPage" element={<AfterTrainFruit />} />
+            <Route path="/AfterTrainFruitPage" element={<AfterTrainFruit />} />
             <Route path="/AfterTrainBluePage" element={<AfterTrainBlue />} />
             <Route path="/AfterTrainOrangePage" element={<AfterTrainOrange />} />
             <Route
