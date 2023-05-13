@@ -1,17 +1,12 @@
 import React from "react";
 
 const BundleDeal2 = () => {
-  /*const [basketItems, setBasketItems] = useState([]);
-
-  const addToBasket = (item) => {
-    setBasketItems([...basketItems, item]);
-  };*/
-
   const product = {
+    id: "23",
     image: "./images/BUNDLE-2-FINAL.png",
     name: "BUNDLE DEAL 2",
     price: "£44.99",
-    description: ["Stage Ripped together with B4 Train"],
+    description: "Stage Ripped together with B4 Train",
   };
 
   return (

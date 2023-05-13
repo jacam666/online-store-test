@@ -1,62 +1,60 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 10%;
+    margin: 0;
+    padding: 0;
+    height: 10%;
 }
 
 body {
-  line-height: 1;
-  background: linear-gradient(
-    to bottom right,
-    rgb(5, 18, 56) 30%,
-    rgb(64, 67, 67) 70%
-  );
+    line-height: 1;
+    background: linear-gradient(to bottom right,
+            rgb(5, 18, 56) 30%,
+            rgb(64, 67, 67) 70%);
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
 }
 
 .product-name {
-  margin-bottom: 20px;
-  font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 h4 {
-  color: #ccc;
+    color: #ccc;
 }
 
 .servings-info {
-  color: #ccc;
-  margin: 20px 0;
+    color: #ccc;
+    margin: 20px 0;
 }
 
 .product-card-image {
-  display: flex;
-  margin: auto;
-  margin-top: 0;
+    display: flex;
+    margin: auto;
+    margin-top: 0;
 }
 
 h1 span {
-  display: block;
+    display: block;
 }
 
 .product-card-details {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .product-card h1 {
-  color: #ccc;
-  margin-top: 10px;
+    color: #ccc;
+    margin-top: 10px;
 }
 
 .product-card-details h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 /*.product-card-details {
@@ -64,130 +62,132 @@ h1 span {
 }*/
 
 .product-card-options {
-  width: 18rem;
-  color: #ccc;
+    width: 18rem;
+    color: #ccc;
 }
 
 .product-description {
-  width: 36rem;
-  color: #ccc;
-  margin: 1rem 0;
+    width: 36rem;
+    color: #ccc;
+    margin: 1rem 0;
 }
 
 .product-description h1 {
-  font-size: 2rem;
-  margin: 20px 0;
+    font-size: 2rem;
+    margin: 20px 0;
 }
 
 .product-price {
-  color: #fff;
+    color: #fff;
 }
 
 .product-directions {
-  color: #ccc;
-  width: 40vw;
+    color: #ccc;
+    width: 40vw;
 }
 
 .product-advice {
-  color: #ccc;
-  width: 20vw;
+    color: #ccc;
+    width: 20vw;
 }
 
 .product-storage {
-  color: #ccc;
+    color: #ccc;
 }
 
 .product-card-checkboxes {
-  margin-right: 20px;
-  height: 4vh;
+    margin-right: 20px;
+    height: 4vh;
 }
 
 .product-card-checkboxes label {
-  display: block;
+    display: block;
 }
 
 .product-card-checkboxes input {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .product-card-amount select {
-  margin-left: 5px;
-  margin-top: 7px;
-  width: 10vw;
-  height: 3vh;
+    margin-left: 5px;
+    margin-top: 7px;
+    width: 10vw;
+    height: 3vh;
 }
 
 .product-card-amount {
-  color: #ccc;
+    color: #ccc;
 }
 
 .amount-ingredients-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .directions-info h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .product-ingredient {
-  font-size: 14px;
-  color: #ccc;
-  margin-top: 10px;
-  width: 40vw;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    width: 40vw;
 }
 
 @media screen and (max-width: 390px) {
-  .product-card,
-  .product-price,
-  .product-description,
-  .product-advice,
-  .product-storage,
-  .product-directions {
-    width: 80%;
-  }
+
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .product-card,
-  .product-price,
-  .product-description,
-  .product-advice,
-  .product-storage,
-  .product-directions {
-    width: 80%;
-  }
+
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  @media screen and (orientation: landscape) {
-    .product-card-image img {
-      margin-top: 550px;
-      margin-bottom: 250px;
-      height: 200px;
-    }
+    @media screen and (orientation: landscape) {
+        .product-card-image img {
+            margin-top: 550px;
+            margin-bottom: 250px;
+            height: 200px;
+        }
 
-    .product-card-details {
-      margin-top: 80px;
-    }
+        .product-card-details {
+            margin-top: 80px;
+        }
 
-    .product-card {
-      height: 1oovh;
-    }
+        .product-card {
+            height: 1oovh;
+        }
 
-    .Navbar {
-      margin-bottom: 50px;
+        .Navbar {
+            margin-bottom: 50px;
+        }
     }
-  }
 }
 
 @media screen and (max-width: 960px) {
-  @media screen and (orientation: landscape) {
-    .product-card-image img {
-      margin-top: 240px;
-      height: 300px;
+    @media screen and (orientation: landscape) {
+        .product-card-image img {
+            margin-top: 240px;
+            height: 300px;
+        }
     }
-  }
 }

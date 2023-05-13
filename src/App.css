@@ -282,6 +282,11 @@ li {
 
 .card-container .card {
   height: 85vh;
+  position: relative;
+  transition: 0.6s;
+}
+.card-container .card:hover {
+  box-shadow: 5px 5px 20px lightgray;
 }
 
 
@@ -295,7 +300,7 @@ li {
       rgb(43, 103, 103) 100%);
   background-size: contain;
   background-position: center;
-  position: relative;
+  
 }
 
 .card a {
@@ -317,7 +322,6 @@ li {
   width: 20vw;
   height: 39vh;
   padding: 40px 40px 0 40px;
-  
 }
 
 .product-add-button {
