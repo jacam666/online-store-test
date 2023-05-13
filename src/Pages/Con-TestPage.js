@@ -1,27 +1,74 @@
 import React from "react";
-//import ProductCard from "./ProductCard.js";
-import ProductCard from "../components/ProductCard.js";
 
-
-function Contest() {
+const Contest = () => {
     const product = {
+        id: "17",
         image: "./images/PCT-NEW-300x300.png",
         name: "CON-TEST P.C.T 240 caps",
         price: "£29.99",
         description:
             "CON-TEST P.C.T HAS BEEN SPECIALLY FORMULATED TO INCREASE NATURAL TESTOSTERONE, REDUCE ESTROGEN AND INHIBIT CORTISOL. MAXIMIZING NATURAL TESTOSTERONE WILL IMPROVE PERFORMANCE, OVERALL WELL BEING AND ELEVATE SEX DRIVE.",
-        options: {
-            ingredients: "D-ASPARTIC ACID 1400MG, CONJUGATED LINOLEIC ACID 700MG, BULBINE NATALENSIS 300MG, MUCCUNA PRURIENS 250MG, ASHWAGANDHA ROOT EXTRACT 200MG, LIQUORICE ROOT EXTRACT 150MG, TONGKAT ALI EXTRACT 150MG, FENUGREEK SEED EXTRACT 100MG, AVENA SATIVA (DERIVED FROM OATS) 100MG, RHODIOLA ROSEA ROOT EXTRACT 100MG, BIOPERINE 5MG. ",
-            servings: "240 caps"
-        },
+        ingredients: [
+            "D-ASPARTIC ACID 1400MG,",
+            <br />,
+            "CONJUGATED LINOLEIC ACID 700MG",
+            <br />,
+            "BULBINE NATALENSIS 300MG",
+            <br />,
+            "MUCCUNA PRURIENS 250MG",
+            <br />,
+            "ASHWAGANDHA ROOT EXTRACT 200MG",
+            <br />,
+            "LIQUORICE ROOT EXTRACT 150MG",
+            <br />,
+            "TONGKAT ALI EXTRACT 150MG",
+            <br />,
+            "FENUGREEK SEED EXTRACT 100MG",
+            <br />,
+            "AVENA SATIVA (DERIVED FROM OATS) 100MG",
+            <br />,
+            "RHODIOLA ROSEA ROOT EXTRACT 100MG",
+            <br />,
+            "BIOPERINE 5MG.",
+        ],
+        servings: "240 caps",
     };
 
-    /*return <ProductCard product={product} />; */
     return (
-        <ProductCard product={product}>
-            <div className="ingredient-info">{product.options.ingredients}</div>
-        </ProductCard>
+        <div className="product-card">
+            <div>
+                <img
+                    className="product-card-image"
+                    src={product.image}
+                    alt={product.name}
+                />
+                <h2 className="product-name">{product.name}</h2>
+                <div className="product-price">
+                    <p>Price: {product.price}</p>
+                </div>
+
+                <div className="product-description">
+                    <h1>Description:</h1>
+                    <p>{product.description}</p>
+                </div>
+                <div className="servings-info">
+                    <h1>Servings:</h1>
+                    <p>{product.servings}</p>
+                </div>
+                <div className="product-directions">
+                    <p>{product.directions}</p>
+                </div>
+                <div>
+                    <p className="product-advice">{product.advice}</p>
+                </div>
+                <div>
+                    <p className="product-storage">{product.storage}</p>
+                </div>
+                <h1>Ingredients:</h1>
+                <p className="product-ingredient">{product.ingredients}</p>
+            </div>
+        </div>
     );
-}
+};
 
 export default Contest;

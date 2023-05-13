@@ -18,14 +18,38 @@ const AfterTrainOrange = () => {
     return (
         <div className="product-card">
             <div>
-                <img className="product-card-image" src={product.image} alt={product.name} />
-                <h2>{product.name}</h2>
-                <p className="product-price">Price: {product.price}</p>
-                <p className="product-description">{product.description}</p>
-                <p className="servings-info">{product.servings}</p>
-                <p className="product-directions">{product.directions}</p>
-                <p className="product-advice">{product.advice}</p>
-                <p className="product-storage">{product.storage}</p>
+                <img
+                    className="product-card-image"
+                    src={product.image}
+                    alt={product.name}
+                />
+                <h2 className="product-name">{product.name}</h2>
+                <div className="product-price">
+                    <p>Price: {product.price}</p>
+                </div>
+
+                <div className="product-description">
+                    <h1>Description:</h1>
+                    <p>{product.description}</p>
+                </div>
+                <div className="servings-info">
+                    <h1>Servings:</h1>
+                    <p>{product.servings}</p>
+                </div>
+                <div className="product-directions">
+                    <h1>Directions:</h1>
+                    <p>{product.directions}</p>
+                </div>
+                <div>
+                    <h1>Advice:</h1>
+                    <p className="product-advice">{product.advice}</p>
+                </div>
+                <div>
+                    <h1>Storage:</h1>
+                    <p className="product-storage">{product.storage}</p>
+                </div>
+
+                <p className="product-ingredient">{product.ingredients}</p>
             </div>
         </div>
     );

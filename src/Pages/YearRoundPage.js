@@ -1,8 +1,9 @@
 import React from "react";
-import ProductCard from "../components/ProductCard.js";
+import "../ProductCard.css"
 
-function YearRound() {
+const YearRound = () => {
     const product = {
+        id: "12",
         image: "./images/Year-round-300x300.png",
         name: "YEAR ROUND IMMUNITY SUPPORT 60 caps",
         price: "£19.99",
@@ -13,16 +14,43 @@ function YearRound() {
             <br />,
             "and fight off colds and viruses.",
         ],
-        options: {
             servings:"60 caps",
-        },
     };
 
-    /*return <ProductCard product={product} />; */
     return (
-        <ProductCard product={product}>
-            <div className="servings">{product.options.servings}</div>
-        </ProductCard>
+        <div className="product-card">
+            <div>
+                <img
+                    className="product-card-image"
+                    src={product.image}
+                    alt={product.name}
+                />
+                <h2 className="product-name">{product.name}</h2>
+                <div className="product-price">
+                    <p>Price: {product.price}</p>
+                </div>
+
+                <div className="product-description">
+                    <h1>Description:</h1>
+                    <p>{product.description}</p>
+                </div>
+                <div className="servings-info">
+                    <h1>Servings:</h1>
+                    <p>{product.servings}</p>
+                </div>
+                <div className="product-directions">
+                    <p>{product.directions}</p>
+                </div>
+                <div>
+                    <p className="product-advice">{product.advice}</p>
+                </div>
+                <div>
+                    <p className="product-storage">{product.storage}</p>
+                </div>
+
+                <p className="product-ingredient">{product.ingredients}</p>
+            </div>
+        </div>
     );
 }
 

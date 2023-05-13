@@ -1,7 +1,6 @@
 import React from "react";
-import ProductCard from "../components/ProductCard.js";
 
-function StagePumpBlue() {
+const StagePumpBlue = () => {
     const product = {
         image: "./images/STAGE-PUMP-BLUE-FOR-WEB-300x300.png",
         name: "STAGE PUMP BLUE RASPBERRY FLAVOUR",
@@ -9,13 +8,47 @@ function StagePumpBlue() {
         description: [
             "STAGE PUMP IS SPECIALLY FORMULATED TO GIVE MIND BLOWING PUMPS, FOCUS AND INCREASED VASCULARITY.",
         ],
-        options: {
-            directions:
-                "DIRECTIONS OF USE: MIX ONE SCOOP (20G) WITH250ML OF CHILLED WATER. STIR OR SHAKE VIGOROUSLY FOR 30 SECONDS USING A SHAKER. FOR ACCURATE MEASURE PLEASE REVERT TO WEIGHING SCALES USING THE SCOOP PROVIDED. CONSUME 30 MINUTES BEFORE INTENSE EXERCISE.",
-        },
+        directions:
+            "MIX ONE SCOOP (20G) WITH 250ML OF CHILLED WATER. STIR OR SHAKE VIGOROUSLY FOR 30 SECONDS USING A SHAKER. FOR ACCURATE MEASURE PLEASE REVERT TO WEIGHING SCALES USING THE SCOOP PROVIDED. CONSUME 30 MINUTES BEFORE INTENSE EXERCISE.",
+            servings: "20 Servings.",
     };
 
-    return <ProductCard product={product} />;
-}
+    return (
+        <div className="product-card">
+            <div>
+                <img
+                    className="product-card-image"
+                    src={product.image}
+                    alt={product.name}
+                />
+                <h2 className="product-name">{product.name}</h2>
+                <div className="product-price">
+                    <p>Price: {product.price}</p>
+                </div>
+
+                <div className="product-description">
+                    <h1>Description:</h1>
+                    <p>{product.description}</p>
+                </div>
+                <div className="servings-info">
+                    <h1>Servings:</h1>
+                    <p>{product.servings}</p>
+                </div>
+                <div className="product-directions">
+                    <h1>Directions:</h1>
+                    <p>{product.directions}</p>
+                </div>
+                <div>
+                    <p className="product-advice">{product.advice}</p>
+                </div>
+                <div>
+                    <p className="product-storage">{product.storage}</p>
+                </div>
+
+                <p className="product-ingredient">{product.ingredients}</p>
+            </div>
+        </div>
+    );
+};
 
 export default StagePumpBlue;

@@ -90,7 +90,7 @@ const AppRoutes = ({
             <Route path="/Con-TestPage" element={<Contest />} />
             <Route path="/StageExtremePage" element={<StageExtreme />} />
             <Route path="/StagePumpBluePage" element={<StagePumpBlue />} />
-            <Route path="/TrainingPlanPage" element={<TrainingPlan />} />
+            <Route path="/TraingPlanPage" element={<TrainingPlan />} />
             <Route path="/BundleDeal1Page" element={<BundleDeal1 />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 />} />

@@ -27,26 +27,58 @@ function AfterTrain() {
 export default AfterTrain; */
 
 import React from "react";
-import ProductCard from "./ProductCard.js";
+import "../ProductCard.css"
 
-function StageRipped() {
+const StageRipped = () => {
   const product = {
+    id: "6",
     image: "/images/Stage-Ripped-CGI-300x300.png",
     name: "STAGE RIPPED 60 caps",
     price: "£29.99",
     description:
       "Stage Ripped has been especially formulated to aid in weight loss, giving energy, suppressing appetite and increasing body temperature for burning fat. For best results take on a calorie reduced diet.",
-    options: {
-      ingredients: "INGREDIENT INFORMATION 1 Capsule: Caffenine Anhydrous 225mg, Kola Nut Extract 3% Caffeine, 2% Theobromine 200mg, Guarana Seed Extract125mg, 5-HTP 5-Hydroxytophan 75mg, Hordenine HCL 75mg, Paradoxine Grains of paradise. Std. to 12.5% 6- paradol 40mg, Vitamin B3 5mg 25%, Vitamin B6 as Pyridoxine HCL 5mg 357% Chromium Picolinate 100mcg 250% ",
-      servings: "60 caps"
-    },
+
+    ingredients: "INGREDIENT INFORMATION 1 Capsule: Caffenine Anhydrous 225mg, Kola Nut Extract 3% Caffeine, 2% Theobromine 200mg, Guarana Seed Extract125mg, 5-HTP 5-Hydroxytophan 75mg, Hordenine HCL 75mg, Paradoxine Grains of paradise. Std. to 12.5% 6- paradol 40mg, Vitamin B3 5mg 25%, Vitamin B6 as Pyridoxine HCL 5mg 357% Chromium Picolinate 100mcg 250% ",
+    servings: "60 caps"
+
   };
 
-  /*return <ProductCard product={product} />; */
   return (
-    <ProductCard product={product}>
-      <div className="ingredient-info">{product.options.ingredients}</div>
-    </ProductCard>
+    <div className="product-card">
+      <div>
+        <img
+          className="product-card-image"
+          src={product.image}
+          alt={product.name}
+        />
+        <h2 className="product-name">{product.name}</h2>
+        <div className="product-price">
+          <p>Price: {product.price}</p>
+        </div>
+
+        <div className="product-description">
+          <h1>Description:</h1>
+          <p>{product.description}</p>
+        </div>
+        <div className="servings-info">
+          <h1>Servings:</h1>
+          <p>{product.servings}</p>
+        </div>
+        <div className="product-directions">
+          <p>{product.directions}</p>
+        </div>
+        <div>
+          <p className="product-advice">{product.advice}</p>
+        </div>
+        <div>
+          <p className="product-storage">{product.storage}</p>
+        </div>
+        <div>
+          <h1>Ingredients:</h1>
+          <p className="product-ingredient">{product.ingredients}</p>
+        </div>
+      </div>
+    </div>
   );
 }
 

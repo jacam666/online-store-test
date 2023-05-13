@@ -1,26 +1,52 @@
 import React from "react";
-//import ProductCard from "./ProductCard.js";
-import ProductCard from "../components/ProductCard.js";
 
 
-function StageExtreme() {
+const StageExtreme = () => {
   const product = {
+    id: "18",
     image: "./images/RIPPED-EXTREME-300x300.png",
     name: "STAGE RIPPED EXTREME",
     price: "£34.99",
     description:
       "Stage Ripped Extreme has been especially formulated to aid in maximum weight loss. Giving increased energy and suppressing appetite, for best results take on a calorie reduced diet. warning high caffeine content, use with caution.",
-    options: {
         servings: "60 caps",
-    },
   };
 
-  /*return <ProductCard product={product} />; */
   return (
-    <ProductCard product={product}>
-      <div className="ingredient-info">{product.options.ingredients}</div>
-    </ProductCard>
-  );
+    <div className="product-card">
+        <div>
+            <img
+                className="product-card-image"
+                src={product.image}
+                alt={product.name}
+            />
+            <h2 className="product-name">{product.name}</h2>
+            <div className="product-price">
+                <p>Price: {product.price}</p>
+            </div>
+
+            <div className="product-description">
+                <h1>Description:</h1>
+                <p>{product.description}</p>
+            </div>
+            <div className="servings-info">
+                <h1>Servings:</h1>
+                <p>{product.servings}</p>
+            </div>
+            <div className="product-directions">
+                <p>{product.directions}</p>
+            </div>
+            <div>
+                <p className="product-advice">{product.advice}</p>
+            </div>
+            <div>
+                <p className="product-storage">{product.storage}</p>
+            </div>
+
+            <p className="product-ingredient">{product.ingredients}</p>
+        </div>
+    </div>
+);
 }
 
 export default StageExtreme;
