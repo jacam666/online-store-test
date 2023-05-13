@@ -320,10 +320,6 @@ li {
   
 }
 
-
-
-
-
 .product-add-button {
   font-weight: 200;
   font-size: 12px;
@@ -393,8 +389,8 @@ li {
     width: 50vw;
     margin-top: 35px;
   }
-  img.cardImage {
-    height: 25vh;
+  .cardImage {
+    height: 20vh;
     width: 40vw;
     padding: 20px;
   }
@@ -409,9 +405,10 @@ li {
     width: 50vw;
   }
   .cardImage {
-    height: 30vh;
+    height:25vh;
     width: 45vw;
     padding: 10px;
+    margin-top: 10px;
   }
   .product-add-button {
     width: 30vw;
