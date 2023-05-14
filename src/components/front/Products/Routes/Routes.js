@@ -45,7 +45,7 @@ const AppRoutes = ({
     return (
         //<div>
         <Routes>
-            <Route
+            {/*<Route
                 path="/"
                 element={
                     <Products
@@ -53,7 +53,7 @@ const AppRoutes = ({
                         handleAddProduct={handleAddProduct}
                     />
                 }
-            />
+            />*/}
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage />} />
             <Route
@@ -69,8 +69,17 @@ const AppRoutes = ({
             />
             <Route
                 path="/"
-                element={isUserLoggedIn ? <div>Welcome to the homepage!</div> : <LoginPage isLoggedIn={setIsUserLoggedIn} />}
+                element={
+                    <>
+                        {isUserLoggedIn && <div>Welcome to the homepage!</div>}
+                        <Products
+                            productItems={productItems}
+                            handleAddProduct={handleAddProduct}
+                        />
+                    </>
+                }
             />
+
             <Route path="/OnlyWheyPage" element={<OnlyWhey />} />
             <Route path="/AfterTrainPage" element={<AfterTrain />} />
             <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced />} />

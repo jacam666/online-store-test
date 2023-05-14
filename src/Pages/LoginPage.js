@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 
-function LoginPage({ isLoggedIn }) {
+const LoginPage = ({ isLoggedIn }) => {
   const Navigate = useNavigate();
 
   const [email, setEmail] = useState("");
