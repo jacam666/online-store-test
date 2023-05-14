@@ -292,9 +292,12 @@ li {
   position: relative;
   transition: 0.3s;
 }
+
 .card-container .card:hover {
   transform: 0.3s;
-  box-shadow: 8px 8px 30px #ccc;
+  /*box-shadow: 8px 8px 30px #ccc;*/
+  box-shadow: 0 0 5px #fff, 0 0 25px
+  #fff, 0 0 50px #fff, 0 0 200px #fff;
 }
 
 
@@ -311,7 +314,7 @@ li {
       rgb(43, 103, 103) 100%);
   background-size: contain;
   background-position: center;
-  
+
 }
 
 .card a {
@@ -337,15 +340,16 @@ li {
   font-size: 12px;
   border-radius: 5px;
   border: none;
-  outline:  none;
+  outline: none;
   background: linear-gradient(to left,
       rgb(26, 41, 85) 0%,
       rgb(61, 69, 69) 100%);
-  color: #fff;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3),
-              0px 2px 5px 0px rgba(0,0,0,0.2),
-              0px 1px 1px 0px rgba(0,0,0,0.24);
-              text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+  color: #f8f3f3;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
 
   width: 30%;
   height: 30px;
@@ -355,9 +359,17 @@ li {
   margin: 15px auto;
 }
 
-.product-add-button:active {
+/*.product-add-button:active {
   transform: translateY(2px);
   box-shadow: none;
+} */
+.product-add-button:active {
+  background: #fff;
+  transform: translateY(2px);
+  /*box-shadow: 0 0 5px #ff96ad, 0 0 25px
+  #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;*/
+  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
+  color: black;
 }
 
 
@@ -388,7 +400,7 @@ li {
   .login-form {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: flex-start;
     margin-top: 130px;
   }
@@ -401,27 +413,31 @@ li {
     width: 50vw;
     margin-top: 35px;
   }
+
   .cardImage {
     height: 20vh;
     width: 40vw;
     padding: 20px;
   }
+
   .product-add-button {
     width: 30vw;
   }
-} 
+}
 
 @media screen and (min-width: 392px) and (max-width: 767px) {
   .card-container .card {
     height: 100%;
     width: 50vw;
   }
+
   .cardImage {
-    height:25vh;
+    height: 25vh;
     width: 45vw;
     padding: 10px;
     margin-top: 10px;
   }
+
   .product-add-button {
     width: 30vw;
   }
