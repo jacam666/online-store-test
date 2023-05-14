@@ -464,6 +464,14 @@ li {
     align-items: center;
     margin: auto;
   }
+  @media screen and (orientation: landscape) {
+    .cardImage {
+      height: auto;
+    }
+    .card-container .card {
+      height: auto;
+    }
+  }
 }
 
 
