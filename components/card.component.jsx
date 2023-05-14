@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 const Card = () => {
         return (
@@ -170,4 +170,4 @@ const Card = () => {
     )
 }
 
-export default Card;
+export default Card;  */
