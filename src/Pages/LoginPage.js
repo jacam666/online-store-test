@@ -1,35 +1,29 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import axios from "axios";
 
-function LoginPage() {
-  const history = useNavigate();
+function LoginPage({ isLoggedIn }) {
+  const Navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  async function submit(e) {
-    e.preventDefault();
+  /*async function submit(e) {
+    e.preventDefault(); */
+    const submit = (e) => {
+      e.preventDefault();
 
-    try {
-      await axios
-        .post("http://localhost:3000/", {
-          email,
-          password,
-        })
-        .then((res) => {
-          if (res.data === "exist") {
-            history("/HomePage", { state: { id: email } });
-          } else if (res.data === "notexist") {
-            alert("email is not known");
-          }
-        })
-        .catch((e) => {
-          alert("Wrong details");
-          console.log(e);
-        });
-    } catch (e) {
-      console.log(e);
+    const storedUser = localStorage.getItem(email);
+    if (storedUser) {
+      const user = JSON.parse(storedUser);
+      if (user.password === password) {
+        isLoggedIn(true);
+
+        Navigate("/", { state: { id: email } });
+      } else {
+        alert("Incorrect password");
+      }
+    } else {
+      alert("Email not found");
     }
   }
 
@@ -41,24 +35,19 @@ function LoginPage() {
           <input
             className="login-email"
             type="email"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             name=""
-            id=""
-          ></input>
+            id="login"
+          />
           <input
             className="login-password"
             type="password"
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
             name=""
-            id=""
-          ></input>
-
+            id="login-password"
+          />
           <input className="submit-button" type="submit" onClick={submit} />
           <p className="or">or</p>
           <div className="signup-link-container">
@@ -73,3 +62,5 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
+

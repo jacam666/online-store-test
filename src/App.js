@@ -8,6 +8,8 @@ import Navbar from "./Navbar";
 const App = () => {
   const { productItems } = data;
   const [basketItems, setBasketItems] = useState([]);
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
 
   const handleAddProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
@@ -43,6 +45,8 @@ const App = () => {
     setBasketItems([]);
   };
 
+
+
   return (
     <div className="App">
       <Navbar basketItems={basketItems} />
@@ -53,6 +57,8 @@ const App = () => {
         handleAddProduct={handleAddProduct}
         handleRemoveProduct={handleRemoveProduct}
         handleBasketClearance={handleBasketClearance}
+        isUserLoggedIn={isUserLoggedIn}
+        setIsUserLoggedIn={setIsUserLoggedIn}
       />
     </div>
   );

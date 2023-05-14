@@ -34,11 +34,17 @@ const AppRoutes = ({
     handleAddProduct,
     handleRemoveProduct,
     handleBasketClearance,
+    isUserLoggedIn,
+    setIsUserLoggedIn
 }) => {
+
+    const handleLogin = (loggedIn) => {
+        setIsUserLoggedIn(loggedIn);
+    };
+
     return (
         //<div>
         <Routes>
-            {/*<Route path="/" element={<HomePage />} />*/}
             <Route
                 path="/"
                 element={
@@ -48,7 +54,7 @@ const AppRoutes = ({
                     />
                 }
             />
-            <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage />} />
             <Route
                 path="/BasketPage"
@@ -61,7 +67,10 @@ const AppRoutes = ({
                     />
                 }
             />
-            {/*<BasketPage BasketItems={BasketItems} />*/}
+            <Route
+                path="/"
+                element={isUserLoggedIn ? <div>Welcome to the homepage!</div> : <LoginPage isLoggedIn={setIsUserLoggedIn} />}
+            />
             <Route path="/OnlyWheyPage" element={<OnlyWhey />} />
             <Route path="/AfterTrainPage" element={<AfterTrain />} />
             <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced />} />

@@ -198,7 +198,8 @@ li {
 .signUp-Email,
 .signUp-Password,
 .login-password,
-.login-email {
+.login-email,
+.signUp-Name {
   margin-bottom: 1rem;
   width: 15vw;
   padding: 0.5rem;

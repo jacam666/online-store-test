@@ -3,6 +3,7 @@ import "../ProductCard.css";
 
 const AfterTrain =() => {
   const product = {
+    id: "8",
     image: "./images/apple-aftertrain-300x300.png",
     name: ["AFTER TRAIN APPLE", <br />, "POST WORKOUT"],
     price: "£24.99",
