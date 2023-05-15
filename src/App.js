@@ -12,6 +12,7 @@ const App = () => {
 
 
 
+
   const handleAddProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist) {
@@ -46,7 +47,7 @@ const App = () => {
     setBasketItems([]);
   };
 
-
+  console.log("BasketItems:", basketItems) 
 
   return (
     <div className="App">
@@ -61,6 +62,7 @@ const App = () => {
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
       />
+      
     </div>
   );
 };

@@ -1,12 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../components/checkout.css"
 
-const Checkout = () => {
+const Checkout = ({ basketItems = [] }) => {
+    const [isBasketOpen, setIsBasketOpen] = useState(false);
+
+
+    const totalPrice = basketItems.length > 0
+        ? basketItems.reduce((price, item) => price + item.quantity * item.price, 0)
+        : 0;
+
+    const toggleBasket = () => {
+        setIsBasketOpen(!isBasketOpen);
+    }
+
     return (
         <div>
             <h1 className='checkout-heading'>Checkout</h1>
             <div className='checkout-container'>
+                <div>
 
+                    <div>
+                        <div className='order-summary'>
+                            <h2>Show Order Summary</h2>
+                            <div>
+                                Total Amount: £{totalPrice}
+                            </div>
+                            <div className='checkout-basket-dropdown'>
+                                <div className='checkout-basket-header' onClick={toggleBasket}>
+                                    <span>Basket</span>
+                                    <span className='arrow-icon'>{isBasketOpen ? '▲' : '▼'}</span>
+                                </div>
+                                {isBasketOpen && (
+                                    <div className='checkout-basket-items'>
+                                        {basketItems.map((item) => (
+                                            <div key={item.id} className='checkout-basket-item'>
+                                                <span>{item.name}</span>
+                                                <span>Quantity: {item.quantity}</span>
+                                                <span>Price: {item.quantity * item.price}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h2 className='address-heading'>Shipping Address:</h2>
                 <input
                     className="shipping-firstName"
@@ -74,7 +112,7 @@ const Checkout = () => {
                     autoComplete='tel'
                 />
             </div>
-        </div>
+        </div >
     )
 }
 

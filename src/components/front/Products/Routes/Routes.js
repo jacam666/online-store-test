@@ -106,7 +106,7 @@ const AppRoutes = ({
             <Route path="/BundleDeal1Page" element={<BundleDeal1 />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 />} />
-            <Route path="/Checkout" element={<Checkout />}/>
+            <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
         </Routes>
         //</div>
     );

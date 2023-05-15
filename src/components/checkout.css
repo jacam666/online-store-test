@@ -1,10 +1,11 @@
 .checkout-container {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 4px;
     align-items: center;
     margin: auto;
     padding-top: 30px;
+    border: none;
     
 }
 
@@ -19,6 +20,7 @@
 .address-heading {
     color: #ccc;
     margin-left: -63px ;
+    margin-bottom: 10px;
 }
 
 .shipping-firstName,
