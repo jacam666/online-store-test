@@ -1,0 +1,48 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+    
+}
+
+.checkout-heading {
+    color: #f3efef;
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.address-heading {
+    color: #ccc;
+    margin-left: -63px ;
+}
+
+.shipping-firstName,
+.shipping-lastName,
+.company-name,
+.address,
+.address-line-two,
+.city,
+.postcode,
+.phone-number {
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.phone-number::placeholder {
+    font-size: 8px;
+}
+
+.shipping-firstName::placeholder,
+.shipping-lastName::placeholder,
+.company-name::placeholder,
+.address::placeholder,
+.address-line-two::placeholder,
+.city::placeholder,
+.postcode::placeholder,
+.phone-number::placeholder {
+}

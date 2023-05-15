@@ -63,6 +63,9 @@ const BasketPage = ({
         Total Price
         <div className="basket-items-total-price">£{totalPrice}</div>
       </div>
+      <div>
+        <button className="checkout-button">Checkout</button>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Products from "../Products";
 import LoginPage from "../../../.././Pages/LoginPage";
 import SignupPage from "../../../.././Pages/SignupPage";
@@ -27,6 +27,7 @@ import TrainingPlan from "../../../.././Pages/TraingPlanPage";
 import BundleDeal1 from "../../../.././Pages/BundleDeal1Page";
 import FatBurnerBundle from "../../../.././Pages/FatBurnerBundlePage";
 import BundleDeal2 from "../../../.././Pages/BundleDeal2Page.js";
+import Checkout from "../../../../Pages/Checkout";
 
 const AppRoutes = ({
     productItems,
@@ -35,25 +36,18 @@ const AppRoutes = ({
     handleRemoveProduct,
     handleBasketClearance,
     isUserLoggedIn,
-    setIsUserLoggedIn
+    setIsUserLoggedIn,
 }) => {
 
     const handleLogin = (loggedIn) => {
         setIsUserLoggedIn(loggedIn);
     };
 
+    const location = useLocation();
+    const { name } = location.state || {};
     return (
         //<div>
         <Routes>
-            {/*<Route
-                path="/"
-                element={
-                    <Products
-                        productItems={productItems}
-                        handleAddProduct={handleAddProduct}
-                    />
-                }
-            />*/}
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage />} />
             <Route
@@ -71,7 +65,7 @@ const AppRoutes = ({
                 path="/"
                 element={
                     <>
-                        {isUserLoggedIn && <div>Welcome to the homepage!</div>}
+                        {isUserLoggedIn && <div> Welcome{name}</div>}
                         <Products
                             productItems={productItems}
                             handleAddProduct={handleAddProduct}
@@ -112,6 +106,7 @@ const AppRoutes = ({
             <Route path="/BundleDeal1Page" element={<BundleDeal1 />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 />} />
+            <Route path="/Checkout" element={<Checkout />}/>
         </Routes>
         //</div>
     );

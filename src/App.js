@@ -11,6 +11,7 @@ const App = () => {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
 
 
+
   const handleAddProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist) {

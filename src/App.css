@@ -426,6 +426,10 @@ li {
   .product-add-button {
     width: 30vw;
   }
+  .submit-button {
+    padding: 5px 15px;
+    border-radius: 7px;
+  }
 }
 
 @media screen and (min-width: 392px) and (max-width: 767px) {

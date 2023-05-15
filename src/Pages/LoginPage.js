@@ -7,8 +7,6 @@ const LoginPage = ({ isLoggedIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  /*async function submit(e) {
-    e.preventDefault(); */
     const submit = (e) => {
       e.preventDefault();
 

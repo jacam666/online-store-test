@@ -1,4 +1,4 @@
-.basket-items {
+    .basket-items {
     margin: 30px auto;
     width: 50%;
     background: linear-gradient(to left,
@@ -138,6 +138,14 @@
     cursor: pointer;
 }
 
+.checkout-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
 
 @media screen and (max-width: 391px) {
     .basket-items {
@@ -201,7 +209,6 @@
 
     img.basket-items-image {
         margin: -55px;
-        margin: 15px 0;
     }
 
     .basket-items-name {
@@ -230,7 +237,17 @@
     }
 
     .basket-items-total-price {
-        padding-left: 65%;
+        padding-left: 100px;
+    }
+
+    .checkout-button {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (orientation: landscape) {
+        img.basket-items-image {
+            margin: auto;
+        }
     }
 }
 

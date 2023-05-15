@@ -1,8 +1,9 @@
-import { useNavigate, Link } from "react-router-dom";
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 
 function SignupPage() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("");
@@ -19,9 +20,10 @@ function SignupPage() {
         name,
         email,
         password,
+        username: name,
       };
       localStorage.setItem(email, JSON.stringify(newUser));
-      history("/home", { state: { id: email } });
+      navigate("/", { state: { username: name, id: email } });
     }
   }
 
