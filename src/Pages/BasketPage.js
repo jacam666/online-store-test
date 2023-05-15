@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/Basket.css";
+import { useNavigate } from "react-router-dom";
 
 const BasketPage = ({
   basketItems,
@@ -11,6 +12,13 @@ const BasketPage = ({
     (price, item) => price + item.quantity * item.price,
     0
   );
+
+  const navigate = useNavigate();
+
+  const handleCheckoutClick = () => {
+    navigate('/Checkout');
+  };
+
   return (
     <div className="basket-items">
       <h2 className="basket-items-header">Basket Items</h2>
@@ -64,7 +72,9 @@ const BasketPage = ({
         <div className="basket-items-total-price">£{totalPrice}</div>
       </div>
       <div>
-        <button className="checkout-button">Checkout</button>
+          <button className="checkout-button" onClick={handleCheckoutClick}>
+            Checkout
+            </button>
       </div>
     </div>
   );
