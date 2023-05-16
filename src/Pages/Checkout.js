@@ -13,6 +13,9 @@ const Checkout = ({ basketItems = [] }) => {
         setIsBasketOpen(!isBasketOpen);
     }
 
+    const orderSummaryText = isBasketOpen ? 'Hide Order Summary' : 'Show Order Summary';
+
+
     return (
         <div>
             <h1 className='checkout-heading'>Checkout</h1>
@@ -20,7 +23,9 @@ const Checkout = ({ basketItems = [] }) => {
                 <div>
                     <div>
                         <div className='order-summary'>
-                            <h2 className='order-summary-heading'>Show Order Summary</h2>
+                            {/*<h2 className='order-summary-heading'>Show Order Summary</h2>*/}
+                            <h2 className='order-summary-heading'>{orderSummaryText}</h2>
+
                             
                             <div className='checkout-basket-dropdown'>
                                 <div className='checkout-basket-header' onClick={toggleBasket}>
@@ -32,8 +37,8 @@ const Checkout = ({ basketItems = [] }) => {
                                         {basketItems.map((item) => (
                                             <div key={item.id} className='checkout-basket-item'>
                                                 <span className='checkout-item-name'>{item.name}</span>
-                                                <span className='checkout-item-quantity'>Quantity: {item.quantity}</span>
-                                                <span>Price: {item.quantity * item.price}</span>
+                                                <span className='checkout-item-quantity'> Quantity: {item.quantity}</span>
+                                                <span> Price: {item.quantity * item.price}</span>
                                             </div>
                                         ))}
                                     </div>

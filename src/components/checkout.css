@@ -103,3 +103,66 @@
 .checkout-basket-item {
     margin: 5px 0;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .shipping-firstName {
+        display: inline-block;
+        width: 41%;
+        margin-left: 4%;
+        border-radius: 5px;
+        padding: 9px;
+
+    }
+    
+    .shipping-lastName {
+        display: inline-block;
+        width: 40%;
+        border-radius: 5px;
+        padding: 9px;
+        border: none;
+    }
+    .address-heading {
+        color: #ccc;
+        margin-left: 56px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .order-summary {
+        
+        width: 87%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .company-name,
+    .address,
+    .address-line-two,
+    .city,
+    .postcode,
+    .phone-number {
+        border: none;
+        border-radius: 5px;
+        padding: 9px;
+        width: 85%;
+        align-items: center;
+        margin: auto;
+    }
+
+    
+    .shipping-firstName {
+        margin-left: 55px;
+        border: none;
+        margin-right: 12px;
+    }
+    .arrow-icon {
+        color: #ccc;
+        font-size: 10px;
+        margin-right: 530px;
+    }
+    
+}
