@@ -18,34 +18,35 @@ const Checkout = ({ basketItems = [] }) => {
             <h1 className='checkout-heading'>Checkout</h1>
             <div className='checkout-container'>
                 <div>
-
                     <div>
                         <div className='order-summary'>
-                            <h2>Show Order Summary</h2>
-                            <div>
-                                Total Amount: £{totalPrice}
-                            </div>
+                            <h2 className='order-summary-heading'>Show Order Summary</h2>
+                            
                             <div className='checkout-basket-dropdown'>
                                 <div className='checkout-basket-header' onClick={toggleBasket}>
-                                    <span>Basket</span>
                                     <span className='arrow-icon'>{isBasketOpen ? '▲' : '▼'}</span>
                                 </div>
+                                
                                 {isBasketOpen && (
                                     <div className='checkout-basket-items'>
                                         {basketItems.map((item) => (
                                             <div key={item.id} className='checkout-basket-item'>
-                                                <span>{item.name}</span>
-                                                <span>Quantity: {item.quantity}</span>
+                                                <span className='checkout-item-name'>{item.name}</span>
+                                                <span className='checkout-item-quantity'>Quantity: {item.quantity}</span>
                                                 <span>Price: {item.quantity * item.price}</span>
                                             </div>
                                         ))}
                                     </div>
                                 )}
                             </div>
+                            <div className='checkout-total'>
+                                £{totalPrice}
+                            </div>
                         </div>
                     </div>
                 </div>
                 <h2 className='address-heading'>Shipping Address:</h2>
+                <div>
                 <input
                     className="shipping-firstName"
                     type="text"
@@ -62,6 +63,8 @@ const Checkout = ({ basketItems = [] }) => {
                     id='shipping-lastName'
                     autoComplete='family-name'
                 />
+                </div>
+                
                 <input
                     className='company-name'
                     type='text'
