@@ -47,7 +47,6 @@ const App = () => {
     setBasketItems([]);
   };
 
-  console.log("BasketItems:", basketItems) 
 
   return (
     <div className="App">

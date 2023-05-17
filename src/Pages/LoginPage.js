@@ -10,13 +10,14 @@ const LoginPage = ({ isLoggedIn }) => {
     const submit = (e) => {
       e.preventDefault();
 
+
     const storedUser = localStorage.getItem(email);
     if (storedUser) {
       const user = JSON.parse(storedUser);
       if (user.password === password) {
         isLoggedIn(true);
 
-        Navigate("/", { state: { id: email } });
+        Navigate("/", { state: { name: user.name, id: email } });
       } else {
         alert("Incorrect password");
       }

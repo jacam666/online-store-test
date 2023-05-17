@@ -39,17 +39,18 @@ const AppRoutes = ({
     setIsUserLoggedIn,
 }) => {
 
-    const handleLogin = (loggedIn) => {
-        setIsUserLoggedIn(loggedIn);
+    const location = useLocation();
+    console.log("Location State:", location.state);
+
+    const handleLogin = () => {
+        setIsUserLoggedIn(true);
     };
 
-    const location = useLocation();
-    const { name } = location.state || {};
     return (
         //<div>
         <Routes>
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
-            <Route path="/SignupPage" element={<SignupPage />} />
+            <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route
                 path="/BasketPage"
                 element={
@@ -65,7 +66,7 @@ const AppRoutes = ({
                 path="/"
                 element={
                     <>
-                        {isUserLoggedIn && <div> Welcome{name}</div>}
+                        {isUserLoggedIn && <div className="welcome-message"> Welcome {location.state?.name}</div>}
                         <Products
                             productItems={productItems}
                             handleAddProduct={handleAddProduct}
@@ -73,7 +74,6 @@ const AppRoutes = ({
                     </>
                 }
             />
-
             <Route path="/OnlyWheyPage" element={<OnlyWhey />} />
             <Route path="/AfterTrainPage" element={<AfterTrain />} />
             <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced />} />

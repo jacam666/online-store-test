@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-function SignupPage() {
+function SignupPage( { setIsUserLoggedIn}) {
   const navigate = useNavigate();
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
   function submit(e) {
     e.preventDefault();
+
+    console.log("Name:", name);
+    console.log("Email:", email);
 
     const storedUser = localStorage.getItem(email);
     if (storedUser) {
@@ -20,10 +24,11 @@ function SignupPage() {
         name,
         email,
         password,
-        username: name,
       };
-      localStorage.setItem(email, JSON.stringify(newUser));
-      navigate("/", { state: { username: name, id: email } });
+      localStorage.setItem(email, name, JSON.stringify(newUser));
+      setIsUserLoggedIn(true);
+      navigate("/", { state: { name: name, email: email } });
+
     }
   }
 

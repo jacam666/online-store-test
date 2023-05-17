@@ -23,7 +23,6 @@ const Checkout = ({ basketItems = [] }) => {
                 <div>
                     <div>
                         <div className='order-summary'>
-                            {/*<h2 className='order-summary-heading'>Show Order Summary</h2>*/}
                             <h2 className='order-summary-heading'>{orderSummaryText}</h2>
 
                             
