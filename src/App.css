@@ -265,23 +265,12 @@ li {
   border-radius: 7px;
 }
 
-/*.navbar li:first-child {
-    border-left: none;
-  }*/
-
 .navbar li:nth-child(1) a,
 .navbar li:nth-child(2) a,
 .navbar li:nth-child(3) a {
   font-weight: bold;
-  color: rgb(247, 242, 242);
+  color: rgb(247, 244, 244);
   text-decoration: none;
-}
-.navbar li:nth-child(1):hover a,
-.navbar li:nth-child(2):hover a,
-.navbar li:nth-child(3):hover a {
-  color: #f5f9f7;
-  text-shadow: 2px 4px 1px #090909;
-  /*box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 5000px #fff, 0 0 200px #fff;*/
 }
 
 

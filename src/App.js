@@ -4,6 +4,7 @@ import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 import Logo from "./components/Logo";
 import Navbar from "./Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const { productItems } = data;
@@ -61,7 +62,7 @@ const App = () => {
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
       />
-      
+      <Footer />
     </div>
   );
 };
