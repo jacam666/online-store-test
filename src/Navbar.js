@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BasketIcon from "./components/BasketIcon";
+import "./components/Navbar.css"
 
 function Navbar() {
   return (

@@ -1,6 +1,4 @@
 /*body {
-  margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -97,13 +95,6 @@ section {
   display: block;
 }
 
-/*body {
-  line-height: 1;
-  background: linear-gradient(to left,
-      rgb(5, 18, 56) 0%,
-      rgb(38, 65, 65) 100%);
-}  */
-
 html {
   line-height: 1;
   background: linear-gradient(to left,
@@ -129,41 +120,10 @@ q:after {
   content: none;
 }
 
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  background: linear-gradient(to left,
-      rgb(5, 18, 56) 0%,
-      rgb(38, 65, 65) 100%);
-  list-style: none;
-  margin-top: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  width: 100%;
-  z-index: 9999;
-}
-
-li {
-  width: 33%;
-  text-align: center;
-  border: 1px solid rgb(87, 79, 79);
-  color: #fff;
-  padding: 10px;
-}
-
-.shopping-icon {
-  position: absolute;
-  padding: 20px;
-  margin-bottom: 5px;
-  top: 50%;
-  left: 84%;
-  transform: translate(-50%, -50%);
 }
 
 .login-container,
@@ -265,13 +225,7 @@ li {
   border-radius: 7px;
 }
 
-.navbar li:nth-child(1) a,
-.navbar li:nth-child(2) a,
-.navbar li:nth-child(3) a {
-  font-weight: bold;
-  color: rgb(247, 244, 244);
-  text-decoration: none;
-}
+
 
 
 .price {

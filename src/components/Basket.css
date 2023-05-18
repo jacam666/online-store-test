@@ -20,6 +20,10 @@
 }
 
 .basket-items-empty {
+    color: #fff;
+}
+
+.basket-items-empty {
     display: flex;
     justify-content: center;
     align-items: center;
