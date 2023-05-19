@@ -125,11 +125,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+form.signUp-Form {
+  height: auto;
+}
 
 .login-container,
 .signUp-container {
-  width: 25vw;
-  height: 70vh;
+  width: 55vw;
+  height: 40vh;
   border: 1px solid #fff;
   margin: 65px auto;
   border-radius: 10px;
@@ -137,6 +140,8 @@ table {
       /*rgb(5, 18, 56) 30%,*/
       rgb(34, 61, 61) 40%,
       rgb(14, 29, 77) 60%);
+      margin: auto;
+      margin-top: 40px;
 }
 
 .signUp-Form,
@@ -145,7 +150,7 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  margin-top: 20px;
 }
 
 .signUp-header,
@@ -161,7 +166,7 @@ table {
 .login-email,
 .signUp-Name {
   margin-bottom: 1rem;
-  width: 15vw;
+  width: 35vw;
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -170,6 +175,11 @@ table {
 .submit-button {
   padding: 5px 15px;
   border-radius: 7px;
+  background: linear-gradient(to bottom right,
+      /*rgb(5, 18, 56) 30%,*/
+      rgb(34, 61, 61) 40%,
+      rgb(14, 29, 77) 60%);
+      color: #ccc;
 }
 
 .or {
@@ -187,8 +197,8 @@ table {
 
 
 .logo {
-  width: 50vw;
-  height: 20vh;
+  width: 60vw;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
