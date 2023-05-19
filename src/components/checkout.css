@@ -117,10 +117,31 @@
     padding: 10px;
     width: 100%;
 }
+.toShipping-button {
+    margin: auto;
+    width: 120px;
+    color: #ccc;
+    background: linear-gradient(to left,
+            rgb(24, 57, 57) 0%,
+            rgb(28, 41, 82) 100%);
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            perspective: 500px;
+    transition: transform 0s, box-shadow 0s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
 
-@media screen and (min-width: 392px) and (max-width: 767px) {
+.toShipping-button:active {
+    transform: translateY(3px) perspective(500px);
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 391px) {
     .address-heading {
-        margin-left: 35px;
+        margin: auto;
+        padding: 10px 0;
     }
     .accordion-container {
         width: 90%;
@@ -128,7 +149,56 @@
     .checkout-basket-items {
         width: 90%;
     }
+
+    .order-summary {
+        width: 78vw;
+    }
     .arrow-icon {
+    }
+
+    .shipping-lastName,
+    .shipping-firstName,
+    .company-name,
+    .address,
+    .address-line-two,
+    .city,
+    .postcode,
+    .phone-number {
+        width: 75vw;
+        margin: auto;
+        padding: 6px;
+    }
+}
+
+@media screen and (min-width: 392px) and (max-width: 767px) {
+    .address-heading {
+        margin: auto;
+        padding: 10px 0;
+    }
+    .accordion-container {
+        width: 90%;
+    }
+    .checkout-basket-items {
+        width: 90%;
+    }
+
+    .order-summary {
+        width: 72vw;
+    }
+    .arrow-icon {
+    }
+
+    .shipping-lastName,
+    .shipping-firstName,
+    .company-name,
+    .address,
+    .address-line-two,
+    .city,
+    .postcode,
+    .phone-number {
+        width: 70vw;
+        margin: auto;
+        padding: 6px;
     }
 }
 
@@ -137,10 +207,9 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .address-heading {
         color: #ccc;
-        margin-left: 115px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin: auto;
         font-size: 18px;
+        padding: 10px 0;
     }
 
     .order-summary {
@@ -162,14 +231,90 @@
     .phone-number {
         width: 70vw;
         margin: auto;
+        padding: 6px;
     }
-
-
-
     .arrow-icon {
         color: #ccc;
         font-size: 10px;
         justify-content: flex-start;
+    }
+    .accordion-content {
+        width: 54vw;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .address-heading {
+        color: #ccc;
+        margin: auto;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .order-summary {
+        width: 60vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .shipping-lastName,
+    .shipping-firstName,
+    .company-name,
+    .address,
+    .address-line-two,
+    .city,
+    .postcode,
+    .phone-number {
+        width: 60vw;
+        margin: auto;
+        padding: 6px;
+    }
+    .arrow-icon {
+        color: #ccc;
+        font-size: 10px;
+        justify-content: flex-start;
+    }
+    .accordion-content {
+        width: 54vw;
+        border: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .address-heading {
+        color: #ccc;
+        margin: auto;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .order-summary {
+        width: 60vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .shipping-lastName,
+    .shipping-firstName,
+    .company-name,
+    .address,
+    .address-line-two,
+    .city,
+    .postcode,
+    .phone-number {
+        width: 60vw;
+        margin: auto;
+        padding: 6px;
+    }
+    .arrow-icon {
+        color: #ccc;
+        font-size: 10px;
     }
     .accordion-content {
         width: 54vw;

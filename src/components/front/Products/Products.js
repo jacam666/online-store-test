@@ -18,7 +18,7 @@ const Products = ({ productItems, handleAddProduct }) => {
                                     />
                                 </div>
                                 <div>
-                                    <h2 className="product-name">{productItem.name}</h2>
+                                    <h2 className="main-page-product-name">{productItem.name}</h2>
                                 </div>
                                 <div className="price">£{productItem.price}</div>
                             </Link>

@@ -64,8 +64,10 @@ const Checkout = ({ basketItems = [] }) => {
                         </div>
                     </div>
                 </div>
-                <h2 className="address-heading">Shipping Address:</h2>
+                
                 <div className="shipping-details">
+                <h2 className="address-heading">Shipping Address:</h2>
+
                     <input
                         className="shipping-firstName"
                         type="text"
@@ -132,6 +134,7 @@ const Checkout = ({ basketItems = [] }) => {
                         autoComplete="tel"
                     />
                 </div>
+                <button className="toShipping-button">Continue to shipping</button>
             </div>
         </div>
     );
