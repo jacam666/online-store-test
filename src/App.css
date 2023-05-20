@@ -100,6 +100,8 @@ html {
   background: linear-gradient(to left,
       rgb(5, 18, 56) 0%,
       rgb(38, 65, 65) 100%);
+      
+
 }
 
 ol,
@@ -195,9 +197,8 @@ form.signUp-Form {
   font-size: 1.3rem;
 }
 
-
 .logo {
-  width: 60vw;
+  width: 30vw;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -261,6 +262,30 @@ form.signUp-Form {
   height: 35vh;
   
 }
+
+.product-add-button {
+  font-weight: 200;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to left,
+          rgb(26, 41, 85) 0%,
+          rgb(61, 69, 69) 100%);
+  color: #f8f3f3;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3),
+      0px 2px 5px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+  width: auto;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 15px auto;
+}
+
 .product-add-button:active {
   background: #fff;
   transform: translateY(2px);
@@ -280,13 +305,16 @@ form.signUp-Form {
 @media screen and (min-width: 100px) and (max-width: 391px) {
   .card-container .card {
     height: 100%;
-    width: 60vw;
+    width: auto;
     margin-top: 35px;
+  }
+  .logo {
+    width: 60vw;
   }
 
   .cardImage {
-    height: 22vh;
-    width: 50vw;
+    height: 20vh;
+    width: 40vw;
     padding: 20px;
     display: block;
     margin-left: auto;
@@ -304,12 +332,15 @@ form.signUp-Form {
 
 @media screen and (min-width: 392px) and (max-width: 480px) {
   .card-container .card {
-    height: 60vh;
-    width: 65vw;
+    height: auto;
+    width: auto;
   }
   .cardImage {
-    width: 65vw;
-    height: 30vh;
+    display: block;
+    margin: 0 auto;
+    width: 35vw;
+    height: 17vh;
+    margin-top: 20px;
   }
   .product-add-button {
     width: 30vw;
@@ -347,19 +378,21 @@ form.signUp-Form {
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .card {
-    height: 50vh;
+    height: auto;
   }
   .cardImage  {
-    height: 18vh;
-    width: 25vw;
+    display: block;
+    height: 15vh;
+    width: 20vw;
     margin: auto;
+    margin-top: 20px;
   }
   button.product-add-button {
     width: auto;
   }
 
   .main-page-product-name {
-    width: 20vw;
+    width: 90%;
   }
 
   @media screen and (orientation: landscape) {
@@ -371,14 +404,17 @@ form.signUp-Form {
 
 @media screen and (min-width: 769px) and (max-width:992px )  {
   .cardImage {
+    display: block;
+    margin: 0 auto;
     width: 20vw;
-    height: 18vh;
+    height: 15vh;
+    margin-top: 10px;
   }
   .main-page-product-name {
-    width: 20vw;
+    width: 90%;
   }
   .card {
-    height: 50vh;
+    height: auto;
   }
   button.product-add-button {
     width: auto;
@@ -388,7 +424,6 @@ form.signUp-Form {
     
     .cardImage {
       height: auto;
-      margin: 30px 0;
     }
     .card-container .card {
       height: auto;
@@ -404,16 +439,21 @@ form.signUp-Form {
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .cardImage {
-    height: 20vh;
-    width: 20vw;
-    margin: auto;
+    display: block;
+    margin: 0 auto;
+    height: 22vh;
+    width: 15vw;
+    margin-top: 20px;
   }
   .card {
-    height: 45vh;
+    height: auto;
+    width: auto;
   }
 
   .main-page-product-name {
     width: 20vw;
+    font-size: 12px;
+    margin-top: 18px;
   }
   button.product-add-button {
     width: auto;
@@ -421,18 +461,25 @@ form.signUp-Form {
 }
 @media screen and (min-width: 1201px) {
   .cardImage {
-    height: 30vh;
-    width: 20vw;
+    display: block;
+    margin: 0 auto;
+    height: 21vh;
+    width: 14vw;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .card {
-    height: 60vh;
+    height: auto;
+    width: 20vw;
   }
 
   .main-page-product-name {
-    width: 20vw;
+    font-size: 18px;
+    width: 60%;
   }
   button.product-add-button {
     width: auto;
+    font-size: 10px;
   }
 }
