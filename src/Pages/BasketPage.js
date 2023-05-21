@@ -12,6 +12,8 @@ const BasketPage = ({
     (price, item) => price + item.quantity * item.price,
     0
   );
+  const shipping = 3.99;
+  const totalPriceIncludingShipping = totalPrice + shipping;
 
   const navigate = useNavigate();
 
@@ -67,14 +69,25 @@ const BasketPage = ({
           </div>
         ))}
       </div>
+      <div className="basket-totals">Basket Totals:</div>
       <div className="basket-items-total-price-name">
-        Total Price
-        <div className="basket-items-total-price">£{totalPrice}</div>
+        <div>Subtotal :</div>
+        <div>£{totalPrice}</div>
+      </div>
+
+      <div className="basket-shipping">
+        <h2 className="basket-shipping-header">Shipping :</h2>
+        <h2 className="basket-shipping-price">Flat rate : £3.99</h2>
+        <p className="basket-shipping-estimate">This is only an estimate. Prices will be updated during checkout.</p>
+      </div>
+      <div className="total-price-including-shipping">
+        <div className="total-price-including-shipping-header">Total price :</div>
+        <div className="total-price-including-shipping-price">£{totalPriceIncludingShipping}</div>
       </div>
       <div>
-          <button className="checkout-button" onClick={handleCheckoutClick}>
-            Checkout
-            </button>
+        <button className="checkout-button" onClick={handleCheckoutClick}>
+          Proceed to checkout
+        </button>
       </div>
     </div>
   );

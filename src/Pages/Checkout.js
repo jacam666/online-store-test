@@ -12,6 +12,7 @@ const Checkout = ({ basketItems = [] }) => {
                 0
             )
             : 0;
+            
 
     const toggleBasket = () => {
         setIsBasketOpen(!isBasketOpen);
