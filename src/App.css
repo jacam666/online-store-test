@@ -127,6 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 form.signUp-Form {
   height: auto;
 }
@@ -141,6 +142,7 @@ form.signUp-Form {
       rgb(14, 29, 77) 60%); */
       margin: auto;
       margin-top: 40px;
+      padding-bottom: 60px;
 }
 
 .signUp-Form,

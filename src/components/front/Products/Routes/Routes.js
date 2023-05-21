@@ -41,7 +41,6 @@ const AppRoutes = ({
 }) => {
 
     const location = useLocation();
-    console.log("Location State:", location.state);
 
     const handleLogin = () => {
         setIsUserLoggedIn(true);

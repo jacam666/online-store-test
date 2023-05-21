@@ -1,9 +1,10 @@
     .basket-items {
         margin: 30px auto;
-        height: auto;
+        height: 100vh;
         width: auto;
         border-radius: 5px;
-        border: 2px solid rgb(251, 248, 248);
+        /*border: 2px solid rgb(251, 248, 248);*/
+        padding-bottom: 60px;
     }
 
     .basket-items-header {
@@ -12,7 +13,7 @@
         align-items: center;
         font-size: 24px;
         height: 50px;
-        border-bottom: 2px solid rgb(248, 245, 245);
+        /*border-bottom: 2px solid rgb(248, 245, 245);*/
         color: #fff;
         font-weight: 700;
     }
@@ -30,19 +31,6 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
-
-
-    /*.basket-items-list {
-    display: flex;;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 5%;
-} */
 
     .basket-item-list {
         display: flex;
@@ -117,18 +105,14 @@
 
     .basket-items-total-price-name {
         display: flex;
+        justify-content: space-around   ;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 25%;
         font-size: 20px;
         font-weight: 700;
-        border-top: 2px solid rgb(250, 246, 246);
+        /*border-top: 2px solid rgb(250, 246, 246);*/
         color: #fff;
-    }
-
-    .basket-items-total-price {
-        display: flex;
-        padding-left: 64%;
     }
 
     .basket-items-price {
@@ -216,7 +200,7 @@
 
         .basket-items-total-price-name {
             margin-top: 15px;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .basket-items-total-price {
@@ -287,7 +271,7 @@
             display: flex;
             flex-direction: column;
             width: 94vw;
-            height: 100vh;
+            height: 100%;
         }
 
         .basket-items-header {
@@ -324,7 +308,8 @@
         }
 
         .basket-items-total-price {
-            padding-left: 75%;
+            /*padding-left: 75%;*/
+            margin: auto;    
         }
 
         @media screen and (orientation: landscape) {
