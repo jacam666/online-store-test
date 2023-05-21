@@ -28,6 +28,7 @@ import BundleDeal1 from "../../../.././Pages/BundleDeal1Page";
 import FatBurnerBundle from "../../../.././Pages/FatBurnerBundlePage";
 import BundleDeal2 from "../../../.././Pages/BundleDeal2Page.js";
 import Checkout from "../../../../Pages/Checkout";
+import ContactPage from "../../../../Pages/ContactPage";
 
 const AppRoutes = ({
     productItems,
@@ -107,6 +108,7 @@ const AppRoutes = ({
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 />} />
             <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
+            <Route path="/ContactPage" element={<ContactPage />} />
         </Routes>
         //</div>
     );

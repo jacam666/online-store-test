@@ -1,6 +1,7 @@
 import React from 'react'
 import "../components/Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -12,20 +13,21 @@ const Footer = () => {
                         <li className='facebook-link'>
                             <a href="https://www.facebook.com/uksnc">
                                 <FaFacebook />
-                                </a>
+                            </a>
                         </li>
                         <li className='instagram-link'>
                             <a href="https://www.instagram.com/snc_supplements/">
                                 <FaInstagram />
-                                </a>
+                            </a>
                         </li>
                         <li className='twitter-link'>
                             <a href="https://twitter.com/SNC52678131">
                                 <FaTwitter />
-                                </a>
+                            </a>
                         </li>
                         <li className='footer-contact'>
-                            <h2>Contact us</h2>
+                            <Link to="/ContactPage">Contact Us
+                            </Link>
                         </li>
                     </ul>
                 </div>

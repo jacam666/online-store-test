@@ -61,7 +61,8 @@ function SignupPage( { setIsUserLoggedIn}) {
             name=""
             id="signup-password"
           />
-          <input className="submit-button" type="submit" onClick={submit} />
+          {/*<input className="submit-button" type="submit" onClick={submit} />*/}
+          <button className="submit-button" type="submit" onClick={submit}>Register</button>
           <p className="or">or</p>
           <div className="login-link-container">
             <Link className="login-link" to="/LoginPage">

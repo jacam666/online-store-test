@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 0; 
+    bottom: 0;
     width: 100%;
 }
 
@@ -16,6 +17,7 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
 ul.connect-links {
     display: flex;
     justify-content: space-around;
@@ -26,9 +28,9 @@ ul.connect-links {
     /*width: 280%;*/
     width: 100vw;
     background: linear-gradient(to left,
-      rgb(5, 18, 56) 0%,
-      rgb(38, 65, 65) 100%);
-      padding: 10px;
+            rgb(5, 18, 56) 0%,
+            rgb(38, 65, 65) 100%);
+    padding: 10px;
 }
 
 .instagram-link a,
@@ -36,9 +38,12 @@ ul.connect-links {
 .facebook-link a {
     color: #fff;
 }
+
 .connect-header {
     color: #fff;
 }
-.footer-contact {
+
+.connect-links a {
     color: #fff;
+    text-decoration: none;
 }
