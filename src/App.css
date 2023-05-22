@@ -201,7 +201,7 @@ form.signUp-Form {
 }
 
 .logo {
-  width: 30vw;
+  width: auto;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -312,7 +312,7 @@ form.signUp-Form {
     margin-top: 35px;
   }
   .logo {
-    width: 60vw;
+    width: auto;
   }
 
   .cardImage {
