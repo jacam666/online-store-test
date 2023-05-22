@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../components/checkout.css";
+//import { Link } from "react-router-dom";
 //import Accordion from '../components/Accordion';
 
 const Checkout = ({ basketItems = [] }) => {
@@ -12,7 +13,7 @@ const Checkout = ({ basketItems = [] }) => {
                 0
             )
             : 0;
-            
+
 
     const toggleBasket = () => {
         setIsBasketOpen(!isBasketOpen);
@@ -65,9 +66,9 @@ const Checkout = ({ basketItems = [] }) => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="shipping-details">
-                <h2 className="address-heading">Shipping Address:</h2>
+                    <h2 className="address-heading">Billing details:</h2>
 
                     <input
                         className="shipping-firstName"
@@ -85,7 +86,7 @@ const Checkout = ({ basketItems = [] }) => {
                         id="shipping-lastName"
                         autoComplete="family-name"
                     />
-                
+
                     <input
                         className="company-name"
                         type="text"
@@ -135,7 +136,16 @@ const Checkout = ({ basketItems = [] }) => {
                         autoComplete="tel"
                     />
                 </div>
-                <button className="toShipping-button">Continue to shipping</button>
+                <div className="checkout-paypal-container">
+                    <h4 className="checkout-paypal-header">PayPal</h4>
+                    <img className="checkout-paypal-image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" alt="paypal logo" />
+                    <a className="checkout-paypal-link" href="https://www.paypal.com/uk/webapps/mpp/paypal-popup">What is PayPal?</a>
+                    <div className="checkout-paypal-text">
+                        <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account</p>
+                    </div>
+                    <button className="checkout-paypal-button">Proceed to PayPal</button>
+                </div>
+                
             </div>
         </div>
     );
