@@ -50,7 +50,7 @@
     .basket-items-name {
         flex: 1;
         font-size: 14px;
-        color: #ccc;
+        color: #ffffff;
     }
 
     .basket-items-function {
@@ -107,6 +107,7 @@
         border-top: 2px solid#fff;
         border-bottom: 2px solid#fff;
         margin-bottom: 30px;
+        width: 100%;
     }
 
     .basket-items-total-price-name {
@@ -133,7 +134,7 @@
     .basket-shipping-price {
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
+        margin-left: 55%;
         width: 50%;
         margin-bottom: 5px;
         margin-top: -15px;
@@ -142,9 +143,12 @@
 
     .basket-shipping-estimate {
         color: #fff;
-        margin-left: auto;
-        width: 50%;
+        margin-left: 55%;
+        width: 45%;
         margin-bottom: 10px;
+    }
+    .basket-subtotal {
+        margin-right: 10px;
     }
 
     .basket-items-price {
@@ -308,6 +312,7 @@
         .checkout-button {
             margin-bottom: 10px;
         }
+        
 
         @media screen and (orientation: landscape) {
             img.basket-items-image {

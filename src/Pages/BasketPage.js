@@ -13,7 +13,7 @@ const BasketPage = ({
     0
   );
   const shipping = 3.99;
-  const totalPriceIncludingShipping = totalPrice + shipping;
+  const totalPriceIncludingShipping = (totalPrice + shipping).toFixed(2);
 
   const navigate = useNavigate();
 
@@ -77,7 +77,7 @@ const BasketPage = ({
       {basketItems.length > 0 && (
         <div className="basket-items-total-price-name">
         <div>Subtotal :</div>
-        <div>£{totalPrice}</div>
+        <div className="basket-subtotal">£{totalPrice.toFixed(2)}</div>
       </div>
       )}
       
