@@ -13,7 +13,7 @@ const BasketPage = ({
     0
   );
   const shipping = 3.99;
-  const totalPriceIncludingShipping = (totalPrice + shipping).toFixed(2);
+  const totalPriceIncludingShipping =  (totalPrice + shipping).toFixed(2);
 
   const navigate = useNavigate();
 

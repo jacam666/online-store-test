@@ -1,18 +1,19 @@
 import React from "react";
 import "../ProductCard.css";
+import AddToCartButton from "../components/AddToCartButton";
 
-const AfterAdvancedBlueCandy = () => {
+const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct}) => {
     const product = {
         id: "7",
         image: "./images/AFTER-TRAIN-ADVANCED-300x300.png",
         name: "AFTER TRAIN ADVANCED BLUE CANDY FLAVOUR POST WORKOUT"
-            /*"AFTER TRAIN ADVANCED",
-            <br />,
-            "BLUE CANDY",
-            <br />,
-            "POST WORKOUT"*/
+        /*"AFTER TRAIN ADVANCED",
+        <br />,
+        "BLUE CANDY",
+        <br />,
+        "POST WORKOUT"*/
         ,
-        price: "£39.99",
+        price: 39.99,
         description:
             "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after them hard gruelling workouts. Suitable for vegetarian’s.",
 
@@ -60,6 +61,10 @@ const AfterAdvancedBlueCandy = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 };

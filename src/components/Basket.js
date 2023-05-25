@@ -36,7 +36,7 @@ function Basket(props) {
 export default Basket; 
 */
 
-import React from 'react';
+/*import React from 'react';
 import Navbar from '../Navbar';
 
 function Basket(props) {
@@ -66,5 +66,5 @@ function Basket(props) {
     );
 }
 
-export default Basket;
+export default Basket; */
 

@@ -1,16 +1,17 @@
 import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
 
-const FatBurnerBundle = () => {
+const FatBurnerBundle = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "22",
         image: "./images/STAGE-RIPPED-NO-HUNGER-300x300.png",
         name: "FAT BURNER BUNDLE DEAL",
-        price: "£44.99",
+        price: 44.99,
         description: [
             "Staged Ripped together with No More Hunger!",
         ],
         options: {
-            
+
         },
     };
 
@@ -46,6 +47,10 @@ const FatBurnerBundle = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 }

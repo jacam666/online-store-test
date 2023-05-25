@@ -1,11 +1,12 @@
 import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
 
-const StagePumpStrawberry = () => {
+const StagePumpStrawberry = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "14",
         image: "./images/cap-stagepump-strawberry-lime-300x300.png",
         name: "STAGE PUMP STRAWBERRY AND LIME FLAVOUR",
-        price: "£29.99",
+        price: 29.99,
         description:
             "STAGE PUMP IS SPECIALLY FORMULATED TO GIVE MIND BLOWING PUMPS, FOCUS AND INCREASED VASCULARITY.",
         directions:
@@ -49,6 +50,10 @@ const StagePumpStrawberry = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 }

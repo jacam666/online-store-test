@@ -1,12 +1,12 @@
 import React from "react";
-import "../ProductCard.css"
+import AddToCartButton from "../components/AddToCartButton";
 
-const AfterTrainOrange = () => {
+const AfterTrainOrange = ({  productItem, handleAddProduct}) => {
     const product = {
         id: "4",
         image: "./images/3After_Train_Orange-1-300x300.png",
         name: "AFTER TRAIN ORANGE POST WORKOUT",
-        price: "£24.99",
+        price: 24.99,
         description:
             "After Train has been specially formulated to aid recovery straight after a workout. with its 50/50 ratio of isolate and carbs combined with creatine and glutamine makes this a great all in one recovery drink. Easy to mix formula and superb flavours it is amazingly refreshing and easy to drink after them hard gruelling workouts. After Train is produced to iso 22000 standards, batch tested and made in an informed sport approved facility. Suitable for vegetarians",
         servings: "17 x 55g servings",
@@ -51,6 +51,10 @@ const AfterTrainOrange = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 }

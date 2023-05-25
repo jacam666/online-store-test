@@ -1,16 +1,17 @@
 import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
 
-const BundleDeal1 = () => {
+const BundleDeal1 = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "21",
         image: "./images/after-adv-and-b4-bundle-300x300.png",
         name: "BUNDLE DEAL 1",
-        price: "£59.99",
+        price: 59.99,
         description: [
             "After Train Advanced together with B4 Extreme.",
         ],
         options: {
-            
+
         },
     };
 
@@ -46,6 +47,10 @@ const BundleDeal1 = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 }

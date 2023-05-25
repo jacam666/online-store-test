@@ -1,12 +1,13 @@
 import React from "react";
 import "../ProductCard.css"
+import AddToCartButton from "../components/AddToCartButton";
 
-const AfterTrainAdvanced = () => {
+const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
   const product = {
     id: "5",
     image: "/images/advanced-aftertrain-strawberrylime-300x300.png",
     name: "AFTER TRAIN ADVANCED POST WORKOUT",
-    price: "£24.99",
+    price: 24.99,
     description:
       "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after them hard gruelling workouts. Suitable for vegetarian’s.",
 
@@ -54,6 +55,10 @@ const AfterTrainAdvanced = () => {
 
         <p className="product-ingredient">{product.ingredients}</p>
       </div>
+      <AddToCartButton
+        handleAddProduct={handleAddProduct}
+        productItem={product}
+      />
     </div>
   );
 

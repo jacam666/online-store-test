@@ -74,38 +74,38 @@ const AppRoutes = ({
                     </>
                 }
             />
-            <Route path="/OnlyWheyPage" element={<OnlyWhey />} />
-            <Route path="/AfterTrainPage" element={<AfterTrain />} />
-            <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced />} />
-            <Route path="/StageRippedPage" element={<StageRipped />} />
-            <Route path="/B4ExtremePage" element={<B4Extreme />} />
-            <Route path="/B4TrainPage" element={<B4Train />} />
-            <Route path="/B4TrainGummyPage" element={<B4TrainGummy />} />
-            <Route path="/AfterTrainFruitPage" element={<AfterTrainFruit />} />
-            <Route path="/AfterTrainBluePage" element={<AfterTrainBlue />} />
-            <Route path="/AfterTrainOrangePage" element={<AfterTrainOrange />} />
+            <Route path="/OnlyWheyPage" element={<OnlyWhey handleAddProduct={handleAddProduct} />} />
+            <Route path="/AfterTrainPage" element={<AfterTrain handleAddProduct={handleAddProduct} />} />
+            <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced handleAddProduct={handleAddProduct} />} />
+            <Route path="/StageRippedPage" element={<StageRipped handleAddProduct={handleAddProduct} />} />
+            <Route path="/B4ExtremePage" element={<B4Extreme handleAddProduct={handleAddProduct} />} />
+            <Route path="/B4TrainPage" element={<B4Train handleAddProduct={handleAddProduct} />} />
+            <Route path="/B4TrainGummyPage" element={<B4TrainGummy handleAddProduct={handleAddProduct} />} />
+            <Route path="/AfterTrainFruitPage" element={<AfterTrainFruit handleAddProduct={handleAddProduct} />} />
+            <Route path="/AfterTrainBluePage" element={<AfterTrainBlue handleAddProduct={handleAddProduct} />} />
+            <Route path="/AfterTrainOrangePage" element={<AfterTrainOrange handleAddProduct={handleAddProduct} />} />
             <Route
                 path="/AfterAdvancedBlueCandyPage"
-                element={<AfterAdvancedBlueCandy />}
+                element={<AfterAdvancedBlueCandy handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/YearRoundPage" element={<YearRound />} />
-            <Route path="/B4ExtremeBluePage" element={<B4ExtremeBlue />} />
+            <Route path="/YearRoundPage" element={<YearRound handleAddProduct={handleAddProduct} />} />
+            <Route path="/B4ExtremeBluePage" element={<B4ExtremeBlue handleAddProduct={handleAddProduct} />} />
             <Route
                 path="/StagePumpStrawberryPage"
-                element={<StagePumpStrawberry />}
+                element={<StagePumpStrawberry handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/NoMoreHungerPage" element={<NoMoreHunger />} />
+            <Route path="/NoMoreHungerPage" element={<NoMoreHunger handleAddProduct={handleAddProduct} />} />
             <Route
                 path="/AfterAdvancedOrangePage"
-                element={<AfterAdvancedOrange />}
+                element={<AfterAdvancedOrange handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/Con-TestPage" element={<Contest />} />
-            <Route path="/StageExtremePage" element={<StageExtreme />} />
-            <Route path="/StagePumpBluePage" element={<StagePumpBlue />} />
-            <Route path="/TraingPlanPage" element={<TrainingPlan />} />
-            <Route path="/BundleDeal1Page" element={<BundleDeal1 />} />
-            <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle />} />
-            <Route path="/BundleDeal2Page" element={<BundleDeal2 />} />
+            <Route path="/Con-TestPage" element={<Contest handleAddProduct={handleAddProduct} />} />
+            <Route path="/StageExtremePage" element={<StageExtreme handleAddProduct={handleAddProduct} />} />
+            <Route path="/StagePumpBluePage" element={<StagePumpBlue handleAddProduct={handleAddProduct} />} />
+            <Route path="/TraingPlanPage" element={<TrainingPlan handleAddProduct={handleAddProduct} />} />
+            <Route path="/BundleDeal1Page" element={<BundleDeal1 handleAddProduct={handleAddProduct} />} />
+            <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle handleAddProduct={handleAddProduct} />} />
+            <Route path="/BundleDeal2Page" element={<BundleDeal2 handleAddProduct={handleAddProduct} />} />
             <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
             <Route path="/ContactPage" element={<ContactPage />} />
         </Routes>

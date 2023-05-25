@@ -5,6 +5,7 @@ import AppRoutes from "./components/front/Products/Routes/Routes";
 import Logo from "./components/Logo";
 import Navbar from "./Navbar";
 import Footer from "./components/Footer";
+//import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const App = () => {
   const { productItems } = data;
@@ -48,9 +49,9 @@ const App = () => {
     setBasketItems([]);
   };
 
-
   return (
     <div className="App">
+
       <Navbar basketItems={basketItems} />
       <Logo />
       <AppRoutes

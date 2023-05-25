@@ -10,7 +10,7 @@ body {
     /*background: linear-gradient(to bottom right,
             rgb(5, 18, 56) 30%,
             rgb(64, 67, 67) 70%);*/
-            
+
 }
 
 .product-card {
@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding: 10px;
     height: 100%;
+    padding-bottom: 60px;
 }
 
 .product-name {
@@ -28,12 +29,6 @@ body {
     font-size: 20px;
     color: #ccc;
 }
-/*.product-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  } */
 
 h4 {
     color: #ccc;
@@ -63,13 +58,27 @@ h1 span {
     margin-top: 10px;
 }
 
+.product-image-9 {
+    width: auto;
+    height: 140px;
+}
+
+.product-image-10 {
+    width: auto;
+    height: 180px;
+}
+.product-image-11 {
+    width: auto;
+    height: 180px;
+}
+.product-image-13 {
+    width: auto;
+    height: 140px;
+}
+
 .product-card-details h1 {
     font-size: 3rem;
 }
-
-/*.product-card-details {
-    max-width: 100%;
-}*/
 
 .product-card-options {
     width: 18rem;
@@ -174,7 +183,7 @@ h1 span {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
     @media screen and (orientation: landscape) {
         .product-card-image img {
             margin-top: 550px;
@@ -187,7 +196,7 @@ h1 span {
         }
 
         .product-card {
-            height: 100vh;
+            height: 70vh;
         }
 
         .Navbar {
@@ -195,12 +204,26 @@ h1 span {
         }
     }
 }
-
-@media screen and (max-width: 960px) {
-    @media screen and (orientation: landscape) {
-        .product-card-image img {
-            margin-top: 240px;
-            height: 300px;
-        }
+@media screen and (min-width: 1200px) {
+    img.logo {
+        width: auto;
+    }
+    
+    .product-image-9 {
+        width: 70%;
+        height: auto;
+    }
+    .product-image-1 {
+        width: 80%;
+        height: auto;
+    }
+    .product-image-10,
+    .product-image-11 {
+        width: 90%;
+        height: auto;
+    }
+    .product-image-13 {
+        width: 70%;
+        height: auto;
     }
 }

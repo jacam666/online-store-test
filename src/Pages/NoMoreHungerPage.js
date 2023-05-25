@@ -1,11 +1,12 @@
 import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
 
-const NoMoreHunger = () => {
+const NoMoreHunger = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "15",
         image: "./images/NO-HUNGER-300x300.png",
         name: "NO MORE HUNGER 90 caps",
-        price: "£29.99",
+        price: 29.99,
         description: [
             "No more hunger has been especially formulated to suppress appetite, it doesn’t contain any form of stimulates so it can be taken later in the evening when food cravings are most likely to kick in. No more hunger is very effective when taken in conjunction with Stage Ripped, Stage Ripped is most effective if taken early in the day giving you energy and suppressing appetite throughout the day, once the Stage Ripped wears off you can take No more hunger keeping the fat burning process going in the evening and during the night.",
         ],
@@ -62,6 +63,10 @@ const NoMoreHunger = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 };

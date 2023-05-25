@@ -1,11 +1,12 @@
 import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
 
-const Contest = () => {
+const Contest = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "17",
         image: "./images/PCT-NEW-300x300.png",
         name: "CON-TEST P.C.T 240 caps",
-        price: "£29.99",
+        price: 29.99,
         description:
             "CON-TEST P.C.T HAS BEEN SPECIALLY FORMULATED TO INCREASE NATURAL TESTOSTERONE, REDUCE ESTROGEN AND INHIBIT CORTISOL. MAXIMIZING NATURAL TESTOSTERONE WILL IMPROVE PERFORMANCE, OVERALL WELL BEING AND ELEVATE SEX DRIVE.",
         ingredients: [
@@ -67,6 +68,10 @@ const Contest = () => {
                 <h1>Ingredients:</h1>
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 };

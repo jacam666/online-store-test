@@ -1,12 +1,13 @@
 import React from "react";
 import "../ProductCard.css"
+import AddToCartButton from "../components/AddToCartButton";
 
-const YearRound = () => {
+const YearRound = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "12",
         image: "./images/Year-round-300x300.png",
         name: "YEAR ROUND IMMUNITY SUPPORT 60 caps",
-        price: "£19.99",
+        price: 19.99,
         description: [
             "Year Round is a high strength immunity support,",
             <br />,
@@ -14,7 +15,7 @@ const YearRound = () => {
             <br />,
             "and fight off colds and viruses.",
         ],
-            servings:"60 caps",
+        servings: "60 caps",
     };
 
     return (
@@ -50,6 +51,10 @@ const YearRound = () => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
             </div>
+            <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
         </div>
     );
 }

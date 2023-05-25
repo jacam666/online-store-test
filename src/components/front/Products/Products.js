@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../../back/Data/Data";
+import AddToCartButton from "../../AddToCartButton";
 
-const Products = ({ productItems, handleAddProduct }) => {
+const Products = ({ handleAddProduct }) => {
     return (
         <div className="card-container">
             {data.productItems &&
@@ -12,7 +13,8 @@ const Products = ({ productItems, handleAddProduct }) => {
                             <Link to={productItem.to}>
                                 <div>
                                     <img
-                                        className="cardImage"
+
+                                        className={`cardImage product-image-${productItem.id}`}
                                         src={productItem.image}
                                         alt={productItem.name}
                                     />
@@ -22,14 +24,18 @@ const Products = ({ productItems, handleAddProduct }) => {
                                 </div>
                                 <div className="price">£{productItem.price}</div>
                             </Link>
-                            <div>
+                            {/*<div>
                                 <button
                                     className="product-add-button"
                                     onClick={() => handleAddProduct(productItem)}
                                 >
                                     Add to Cart
                                 </button>
-                            </div>
+                </div>*/}
+                            <AddToCartButton
+                                handleAddProduct={handleAddProduct}
+                                productItem={productItem}
+                            />
                         </div>
                     </div>
                 ))}

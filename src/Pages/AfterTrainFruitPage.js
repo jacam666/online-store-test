@@ -1,4 +1,6 @@
-const AfterTrainFruit = () => {
+import AddToCartButton from "../components/AddToCartButton";
+
+const AfterTrainFruit = ({ productItem, handleAddProduct}) => {
   const product = {
     id: "2",
     name: "AFTER TRAIN FRUIT PUNCH POST WORKOUT",
@@ -11,6 +13,8 @@ const AfterTrainFruit = () => {
     advice: "Keep out of reach of children, Once mixed keep chilled and consume within 3 hours. Manufactured on equipment which processes products containing cereals, milk, egg, soya, shellfish.",
     storage: "Close tub after use. Store in a cool dry place."
   };
+
+
 
   return (
     <div className="product-card">
@@ -48,6 +52,10 @@ const AfterTrainFruit = () => {
 
         <p className="product-ingredient">{product.ingredients}</p>
       </div>
+      <AddToCartButton
+        handleAddProduct={handleAddProduct}
+        productItem={product}
+      />
     </div>
   );
 };

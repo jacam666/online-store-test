@@ -1,4 +1,7 @@
-const OnlyWheyPage = () => {
+import React from "react";
+import AddToCartButton from "../components/AddToCartButton";
+
+const OnlyWheyPage = ({  productItem, handleAddProduct}) => {
   const product = {
     id: "1",
     name: "THE ONLY WHEY 2.2KG 74 servings",
@@ -14,6 +17,7 @@ const OnlyWheyPage = () => {
     servings: "74 Servings"
   };
 
+
   return (
     <div className="product-card">
       <div>
@@ -24,7 +28,7 @@ const OnlyWheyPage = () => {
         />
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">
-          <p>Price: {product.price}</p>
+          <p>Price: £{product.price}</p>
         </div>
 
         <div className="product-description">
@@ -47,6 +51,12 @@ const OnlyWheyPage = () => {
 
         <p className="product-ingredient">{product.ingredients}</p>
       </div>
+      <div>
+      </div>
+      <AddToCartButton
+        handleAddProduct={handleAddProduct}
+        productItem={product}
+      />
     </div>
   );
 };
