@@ -3,7 +3,6 @@ import React from "react";
 const AddToCartButton = ({ handleAddProduct, productItem }) => {
 
     //const { id } = productItem;
-
     const handleClick = () => {
         handleAddProduct(productItem);
     };

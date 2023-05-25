@@ -22,7 +22,7 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
                 />
                 <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
-                    <p>Price: {product.price}</p>
+                    <p>Price: £{product.price}</p>
                 </div>
 
                 <div className="product-description">
@@ -35,11 +35,11 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
                 <div className="product-directions">
                     <p>{product.directions}</p>
                 </div>
-                <div>
-                    <p className="product-advice">{product.advice}</p>
+                <div className="product-advice">
+                    <p >{product.advice}</p>
                 </div>
-                <div>
-                    <p className="product-storage">{product.storage}</p>
+                <div className="product-storage">
+                    <p>{product.storage}</p>
                 </div>
 
                 <p className="product-ingredient">{product.ingredients}</p>

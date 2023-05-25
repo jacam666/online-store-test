@@ -7,7 +7,7 @@ const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
     id: "5",
     image: "/images/advanced-aftertrain-strawberrylime-300x300.png",
     name: "AFTER TRAIN ADVANCED POST WORKOUT",
-    price: 24.99,
+    price: 39.99,
     description:
       "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after them hard gruelling workouts. Suitable for vegetarian’s.",
 
@@ -44,13 +44,13 @@ const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
           <h1>Directions:</h1>
           <p>{product.directions}</p>
         </div>
-        <div>
+        <div className="product-advice">
           <h1>Advice:</h1>
-          <p className="product-advice">{product.advice}</p>
+          <p>{product.advice}</p>
         </div>
-        <div>
+        <div className="product-storage">
           <h1>Storage:</h1>
-          <p className="product-storage">{product.storage}</p>
+          <p>{product.storage}</p>
         </div>
 
         <p className="product-ingredient">{product.ingredients}</p>

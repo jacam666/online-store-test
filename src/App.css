@@ -467,7 +467,6 @@ form.signUp-Form {
     height: auto;
     width: auto;
   }
-
   .main-page-product-name {
     width: 20vw;
     font-size: 12px;
@@ -490,10 +489,86 @@ form.signUp-Form {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .logo {
+    width: 50%;
+  }
+
   .card {
     height: auto;
     width: 12vw;
     margin-right: 10px;
+  }
+  .cardImage.product-image-1 {
+    height: 100px;
+  }
+  .cardImage.product-image-2 {
+    height: 110px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-3,
+  .cardImage.product-image-4 {
+    height: 115px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-5,
+  .cardImage.product-image-7,
+  .cardImage.product-image-9 {
+    height: 120px;
+    margin-top: 40px;
+  }
+  .cardImage.product-image-6,
+  .cardImage.product-image-16 {
+    height: 125px;
+    margin-top: 20px;
+    width: 150px;
+  }
+  
+  .cardImage.product-image-15 {
+    height: 120px;
+    margin-top: 10px;
+  }
+  .cardImage.product-image-8 {
+    height: 130px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-10 {
+    height: 150px;
+  }
+  
+  .cardImage.product-image-11 {
+    height: 155px;
+    margin-top: 10px;
+  }
+  .cardImage.product-image-12 {
+    height: 120px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-13 {
+    height: 120px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-14 {
+    height: 120px;
+    margin-top: 30px;
+  }
+  .cardImage.product-image-17 {
+    height: 120px;
+    margin-top: 5px;
+  }
+  .cardImage.product-image-18 {
+    height: 120px;
+    margin-top: 5px;
+  }
+  .cardImage.product-image-19 {
+    height: 130px;
+    width: ;
+    margin-top: 5px;
+  }
+  .cardImage.product-image-21,
+  .cardImage.product-image-22,
+  .cardImage.product-image-23 {
+    height: 120px;
+    margin-top: 5px;
   }
 
   .main-page-product-name {

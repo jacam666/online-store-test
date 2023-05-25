@@ -40,13 +40,13 @@ const B4TrainGummy = ({ productItem, handleAddProduct }) => {
                     <h1>Directions:</h1>
                     <p>{product.directions}</p>
                 </div>
-                <div>
+                <div className="product-advice">
                     <h1>Advice:</h1>
-                    <p className="product-advice">{product.advice}</p>
+                    <p>{product.advice}</p>
                 </div>
-                <div>
+                <div className="product-storage">
                     <h1>Storage:</h1>
-                    <p className="product-storage">{product.storage}</p>
+                    <p>{product.storage}</p>
                 </div>
 
                 <p className="product-ingredient">{product.ingredients}</p>

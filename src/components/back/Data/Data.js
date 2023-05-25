@@ -47,7 +47,7 @@ const data = {
         },
         {
             id: "7",
-            name: "AFTER TRAIN ADVANCED 2KG BLUE CANDY FLAVOUR",
+            name: "AFTER TRAIN ADVANCED 2KG BLUE CANDY",
             price: 39.99,
             image: "./images/AFTER-TRAIN-ADVANCED-300x300.png",
             to: "./AfterAdvancedBlueCandyPage",
@@ -61,7 +61,7 @@ const data = {
         },
         {
             id: "9",
-            name: "B4 EXTREME CANDY FLAVOUR STRONG PRE WORKOUT",
+            name: "B4 EXTREME STRONG PRE WORKOUT",
             price: 24.99,
             image: "./images/b4-candy-extreme-300x300.png",
             to: "./B4ExtremePage",
@@ -75,7 +75,7 @@ const data = {
         },
         {
             id: "11",
-            name: "B4 TRAIN TROPICAL GUMMY FLAVOUR PRE WORKOUT",
+            name: "B4 TRAIN PRE WORKOUT",
             price: 24.99,
             image: "./images/B4-tropical-gummy-300x300.png",
             to: "./B4TrainGummyPage",
@@ -89,7 +89,7 @@ const data = {
         },
         {
             id: "13",
-            name: "B4 EXTREME BLUE RASPBERRY FLAVOUR STRONG PRE-WORKOUT",
+            name: "B4 EXTREME STRONG PRE-WORKOUT",
             price: 24.99,
             image: "./images/cap-b4pre-blue-300x300.png",
             to: "./B4ExtremeBluePage",
@@ -110,7 +110,7 @@ const data = {
         },
         {
             id: "16",
-            name: "AFTER TRAIN ADVANCED 2KG ORANGE AND MANGO",
+            name: "AFTER TRAIN ADVANCED 2KG ORANGE/MANGO",
             price: 39.99,
             image: "./images/orange-mango-advanced-aftertrain-for-web-300x300.png",
             to: "./AfterAdvancedOrangePage",

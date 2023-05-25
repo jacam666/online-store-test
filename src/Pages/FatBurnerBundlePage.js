@@ -38,11 +38,11 @@ const FatBurnerBundle = ({ productItem, handleAddProduct }) => {
                 <div className="product-directions">
                     <p>{product.directions}</p>
                 </div>
-                <div>
-                    <p className="product-advice">{product.advice}</p>
+                <div className="product-advice">
+                    <p>{product.advice}</p>
                 </div>
-                <div>
-                    <p className="product-storage">{product.storage}</p>
+                <div className="product-storage">
+                    <p>{product.storage}</p>
                 </div>
 
                 <p className="product-ingredient">{product.ingredients}</p>
