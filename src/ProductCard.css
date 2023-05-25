@@ -179,10 +179,15 @@ h1 span {
 
 .product-ingredient {
     font-size: 14px;
-    color: #ccc;
+    color: #fff;
     margin-top: 10px;
-    margin-left: 35px;
+    margin-left: 30px;
     width: auto;
+}
+.product-ingredient h1 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 391px) {
@@ -208,6 +213,9 @@ h1 span {
     .product-directions {
         width: 80%;
     }
+    .product-ingredient {
+        margin-left: 70px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
@@ -232,7 +240,9 @@ h1 span {
     }
 }
 @media screen and (min-width: 961px) and (max-width: 1200px) {
-    
+    .product-ingredient {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1201px) {
@@ -261,11 +271,14 @@ h1 span {
         height: auto;
     }
 
-    .servings-info {
-        margin-right: 60px;
-    }
+    
     .product-directions {
-        margin: auto;
+        width: 45vw;
     }
+    
+    .product-ingredient {
+        margin-left: 0;
+    }
+
     
 }
