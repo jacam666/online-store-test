@@ -279,6 +279,9 @@ h1 span {
     .product-ingredient {
         margin-left: 0;
     }
+    .product-advice {
+        width: 45vw;
+    }
 
     
 }
