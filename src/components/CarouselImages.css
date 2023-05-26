@@ -1,0 +1,48 @@
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.image-carousel-inner {
+    display: flex;
+}
+
+.image-carousel img {
+    height: 140px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    border: 6px solid;
+    border-image: linear-gradient(to left, rgb(16, 35, 93) 0%, rgb(43, 103, 103) 100%);
+    border-image-slice: 1;
+
+
+}
+
+.image-carousel img.visible {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1201px) {
+    .image-carousel {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .image-carousel-inner {
+        display: flex;
+    }
+
+    .image-carousel img {
+        height: 280px;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .image-carousel img.visible {
+        opacity: 1;
+    }
+}

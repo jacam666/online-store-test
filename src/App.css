@@ -100,6 +100,9 @@ html {
   background: linear-gradient(to left,
       rgb(5, 18, 56) 0%,
       rgb(38, 65, 65) 100%);
+      /*background: linear-gradient(to left,
+      rgb(30, 34, 42) 0%,
+      rgb(16, 16, 16) 100%);*/
       
 
 }
@@ -232,7 +235,7 @@ form.signUp-Form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px #077d34;
+  /*border: solid 1px #077d34;*/
   border-radius: 10px;
   height: auto;
   width: 25vw;
@@ -240,6 +243,9 @@ form.signUp-Form {
   background: linear-gradient(to left,
       rgb(16, 35, 93) 0%,
       rgb(43, 103, 103) 100%);
+      /*background: linear-gradient(to left,
+      rgb(4, 4, 4) 0%,
+      rgb(69, 68, 68) 100%);*/
   background-size: contain;
   background-position: center;
 

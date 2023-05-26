@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import data from "../../back/Data/Data";
 import AddToCartButton from "../../AddToCartButton";
+import ImageCarousel from "../../ImageCarousel";
 
 const Products = ({ handleAddProduct }) => {
     return (
+        <div>
+            <ImageCarousel />
         <div className="card-container">
             {data.productItems &&
                 data.productItems.map((productItem) => (
@@ -24,14 +27,6 @@ const Products = ({ handleAddProduct }) => {
                                 </div>
                                 <div className="price">£{productItem.price}</div>
                             </Link>
-                            {/*<div>
-                                <button
-                                    className="product-add-button"
-                                    onClick={() => handleAddProduct(productItem)}
-                                >
-                                    Add to Cart
-                                </button>
-                </div>*/}
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}
@@ -39,6 +34,7 @@ const Products = ({ handleAddProduct }) => {
                         </div>
                     </div>
                 ))}
+        </div>
         </div>
     );
 };
