@@ -4,8 +4,9 @@ import image1 from "../components/CarouselImages/CarouselfullRange.jpg"
 import image2 from "../components/CarouselImages/CarouselAfterTrain.jpg"
 import image3 from "../components/CarouselImages/CarouselB4Extreme.jpg"
 import image4 from "../components/CarouselImages/CarouselOnlyWheyPromotion.jpg"
+import image5 from "../components/CarouselImages/CarouselStageB4Pump.jpg"
 
-const images = [image1, image2, image3, image4];
+const images = [image1, image2, image3, image4, image5];
 
 const ImageCarousel = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
