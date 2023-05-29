@@ -5,6 +5,7 @@ const data = {
             name: "THE ONLY WHEY 2.2KG 74 servings",
             price: 39.99,
             image: "./images/only-whey-final-300x300.png",
+            image2: "./images/only-whey-nutritional-info.jpeg",
             to: "./OnlyWheyPage",
             description: "",
         },
