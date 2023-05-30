@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "../components/checkout.css";
-import { loadStripe } from '@stripe/stripe-js';
+import PayPalCheckout from "../components/PayPalCheckout";
 
 
 
-const Checkout = ({ basketItems = [] }) => {
+const Checkout = ({ productItem, basketItems = [] }) => {
     const [isBasketOpen, setIsBasketOpen] = useState(false);
-    const stripePromise = loadStripe('pk_test_51NBE82FW6Es16DlXS5FdAW2ELyZgIBdbeykYU5VEBev6G6BNglbpdAF2Ac06KADKpRHSCZswK96mKWat1gCyn3tf00GWzIem8P');
-
     const totalPrice =
         basketItems.length > 0
             ? basketItems.reduce(
@@ -25,41 +23,6 @@ const Checkout = ({ basketItems = [] }) => {
         ? "Hide Order Summary"
         : "Show Order Summary";
 
-    const handleClick = async () => {
-        const stripe = await stripePromise;
-
-        
-        const response = await fetch('/create-payment-intent', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ amount: 1000, currency: 'gbp' })
-        });
-
-        const { clientSecret, error } = await response.json();
-
-        if (error) {
-            
-        } else {
-            
-            const result = await stripe.confirmCardPayment(clientSecret);
-
-            if (result.error) {
-                console.log(result.error.message);
-            } else {
-                console.log('Payment successful');
-            }
-        }
-    };
-
-    const PaymentButton = () => {
-        return (
-            <button className="checkout-paypal-button" onClick={handleClick}>
-                Pay with Stripe
-            </button>
-        );
-    };
     return (
         <div>
             <h1 className="checkout-heading">Checkout</h1>
@@ -104,7 +67,7 @@ const Checkout = ({ basketItems = [] }) => {
                     </div>
                 </div>
 
-                <div className="shipping-details">
+                {/*<div className="shipping-details">
                     <h2 className="address-heading">Billing details:</h2>
 
                     <input
@@ -172,10 +135,8 @@ const Checkout = ({ basketItems = [] }) => {
                         id="phone"
                         autoComplete="tel"
                     />
-                </div>
-                <PaymentButton />
-                {/*<button className="checkout-paypal-button">Proceed to PayPal</button>*/}
-
+                                                </div>*/}
+                <PayPalCheckout basketItems={basketItems}  />
             </div>
         </div>
     );

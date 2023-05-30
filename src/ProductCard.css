@@ -39,15 +39,21 @@ h4 {
 }
 
 
-.product-image-container {
+/*.product-image-container {
     display: flex;
     flex-direction: row;
-}
-.product-card-image {
+}*/
+/*.product-card-image {
     display: flex;
     height: 175px;
     margin: 0px 0px 0px auto;
     
+}*/
+.product-card-image {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin: 0 auto;
 }
 .product-card-image-2 {
     display: flex;

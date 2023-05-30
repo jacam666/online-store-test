@@ -124,7 +124,7 @@
     width: 100%;
 }
 
-.checkout-paypal-button {
+/*.checkout-paypal-button {
     margin: auto;
     width: auto;
     color: #ffffff;
@@ -185,7 +185,7 @@
     padding: 10px;
     color: rgb(58, 59, 60);
     font-size: 14px;
-}
+}*/
 
 
 @media screen and (max-width: 391px) {}
@@ -214,9 +214,7 @@
             height: 100%;
         }
 
-        .checkout-paypal-button {
-            margin: 20px auto;
-        }
+        
     }
 }
 
@@ -346,9 +344,7 @@
         width: auto;
     }
 
-    .checkout-paypal-button {
-        margin: 20px auto;
-    }
+    
 
     .shipping-details {
         width: auto;

@@ -321,11 +321,11 @@ form.signUp-Form {
     margin-top: 35px;
   }
   .logo {
-    width: 80vw ;
+    width: auto ;
   }
 
   .cardImage {
-    height: 20vh;
+    height: 18vh;
     width: 40vw;
     padding: 20px;
     display: block;
