@@ -6,7 +6,7 @@ import Logo from "./components/Logo";
 import Navbar from "./Navbar";
 import Footer from "./components/Footer";
 //import ImageCarousel from "./components/ImageCarousel";
-//import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const App = () => {
   const { productItems } = data;
@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <div className="App">
-      
+      <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }}/>
       <Navbar basketItems={basketItems} />
       <Logo />
       <AppRoutes

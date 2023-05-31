@@ -2,10 +2,9 @@
     width: 70vw;
     margin: 0 auto;
     margin-top: 10px;
+    background-color: aliceblue;
 }
-element.style {
-    color: #fff;
-}
+
 @media screen and (max-width: 390px) {
     .paypal-checkout-container {
         width: 80vw;
