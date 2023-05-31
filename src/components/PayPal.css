@@ -1,8 +1,30 @@
-.paypal-button-container {
-    width: 80%;
-    margin: auto;
+.paypal-checkout-container {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 10px;
 }
-#zoid-paypal-buttons-uid_a7693bfe15_mtk6mta6mtg {
-    margin: auto;
+element.style {
+    color: #fff;
 }
-  
+@media screen and (max-width: 390px) {
+    .paypal-checkout-container {
+        width: 80vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .paypal-checkout-container {
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .paypal-checkout-container {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .paypal-checkout-container {
+        width: 35vw;
+        color: rgb(255, 255, 255);
+    }
+}

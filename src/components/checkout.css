@@ -200,7 +200,7 @@
     }
 
     .order-summary {
-        width: 72vw;
+        width: 70vw;
     }
 
     @media screen and (orientation: landscape) {
@@ -233,7 +233,7 @@
     }
 
     .order-summary {
-        width: 78vw;
+        width: 50vw;
         height: 6vh;
         margin: auto;
         display: flex;
@@ -267,7 +267,7 @@
     }
 
     .order-summary {
-        width: 77vw;
+        width: 50vw;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -311,7 +311,7 @@
     }
 
     .order-summary {
-        width: 32vw;
+        width: 35vw;
         margin: auto;
         height: auto;
         display: flex;

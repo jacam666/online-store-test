@@ -138,6 +138,7 @@ const Checkout = ({ productItem, basketItems = [] }) => {
                                                 </div>*/}
                 <PayPalCheckout basketItems={basketItems}  />
             </div>
+            
         </div>
     );
 };
