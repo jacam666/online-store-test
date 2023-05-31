@@ -234,7 +234,7 @@
 
     .order-summary {
         width: 50vw;
-        height: 6vh;
+        height: auto;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -249,7 +249,7 @@
     }
 
     .accordion-content {
-        width: 54vw;
+        width: auto;
         border: none;
     }
 
@@ -282,7 +282,7 @@
     }
 
     .accordion-content {
-        width: 54vw;
+        width: 33vw;
         border: none;
     }
 }
