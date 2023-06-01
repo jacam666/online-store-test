@@ -101,7 +101,7 @@ app.listen(port, () => {
 
 */
 
-const express = require('express');
+/*const express = require('express');
 const cors = require('cors')
 const app = express();
 const stripe = require('stripe')("sk_test_51NBE82FW6Es16DlXn4bLYmNL8tlJfDQgQI1Hy0emz8qD6UFdMdB5PFJfLyG86tHZ9IDjgPrTy4GcqEtR7gjWCJUn00ACKxTmqF");
@@ -125,6 +125,7 @@ app.post('/create-payment-intent', async (req, res) => {
 });
 app.listen(3000, () => {
     console.log('Server running on port 3000');
-});
+});*/
+
 
 
