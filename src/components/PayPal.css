@@ -31,5 +31,6 @@
     .paypal-checkout-container {
         width: 35vw;
         color: rgb(255, 255, 255);
+        margin-top: 0;
     }
 }
