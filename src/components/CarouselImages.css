@@ -43,7 +43,7 @@
     }
 
     .image-carousel img {
-        height: 280px;
+        height: 200px;
         width: 100vw;
         opacity: 0;
         transition: opacity 1s ease-in-out;

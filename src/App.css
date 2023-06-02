@@ -495,8 +495,8 @@ form.signUp-Form {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .logo {
-    width: 50%;
+  img.logo {
+    width: auto;
   }
 
   .card {
@@ -567,7 +567,6 @@ form.signUp-Form {
   }
   .cardImage.product-image-19 {
     height: 130px;
-    width: ;
     margin-top: 5px;
   }
   .cardImage.product-image-21,

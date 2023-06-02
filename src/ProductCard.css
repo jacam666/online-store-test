@@ -13,17 +13,17 @@ body {
 
 }
 div.product-card {
-    width: 100vw;
-    padding-left: 0;
+    margin: auto;
+    width: 70vw;
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px;
     height: 100%;
     padding-bottom: 60px;
+    width: 20vw;
 }
 
 .product-name {
@@ -37,18 +37,6 @@ div.product-card {
 h4 {
     color: #ccc;
 }
-
-
-/*.product-image-container {
-    display: flex;
-    flex-direction: row;
-}*/
-/*.product-card-image {
-    display: flex;
-    height: 175px;
-    margin: 0px 0px 0px auto;
-    
-}*/
 .product-card-image {
     display: flex;
     justify-content: center;
@@ -111,7 +99,6 @@ h1 span {
 .product-description {
     width: 36rem;
     color: #fff;
-    margin: auto;
 }
 
 .product-description h1 {
@@ -122,12 +109,10 @@ h1 span {
 
 .product-price {
     color: #fff;
-    margin: auto;
 }
 
 .product-directions {
     color: #fff;
-    margin: auto;
 }
 .product-directions h1 {
     color: #fff;
@@ -136,7 +121,6 @@ h1 span {
 .product-advice {
     color: #fff;
     width: auto;
-    margin: auto;
     margin-top: 20px;
 }
 .product-advice h1 {
@@ -146,7 +130,6 @@ h1 span {
 
 .product-storage {
     color: #fff;
-    margin: auto;
 }
 .product-storage h1 {
     color: #fff;
@@ -176,40 +159,42 @@ h1 span {
     color: #fff;
 }
 
-.amount-ingredients-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .directions-info h1 {
     font-size: 2rem;
     color: #fff;
 }
-
+.servings-info {
+}
 .servings-info p  {
     color: #fff;
-    margin-left: 70px;
+    /*margin-left: 70px;*/
 }
 .servings-info h1  {
     color: #fff;
-    margin-left: 70px;
 }
 
 .product-ingredient {
     font-size: 14px;
     color: #fff;
     margin-top: 10px;
-    margin-left: 30px;
-    width: auto;
+    margin-left: 0;
 }
 .product-ingredient h1 {
     font-size: 20px;
     color: #fff;
     margin-bottom: 5px;
 }
-
+@media screen and (max-width: 390px) {
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions,
+    .servings-info {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 391px) {
 
     .product-card,
@@ -217,7 +202,8 @@ h1 span {
     .product-description,
     .product-advice,
     .product-storage,
-    .product-directions {
+    .product-directions,
+    .product-ingredient {
         width: 80%;
     }
 
@@ -230,15 +216,25 @@ h1 span {
     .product-description,
     .product-advice,
     .product-storage,
-    .product-directions {
+    .product-directions,
+    .servings-info,
+    .product-ingredient {
+        width: 80%;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions,
+    .servings-info,
+    .product-ingredient {
         width: 80%;
     }
-    .product-ingredient {
-        margin-left: 70px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 960px) {
+    
     @media screen and (orientation: landscape) {
         .product-card-image img {
             margin-top: 550px;
@@ -249,20 +245,13 @@ h1 span {
         .product-card-details {
             margin-top: 80px;
         }
-
-        .product-card {
-            height: 70vh;
-        }
-
         .Navbar {
             margin-bottom: 50px;
         }
     }
 }
 @media screen and (min-width: 961px) and (max-width: 1200px) {
-    .product-ingredient {
-        margin-left: 0;
-    }
+    
 }
 
 @media screen and (min-width: 1201px) {
@@ -302,6 +291,31 @@ h1 span {
     .product-advice {
         width: 45vw;
     }
-
-    
+}
+@media  screen and (min-width: 1201px) {
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions,
+    .servings-info,
+    .product-ingredient {
+        margin-left: 150px;
+    }
+}
+@media  screen and (min-width: 1600px) {
+    .product-card,
+    .product-price,
+    .product-description,
+    .product-advice,
+    .product-storage,
+    .product-directions,
+    .servings-info {
+        width: 30%;
+        margin: auto;
+    }
+    .product-ingredient {
+        margin-left: 470px;
+    }
 }

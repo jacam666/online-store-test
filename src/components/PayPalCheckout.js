@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import PaymentFailure from "./PaymentFailure";
 import PaymentSuccess from "./PaymentSuccess";
 import "../components/PayPal.css";
-import { loadScript} from "@paypal/paypal-js";
+import { loadScript } from "@paypal/paypal-js";
 
 function PayPalCheckout({ basketItems }) {
     const [transactionStatus, setTransactionStatus] = useState(null);
