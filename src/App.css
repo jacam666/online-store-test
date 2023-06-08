@@ -322,7 +322,8 @@ form.signUp-Form {
     margin-top: 35px;
   }
   .logo {
-    width: auto ;
+    width: 50vw ;
+    height: auto;
   }
 
   .cardImage {
@@ -357,7 +358,8 @@ form.signUp-Form {
     width: 30vw;
   }
   .logo {
-    width: 80vw;
+    width: 50vw;
+    height: auto;
   }
 }
 
@@ -371,6 +373,10 @@ form.signUp-Form {
     text-align: center;
     width: 90%;
     
+  }
+  .logo {
+    width: 50vw;
+    height: auto;
   }
   .cardImage {
     display: block;
@@ -395,7 +401,8 @@ form.signUp-Form {
     height: auto;
   }
   .logo {
-    width: auto;
+    width: 50vw;
+    height: auto;
   }
   .cardImage  {
     display: block;
@@ -443,6 +450,8 @@ form.signUp-Form {
   button.product-add-button {
     width: auto;
   }
+  
+  
   
 
   @media screen and (orientation: landscape) {
