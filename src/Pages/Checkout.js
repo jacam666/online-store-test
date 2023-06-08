@@ -23,7 +23,7 @@ const Checkout = ({ productItem, basketItems = [] }) => {
         <div>
             <h1 className="checkout-heading">Checkout</h1>
             <div className="checkout-container">
-                <div className="order-summary">
+                {/*<div className="order-summary">
                     <h2 className="order-summary-heading" onClick={toggleBasket}>
                         {orderSummaryText}
                         <span className="arrow-icon">{isBasketOpen ? "▲" : "▼"}</span>
@@ -46,9 +46,27 @@ const Checkout = ({ productItem, basketItems = [] }) => {
                         )}
                     </div>
                     <div className="checkout-total">£{totalPrice.toFixed(2)}</div>
+                                        </div>*/}
+                <div className='order-summary'>
+                    <h1 className='order-summary-heading' onClick={toggleBasket}>
+                        <span className="order-summary-text">{orderSummaryText}</span>
+                        <span className="arrow-icon">{isBasketOpen ? "▲" : "▼"}</span>
+                        <div className="checkout-total">£{totalPrice.toFixed(2)}</div>
+                    </h1>
+                    {isBasketOpen && <div className="checkout-basket-items">
+                        {basketItems.map((item) => (
+                            <div key={item.id} className="checkout-basket-item">
+                                <img className="checkout-item-image" src={item.image} alt={item.name}/> 
+                                <span className="checkout-item-name">{item.name}</span>
+                                <span className="checkout-item-quantity"> Quantity: {item.quantity}</span>
+                                <span className="checkout-item-price"> Price: {item.quantity * item.price}</span>
+                            </div>
+                        ))}
+                    </div>}
+
                 </div>
                 <PayPalCheckout basketItems={basketItems} />
-                
+
             </div>
         </div>
     );

@@ -5,7 +5,6 @@ import AppRoutes from "./components/front/Products/Routes/Routes";
 import Logo from "./components/Logo";
 import Navbar from "./Navbar";
 import Footer from "./components/Footer";
-//import ImageCarousel from "./components/ImageCarousel";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const App = () => {
