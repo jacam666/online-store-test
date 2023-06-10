@@ -309,7 +309,7 @@ form.signUp-Form {
 }
 
 .welcome-message {
-  color: #ccc;
+  color: #fff;
   margin-top: 15px;
   margin-left: 10px;
 
@@ -327,8 +327,8 @@ form.signUp-Form {
   }
 
   .cardImage {
-    height: 18vh;
-    width: 40vw;
+    height: 16vh;
+    width: 35vw;
     padding: 20px;
     display: block;
     margin-left: auto;
@@ -338,8 +338,13 @@ form.signUp-Form {
   .product-add-button {
     width: 30vw;
   }
+  .cardImage.product-image-10,
+  .cardImage.product-image-11 {
+    width: 36vw;
+  }
   
 }
+
 
 @media screen and (min-width: 392px) and (max-width: 480px) {
   .card-container .card {
@@ -381,10 +386,18 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: auto;
-    height: 15vh;
+    height: 12vh;
     width: 20vw;
     margin-top: 20px;
   }
+  .cardImage.product-image-9,
+  .cardImage.product-image-10,
+  .cardImage.product-image-11,
+  .cardImage.product-image-13 {
+    width: 17vw;
+    height: auto;
+  }
+
   @media screen and (orientation: landscape) {
     .cardImage {
       height: auto;
@@ -411,6 +424,26 @@ form.signUp-Form {
     margin: auto;
     margin-top: 20px;
   }
+  
+  .cardImage.product-image-3 {
+    margin-top: 38px;
+  }
+  .cardImage.product-image-6 {
+    margin-top: 0;
+  }
+
+  .cardImage.product-image-9,
+  .cardImage.product-image-10,
+  .cardImage.product-image-11,
+  .cardImage.product-image-13 {
+    width: 17vw;
+    height: auto;
+  }
+  
+  .cardImage.product-image-12 {
+    height: 13vh;
+  }
+
   button.product-add-button {
     width: auto;
   }
@@ -457,7 +490,7 @@ form.signUp-Form {
   @media screen and (orientation: landscape) {
     
     .cardImage {
-      height: auto;
+      height: 15vh;
     }
     .card-container .card {
       height: auto;
@@ -476,7 +509,7 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 22vh;
+    height: 16vh;
     width: 15vw;
     margin-top: 20px;
   }
