@@ -59,7 +59,7 @@ const Checkout = ({ productItem, basketItems = [] }) => {
                                 <img className="checkout-item-image" src={item.image} alt={item.name}/> 
                                 <span className="checkout-item-name">{item.name}</span>
                                 <span className="checkout-item-quantity"> Quantity: {item.quantity}</span>
-                                <span className="checkout-item-price"> Price: {item.quantity * item.price}</span>
+                                <span className="checkout-item-price"> Price: {(item.quantity * item.price).toFixed(2)}</span>
                             </div>
                         ))}
                     </div>}
