@@ -318,7 +318,7 @@ form.signUp-Form {
 @media screen and (min-width: 100px) and (max-width: 391px) {
   .card-container .card {
     
-    width: auto;
+    width: 50vw;
     margin-top: 35px;
   }
   .logo {
@@ -338,10 +338,10 @@ form.signUp-Form {
   .product-add-button {
     width: 30vw;
   }
-  .cardImage.product-image-10,
+  /*.cardImage.product-image-10,
   .cardImage.product-image-11 {
     width: 36vw;
-  }
+  }*/
   
 }
 
@@ -372,6 +372,7 @@ form.signUp-Form {
   
   .card {
     height: auto;
+    width: 35vw;
   }
   .main-page-product-name {
     font-size: 14px;
@@ -406,7 +407,7 @@ form.signUp-Form {
       height: auto;
     }
   }
-}
+} 
 
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -432,7 +433,7 @@ form.signUp-Form {
     margin-top: 0;
   }
 
-  .cardImage.product-image-9,
+  /*.cardImage.product-image-9,
   .cardImage.product-image-10,
   .cardImage.product-image-11,
   .cardImage.product-image-13 {
@@ -441,8 +442,8 @@ form.signUp-Form {
   }
   
   .cardImage.product-image-12 {
-    height: 13vh;
-  }
+    height: 10vh;
+  }*/
 
   button.product-add-button {
     width: auto;
@@ -530,6 +531,8 @@ form.signUp-Form {
     width: auto;
   }
 }
+
+
 @media screen and (min-width: 1201px) {
   .cardImage {
     display: block;
@@ -546,7 +549,7 @@ form.signUp-Form {
 
   .card {
     height: auto;
-    width: 12vw;
+    width: 18vw;
     margin-right: 10px;
   }
   .cardImage.product-image-1 {
