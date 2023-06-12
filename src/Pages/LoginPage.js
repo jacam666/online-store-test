@@ -187,7 +187,7 @@ const LoginPage = ({ isLoggedIn }) => {
             id="login-password"
           />
           {/*<input className="submit-button" type="submit" onClick={submit} />*/}
-          <button className="submit-button" type="submit" onClick={submit}>Login</button>
+          <button className="login-submit-button" type="submit" onClick={submit}>Login</button>
           <p className="or">or</p>
           <div className="signup-link-container">
             <Link className="signup-link" to="/SignupPage">
