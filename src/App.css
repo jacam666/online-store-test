@@ -490,7 +490,8 @@ form.signUp-Form {
   @media screen and (orientation: landscape) {
     
     .cardImage {
-      height: 15vh;
+      height: 25vh;
+      width: auto;
     }
     .card-container .card {
       height: auto;
