@@ -24,14 +24,21 @@
 .studio-image-1 {
     width: 35vw;
     height: 15vh;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-right: 10px;
+    position: relative;
+    transition: 1.2s;
 }
 
 .studio-image-2 {
     width: 35vw;
     height: 15vh;
-    border-radius: 30px;
+    border-radius: 10px;
+    transition: 1.2s;
+}
+.studio-image-1:hover,
+.studio-image-2:hover {
+    transform: scale(1.5);
 }
 .studio-descriptions{
     display: flex;
