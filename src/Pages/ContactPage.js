@@ -4,8 +4,10 @@ import Logo from '../components/Logo'
 
 const ContactPage = () => {
     return (
-        <div className='contact-container'>
+        <div>
             <Logo />
+            <div className='contact-container'>
+            
             <div className='contact-address'>
                 <h2 className='contact-heading'>Contact Us:</h2>
                 <p>
@@ -31,6 +33,8 @@ const ContactPage = () => {
                 marginWidth="0"
             ></iframe>
         </div>
+        </div>
+        
 
     )
 }

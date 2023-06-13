@@ -18,7 +18,7 @@ function TheStudioPage() {
                     Are you looking for a fitness studio that can help you achieve your goals in a comfortable and private environment?
                 </p>
                 <div className='studio-description-section-2'>
-                    Do you want to train with a professional bodybuilder and competitor who has won multiple competitions and has 30 years of experience in the industry?
+                    Do you want to train with a bodybuilder and competitor who has won multiple competitions and has 30 years of experience in the industry?
                 </div>
                 <div className='studio-description-section-3'>
                     If so, then you have come to the right place. Welcome to SNC Studios, where we offer one-to-one and group sessions with Mark Etherdon, a certified personal trainer and a successful bodybuilder.
