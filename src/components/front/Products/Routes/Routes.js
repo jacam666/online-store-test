@@ -29,6 +29,7 @@ import FatBurnerBundle from "../../../.././Pages/FatBurnerBundlePage";
 import BundleDeal2 from "../../../.././Pages/BundleDeal2Page.js";
 import Checkout from "../../../../Pages/Checkout";
 import ContactPage from "../../../../Pages/ContactPage";
+import TheStudioPage from "../../../../Pages/TheStudioPage";
 
 const AppRoutes = ({
     productItems,
@@ -51,6 +52,7 @@ const AppRoutes = ({
         <Routes>
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
+            <Route path="/TheStudioPage" element={<TheStudioPage />} />
             <Route
                 path="/BasketPage"
                 element={
