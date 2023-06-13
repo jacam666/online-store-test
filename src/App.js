@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
-import Logo from "./components/Logo";
+//import Logo from "./components/Logo";
 import Navbar from "./Navbar";
 import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
@@ -53,7 +53,7 @@ const App = () => {
     <div className="App">
       <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }}/>
       <Navbar basketItems={basketItems} />
-      <Logo />
+      {/*<Logo />*/}
       <AppRoutes
         productItems={productItems}
         basketItems={basketItems}

@@ -1,6 +1,7 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
   const product = {
@@ -39,6 +40,7 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
 
   return (
     <div className="product-card">
+      <Logo />
       <div>
         <img
           className="product-card-image"

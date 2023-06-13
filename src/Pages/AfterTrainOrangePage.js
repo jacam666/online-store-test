@@ -1,5 +1,6 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const AfterTrainOrange = ({  productItem, handleAddProduct}) => {
     const product = {
@@ -17,6 +18,7 @@ const AfterTrainOrange = ({  productItem, handleAddProduct}) => {
 
     return (
         <div className="product-card">
+            <Logo />
             <div>
                 <img
                     className="product-card-image"

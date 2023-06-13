@@ -1,6 +1,7 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const YearRound = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -20,6 +21,7 @@ const YearRound = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
+            <Logo />
             <div>
                 <img
                     className="product-card-image"

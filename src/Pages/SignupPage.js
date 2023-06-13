@@ -167,6 +167,7 @@ export default SignupPage;   */
 
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Logo from "../components/Logo";
 
 
 function SignupPage( { setIsUserLoggedIn}) {
@@ -202,6 +203,7 @@ function SignupPage( { setIsUserLoggedIn}) {
 
   return (
     <div className="Signup">
+      <Logo />
       <div className="signUp-container">
         <form className="signUp-Form" action="POST">
           <h1 className="signUp-header">Register</h1>

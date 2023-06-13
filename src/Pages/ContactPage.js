@@ -1,9 +1,11 @@
 import React from 'react'
 import "../components/contact.css"
+import Logo from '../components/Logo'
 
 const ContactPage = () => {
     return (
         <div className='contact-container'>
+            <Logo />
             <div className='contact-address'>
                 <h2 className='contact-heading'>Contact Us:</h2>
                 <p>

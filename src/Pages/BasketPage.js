@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Basket.css";
 import { useNavigate } from "react-router-dom";
+import Logo from "../components/Logo";
 
 const BasketPage = ({
   basketItems,
@@ -23,6 +24,7 @@ const BasketPage = ({
 
   return (
     <div className="basket-items">
+      <Logo />
       <h2 className="basket-items-header">Basket Items</h2>
       <div className="clear-basket">
         {basketItems.length >= 1 && (

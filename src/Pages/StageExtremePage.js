@@ -1,5 +1,6 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 
 const StageExtreme = ({ productItem, handleAddProduct }) => {
@@ -15,6 +16,7 @@ const StageExtreme = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
+            <Logo />
             <div>
                 <img
                     className="product-card-image"

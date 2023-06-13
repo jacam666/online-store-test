@@ -4,68 +4,48 @@
     height: 100vh;*/
     padding-bottom: 60px;
 }
+
 .studio-heading {
     font-size: 3rem;
     color: #fff;
     text-align: center;
     margin: 2rem 0 auto;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 70px;
 }
+
 .image-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
+
 .studio-image-1 {
     width: 35vw;
     height: 15vh;
     border-radius: 30px;
     margin-right: 10px;
 }
+
 .studio-image-2 {
     width: 35vw;
     height: 15vh;
     border-radius: 30px;
 }
-.studio-description-section-1 {
-    color: #eae6e6;
-    width: 70%;
-    border: 1px solid rgb(126, 80, 80);
-    border-radius: 7px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 30px;
+.studio-descriptions{
+    display: flex;
+    flex-wrap: wrap;
 }
-.studio-description-section-2 {
-    color: #fff;
-    width: 70%;
-    border: 1px solid rgb(126, 80, 80);
-    border-radius: 7px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-}
-.studio-description-section-3 {
-    color: #fff;
-    width: 70%;
-    border: 1px solid rgb(126, 80, 80);
-    border-radius: 7px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-}
-.studio-description-section-4 {
-    color: #fff;
-    width: 70%;
-    border: 1px solid rgb(126, 80, 80);
-    border-radius: 7px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-}
+
+.studio-description-section-1,
+.studio-description-section-2,
+.studio-description-section-3,
+.studio-description-section-4,
 .studio-description-section-5 {
-    color: #fff;
+    color: #ede6e6;
     width: 70%;
+    font-size: 1.1rem;
     border: 1px solid rgb(126, 80, 80);
     border-radius: 7px;
     padding: 10px;
@@ -73,3 +53,14 @@
     margin-top: 20px;
 }
 
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+
+    .studio-description-section-1,
+    .studio-description-section-2,
+    .studio-description-section-3,
+    .studio-description-section-4,
+    .studio-description-section-5 {
+        width: 50%;
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const OnlyWheyPage = ({  productItem, handleAddProduct}) => {
   const product = {
@@ -21,6 +22,7 @@ const OnlyWheyPage = ({  productItem, handleAddProduct}) => {
 
   return (
     <div className="product-card">
+      <Logo />
       <div>
         <div className="product-image-container">
         <img

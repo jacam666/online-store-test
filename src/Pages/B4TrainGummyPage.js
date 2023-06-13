@@ -1,6 +1,7 @@
 import React from "react";
 import "../ProductCard.css";
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const B4TrainGummy = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -18,6 +19,7 @@ const B4TrainGummy = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
+            <Logo />
             <div>
                 <img
                     className="product-card-image"

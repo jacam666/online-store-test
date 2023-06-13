@@ -1,5 +1,6 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import Logo from "../components/Logo";
 
 const BundleDeal2 = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -12,6 +13,7 @@ const BundleDeal2 = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
+            <Logo />
             <div>
                 <img
                     className="product-card-image"
