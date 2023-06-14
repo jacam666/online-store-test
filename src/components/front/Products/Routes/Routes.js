@@ -30,6 +30,7 @@ import BundleDeal2 from "../../../.././Pages/BundleDeal2Page.js";
 import Checkout from "../../../../Pages/Checkout";
 import ContactPage from "../../../../Pages/ContactPage";
 import TheStudioPage from "../../../../Pages/TheStudioPage";
+import DietPlan from "../../../../Pages/DietPlan";
 
 const AppRoutes = ({
     productItems,
@@ -110,6 +111,7 @@ const AppRoutes = ({
             <Route path="/BundleDeal2Page" element={<BundleDeal2 handleAddProduct={handleAddProduct} />} />
             <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
             <Route path="/ContactPage" element={<ContactPage />} />
+            <Route path="/DietPlan" element={<DietPlan handleAddProduct={handleAddProduct}/>} />
         </Routes>
         //</div>
     );

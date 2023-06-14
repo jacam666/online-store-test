@@ -351,6 +351,9 @@ form.signUp-Form {
   margin-left: 10px;
 
 }
+.cardImage.product-image-24 {
+  border-radius: 6px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 391px) {
   .card-container .card {

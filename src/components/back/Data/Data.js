@@ -166,6 +166,13 @@ const data = {
             image: "./images/BUNDLE-2-FINAL.png ",
             to: "./BundleDeal2Page",
         },
+        {
+            id: "24",
+            name: "Diet Plan",
+            price: 30.00,
+            image: "./images/personal-training-image-1.jpg ",
+            to: "./DietPlan",
+        },
     ],
 };
 

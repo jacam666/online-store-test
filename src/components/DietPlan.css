@@ -1,0 +1,62 @@
+.diet-plan-container {
+    margin-bottom: 60px;
+}
+
+.header {
+    color: #eee7e7;
+    text-align: center;
+    font-size: 3rem;
+}
+.header-2 {
+    color: #eee7e7;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.diet-plan-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.certificate,
+.diet-image {
+    width: 45vw;
+    height: 20vh;
+    border-radius: 3px;
+    
+}
+.diet-plan-text-container {
+    background-color: rgb(182, 178, 174);
+    width: 86vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+/*.diet-plan-text-1,*/
+.diet-plan-text-2,
+.diet-plan-text-3,
+.diet-plan-text-4,
+.diet-plan-text-5 {
+    color: #000000;
+    background-color: rgb(218, 210, 203);
+    text-align: flex-start;
+    width: 80vw;
+    margin: auto;
+    border: .1px solid #2c2929;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: large;
+}
+.diet-plan-text-1 {
+    color: #0c0c0c;
+    text-align: flex-start;
+    background-color: rgb(218, 210, 203);
+    width: 80vw;
+    margin: auto;
+    border: .1px solid #3a3838;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: large;
+}

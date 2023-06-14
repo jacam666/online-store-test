@@ -18,7 +18,6 @@ const Products = ({productItem,handleAddProduct}) => {
                                 <Link to={productItem.to}>
                                     <div>
                                         <img
-
                                             className={`cardImage product-image-${productItem.id}`}
                                             src={productItem.image}
                                             alt={productItem.name}
