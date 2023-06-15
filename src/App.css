@@ -100,10 +100,10 @@ html {
   background: linear-gradient(to left,
       rgb(5, 18, 56) 0%,
       rgb(38, 65, 65) 100%);
-      /*background: linear-gradient(to left,
+  /*background: linear-gradient(to left,
       rgb(30, 34, 42) 0%,
       rgb(16, 16, 16) 100%);*/
-      
+
 
 }
 
@@ -137,15 +137,15 @@ form.signUp-Form {
 
 .login-container,
 .signUp-container {
-  /*margin: 65px auto;*/
-  /*border: 1px solid #fff;*/
   border-radius: 10px;
-  /*background: linear-gradient(to bottom right,
-      rgb(34, 61, 61) 40%,
-      rgb(14, 29, 77) 60%); */
-      margin: auto;
-      margin-top: 40px;
-      padding-bottom: 60px;
+  background: linear-gradient(to left,
+      rgb(26, 41, 85) 0%,
+      rgb(47, 82, 82) 100%);
+  margin: auto;
+  margin-top: 40px;
+  width: 50vw;
+  padding: 40px 20px;
+  padding-bottom: 60px;
 }
 
 .signUp-Form,
@@ -154,7 +154,6 @@ form.signUp-Form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .signUp-header,
@@ -175,6 +174,7 @@ form.signUp-Form {
   border-radius: 4px;
   border: 1px solid #ccc;
 }
+
 .login-submit-button {
   /*padding: 5px 15px;*/
   padding: 0.5rem;
@@ -187,7 +187,7 @@ form.signUp-Form {
       /*rgb(5, 18, 56) 30%,*/
       rgb(34, 61, 61) 40%,
       rgb(34, 61, 61) 60%);
-      color: #fff;
+  color: #fff;
 }
 
 .signup-submit-button {
@@ -201,7 +201,7 @@ form.signUp-Form {
       /*rgb(5, 18, 56) 30%,*/
       rgb(34, 61, 61) 40%,
       rgb(34, 61, 61) 60%);
-      color: #fff;
+  color: #fff;
 }
 
 .or {
@@ -228,6 +228,7 @@ form.signUp-Form {
       rgb(34, 61, 61) 40%,
       rgb(34, 61, 61) 60%);
 }
+
 .signup-link-container {
   width: auto;
   text-align: center;
@@ -281,13 +282,14 @@ form.signUp-Form {
   background: linear-gradient(to left,
       rgb(16, 35, 93) 0%,
       rgb(43, 103, 103) 100%);
-      /*background: linear-gradient(to left,
+  /*background: linear-gradient(to left,
       rgb(4, 4, 4) 0%,
       rgb(69, 68, 68) 100%);*/
   background-size: contain;
   background-position: center;
 
 }
+
 .card:hover {
   box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
 }
@@ -297,19 +299,19 @@ form.signUp-Form {
 }
 
 .main-page-product-name {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #fff;
-    width: 40vw;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+  width: 40vw;
 }
 
 
 .cardImage {
   width: 40vw;
   height: 35vh;
-  
+
 }
 
 
@@ -320,12 +322,12 @@ form.signUp-Form {
   border: none;
   outline: none;
   background: linear-gradient(to left,
-          rgb(26, 41, 85) 0%,
-          rgb(61, 69, 69) 100%);
+      rgb(26, 41, 85) 0%,
+      rgb(61, 69, 69) 100%);
   color: #f8f3f3;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+    0px 2px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.24);
 
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
   width: auto;
@@ -351,18 +353,20 @@ form.signUp-Form {
   margin-left: 10px;
 
 }
+
 .cardImage.product-image-24 {
   border-radius: 6px;
 }
 
 @media screen and (min-width: 100px) and (max-width: 391px) {
   .card-container .card {
-    
+
     width: 50vw;
     margin-top: 35px;
   }
+
   .logo {
-    width: 50vw ;
+    width: 50vw;
     height: auto;
   }
 
@@ -378,7 +382,7 @@ form.signUp-Form {
   .product-add-button {
     width: 30vw;
   }
-  
+
 }
 
 
@@ -387,6 +391,7 @@ form.signUp-Form {
     height: 100%;
     width: auto;
   }
+
   .cardImage {
     height: 20vh;
     width: 40vw;
@@ -395,9 +400,11 @@ form.signUp-Form {
     margin-left: auto;
     margin-right: auto;
   }
+
   .product-add-button {
     width: 30vw;
   }
+
   .logo {
     width: 50vw;
     height: auto;
@@ -405,21 +412,24 @@ form.signUp-Form {
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  
+
   .card {
     height: auto;
     width: 35vw;
   }
+
   .main-page-product-name {
     font-size: 14px;
     text-align: center;
     width: 90%;
-    
+
   }
+
   .logo {
     width: 50vw;
     height: auto;
   }
+
   .cardImage {
     display: block;
     margin: auto;
@@ -427,6 +437,7 @@ form.signUp-Form {
     width: 20vw;
     margin-top: 20px;
   }
+
   .cardImage.product-image-9,
   .cardImage.product-image-10,
   .cardImage.product-image-11,
@@ -434,37 +445,45 @@ form.signUp-Form {
     width: 17vw;
     height: auto;
   }
+  .login-container,
+  .signUp-container {
+    width: 40vw;
+  }
 
   @media screen and (orientation: landscape) {
     .cardImage {
       height: auto;
     }
+
     .card-container .card {
       height: auto;
     }
   }
-} 
+}
 
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .card {
     height: auto;
   }
+
   .logo {
     width: 50vw;
     height: auto;
   }
-  .cardImage  {
+
+  .cardImage {
     display: block;
     height: 15vh;
     width: 20vw;
     margin: auto;
     margin-top: 20px;
   }
-  
+
   .cardImage.product-image-3 {
     margin-top: 38px;
   }
+
   .cardImage.product-image-6 {
     margin-top: 0;
   }
@@ -476,22 +495,28 @@ form.signUp-Form {
   .main-page-product-name {
     width: 90%;
   }
+  .login-container,
+  .signUp-container {
+    width: 30vw;
+  }
 
   @media screen and (orientation: landscape) {
     .card {
       height: auto;
     }
+
     .card-container {
       margin-bottom: 60px;
       height: 100%;
     }
+
     .cardImage {
       height: auto;
     }
   }
 }
 
-@media screen and (min-width: 769px) and (max-width:992px )  {
+@media screen and (min-width: 769px) and (max-width:992px) {
   .cardImage {
     display: block;
     margin: 0 auto;
@@ -499,32 +524,42 @@ form.signUp-Form {
     height: 15vh;
     margin-top: 10px;
   }
+
   .main-page-product-name {
     width: 90%;
   }
+
   .card {
     height: auto;
   }
+
   button.product-add-button {
     width: auto;
   }
-  
-  
-  
+  .login-container,
+  .signUp-container {
+    width: 30vw;
+  }
+
+
+
 
   @media screen and (orientation: landscape) {
-    
+
     .cardImage {
       height: 25vh;
       width: auto;
     }
+
     .card-container .card {
       height: auto;
     }
+
     .login-container,
     .signUp-container {
-      height: 100vh;
+      
     }
+
     /*.signup-submit-button {
       width: auto;
       padding: 0%;
@@ -540,19 +575,26 @@ form.signUp-Form {
     width: 15vw;
     margin-top: 20px;
   }
+
   .card {
     height: auto;
     width: auto;
   }
+
   .main-page-product-name {
     width: 20vw;
     font-size: 12px;
     margin-top: 18px;
   }
+
   button.product-add-button {
     width: auto;
   }
-  
+  .login-container,
+  .signUp-container {
+    width: 30vw;
+  }
+
 }
 
 
@@ -566,6 +608,7 @@ form.signUp-Form {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   img.logo {
     width: auto;
   }
@@ -575,71 +618,85 @@ form.signUp-Form {
     width: 18vw;
     margin-right: 10px;
   }
+
   .cardImage.product-image-1 {
     height: 100px;
   }
+
   .cardImage.product-image-2 {
     height: 110px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-3,
   .cardImage.product-image-4 {
     height: 115px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-5,
   .cardImage.product-image-7,
   .cardImage.product-image-9 {
     height: 120px;
     margin-top: 40px;
   }
+
   .cardImage.product-image-6,
   .cardImage.product-image-16 {
     height: 125px;
     margin-top: 20px;
     width: 150px;
   }
-  
+
   .cardImage.product-image-15 {
     height: 120px;
     margin-top: 10px;
   }
+
   .cardImage.product-image-8 {
     height: 130px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-10 {
     height: 150px;
   }
-  
+
   .cardImage.product-image-11 {
     height: 155px;
     margin-top: 10px;
   }
+
   .cardImage.product-image-12 {
     height: 120px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-13 {
     height: 120px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-14 {
     height: 120px;
     margin-top: 30px;
   }
+
   .cardImage.product-image-17 {
     height: 120px;
     margin-top: 5px;
   }
+
   .cardImage.product-image-18 {
     height: 120px;
     margin-top: 5px;
   }
+
   .cardImage.product-image-19 {
     height: 130px;
     margin-top: 5px;
   }
+
   .cardImage.product-image-21,
   .cardImage.product-image-22,
   .cardImage.product-image-23 {
@@ -651,13 +708,18 @@ form.signUp-Form {
     font-size: 16px;
     width: 12vw;
   }
+
   button.product-add-button {
     width: auto;
     font-size: 10px;
   }
-  
+
 
   #login-email {
     width: auto;
+  }
+  .login-container,
+  .signUp-container {
+    width: 25vw;
   }
 }

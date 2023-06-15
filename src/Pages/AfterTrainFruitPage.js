@@ -26,6 +26,7 @@ const AfterTrainFruit = ({ productItem, handleAddProduct }) => {
           src={product.image}
           alt={product.name}
         />
+        
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">
           <p>Price: {product.price}</p>
