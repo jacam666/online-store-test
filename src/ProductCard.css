@@ -25,7 +25,20 @@ div.product-card {
     padding-bottom: 60px;
     width: 20vw;
 }
-
+.product-container {
+    background: linear-gradient(to left,
+            rgb(26, 41, 85) 0%,
+            rgb(47, 82, 82) 100%);
+            padding: 10px;
+            border-radius: 7px;
+}
+.product-card-info {
+    background: linear-gradient(to left,
+            rgb(42, 57, 101) 0%,
+            rgb(70, 79, 79) 100%);
+            padding: 10px;
+            border-radius: 7px;
+}
 .product-name {
     text-align: center;
     margin: auto;

@@ -23,7 +23,7 @@ const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
   return (
     <div className="product-card">
       <Logo />
-      <div>
+      <div className="product-container">
         <img
           className="product-card-image"
           src={product.image}
