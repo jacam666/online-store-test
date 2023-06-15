@@ -8,6 +8,8 @@ const DietPlan = ({productItem, handleAddProduct}) => {
 
     const product = {
         id: "24",
+        image: "./images/personal-training-image-1.jpg",
+        name: "Diet Plan",
         price: 30.00,
     };
 
