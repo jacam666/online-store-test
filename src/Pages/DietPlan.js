@@ -16,7 +16,7 @@ const DietPlan = ({productItem, handleAddProduct}) => {
     return (
         <div className='diet-plan-container'>
             <Logo />
-            <div>
+            <div className='header-container'>
                 <div className='header'>Diet Plan</div>
                 <p className='header-2'>With 1 hour online consultation</p>
             </div>
@@ -24,7 +24,7 @@ const DietPlan = ({productItem, handleAddProduct}) => {
                 <img className='diet-image' src='/images/personal-training-image-1.jpg' alt='personal-training' />
                 <img className='certificate' src='/images/nutritionCertificate.jpg' alt='nutrition-certificate' />
             </div>
-            <div className="product-price">
+            <div className="diet-plan-product-price">
                     <p>Price: £{product.price}</p>
                 </div>
             <div className='diet-plan-text-container'>

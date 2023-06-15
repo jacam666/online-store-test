@@ -2,17 +2,45 @@
     margin-bottom: 60px;
 }
 
+/*.header-container {
+    display: block;
+    background: linear-gradient(to left,
+            rgb(26, 41, 85) 0%,
+            rgb(47, 82, 82) 100%);
+    margin: auto;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 86vw;
+    border-radius: 4px;
+}*/
+.header-container {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .header {
-    color: #eee7e7;
+    display: flex;
+    color:#eee7e7;
     text-align: center;
     font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .header-2 {
+    display: flex;
     color: #eee7e7;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .diet-plan-image-container {
@@ -28,7 +56,7 @@
     border-radius: 3px;
 }
 
-.product-price {
+.diet-plan-product-price {
     width: 100vw;
     color: #eee7e7;
     display: flex;
@@ -38,7 +66,6 @@
 }
 
 .diet-plan-text-container {
-    /*background-color: rgb(182, 178, 174);*/
     background: linear-gradient(to left,
             rgb(26, 41, 85) 0%,
             rgb(47, 82, 82) 100%);
@@ -86,27 +113,56 @@
     .diet-image {
         width: 40vw;
     }
+
     .diet-plan-text-container {
         width: 80vw;
     }
 }
+@media screen and (min-width: 768px) {
+
+    .certificate,
+    .diet-image {
+        width: 35vw;
+    }
+
+    .diet-plan-text-container {
+        width: 70vw;
+    }
+    @media screen and (orientation: landscape) {
+        .certificate,
+        .diet-image {
+            width: 35vw;
+            height: auto;
+        }
+    }
+}
+
 @media screen and (min-width: 961px) {
 
     .certificate,
     .diet-image {
         width: 30vw;
     }
+
     .diet-plan-text-container {
         width: 60vw;
     }
 }
-@media screen and (min-width: 1200px) {
 
+@media screen and (min-width: 1200px) {
+    .header-container {
+        width: 50vw;
+    }
     .certificate,
     .diet-image {
         width: 25vw;
     }
+
     .diet-plan-text-container {
+        width: 50vw;
+    }
+
+    .header-container {
         width: 50vw;
     }
 }
