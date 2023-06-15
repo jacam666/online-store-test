@@ -25,6 +25,7 @@ const StagePumpStrawberry = ({ productItem, handleAddProduct }) => {
                     src={product.image}
                     alt={product.name}
                 />
+                <div className="product-card-info">
                 <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
                     <p>Price: {product.price}</p>
@@ -51,6 +52,7 @@ const StagePumpStrawberry = ({ productItem, handleAddProduct }) => {
                 </div>
 
                 <p className="product-ingredient">{product.ingredients}</p>
+                </div>
             </div>
             <AddToCartButton
                 handleAddProduct={handleAddProduct}

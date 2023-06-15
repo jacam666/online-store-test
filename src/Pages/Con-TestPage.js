@@ -45,6 +45,7 @@ const Contest = ({ productItem, handleAddProduct }) => {
                     src={product.image}
                     alt={product.name}
                 />
+                <div className="product-card-info">
                 <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
                     <p>Price: {product.price}</p>
@@ -71,7 +72,7 @@ const Contest = ({ productItem, handleAddProduct }) => {
                 <h1>Ingredients:</h1>
                 <p>{product.ingredients}</p>
                 </div>
-                
+                </div>
             </div>
             <AddToCartButton
                 handleAddProduct={handleAddProduct}

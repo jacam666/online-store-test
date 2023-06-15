@@ -109,19 +109,22 @@ h4 {
     color: #ccc;
 }
 
-.product-description {
-    width: 36rem;
-    color: #fff;
+.product-description{
+    color: #f0eaea;
+}
+.training-plan-product-description {
+    width: auto;
+    color: #dfd6d6;
 }
 
 .product-description h1 {
     font-size: 20px;
     margin: 20px 0;
-    color: #fff;
+    color: #efeaea;
 }
 
 .product-price {
-    color: #fff;
+    color: #ede7e7;
 }
 
 .product-directions {

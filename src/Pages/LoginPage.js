@@ -33,7 +33,7 @@ const LoginPage = ({ isLoggedIn }) => {
   return (
     <div className="login">
       <Logo />
-      <div className="login-product-container">
+      <div>
       <div className="login-container">
         <form className="login-form" action="POST">
           <h1 className="login-header">Login</h1>

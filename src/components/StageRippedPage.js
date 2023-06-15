@@ -1,6 +1,7 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "./AddToCartButton";
+import Logo from "./Logo";
 
 const StageRipped = ({ productItem, handleAddProduct }) => {
   const product = {
@@ -18,12 +19,14 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
 
   return (
     <div className="product-card">
-      <div>
+      <Logo />
+      <div className="product-container ">
         <img
           className="product-card-image"
           src={product.image}
           alt={product.name}
         />
+        <div className="product-card-info">
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">
           <p>Price: {product.price}</p>
@@ -49,6 +52,7 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
         <div className="product-ingredient">
           <h1>Ingredients:</h1>
           <p>{product.ingredients}</p>
+        </div>
         </div>
       </div>
       <AddToCartButton
