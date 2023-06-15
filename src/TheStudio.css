@@ -22,8 +22,8 @@
 }
 
 .studio-image-1 {
-    width: 35vw;
-    height: 15vh;
+    width: 40vw;
+    height: 14vh;
     border-radius: 10px;
     margin-right: 10px;
     position: relative;
@@ -31,8 +31,8 @@
 }
 
 .studio-image-2 {
-    width: 35vw;
-    height: 15vh;
+    width: 40vw;
+    height: auto;
     border-radius: 10px;
     transition: 1.2s;
 }
@@ -43,6 +43,13 @@
 .studio-descriptions{
     display: flex;
     flex-wrap: wrap;
+    background: linear-gradient(to left,
+            rgb(26, 41, 85) 0%,
+            rgb(47, 82, 82) 100%);
+            margin:  auto;
+            width: 85vw;
+            margin-top: 20px;
+            border-radius: 7px;
 }
 
 .studio-description-section-1,
@@ -51,13 +58,18 @@
 .studio-description-section-4,
 .studio-description-section-5 {
     color: #ede6e6;
-    width: 70%;
+    background: linear-gradient(to left,
+            rgb(42, 57, 101) 0%,
+            rgb(91, 103, 103) 100%);
+    width: 80%;
     font-size: 1.1rem;
-    border: 1px solid rgb(126, 80, 80);
     border-radius: 7px;
-    padding: 10px;
+    padding: 12px;
     margin: auto;
     margin-top: 20px;
+}
+.studio-description-section-5 {
+    margin-bottom: 20px;
 }
 
 
