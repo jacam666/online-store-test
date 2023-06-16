@@ -30,8 +30,8 @@
 }
 
 .studio-carousel-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 180px;
     border-radius: 20px;
     /*width: 80%;
     height: 200px;
@@ -101,6 +101,18 @@
     .studio-description-section-3,
     .studio-description-section-4,
     .studio-description-section-5 {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .studio-description-section-1,
+    .studio-description-section-2,
+    .studio-description-section-3,
+    .studio-description-section-4,
+    .studio-description-section-5 {
+        width: 80%;
+    }
+    .studio-descriptions {
         width: 50%;
     }
 }
