@@ -280,19 +280,19 @@ h4 {
         height: auto;
     }
 
-    .product-image-1 {
-        width: 80%;
+    /*.product-image-1 {
+        width: 50%;
         height: auto;
-    }
+    }*/
 
     .product-image-10,
     .product-image-11 {
-        width: 90%;
+        width: 70%;
         height: auto;
     }
 
     .product-image-13 {
-        width: 70%;
+        width: 50%;
         height: auto;
     }
 

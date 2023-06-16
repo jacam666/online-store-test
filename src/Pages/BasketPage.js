@@ -41,7 +41,7 @@ const BasketPage = ({
           {basketItems && basketItems.length === 0 && (
             <div className="basket-items-empty">No items are added.</div>
           )}
-          <div>
+          <div className="basket-items-container">
             {basketItems?.map((item) => (
               <div key={item.id} className="basket-item-list">
                 <img

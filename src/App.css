@@ -310,7 +310,7 @@ form.signUp-Form {
 
 .cardImage {
   width: 40vw;
-  height: 35vh;
+  height: 17vh;
 
 }
 
@@ -393,7 +393,7 @@ form.signUp-Form {
   }
 
   .cardImage {
-    height: 20vh;
+    height: auto;
     width: 40vw;
     padding: 20px;
     display: block;
@@ -433,16 +433,20 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: auto;
-    height: 12vh;
-    width: 20vw;
+    height: auto;
+    width: 25vw;
     margin-top: 20px;
   }
 
-  .cardImage.product-image-9,
+  
   .cardImage.product-image-10,
   .cardImage.product-image-11,
   .cardImage.product-image-13 {
-    width: 17vw;
+    width: 25vw;
+    height: auto;
+  }
+  .cardImage.product-image-9 {
+    width: 19vw;
     height: auto;
   }
   .login-container,
@@ -474,8 +478,8 @@ form.signUp-Form {
 
   .cardImage {
     display: block;
-    height: 15vh;
-    width: 20vw;
+    height: auto;
+    width: 18vw;
     margin: auto;
     margin-top: 20px;
   }
@@ -520,8 +524,8 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: 0 auto;
-    width: 20vw;
-    height: 15vh;
+    width: 15vw;
+    height: auto;
     margin-top: 10px;
   }
 
@@ -541,15 +545,12 @@ form.signUp-Form {
     width: 30vw;
   }
 
-
-
-
   @media screen and (orientation: landscape) {
 
-    .cardImage {
+    /*.cardImage {
       height: 25vh;
       width: auto;
-    }
+    }*/
 
     .card-container .card {
       height: auto;
@@ -571,8 +572,8 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 16vh;
-    width: 15vw;
+    height: auto;
+    width: 10vw;
     margin-top: 20px;
   }
 
@@ -602,8 +603,8 @@ form.signUp-Form {
   .cardImage {
     display: block;
     margin: 0 auto;
-    height: 17vh;
-    width: 12vw;
+    height: auto;
+    width: 10vw;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -619,7 +620,8 @@ form.signUp-Form {
     margin-right: 10px;
   }
 
-  .cardImage.product-image-1 {
+  /*
+  .cardImage.product-image {
     height: 100px;
   }
 
@@ -702,7 +704,7 @@ form.signUp-Form {
   .cardImage.product-image-23 {
     height: 120px;
     margin-top: 5px;
-  }
+  } */
 
   .main-page-product-name {
     font-size: 16px;
