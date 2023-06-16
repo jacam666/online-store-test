@@ -204,8 +204,13 @@
         align-items: center;
         margin: auto;
         margin-bottom: 10px;
-        background-color: rgb(9, 66, 66);
+        background: linear-gradient(to left,
+                rgb(16, 35, 93) 0%,
+                rgb(9, 66, 66) 100%);
         border: none;
+        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.3),
+            0px 2px 5px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.24);
         border-radius: 4px;
         color: #ffffff;
         padding: 6px 15px;
