@@ -21,11 +21,15 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
     <div className="product-card">
       <Logo />
       <div className="product-container ">
+        <div className="product-image-container">
         <img
-          className="product-card-image"
+          className="stage-ripped-product-card-image"
           src={product.image}
           alt={product.name}
         />
+        <img className="stage-ripped-product-card-image-2" src="images/staged-ripped-info.jpeg" alt="protein" />
+        </div>
+        
         <div className="product-card-info">
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">
@@ -49,10 +53,10 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
         <div className="product-storage">
           <p>{product.storage}</p>
         </div>
-        <div className="product-ingredient">
+        {/*<div className="product-ingredient">
           <h1>Ingredients:</h1>
           <p>{product.ingredients}</p>
-        </div>
+  </div>*/}
         </div>
       </div>
       <AddToCartButton

@@ -21,11 +21,15 @@ const AfterTrainFruit = ({ productItem, handleAddProduct }) => {
     <div className="product-card">
       <Logo />
       <div className="product-container">
+        <div className="product-image-container">
         <img
-          className="product-card-image"
+          className="after-train-product-card-image"
           src={product.image}
           alt={product.name}
         />
+        <img className="after-train-product-card-image-2" src="images/after-train-nutri-info.jpeg" alt="protein" />
+        </div>
+        
         <div className="product-card-info">
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">

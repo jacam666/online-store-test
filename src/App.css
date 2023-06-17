@@ -242,13 +242,13 @@ form.signUp-Form {
 
 .logo {
   width: auto;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background-color: transparent;
 }
 
@@ -544,6 +544,7 @@ form.signUp-Form {
   .signUp-container {
     width: 30vw;
   }
+  
 
   @media screen and (orientation: landscape) {
 

@@ -50,21 +50,75 @@ div.product-card {
 h4 {
     color: #ccc;
 }
-.product-card-image {
+.product-image-container {
     display: flex;
     justify-content: center;
+}
+.product-card-image {
+    display: flex;
+    /*justify-content: center;*/
     height: 150px;
     margin: 0 auto;
 }
-.product-card-image-2 {
+.only-whey-product-card-image-2 {
     display: flex;
-    height: 50px;
-    width: 50px;
-    margin: 7px auto 0px 0px;
+    height: 130px;
+    width: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-right: 25px;
 }
-.product-card-image-2:hover {
-    width: 100px;
-    height: 100px;
+.product-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #c3c4bf;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.only-whey-product-card-image {
+    height: 150px;
+}
+
+.year-round-product-card-image,
+.b4-train-product-card-image,
+.stage-ripped-product-card-image,
+.after-train-product-card-image {
+    width: auto;
+    height: 14vh;
+    margin-top: 20px;
+    margin: auto;
+}
+
+
+.b4-train-product-card-image-2, 
+.b4-extreme-product-card-image-2{
+    width: auto;
+    height: 9vh;
+    margin: auto;
+    border-radius: 5px;
+}
+.year-round-product-card-image-2,
+.after-train-product-card-image-2 {
+    width: auto;
+    height: 10vh;
+    margin: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.stage-ripped-product-card-image-2 {
+    width: auto;
+    height: 11vh;
+    margin: auto;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.b4-extreme-product-card-image {
+    width: auto;
+    height: 15vh;
+}
+.product-price {
+    font-size: 1.2rem;
 }
 
 /*h1 span {
@@ -249,6 +303,39 @@ h4 {
     .servings-info,
     .product-ingredient {
         width: 80%;
+    }
+    .product-container {
+        display: flex;
+        width: 100%;
+    }
+    .product-image-container {
+        display: block;
+        background-color: #a7a9a2;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .after-train-product-card-image,
+    .only-whey-product-card-image {
+        margin-top: 2rem;
+        margin-bottom: 10px;
+        height: 250px;
+    }
+    
+    .only-whey-product-card-image-2 {
+        margin: auto;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .after-train-product-card-image-2 {
+        width: 250px;
+    }
+    .product-card-info {
+        width: 90vw;
+    }
+    .product-card-image {
+        width: 30vw;
+        height: 30vh;
+        margin: auto;
     }
     
     @media screen and (orientation: landscape) {

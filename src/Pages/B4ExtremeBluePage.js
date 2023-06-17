@@ -42,11 +42,15 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
     <div className="product-card">
       <Logo />
       <div className="product-container">
+        <div className="product-image-container">
         <img
-          className="product-card-image"
+          className="b4-extreme-product-card-image"
           src={product.image}
           alt={product.name}
         />
+        <img className="b4-extreme-product-card-image-2" src="images/b4-extreme-intro.jpeg" alt="pre-workout" />
+        </div>
+        
         <div className="product-card-info">
         <h2 className="product-name">{product.name}</h2>
         <div className="product-price">
@@ -73,7 +77,7 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
           <p>{product.storage}</p>
         </div>
 
-        <p className="product-ingredient">{product.ingredients}</p>
+        {/*<p className="product-ingredient">{product.ingredients}</p>*/}
         </div>
       </div>
       <AddToCartButton

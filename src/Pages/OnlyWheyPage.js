@@ -32,15 +32,11 @@ const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
       <div className="product-container">
         <div className="product-image-container">
           <img
-            className="product-card-image"
+            className="only-whey-product-card-image"
             src={product.image}
             alt={product.name}
           />
-          {/*<img
-        className="product-card-image-2"
-        src={product.image2}
-        alt="protein"
-  />*/}
+          <img className="only-whey-product-card-image-2" src="images/only-whey-nutritional-info.jpeg" alt="protein" />
         </div>
         <div className="product-card-info">
           <h2 className="product-name">{product.name}</h2>
