@@ -70,7 +70,6 @@ h4 {
 }
 .product-image-container {
     display: flex;
-    justify-content: center;
     background-color: #c3c4bf;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -87,7 +86,7 @@ h4 {
     margin-right: 30px;
 }
 
-
+.after-advanced-product-card-image,
 .bundle-deal-2-product-card-image,
 .contest-product-card-image,
 .no-more-hunger-product-card-image,
@@ -96,16 +95,16 @@ h4 {
 .b4-train-product-card-image,
 .stage-ripped-product-card-image,
 .after-train-product-card-image {
-    width: auto;
-    height: 14vh;
+    height: 12vh;
     margin-top: 20px;
     margin: auto;
 }
 
+.after-advanced-product-image-2,
 .b4-train-product-card-image-2, 
 .b4-extreme-product-card-image-2{
     width: auto;
-    height: 9vh;
+    height: 11vh;
     margin: auto;
     border-radius: 5px;
 }
@@ -120,7 +119,7 @@ h4 {
     height: 10vh;
     margin: auto;
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: auto;
 }
 
 .stage-ripped-product-card-image-2 {
@@ -497,15 +496,8 @@ h4 {
     }
 }
 @media  screen and (min-width: 1201px) {
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .servings-info,
-    .product-ingredient {
-        margin-left: 150px;
+    .product-name {
+        padding-top: 6rem;
     }
 }
 @media  screen and (min-width: 1600px) {
@@ -516,8 +508,14 @@ h4 {
     .product-storage,
     .product-directions,
     .servings-info {
-        width: 30%;
+        width: 60%;
         margin: auto;
+    }
+    .product-image-container {
+        padding-top: 40px;
+    }
+    .product-name {
+        margin-top: 6rem;
     }
     .product-ingredient {
         margin-left: 470px;
