@@ -347,6 +347,7 @@ h4 {
         margin-bottom: 10px;
         height: 250px;
     }
+    .after-advanced-product-card-image,
     .after-train-product-card-image {
         margin: auto;
         height: auto;
@@ -356,6 +357,7 @@ h4 {
         height: 200px;
         margin-top: -30px;
     }
+    .after-advanced-product-image-2,
     .contest-product-card-image-2 {
         display: flex;
         margin: auto;
