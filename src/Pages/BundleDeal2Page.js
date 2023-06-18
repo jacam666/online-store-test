@@ -15,11 +15,14 @@ const BundleDeal2 = ({ productItem, handleAddProduct }) => {
         <div className="product-card">
             <Logo />
             <div className="product-container">
+                <div className="product-image-container">
                 <img
                     className="product-card-image"
                     src={product.image}
                     alt={product.name}
                 />
+                </div>
+                
                 <div className="product-card-info">
                     <h2 className="product-name">{product.name}</h2>
                     <div className="product-price">

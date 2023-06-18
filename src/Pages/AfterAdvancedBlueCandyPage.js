@@ -33,7 +33,7 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct}) => {
             <div className="product-container">
                 <div className="product-image-container">
                 <img
-                    className="product-card-image"
+                    className="after-train-product-card-image"
                     src={product.image}
                     alt={product.name}
                 />

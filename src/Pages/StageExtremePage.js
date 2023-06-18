@@ -18,11 +18,15 @@ const StageExtreme = ({ productItem, handleAddProduct }) => {
         <div className="product-card">
             <Logo />
             <div className="product-container">
+                <div className="product-image-container">
                 <img
                     className="product-card-image"
                     src={product.image}
                     alt={product.name}
                 />
+                <img className="stage-extreme-product-card-image-2" src="/images\stage-extreme-nutri-info.jpeg" alt="fat-burner" />
+                </div>
+                
                 <div className="product-card-info">
                     <h2 className="product-name">{product.name}</h2>
                     <div className="product-price">

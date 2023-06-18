@@ -20,38 +20,42 @@ const StagePumpStrawberry = ({ productItem, handleAddProduct }) => {
         <div className="product-card">
             <Logo />
             <div className="product-container">
-                <img
-                    className="product-card-image"
-                    src={product.image}
-                    alt={product.name}
-                />
+                <div className="product-image-container">
+                    <img
+                        className="stage-pump-product-card-image"
+                        src={product.image}
+                        alt={product.name}
+                    />
+                    <img className="stage-pump-product-card-image-2" src="images\stage-pump-nutri-info.jpeg" alt="pre-workout" />
+                </div>
+
                 <div className="product-card-info">
-                <h2 className="product-name">{product.name}</h2>
-                <div className="product-price">
-                    <p>Price: {product.price}</p>
-                </div>
+                    <h2 className="product-name">{product.name}</h2>
+                    <div className="product-price">
+                        <p>Price: {product.price}</p>
+                    </div>
 
-                <div className="product-description">
-                    <h1>Description:</h1>
-                    <p>{product.description}</p>
-                </div>
-                <div className="servings-info">
-                    <h1>Servings:</h1>
-                    <p>{product.servings}</p>
-                </div>
-                <div className="product-directions">
-                    <h1>Directions:</h1>
-                    <p>{product.directions}</p>
-                </div>
-                <div className="product-advice">
-                    <p>{product.advice}</p>
-                </div>
-                <div className="product-storage">
-                    <h1>Storage:</h1>
-                    <p>{product.storage}</p>
-                </div>
+                    <div className="product-description">
+                        <h1>Description:</h1>
+                        <p>{product.description}</p>
+                    </div>
+                    <div className="servings-info">
+                        <h1>Servings:</h1>
+                        <p>{product.servings}</p>
+                    </div>
+                    <div className="product-directions">
+                        <h1>Directions:</h1>
+                        <p>{product.directions}</p>
+                    </div>
+                    <div className="product-advice">
+                        <p>{product.advice}</p>
+                    </div>
+                    <div className="product-storage">
+                        <h1>Storage:</h1>
+                        <p>{product.storage}</p>
+                    </div>
 
-                <p className="product-ingredient">{product.ingredients}</p>
+                    <p className="product-ingredient">{product.ingredients}</p>
                 </div>
             </div>
             <AddToCartButton

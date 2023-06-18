@@ -40,11 +40,15 @@ const Contest = ({ productItem, handleAddProduct }) => {
         <div className="product-card">
             <Logo />
             <div className="product-container">
+                <div className="product-image-container">
                 <img
-                    className="product-card-image"
+                    className="contest-product-card-image"
                     src={product.image}
                     alt={product.name}
                 />
+                <img className="contest-product-card-image-2" src="images\contest-nutri-info-.jpeg" alt="supplements" />
+                </div>
+                
                 <div className="product-card-info">
                 <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
