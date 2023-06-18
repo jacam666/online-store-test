@@ -72,10 +72,10 @@ const Contest = ({ productItem, handleAddProduct }) => {
                 <div className="product-storage">
                     <p>{product.storage}</p>
                 </div>
-                <div className="product-ingredient">
+                {/*<div className="product-ingredient">
                 <h1>Ingredients:</h1>
                 <p>{product.ingredients}</p>
-                </div>
+    </div>*/}
                 </div>
             </div>
             <AddToCartButton

@@ -17,7 +17,7 @@ const BundleDeal2 = ({ productItem, handleAddProduct }) => {
             <div className="product-container">
                 <div className="product-image-container">
                 <img
-                    className="product-card-image"
+                    className="bundle-deal-2-product-card-image"
                     src={product.image}
                     alt={product.name}
                 />

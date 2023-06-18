@@ -43,10 +43,10 @@ const StagePumpStrawberry = ({ productItem, handleAddProduct }) => {
                         <h1>Servings:</h1>
                         <p>{product.servings}</p>
                     </div>
-                    <div className="product-directions">
+                    {/*<div className="product-directions">
                         <h1>Directions:</h1>
                         <p>{product.directions}</p>
-                    </div>
+    </div>*/}
                     <div className="product-advice">
                         <p>{product.advice}</p>
                     </div>

@@ -34,6 +34,7 @@ const AfterAdvancedOrange = ( { productItem, handleAddProduct}) => {
                     src={product.image}
                     alt={product.name}
                 />
+                <img className="after-advanced-product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />
                 </div>
                 
                 <div className="product-card-info">
@@ -54,14 +55,14 @@ const AfterAdvancedOrange = ( { productItem, handleAddProduct}) => {
                     <h1>Directions:</h1>
                     <p>{product.directions}</p>
                 </div>
-                <div className="product-advice">
+                {/*<div className="product-advice">
                     <h1>Advice:</h1>
                     <p>{product.advice}</p>
                 </div>
                 <div className="product-storage">
                     <h1>Storage:</h1>
                     <p>{product.storage}</p>
-                </div>
+    </div>*/}
 
                 <p className="product-ingredient">{product.ingredients}</p>
                 </div>

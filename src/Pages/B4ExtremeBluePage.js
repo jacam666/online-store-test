@@ -68,14 +68,14 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
           <h1>Directions:</h1>
           <p>{product.directions}</p>
         </div>
-        <div className="product-advice">
+        {/*<div className="product-advice">
           <h1>Advice:</h1>
           <p>{product.advice}</p>
         </div>
         <div className="product-storage">
           <h1>Storage:</h1>
           <p>{product.storage}</p>
-        </div>
+  </div>*/}
 
         {/*<p className="product-ingredient">{product.ingredients}</p>*/}
         </div>

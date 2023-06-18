@@ -36,11 +36,11 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
           <p>Price: {product.price}</p>
         </div>
 
-        <div className="product-description">
+        <div className="stage-ripped-product-description">
           <h1>Description:</h1>
           <p>{product.description}</p>
         </div>
-        <div className="servings-info">
+        <div className="stage-ripped-servings-info">
           <h1>Servings:</h1>
           <p>{product.servings}</p>
         </div>
