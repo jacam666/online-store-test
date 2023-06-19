@@ -8,9 +8,9 @@ import image5 from "../components/StudioImages/studioPic5.jpg"
 import image6 from "../components/StudioImages/studioPic6.jpg"
 import image7 from "../components/StudioImages/studioPic7.jpg"
 import image8 from "../components/StudioImages/studioPic8.jpg"
-import image9 from "../components/StudioImages/studioPic9.jpg"
+//import image9 from "../components/StudioImages/studioPic9.jpg"
 
-const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
+const images = [image1, image2, image3, image4, image5, image6, image7, image8];
 
 const StudioCarousel = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

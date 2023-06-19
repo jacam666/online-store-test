@@ -1,6 +1,7 @@
 import React from 'react'
 import "../TheStudio.css"
 import StudioCarousel from '../components/StudioCarousel'
+import image9 from "../components/StudioImages/studioPic9.jpg"
 
 function TheStudioPage() {
     return (
@@ -27,6 +28,7 @@ function TheStudioPage() {
                             Contact us today and book your free consultation with Mark Etherden. You won’t regret it!
                         </p>
                 </div>
+                <img className='studio-image-9' src={image9} alt='personal-training' />
             </div>
 
 

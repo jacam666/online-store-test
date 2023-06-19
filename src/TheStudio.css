@@ -28,6 +28,15 @@
     border: 3px solid rgb(44, 55, 87);
 
 }
+.studio-image-9 {
+    display: flex;
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid rgb(44, 55, 87);
+}
 
 
 .studio-descriptions {
@@ -57,7 +66,7 @@
     border-radius: 7px;
     padding: 12px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .studio-description-section-5 {
@@ -93,15 +102,19 @@
     .studio-carousel-image {
         width: 50%;
     }
+    .studio-image-9 {
+        width: 50%;
+    }
 }
 @media screen and (min-width: 961px) and (max-width: 1200px) {
 
     .studio-image-and-text-container {
         display: flex;
-        padding: 40px;
+        /*padding: 40px;*/
         gap: 5px    ;
         width: 95vw;
         margin: auto;
+        margin-top: 40px;
     }
     .studio-carousel-image {
         height: 400px;
@@ -111,29 +124,28 @@
     .studio-description-section-3,
     .studio-description-section-4,
     .studio-description-section-5 {
-        width: 45%;
+        width: 85%;
+        margin-top: 5px;
     }
-    .studio-description-section-1 {
-        padding: 30px 10px;
-    }
-
-    .studio-descriptions {
-        width: 70%;
+    .studio-image-9 {
         height: 400px;
+        margin-top: auto;
     }
 }
 @media screen and (min-width: 1201px) {
 
     .studio-image-and-text-container {
         display: flex;
-        padding: 40px;
         gap: 5px    ;
-        width: 80vw;
+        width: 90vw;
         margin: auto;
+        margin-top: 40px;
     }
+    .studio-image-9,
     .studio-carousel-image {
         height: 400px;
         width: 25vw;
+        margin: auto;
     }
     .studio-heading {
         font-size: 4rem;
@@ -144,14 +156,16 @@
     .studio-description-section-3,
     .studio-description-section-4,
     .studio-description-section-5 {
-        width: 45%;
+        width: 85%;
+        padding: 5px;
+        height: 10vh;
+        margin-top: 5px;
+        
     }
     .studio-descriptions {
-        height: 400px;
+        height: 40%;
         border: 3px solid rgb(44, 55, 87);
     }
-    .studio-description-section-1 {
-        padding: 30px 10px;
-    }
+    
 }
 
