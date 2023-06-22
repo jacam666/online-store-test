@@ -1,7 +1,46 @@
-.protein-header {
-    margin-top: 60px;
-    color: rgb(188, 55, 55);
-    font-size: 40px;
+.protein-page-card-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 40px;
+}
+
+.protein-page-card {
+    width: 45vw;
+    background-color: rgb(233, 235, 225);
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40vh;
+    border-radius: 4px;
+}
+
+.protein-page-cardImage {
+    margin: auto;
+    width: 100%;
+    transform: scale(0.7);
+}
+
+.protein-page-cardImage.protein-page-product-image-1 {
+    transform: scale(0.6);
+}
+.protein-page-cardImage.protein-page-product-image-2 {
+    transform: scale(0.7);
+    margin-top: 0;
+}
+
+.protein-page-product-name  {
+    color: black;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.protein-page-link {
+    text-decoration: none;
+}
+
+.protein-page-price {
+    color: black;
     text-align: center;
 }
