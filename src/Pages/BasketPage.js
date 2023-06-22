@@ -1,7 +1,6 @@
 import React from "react";
 import "../components/Basket.css";
 import { useNavigate } from "react-router-dom";
-import Logo from "../components/Logo";
 
 const BasketPage = ({
   basketItems,
@@ -23,8 +22,8 @@ const BasketPage = ({
   };
 
   return (
+    
     <div className="basket-items">
-      <Logo />
       <div className="product-container">
         <div className="product-card-info">
           <h2 className="basket-items-header">Basket Items</h2>

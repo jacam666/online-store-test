@@ -1,9 +1,3 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -22,28 +16,29 @@ ul.connect-links {
     display: flex;
     justify-content: space-around;
     border: none;
-    border-top: 1px solid rgb(78, 69, 69);
+    /*border-top: 1px solid rgb(78, 69, 69);*/
     display: flex;
     list-style: none;
     /*width: 280%;*/
     width: 100vw;
-    background: linear-gradient(to left,
+    /*background: linear-gradient(to left,
             rgb(5, 18, 56) 0%,
-            rgb(38, 65, 65) 100%);
+            rgb(38, 65, 65) 100%);*/
+            background-color: #080808;
     padding: 10px;
 }
 
 .instagram-link a,
 .twitter-link a,
 .facebook-link a {
-    color: #fff;
+    color: #0a0a0a;
 }
 
 .connect-header {
-    color: #fff;
+    color: #080808;
 }
 
 .connect-links a {
-    color: #fff;
+    color: #f9f8f8;
     text-decoration: none;
 }

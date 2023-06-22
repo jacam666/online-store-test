@@ -5,7 +5,7 @@ import ImageCarousel from "../../ImageCarousel";
 import AddToCartButton from "../../AddToCartButton";
 import Logo from "../../Logo";
 
-const Products = ({productItem,handleAddProduct}) => {
+const Products = ({ productItem, handleAddProduct }) => {
     return (
         <div>
             <Logo />
@@ -29,10 +29,8 @@ const Products = ({productItem,handleAddProduct}) => {
                                     <div className="price">£{productItem.price}</div>
                                 </Link>
                                 <AddToCartButton
-                                handleAddProduct={handleAddProduct}
-                                productItem={productItem}
-                    />
-                    
+                                    handleAddProduct={handleAddProduct}
+                                    productItem={productItem} />
                             </div>
                         </div>
                     ))}

@@ -6,6 +6,7 @@ import AppRoutes from "./components/front/Products/Routes/Routes";
 import Navbar from "./Navbar";
 import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+//import HomePage from "./Pages/HomePage";
 
 const App = () => {
   const { productItems } = data;
@@ -30,6 +31,7 @@ const App = () => {
     }
   };
 
+
   const handleRemoveProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist.quantity === 1) {
@@ -45,6 +47,7 @@ const App = () => {
     }
   };
 
+
   const handleBasketClearance = () => {
     setBasketItems([]);
   };
@@ -52,7 +55,9 @@ const App = () => {
   return (
     <div className="App">
       <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }}/>
+      
       <Navbar basketItems={basketItems} />
+      
       {/*<Logo />*/}
       <AppRoutes
         productItems={productItems}
@@ -62,8 +67,9 @@ const App = () => {
         handleBasketClearance={handleBasketClearance}
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
-      />
+  />
       <Footer />
+      
     </div>
   );
 };

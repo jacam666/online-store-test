@@ -1,8 +1,7 @@
 .image-carousel {
     width: 100%;
     overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 33px;
 }
 
 .image-carousel-inner {
@@ -10,7 +9,7 @@
 }
 
 .image-carousel img {
-    height: 120px;
+    height: 14vh;
     width: 100vw;
     opacity: 0;
     transition: opacity 2.5s ease-in-out;

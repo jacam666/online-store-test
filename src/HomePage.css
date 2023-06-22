@@ -1,0 +1,89 @@
+.homepage-body {
+    /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.test-product-card-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+.diet-product-card-container,
+.wellbeing-product-card-container,
+.fat-loss-product-card-container,
+.pre-workout-product-card-container
+.protein-product-card-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    /*display: inline-block;*/
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+.image-text {
+    color: rgb(2, 2, 2);
+    background : #e9e3e3;
+    background: #d0d0d0;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+}
+
+.homepage-snc-products {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.homePage-image {
+    height: 22vh;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+}
+.homePage-studio-image {
+    width: 95%;
+    padding: 0 10px 0 10px;
+}
+.pre-workout-homePage-image {
+    height: 20vh;
+    width: 95%;
+    padding: 0 10px;
+    margin: auto;
+}
+.fat-loss-homePage-image {
+    height: 95%;
+    width: 95%;
+    padding: 5px 10px 0 10px;
+    margin-bottom: 0;
+}
+
+.wellbeing-homePage-image {
+    height: 95%;
+    width: 95%;
+    padding:  0 10px;
+    margin: auto;
+    margin-top: 0;
+}
+
+
+

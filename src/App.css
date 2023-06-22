@@ -95,14 +95,21 @@ section {
   display: block;
 }
 
-html {
+html,
+body,
+#root {
   line-height: 1;
-  background: linear-gradient(to left,
+  /*background: linear-gradient(to left,
       rgb(5, 18, 56) 0%,
-      rgb(38, 65, 65) 100%);
+      rgb(38, 65, 65) 100%);*/
   /*background: linear-gradient(to left,
       rgb(30, 34, 42) 0%,
       rgb(16, 16, 16) 100%);*/
+  /*background: linear-gradient(to right,
+      rgb(56, 102, 102) 20%,
+      rgb(69, 101, 101) 80%);*/
+  height: 100%;
+  /*background: #add2c9;*/
 
 
 }
@@ -240,16 +247,33 @@ form.signUp-Form {
       rgb(34, 61, 61) 60%);
 }
 
+/*.logo-container {
+  width: 100%;
+  
+  background: #add2c9;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .logo {
   width: auto;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  background-color: transparent;
+  margin-top: 39px;
+  padding: 15px 0;
+}*/
+.logo-container {
+  width: 20%;
+  display: flex;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .card-container {
@@ -365,10 +389,7 @@ form.signUp-Form {
     margin-top: 35px;
   }
 
-  .logo {
-    width: 50vw;
-    height: auto;
-  }
+  .logo {}
 
   .cardImage {
     height: 16vh;
@@ -438,17 +459,19 @@ form.signUp-Form {
     margin-top: 20px;
   }
 
-  
+
   .cardImage.product-image-10,
   .cardImage.product-image-11,
   .cardImage.product-image-13 {
     width: 25vw;
     height: auto;
   }
+
   .cardImage.product-image-9 {
     width: 19vw;
     height: auto;
   }
+
   .login-container,
   .signUp-container {
     width: 40vw;
@@ -499,6 +522,7 @@ form.signUp-Form {
   .main-page-product-name {
     width: 90%;
   }
+
   .login-container,
   .signUp-container {
     width: 30vw;
@@ -540,11 +564,12 @@ form.signUp-Form {
   button.product-add-button {
     width: auto;
   }
+
   .login-container,
   .signUp-container {
     width: 30vw;
   }
-  
+
 
   @media screen and (orientation: landscape) {
 
@@ -558,9 +583,7 @@ form.signUp-Form {
     }
 
     .login-container,
-    .signUp-container {
-      
-    }
+    .signUp-container {}
 
     /*.signup-submit-button {
       width: auto;
@@ -592,6 +615,7 @@ form.signUp-Form {
   button.product-add-button {
     width: auto;
   }
+
   .login-container,
   .signUp-container {
     width: 30vw;
@@ -721,6 +745,7 @@ form.signUp-Form {
   #login-email {
     width: auto;
   }
+
   .login-container,
   .signUp-container {
     width: 25vw;

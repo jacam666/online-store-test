@@ -25,30 +25,6 @@ const Checkout = ({ productItem, basketItems = [] }) => {
             <Logo />
             <h1 className="checkout-heading">Checkout</h1>
             <div className="checkout-container">
-                {/*<div className="order-summary">
-                    <h2 className="order-summary-heading" onClick={toggleBasket}>
-                        {orderSummaryText}
-                        <span className="arrow-icon">{isBasketOpen ? "▲" : "▼"}</span>
-                    </h2>
-                    <div className="checkout-basket-dropdown">
-                        {isBasketOpen && (
-                            <div className="accordion-container">
-                                <div className={`accordion-content ${isBasketOpen ? "open" : ""}`}>
-                                    <div className="checkout-basket-items">
-                                        {basketItems.map((item) => (
-                                            <div key={item.id} className="checkout-basket-item">
-                                                <span className="checkout-item-name">{item.name}</span>
-                                                <span className="checkout-item-quantity"> Quantity: {item.quantity}</span>
-                                                <span> Price: {item.quantity * item.price}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                    <div className="checkout-total">£{totalPrice.toFixed(2)}</div>
-                                        </div>*/}
                 <div className='order-summary'>
                     <h1 className='order-summary-heading' onClick={toggleBasket}>
                         <span className="order-summary-text">{orderSummaryText}</span>
