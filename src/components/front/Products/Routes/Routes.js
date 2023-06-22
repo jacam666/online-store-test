@@ -54,6 +54,7 @@ const AppRoutes = ({
         //<div>
         <Routes>
             <Route path="/HomePage" element={ <HomePage />}/>
+            <Route path="/" element={ <HomePage /> } />
             <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage /> }/>
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
