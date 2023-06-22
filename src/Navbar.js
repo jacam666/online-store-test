@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import BasketIcon from "./components/BasketIcon";
 import "./components/Navbar.css"
 //import Logo from "./components/Logo";
-import logoImage from "./components/images/logo-copy.png"
+import logoImage from "./components/images/logonew-3.png"
 
 function Navbar() {
   return (

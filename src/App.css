@@ -268,8 +268,9 @@ form.signUp-Form {
 .logo-container {
   width: 20%;
   display: flex;
+  
 }
-.logo {
+.logo-image {
   display: flex;
   justify-content: center;
   align-items: center;

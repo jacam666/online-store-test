@@ -5,7 +5,7 @@
             rgb(5, 18, 56) 0%,
             rgb(38, 65, 65) 100%);*/
     /*background: #488b8f;*/
-    background: #fff;
+    background: #0c0c0c;
     list-style: none;
     margin-top: 0;
     position: fixed;
@@ -21,13 +21,14 @@
 .navbar li:nth-child(4) a {
     font-weight: bold;
     font-size: 16px;
-    color: rgb(16, 16, 16);
+    color: rgb(245, 243, 243);
     text-decoration: none;
 }
 
 .logo-image {
     width: 100%;
     height: 100%;
+    transform: scale(1.5);
 }
 
 .navbar li {
@@ -45,5 +46,5 @@
     top: 45%;
     left: 88%;
     transform: translate(-50%, -50%);
-    color: rgb(16, 16, 16);
+    color: rgb(243, 238, 238);
 }
