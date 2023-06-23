@@ -69,9 +69,11 @@ function HomePage() {
                   src={sncDisplayImage}
                   alt="protein"
                 />
+                <Link to="/WellBeingCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Wellbeing Products</p>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="diet-product-card-container">

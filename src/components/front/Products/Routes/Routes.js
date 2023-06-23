@@ -35,6 +35,7 @@ import HomePage from "../../../../Pages/HomePage";
 import ProteinCataloguePage from "../../../../Pages/ProteinCataloguePage";
 import PreWorkoutCataloguePage from "../../../../Pages/PreWorkoutCataloguePage";
 import FatLossCataloguePage from "../../../../Pages/FatLossCataloguePage";
+import WellBeingCataloguePage from "../../../../Pages/WellBeingCataloguePage";
 
 const AppRoutes = ({
     productItems,
@@ -59,7 +60,8 @@ const AppRoutes = ({
             <Route path="/" element={ <HomePage /> } />
             <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage handleAddProduct={handleAddProduct} /> }/>
             <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
-            <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage /> } />
+            <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage handleAddProduct={handleAddProduct}/> } />
+            <Route path="/WellBeingCataloguePage" element={ <WellBeingCataloguePage handleAddProduct={handleAddProduct} />} />
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />
@@ -100,7 +102,7 @@ const AppRoutes = ({
                 path="/ProteinCataloguePage/AfterAdvancedBlueCandyPage"
                 element={<AfterAdvancedBlueCandy handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/YearRoundPage" element={<YearRound handleAddProduct={handleAddProduct} />} />
+            <Route path="/WellBeingCataloguePage/YearRoundPage" element={<YearRound handleAddProduct={handleAddProduct} />} />
             <Route path="/PreWorkoutCataloguePage/B4ExtremeBluePage" element={<B4ExtremeBlue handleAddProduct={handleAddProduct} />} />
             <Route
                 path="/PreWorkoutCataloguePage/StagePumpStrawberryPage"
@@ -111,7 +113,7 @@ const AppRoutes = ({
                 path="/ProteinCataloguePage/AfterAdvancedOrangePage"
                 element={<AfterAdvancedOrange handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/Con-TestPage" element={<Contest handleAddProduct={handleAddProduct} />} />
+            <Route path="/WellBeingCataloguePage/Con-TestPage" element={<Contest handleAddProduct={handleAddProduct} />} />
             <Route path="/FatLossCataloguePage/StageExtremePage" element={<StageExtreme handleAddProduct={handleAddProduct} />} />
             <Route path="/PreWorkoutCataloguePage/StagePumpBluePage" element={<StagePumpBlue handleAddProduct={handleAddProduct} />} />
             <Route path="/TraingPlanPage" element={<TrainingPlan handleAddProduct={handleAddProduct} />} />

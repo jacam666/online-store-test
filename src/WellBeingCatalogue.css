@@ -1,0 +1,61 @@
+.well-being-page-card-container {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.well-being-text-2 {
+    color: #0d0d0d;
+}
+.well-being-page-card {
+    width: 45vw;
+    background-color: rgb(233, 235, 225);
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40vh;
+    border-radius: 4px;
+}
+
+.well-being-page-cardImage {
+    margin: auto;
+    width: 100%;
+}
+
+.well-being-page-product-image-12 {
+    transform: scale(0.8);
+}
+.well-being-page-product-image-17 {
+    transform: scale(0.8);
+    margin-top: 0;
+}
+
+.well-being-page-product-name  {
+    color: black;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.well-being-page-product-name-1,
+.well-being-page-product-name-8 {
+    margin-bottom: 19%
+}
+
+.well-being-page-link {
+    text-decoration: none;
+}
+
+.well-being-page-price {
+    color: black;
+    text-align: center;
+}
+.stock-image-container {
+    display: flex;
+    margin: auto;
+}
+.more-stock-image {
+    width: 95vw;
+    margin: auto;
+}
