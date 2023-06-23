@@ -1,5 +1,5 @@
 .protein-page-card-container {
-    margin-top: 40px;
+    margin-top: 55px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,10 +22,10 @@
     transform: scale(0.7);
 }
 
-.protein-page-cardImage.protein-page-product-image-1 {
+.protein-page-product-image-1 {
     transform: scale(0.6);
 }
-.protein-page-cardImage.protein-page-product-image-2 {
+.protein-page-product-image-2 {
     transform: scale(0.7);
     margin-top: 0;
 }
@@ -35,7 +35,13 @@
     text-align: center;
     width: 90%;
     margin: auto;
+    margin-bottom: 10%;
 }
+.protein-page-product-name-1,
+.protein-page-product-name-8 {
+    margin-bottom: 19%
+}
+
 .protein-page-link {
     text-decoration: none;
 }

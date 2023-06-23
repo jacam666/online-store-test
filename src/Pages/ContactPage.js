@@ -1,11 +1,9 @@
 import React from 'react'
 import "../components/contact.css"
-import Logo from '../components/Logo'
 
 const ContactPage = () => {
     return (
         <div>
-            <Logo />
             <div className='contact-container'>
             
             <div className='contact-address'>

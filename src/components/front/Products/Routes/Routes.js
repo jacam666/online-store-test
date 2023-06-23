@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Routes/*}, useLocation */} from "react-router-dom";
-//import Products from "../Products";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Products from "../Products";
 import LoginPage from "../../../.././Pages/LoginPage";
 import SignupPage from "../../../.././Pages/SignupPage";
 import OnlyWhey from "../../../.././Pages/OnlyWheyPage";
@@ -44,7 +44,7 @@ const AppRoutes = ({
     setIsUserLoggedIn,
 }) => {
 
-    //const location = useLocation();
+    const location = useLocation();
 
     const handleLogin = () => {
         setIsUserLoggedIn(true);
@@ -55,7 +55,7 @@ const AppRoutes = ({
         <Routes>
             <Route path="/HomePage" element={ <HomePage />}/>
             <Route path="/" element={ <HomePage /> } />
-            <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage /> }/>
+            <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage handleAddProduct={handleAddProduct} /> }/>
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />
@@ -70,7 +70,7 @@ const AppRoutes = ({
                     />
                 }
             />
-            {/*<Route
+            <Route
                 path="/"
                 element={
                     <>
@@ -81,7 +81,7 @@ const AppRoutes = ({
                         />
                     </>
                 }
-            />*/}
+            />
             <Route path="/OnlyWheyPage" element={<OnlyWhey handleAddProduct={handleAddProduct} />} />
             <Route path="/AfterTrainPage" element={<AfterTrain handleAddProduct={handleAddProduct} />} />
             <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced handleAddProduct={handleAddProduct} />} />

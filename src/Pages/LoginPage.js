@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import Logo from "../components/Logo";
 
 const LoginPage = ({ isLoggedIn }) => {
   const Navigate = useNavigate();
@@ -32,7 +31,6 @@ const LoginPage = ({ isLoggedIn }) => {
 
   return (
     <div className="login">
-      <Logo />
       <div>
       <div className="login-container">
         <form className="login-form" action="POST">

@@ -4,7 +4,7 @@ import "../components/ProteinCatalogue.css";
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 
-const ProteinCataloguePage = ({ handleAddProduct }) => {
+const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "5", "2", "3", "4", "7", "8", "16"];
 
     const filteredProducts = data.productItems.filter((productItem) =>
@@ -26,7 +26,10 @@ const ProteinCataloguePage = ({ handleAddProduct }) => {
                                     />
                                 </div>
                                 <div>
-                                    <h2 className="protein-page-product-name">{productItem.name}</h2>
+                                    <h2 className={`protein-page-product-name protein-page-product-name-${productItem.id}`}>
+                                        {productItem.name}
+                                    </h2>
+
                                 </div>
                                 <div className="protein-page-price">£{productItem.price}</div>
                             </Link>
