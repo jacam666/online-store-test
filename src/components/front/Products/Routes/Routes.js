@@ -33,6 +33,7 @@ import TheStudioPage from "../../../../Pages/TheStudioPage";
 import DietPlan from "../../../../Pages/DietPlan";
 import HomePage from "../../../../Pages/HomePage";
 import ProteinCataloguePage from "../../../../Pages/ProteinCataloguePage";
+import PreWorkoutCataloguePage from "../../../../Pages/PreWorkoutCataloguePage";
 
 const AppRoutes = ({
     productItems,
@@ -56,6 +57,7 @@ const AppRoutes = ({
             <Route path="/HomePage" element={ <HomePage />}/>
             <Route path="/" element={ <HomePage /> } />
             <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage handleAddProduct={handleAddProduct} /> }/>
+            <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />

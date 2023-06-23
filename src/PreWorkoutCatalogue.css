@@ -1,0 +1,55 @@
+.pre-workout-page-card-container {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.pre-workout-page-card {
+    width: 45vw;
+    background-color: rgb(233, 235, 225);
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40vh;
+    border-radius: 4px;
+}
+
+.pre-workout-page-cardImage {
+    margin: auto;
+    width: 100%;
+}
+
+.pre-workout-page-product-image-9,
+.pre-workout-page-product-image-13 {
+    transform: scale(0.7);
+}
+.pre-workout-page-product-image-10,
+.pre-workout-page-product-image-11 {
+    transform: scale(0.9);
+}
+.pre-workout-page-product-image-14,
+.pre-workout-page-product-image-19 {
+    transform: scale(0.8);
+}
+
+.pre-workout-page-product-name  {
+    color: black;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.pre-workout-page-product-name-11 {
+    margin-bottom: 19%
+}
+
+.pre-workout-page-link {
+    text-decoration: none;
+}
+
+.pre-workout-page-price {
+    color: black;
+    text-align: center;
+}

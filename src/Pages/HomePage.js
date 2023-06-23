@@ -41,9 +41,11 @@ function HomePage() {
                   src={b4Extreme}
                   alt="protein"
                 />
+                <Link to="/PreWorkoutCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Pre-Workouts</p>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="fat-loss-product-card-container">
