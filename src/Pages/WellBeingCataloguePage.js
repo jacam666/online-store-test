@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../WellBeingCatalogue.css";
 
-const WellBeingCataloguePage = ({ productItem, handleAddProduct}) => {
+const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
 
 
     const specificItemIds = ["12", "17"];
@@ -27,14 +27,16 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct}) => {
                                         alt={productItem.name}
                                     />
                                 </div>
-                                
+
                                 <div>
                                     <h2 className={`well-being-page-product-name well-being-page-product-name-${productItem.id}`}>
                                         {productItem.name}
                                     </h2>
 
                                 </div>
-                                <div className="well-being-page-price">£{productItem.price}</div>
+                                <div className={`well-being-page-price well-being-page-price-${productItem.id}`}>
+                                    £{productItem.price}
+                                </div>
                             </Link>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
