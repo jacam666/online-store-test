@@ -34,6 +34,7 @@ import DietPlan from "../../../../Pages/DietPlan";
 import HomePage from "../../../../Pages/HomePage";
 import ProteinCataloguePage from "../../../../Pages/ProteinCataloguePage";
 import PreWorkoutCataloguePage from "../../../../Pages/PreWorkoutCataloguePage";
+import FatLossCataloguePage from "../../../../Pages/FatLossCataloguePage";
 
 const AppRoutes = ({
     productItems,
@@ -58,6 +59,7 @@ const AppRoutes = ({
             <Route path="/" element={ <HomePage /> } />
             <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage handleAddProduct={handleAddProduct} /> }/>
             <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
+            <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage /> } />
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />
@@ -84,34 +86,34 @@ const AppRoutes = ({
                     </>
                 }
             />
-            <Route path="/OnlyWheyPage" element={<OnlyWhey handleAddProduct={handleAddProduct} />} />
-            <Route path="/AfterTrainPage" element={<AfterTrain handleAddProduct={handleAddProduct} />} />
-            <Route path="/AfterTrainAdvancedPage" element={<AfterTrainAdvanced handleAddProduct={handleAddProduct} />} />
-            <Route path="/StageRippedPage" element={<StageRipped handleAddProduct={handleAddProduct} />} />
-            <Route path="/B4ExtremePage" element={<B4Extreme handleAddProduct={handleAddProduct} />} />
-            <Route path="/B4TrainPage" element={<B4Train handleAddProduct={handleAddProduct} />} />
-            <Route path="/B4TrainGummyPage" element={<B4TrainGummy handleAddProduct={handleAddProduct} />} />
-            <Route path="/AfterTrainFruitPage" element={<AfterTrainFruit handleAddProduct={handleAddProduct} />} />
-            <Route path="/AfterTrainBluePage" element={<AfterTrainBlue handleAddProduct={handleAddProduct} />} />
-            <Route path="/AfterTrainOrangePage" element={<AfterTrainOrange handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/OnlyWheyPage" element={<OnlyWhey handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/AfterTrainPage" element={<AfterTrain handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/AfterTrainAdvancedPage" element={<AfterTrainAdvanced handleAddProduct={handleAddProduct} />} />
+            <Route path="/FatLossCataloguePage/StageRippedPage" element={<StageRipped handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage/B4ExtremePage" element={<B4Extreme handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage/B4TrainPage" element={<B4Train handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage/B4TrainGummyPage" element={<B4TrainGummy handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/AfterTrainFruitPage" element={<AfterTrainFruit handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/AfterTrainBluePage" element={<AfterTrainBlue handleAddProduct={handleAddProduct} />} />
+            <Route path="/ProteinCataloguePage/AfterTrainOrangePage" element={<AfterTrainOrange handleAddProduct={handleAddProduct} />} />
             <Route
-                path="/AfterAdvancedBlueCandyPage"
+                path="/ProteinCataloguePage/AfterAdvancedBlueCandyPage"
                 element={<AfterAdvancedBlueCandy handleAddProduct={handleAddProduct} />}
             />
             <Route path="/YearRoundPage" element={<YearRound handleAddProduct={handleAddProduct} />} />
-            <Route path="/B4ExtremeBluePage" element={<B4ExtremeBlue handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage/B4ExtremeBluePage" element={<B4ExtremeBlue handleAddProduct={handleAddProduct} />} />
             <Route
-                path="/StagePumpStrawberryPage"
+                path="/PreWorkoutCataloguePage/StagePumpStrawberryPage"
                 element={<StagePumpStrawberry handleAddProduct={handleAddProduct} />}
             />
-            <Route path="/NoMoreHungerPage" element={<NoMoreHunger handleAddProduct={handleAddProduct} />} />
+            <Route path="/FatLossCataloguePage/NoMoreHungerPage" element={<NoMoreHunger handleAddProduct={handleAddProduct} />} />
             <Route
-                path="/AfterAdvancedOrangePage"
+                path="/ProteinCataloguePage/AfterAdvancedOrangePage"
                 element={<AfterAdvancedOrange handleAddProduct={handleAddProduct} />}
             />
             <Route path="/Con-TestPage" element={<Contest handleAddProduct={handleAddProduct} />} />
-            <Route path="/StageExtremePage" element={<StageExtreme handleAddProduct={handleAddProduct} />} />
-            <Route path="/StagePumpBluePage" element={<StagePumpBlue handleAddProduct={handleAddProduct} />} />
+            <Route path="/FatLossCataloguePage/StageExtremePage" element={<StageExtreme handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage/StagePumpBluePage" element={<StagePumpBlue handleAddProduct={handleAddProduct} />} />
             <Route path="/TraingPlanPage" element={<TrainingPlan handleAddProduct={handleAddProduct} />} />
             <Route path="/BundleDeal1Page" element={<BundleDeal1 handleAddProduct={handleAddProduct} />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle handleAddProduct={handleAddProduct} />} />

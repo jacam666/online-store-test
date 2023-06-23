@@ -55,9 +55,11 @@ function HomePage() {
                   src={FatLossImages}
                   alt="protein"
                 />
+                <Link to="/FatLossCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Fat Loss Products</p>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="wellbeing-product-card-container">

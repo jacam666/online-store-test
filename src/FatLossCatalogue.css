@@ -1,0 +1,63 @@
+.fat-loss-page-card-container {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.fat-loss-text-1 {
+    font-size: 1rem;
+    background: #dcf3e5 ;
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border: 1px solid black;
+}
+.fat-loss-text-2 {
+    color: #0d0d0d;
+}
+.fat-loss-page-card {
+    width: 45vw;
+    background-color: rgb(233, 235, 225);
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40vh;
+    border-radius: 4px;
+}
+
+.fat-loss-page-cardImage {
+    margin: auto;
+    width: 100%;
+}
+
+.fat-loss-page-product-image-6 {
+    transform: scale(0.7);
+}
+.fat-loss-page-product-image-15,
+.fat-loss-page-product-image-18 {
+    transform: scale(0.7);
+    margin-top: 0;
+}
+
+.fat-loss-page-product-name  {
+    color: black;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.fat-loss-page-product-name-1,
+.fat-loss-page-product-name-8 {
+    margin-bottom: 19%
+}
+
+.fat-loss-page-link {
+    text-decoration: none;
+}
+
+.fat-loss-page-price {
+    color: black;
+    text-align: center;
+}

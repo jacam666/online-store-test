@@ -86,7 +86,6 @@ h4 {
 .stage-pump-product-card-image,
 .year-round-product-card-image,
 .b4-train-product-card-image,
-.stage-ripped-product-card-image,
 .after-train-product-card-image {
     height: 12vh;
     margin-top: 20px;
@@ -113,14 +112,6 @@ h4 {
     margin: auto;
     border-radius: 5px;
     margin-right: auto;
-}
-
-.stage-ripped-product-card-image-2 {
-    width: auto;
-    height: 11vh;
-    margin: auto;
-    border-radius: 5px;
-    margin-right: 30px;
 }
 .b4-extreme-product-card-image {
     width: auto;
@@ -175,9 +166,6 @@ h4 {
 
 .product-description{
     color: #f0eaea;
-}
-.stage-ripped-product-description {
-    color: #ede7e7;
 }
 .training-plan-product-description {
     width: auto;
@@ -409,18 +397,7 @@ h4 {
         margin-top: 40px;
     }
 
-    .stage-ripped-product-card-image-2 {
-        display: flex;
-        width: auto;
-        margin: auto;
-    }
-    
-    .stage-ripped-product-description {
-        width: 80%;
-    }
-    .stage-ripped-servings-info {
-        color: #ede7e7;
-    }
+  
 
 
     .product-card-info {
