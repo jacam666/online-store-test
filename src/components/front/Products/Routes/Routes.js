@@ -36,6 +36,7 @@ import ProteinCataloguePage from "../../../../Pages/ProteinCataloguePage";
 import PreWorkoutCataloguePage from "../../../../Pages/PreWorkoutCataloguePage";
 import FatLossCataloguePage from "../../../../Pages/FatLossCataloguePage";
 import WellBeingCataloguePage from "../../../../Pages/WellBeingCataloguePage";
+import TrainingAndDietPage from "../../../../Pages/TrainingAndDietPage";
 
 const AppRoutes = ({
     productItems,
@@ -62,6 +63,7 @@ const AppRoutes = ({
             <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
             <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage handleAddProduct={handleAddProduct}/> } />
             <Route path="/WellBeingCataloguePage" element={ <WellBeingCataloguePage handleAddProduct={handleAddProduct} />} />
+            <Route path="/TrainingAndDietPage" element={ <TrainingAndDietPage /> } />
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />

@@ -83,7 +83,7 @@ function HomePage() {
                   src={homepageStudio}
                   alt="diet"
                 />
-                <Link to= "/TheStudioPage">
+                <Link to= "/TrainingAndDietPage">
                   <div className="text-overlay">
                     <p className="image-text">Shop Training and Diet Plans</p>
                   </div>

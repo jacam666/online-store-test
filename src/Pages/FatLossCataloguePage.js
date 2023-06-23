@@ -16,7 +16,6 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
     return (
         <div>
             <div className="fat-loss-page-card-container">
-                <p className='fat-loss-text-1'>Are you looking for a fat loss product that will help you achieve your weight loss goals? </p>
                 {filteredProducts.map((productItem) => (
                     <div className="fat-loss-page-card" key={productItem.id}>
                         <div>

@@ -58,4 +58,5 @@
 .more-stock-image {
     width: 95vw;
     margin: auto;
+    border-radius: 4px;
 }
