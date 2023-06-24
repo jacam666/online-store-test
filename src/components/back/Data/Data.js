@@ -52,6 +52,7 @@ const data = {
             price: 39.99,
             image: "./images/AFTER-TRAIN-ADVANCED-300x300.png",
             to: "./AfterAdvancedBlueCandyPage",
+            flavour: "Blue Candy Flavour",
         },
         {
             id: "8",
