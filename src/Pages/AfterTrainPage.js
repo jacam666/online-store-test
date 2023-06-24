@@ -1,7 +1,6 @@
 import React from "react";
 import "../ProductCard.css";
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo";
 
 const AfterTrain = ({ productItem, handleAddProduct }) => {
   const product = {
@@ -20,9 +19,9 @@ const AfterTrain = ({ productItem, handleAddProduct }) => {
 
   return (
     <div className="product-card">
-      <Logo />
       <div className="product-container">
         <div className="product-image-container">
+        <h2 className="product-name">{product.name}</h2>
           <img
             className="after-train-product-card-image"
             src={product.image}
@@ -32,7 +31,6 @@ const AfterTrain = ({ productItem, handleAddProduct }) => {
         </div>
 
         <div className="product-card-info">
-          <h2 className="product-name">{product.name}</h2>
           <div className="product-price">
             <p>Price: {product.price}</p>
           </div>
@@ -60,11 +58,12 @@ const AfterTrain = ({ productItem, handleAddProduct }) => {
 
           <p className="product-ingredient">{product.ingredients}</p>
         </div>
+        <AddToCartButton
+                handleAddProduct={handleAddProduct}
+                productItem={product}
+            />
       </div>
-      <AddToCartButton
-        handleAddProduct={handleAddProduct}
-        productItem={product}
-      />
+      
     </div>
   );
 }

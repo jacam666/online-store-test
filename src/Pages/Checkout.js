@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../components/checkout.css";
 import PayPalCheckout from "../components/PayPalCheckout";
-import Logo from "../components/Logo";
 
 const Checkout = ({ productItem, basketItems = [] }) => {
     const [isBasketOpen, setIsBasketOpen] = useState(false);
@@ -22,7 +21,6 @@ const Checkout = ({ productItem, basketItems = [] }) => {
 
     return (
         <div>
-            <Logo />
             <h1 className="checkout-heading">Checkout</h1>
             <div className="checkout-container">
                 <div className='order-summary'>

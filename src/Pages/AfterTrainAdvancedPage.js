@@ -1,13 +1,14 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo";
+import { BsFillHexagonFill } from "react-icons/bs";
 
-const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
+const AfterTrainAdvanced = ({ productItem, handleAddProduct }) => {
   const product = {
     id: "5",
     image: "/images/advanced-aftertrain-strawberrylime-300x300.png",
-    name: ["AFTER TRAIN ADVANCED", <br /> , "STRAWBERRY AND LIME", <br /> , "POST WORKOUT"],
+    image2: "/images/after-advanced-nutri-info.jpeg",
+    name: ["AFTER TRAIN ADVANCED", /*<br />, "STRAWBERRY AND LIME", <br />, "POST WORKOUT"*/],
     price: 39.99,
     description:
       "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after them hard gruelling workouts. Suitable for vegetarian’s.",
@@ -22,36 +23,58 @@ const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
   };
   return (
     <div className="product-card">
-      <Logo />
       <div className="product-container">
+
         <div className="product-image-container">
-        <img
-          className="after-advanced-product-card-image"
-          src={product.image}
-          alt={product.name}
-        />
-        <img className="after-advanced-product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />
-        </div>
+          
         
-        <div className="product-card-info">
-        <h2 className="product-name">{product.name}</h2>
-        <div className="product-price">
-          <p>Price: {product.price}</p>
+          <div className="name-and-bullet-container">
+          <h2 className="product-name">{product.name}</h2>
+          <div className="bullet-points-container" >
+            <div className="bullet-points">
+            <BsFillHexagonFill className="hexagon-icon" />
+            <p className="product-bullet-points">26g of protein to support growth and maintenance of muscle</p>
+            </div>
+            <div className="bullet-points">
+            <BsFillHexagonFill className="hexagon-icon" />
+            <p className="product-bullet-points">25g of of high-quality  carbohydrates to support your growth goals</p>
+            
+            </div>
+            
+          </div>
+          </div>
+        
+
+          <img
+            className="product-card-image"
+            src={product.image}
+            alt={product.name}
+          />
+          {/*<img
+            className="product-card-image-2"
+            src={product.image2}
+            alt={product.name}
+  />*/}
         </div>
 
-        <div className="product-description">
-          <h1>Description:</h1>
-          <p>{product.description}</p>
-        </div>
-        <div className="servings-info">
-          <h1>Servings:</h1>
-          <p>{product.servings}</p>
-        </div>
-        <div className="product-directions">
-          <h1>Directions:</h1>
-          <p>{product.directions}</p>
-        </div>
-        {/*<div className="product-advice">
+        <div className="product-card-info">
+          <div className="product-price">
+            <p>Price: {product.price}</p>
+          </div>
+
+          <div className="product-description">
+            <h1>Description:</h1>
+            <p>{product.description}</p>
+          </div>
+          <div className="servings-info">
+            <h1>Servings:</h1>
+            <p>{product.servings}</p>
+          </div>
+          <div className="product-directions">
+            <h1>Directions:</h1>
+            <p>{product.directions}</p>
+          </div>
+          {/*<div className="product-advice">
           <h1>Advice:</h1>
           <p>{product.advice}</p>
         </div>
@@ -60,13 +83,14 @@ const AfterTrainAdvanced = ({productItem, handleAddProduct}) => {
           <p>{product.storage}</p>
   </div>*/}
 
-        <p className="product-ingredient">{product.ingredients}</p>
+          <p className="product-ingredient">{product.ingredients}</p>
         </div>
+        <AddToCartButton
+          handleAddProduct={handleAddProduct}
+          productItem={product}
+        />
       </div>
-      <AddToCartButton
-        handleAddProduct={handleAddProduct}
-        productItem={product}
-      />
+
     </div>
   );
 

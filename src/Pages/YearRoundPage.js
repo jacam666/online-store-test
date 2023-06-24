@@ -1,7 +1,6 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo";
 
 const YearRound = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -21,8 +20,8 @@ const YearRound = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
-            <Logo />
             <div className="product-container">
+            <h2 className="product-name">{product.name}</h2>
                 <div className="product-image-container">
                 <img
                     className="year-round-product-card-image"
@@ -33,7 +32,6 @@ const YearRound = ({ productItem, handleAddProduct }) => {
                 </div>
                 
                 <div className="product-card-info">
-                <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
                     <p>Price: {product.price}</p>
                 </div>
@@ -58,11 +56,12 @@ const YearRound = ({ productItem, handleAddProduct }) => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
                 </div>
-            </div>
-            <AddToCartButton
+                <AddToCartButton
                 handleAddProduct={handleAddProduct}
                 productItem={product}
             />
+            </div>
+            
         </div>
     );
 }

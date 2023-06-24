@@ -246,25 +246,6 @@ form.signUp-Form {
       rgb(34, 61, 61) 40%,
       rgb(34, 61, 61) 60%);
 }
-
-/*.logo-container {
-  width: 100%;
-  
-  background: #add2c9;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.logo {
-  width: auto;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 39px;
-  padding: 15px 0;
-}*/
 .logo-container {
   width: 20%;
   display: flex;

@@ -1,6 +1,5 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo";
 
 const Contest = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -38,8 +37,8 @@ const Contest = ({ productItem, handleAddProduct }) => {
 
     return (
         <div className="product-card">
-            <Logo />
             <div className="product-container">
+            <h2 className="product-name">{product.name}</h2>
                 <div className="product-image-container">
                 <img
                     className="contest-product-card-image"
@@ -50,7 +49,6 @@ const Contest = ({ productItem, handleAddProduct }) => {
                 </div>
                 
                 <div className="product-card-info">
-                <h2 className="product-name">{product.name}</h2>
                 <div className="product-price">
                     <p>Price: {product.price}</p>
                 </div>
@@ -77,11 +75,12 @@ const Contest = ({ productItem, handleAddProduct }) => {
                 <p>{product.ingredients}</p>
     </div>*/}
                 </div>
-            </div>
-            <AddToCartButton
+                <AddToCartButton
                 handleAddProduct={handleAddProduct}
                 productItem={product}
             />
+            </div>
+            
         </div>
     );
 };

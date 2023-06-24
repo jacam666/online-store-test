@@ -1,6 +1,5 @@
 import React from 'react'
 import "../components/DietPlan.css"
-import Logo from '../components/Logo'
 import AddToCartButton from '../components/AddToCartButton'
 
 
@@ -15,7 +14,6 @@ const DietPlan = ({productItem, handleAddProduct}) => {
 
     return (
         <div className='diet-plan-container'>
-            <Logo />
             <div className='header-container'>
                 <div className='header'>Diet Plan</div>
                 <p className='header-2'>With 1 hour online consultation</p>

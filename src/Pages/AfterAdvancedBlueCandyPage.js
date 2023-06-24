@@ -1,12 +1,11 @@
 import React from "react";
 import "../ProductCard.css";
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo.js"
 
 const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct}) => {
     const product = {
         id: "7",
-        image: "./images/AFTER-TRAIN-ADVANCED-300x300.png",
+        image: "/images/AFTER-TRAIN-ADVANCED-300x300.png",
         name: "AFTER TRAIN ADVANCED BLUE CANDY FLAVOUR POST WORKOUT"
         /*"AFTER TRAIN ADVANCED",
         <br />,
@@ -29,19 +28,19 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct}) => {
     return (
         
         <div className="product-card">
-            <Logo />
             <div className="product-container">
+            <h2 className="product-name">{product.name}</h2>
                 <div className="product-image-container">
                 <img
-                    className="after-train-product-card-image"
+                    className="product-card-image"
                     src={product.image}
                     alt={product.name}
                 />
-                <img className="after-advanced-product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />
+                <img className="after-advanced-product-image-2" src="/images/after-advanced-nutri-info.jpeg" alt="protein" />
                 </div>
                 
                 <div className="product-card-info">
-                <h2 className="product-name">{product.name}</h2>
+                
                 <div className="product-price">
                     <p>Price: {product.price}</p>
                 </div>
@@ -69,11 +68,12 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct}) => {
 
                 <p className="product-ingredient">{product.ingredients}</p>
                 </div>
-            </div>
-            <AddToCartButton
+                <AddToCartButton
                 handleAddProduct={handleAddProduct}
                 productItem={product}
             />
+            </div>
+            
         </div>
     );
 };

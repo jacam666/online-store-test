@@ -1,11 +1,11 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
-import Logo from "../components/Logo";
 
-const AfterAdvancedOrange = ( { productItem, handleAddProduct}) => {
+const AfterAdvancedOrange = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "16",
-        image: "./images/orange-mango-advanced-aftertrain-for-web-300x300.png",
+        image: "/images/orange-mango-advanced-aftertrain-for-web-300x300.png",
+        image2: "/images/after-advanced-nutri-info.jpeg",
         name: [
             "AFTER TRAIN ADVANCED 2KG",
             <br />,
@@ -26,36 +26,40 @@ const AfterAdvancedOrange = ( { productItem, handleAddProduct}) => {
 
     return (
         <div className="product-card">
-            < Logo />
             <div className="product-container">
-                <div className="product-image-container">
-                <img
-                    className="after-train-product-card-image"
-                    src={product.image}
-                    alt={product.name}
-                />
-                <img className="after-advanced-product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />
-                </div>
-                
-                <div className="product-card-info">
                 <h2 className="product-name">{product.name}</h2>
-                <div className="product-price">
-                    <p>Price: {product.price}</p>
+                <div className="product-image-container">
+                    <img
+                        className="product-card-image"
+                        src={product.image}
+                        alt={product.name}
+                    />
+                    <img
+                        className="product-card-image-2"
+                        src={product.image2}
+                        alt={product.name}
+                    />
+                    {/*<img className="product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />*/}
                 </div>
 
-                <div className="product-description">
-                    <h1>Description:</h1>
-                    <p>{product.description}</p>
-                </div>
-                <div className="servings-info">
-                    <h1>Servings:</h1>
-                    <p>{product.servings}</p>
-                </div>
-                <div className="product-directions">
-                    <h1>Directions:</h1>
-                    <p>{product.directions}</p>
-                </div>
-                {/*<div className="product-advice">
+                <div className="product-card-info">
+                    <div className="product-price">
+                        <p>Price: {product.price}</p>
+                    </div>
+
+                    <div className="product-description">
+                        <h1>Description:</h1>
+                        <p>{product.description}</p>
+                    </div>
+                    <div className="servings-info">
+                        <h1>Servings:</h1>
+                        <p>{product.servings}</p>
+                    </div>
+                    <div className="product-directions">
+                        <h1>Directions:</h1>
+                        <p>{product.directions}</p>
+                    </div>
+                    {/*<div className="product-advice">
                     <h1>Advice:</h1>
                     <p>{product.advice}</p>
                 </div>
@@ -64,13 +68,14 @@ const AfterAdvancedOrange = ( { productItem, handleAddProduct}) => {
                     <p>{product.storage}</p>
     </div>*/}
 
-                <p className="product-ingredient">{product.ingredients}</p>
+                    <p className="product-ingredient">{product.ingredients}</p>
                 </div>
+                <AddToCartButton
+                    handleAddProduct={handleAddProduct}
+                    productItem={product}
+                />
             </div>
-            <AddToCartButton
-                handleAddProduct={handleAddProduct}
-                productItem={product}
-            />
+
         </div>
     );
 }

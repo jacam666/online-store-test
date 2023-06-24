@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import data from "../../back/Data/Data";
 import ImageCarousel from "../../ImageCarousel";
 import AddToCartButton from "../../AddToCartButton";
-import Logo from "../../Logo";
 
 const Products = ({ productItem, handleAddProduct }) => {
     return (
         <div>
-            <Logo />
             <ImageCarousel />
             <div className="card-container">
                 {data.productItems &&

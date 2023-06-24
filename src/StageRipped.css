@@ -7,13 +7,16 @@
     padding-top: 60px;
 }
 .stage-ripped-product-container {
-    background-color: rgb(233, 235, 225);
+    background-color: rgb(242, 244, 238);
     height: 100vh;
 }
 .stage-ripped-product-image-container {
     display: flex;
     justify-content:center;
+    width: 80vw;
+    margin: auto;
     background-color: rgb(240, 230, 216);
+    border-radius: 2px;
 }
 .stage-ripped-product-card-image {
     height: 19vh;
@@ -47,7 +50,10 @@
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 .stage-ripped-servings-info {
-    color: #ede7e7;
+    padding: 20px;
+    text-align: center;
+    color: #131212;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 .stage-ripped-product-card-info {
 
@@ -62,5 +68,4 @@
     font-size: 1.4rem;
     text-align: center;
     padding: 30px 0;
-    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }

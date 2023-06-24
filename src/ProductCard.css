@@ -1,495 +1,129 @@
-body {
-    line-height: 1;
-    /*background: linear-gradient(to bottom right,
-            rgb(5, 18, 56) 30%,
-            rgb(64, 67, 67) 70%);*/
-
-}
-div.product-card {
-    margin: auto;
-    width: 70vw;
-}
-
 .product-card {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 100%;
+    height: 110vh;
     padding-bottom: 60px;
-    width: 20vw;
+    padding-top: 60px;
 }
 .product-container {
-    background: linear-gradient(to left,
-            rgb(26, 41, 85) 0%,
-            rgb(47, 82, 82) 100%);
-            padding: 10px;
-            border-radius: 7px;
-}
-.product-card-info {
-    background: linear-gradient(to left,
-            rgb(42, 57, 101) 0%,
-            rgb(70, 79, 79) 100%);
-            padding: 10px;
-            border-radius: 7px;
-}
-.product-name {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #fff;
-}
-
-h4 {
-    color: #ccc;
-}
-.product-image-container {
-    display: flex;
-    justify-content: center;
-}
-.product-card-image {
-    display: flex;
-    /*justify-content: center;*/
-    height: 150px;
-    margin: 0 auto;
-}
-.only-whey-product-card-image-2 {
-    display: flex;
-    height: 130px;
-    width: auto;
-    border-radius: 6px;
-    margin-top: 10px;
-    margin-right: 25px;
-}
-.product-image-container {
-    display: flex;
-    background-color: #c3c4bf;
-    border-radius: 5px;
+    background-color: rgb(241, 242, 237);
+    height: 120vh;
     margin-bottom: 10px;
 }
-.only-whey-product-card-image {
-    height: 150px;
-}
-
-.after-advanced-product-image-2 {
-    width: auto;
-    height: 100px;
+.product-image-container {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    width: 80vw;
     margin: auto;
-    border-radius: 5px;
-    margin-right: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(245, 236, 223);
+    border-radius: 2px;
 }
-
-.after-advanced-product-card-image,
-.bundle-deal-2-product-card-image,
-.contest-product-card-image,
-.no-more-hunger-product-card-image,
-.stage-pump-product-card-image,
-.year-round-product-card-image,
-.b4-train-product-card-image,
-.after-train-product-card-image {
-    height: 12vh;
+.product-card-image {
+    height: 19vh;
     margin-top: 20px;
-    margin: auto;
+    width: 50%;
+    transform: scale(0.9);
+    padding-bottom: 10px;
 }
-
-.after-advanced-product-image-2,
-.b4-train-product-card-image-2, 
-.b4-extreme-product-card-image-2{
-    width: auto;
+.product-card-image-2 {
+    width: 50%;
     height: 11vh;
-    margin: auto;
     border-radius: 5px;
 }
-
-.stage-extreme-product-card-image-2,
-.contest-product-card-image-2,
-.no-more-hunger-product-card-image-2,
-.stage-pump-product-card-image-2,
-.year-round-product-card-image-2,
-.after-train-product-card-image-2 {
+.product-card-image-2 {
+    width: auto;
+    margin: auto;
+}
+.after-advanced-product-image-2 {
+    margin: auto;
     width: auto;
     height: 10vh;
-    margin: auto;
-    border-radius: 5px;
-    margin-right: auto;
 }
-.b4-extreme-product-card-image {
-    width: auto;
-    height: 15vh;
-}
-.product-price {
-    font-size: 1.2rem;
-}
-
-.product-card-details {
-    margin-top: 0;
-}
-
-.product-card h1 {
-    color:#f2eeee;
-    margin-top: 10px;
-    font-size: 20px;
-}
-.product-card p {
-    color: #f2eeee;
-    font-size: 1.3rem;
-}
-
-.product-image-9 {
-    width: auto;
-    height: 140px;
-}
-
-.product-image-10 {
-    width: auto;
-    height: 180px;
-}
-
-.product-image-11 {
-    width: auto;
-    height: 180px;
-}
-
-.product-image-13 {
-    width: auto;
-    height: 140px;
-}
-
-.product-card-details h1 {
-    font-size: 3rem;
-}
-
-.product-card-options {
-    width: 18rem;
-    color: #ccc;
-}
-
-.product-description{
-    color: #f0eaea;
-}
-.training-plan-product-description {
-    width: auto;
-    color: #dfd6d6;
-}
-
-.product-description h1 {
-    font-size: 20px;
-    margin: 20px 0;
-    color: #efeaea;
-}
-
-.product-price {
+.product-description {
     color: #ede7e7;
 }
-
-.product-directions {
-    color: #fff;
+.product-description-heading {
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
-.product-directions h1 {
-    color: #fff;
-}
-
-.product-advice {
-    color: #fff;
-    width: auto;
-    margin-top: 20px;
-}
-.product-advice h1 {
-    margin-top: 20px;
-    color: #fff;
-}
-
-.product-storage {
-    color: #fff;
-}
-.product-storage h1 {
-    color: #fff;
-}
-
-.product-card-checkboxes {
-    margin-right: 20px;
-    height: 4vh;
-}
-
-.product-card-checkboxes label {
-    display: block;
-}
-
-.product-card-checkboxes input {
-    margin-right: 5px;
-}
-
-.product-card-amount select {
-    margin-left: 5px;
-    margin-top: 7px;
-    width: 10vw;
-    height: 3vh;
-}
-
-.product-card-amount {
-    color: #fff;
-}
-
-.directions-info h1 {
-    font-size: 2rem;
-    color: #fff;
+.product-description {
+    width: 80%;
+    color: #131212;
+    margin: auto;
+    font-size: 1.2rem;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 .servings-info {
-    color: #ede7e7;
+    padding: 10px;
+    text-align: center;
+    color: #131212;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
-.servings-info p  {
-    color: #fff;
-    /*margin-left: 70px;*/
+.servings-info h1 {
+    font-size: 1.5rem;
 }
-.servings-info h1  {
-    color:#ede7e7;
-    font-size: 30px;
-}
-
-.product-ingredient {
-    font-size: 14px;
-    color: #fff;
+.product-card-info {
     margin-top: 10px;
-    margin-left: 0;
+    margin: auto;
+    background-color: rgb(245, 236, 223);
+    width: 80vw;
 }
-.product-ingredient h1 {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 5px;
+/*.product-name {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+}*/
+.bullet-points-container {
+    display: flex;
+    flex-direction: column;
 }
-@media screen and (max-width: 390px) {
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .servings-info {
-        width: 80%;
-    }
+.hexagon-icon {
+    align-self: flex-start;
+    padding-top: 3px;
+    margin-left: 2%;
 }
-@media screen and (max-width: 391px) {
-
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .product-ingredient {
-        width: 80%;
-    }
-
+.product-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px;
 }
-
-@media screen and (min-width: 392px) and (max-width: 768px) {
-
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .servings-info,
-    .product-ingredient {
-        width: 80%;
+.name-and-bullet-container {
+    display: flex;
+    flex-direction: column;
 }
+.bullet-points {
+    display: flex;
+    flex-direction: row;
 }
-@media screen and (min-width: 769px) /*and (max-width: 960px)*/ {
-
-    
-    .product-container h1 {
-        font-size: 1.8rem;
-    }
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .servings-info,
-    .product-ingredient {
-        width: 80%;
-    }
-    .product-container {
-        display: flex;
-        width: 100%;
-    }
-    .product-image-container {
-        display: block;
-        background-color: #a7a9a2;
-        border-radius: 4px;
-        margin-right: 10px;
-        padding: 100px 0;
-    }
-
-    .only-whey-product-card-image {
-        margin-top: 2rem;
-        margin-bottom: 10px;
-        height: 250px;
-    }
-    .after-advanced-product-card-image,
-    .after-train-product-card-image {
-        margin: auto;
-        height: auto;
-        width: auto;
-    }
-    .contest-product-card-image {
-        height: 200px;
-        margin-top: -30px;
-    }
-    .after-advanced-product-image-2,
-    .contest-product-card-image-2 {
-        display: flex;
-        margin: auto;
-        padding-top: 50px;
-    }
-    .year-round-product-card-image {
-        height: 250px;
-    }
-    .year-round-product-card-image-2 {
-        display: flex;
-        margin: auto;
-        height: 150px;
-    }
-    
-    
-    .only-whey-product-card-image-2 {
-        margin: auto;
-        height: 200px;
-        margin-bottom: 30px;
-    }
-    
-    .after-train-product-card-image-2 {
-        display: flex;
-        width: auto;
-        height: 200px;
-        margin: auto;
-        margin-top: 60px;
-    }
-    .b4-train-product-card-image {
-        height: 250px;
-    }
-    .b4-train-product-card-image-2 {
-        display: flex;
-        margin: auto;
-        height: 150px;
-    }
-    
-    .no-more-hunger-product-card-image,
-    .stage-pump-product-card-image,
-    .b4-extreme-product-card-image {
-        height: 250px;
-    }
-    .stage-extreme-product-card-image-2,
-    .no-more-hunger-product-card-image-2,
-    .stage-pump-product-card-image-2,
-    .b4-extreme-product-card-image-2 {
-        display: flex;
-        margin: auto;
-        height: 150px;
-        margin-top: 50px;
-    }
-    .after-advanced-product-image-2 {
-        display: flex;
-        margin: auto;
-        height: 170px;
-        margin-top: 40px;
-    }
-
-  
-
-
-    .product-card-info {
-        width: 90vw;
-    }
-
-    .product-card-image {
-        width: 40vw;
-        height: auto;
-        margin: auto;
-    }
-    
-    @media screen and (orientation: landscape) {
-        .product-card-image img {
-            margin-top: 550px;
-            margin-bottom: 250px;
-            height: 200px;
-        }
-
-        .product-card-details {
-            margin-top: 80px;
-        }
-        .Navbar {
-            margin-bottom: 50px;
-        }
-    }
-}
-@media screen and (min-width: 961px) and (max-width: 1200px) {
+.product-bullet-points {
+    font-size: 12px;
+    padding: 5px;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+    margin: auto;
     
 }
-
-@media screen and (min-width: 1201px) {
-    img.logo {
-        width: auto;
-    }
-
-    .product-image-9 {
-        width: 70%;
-        height: auto;
-    }
-
-    /*.product-image-1 {
-        width: 50%;
-        height: auto;
-    }*/
-
-    .product-image-10,
-    .product-image-11 {
-        width: 70%;
-        height: auto;
-    }
-
-    .product-image-13 {
-        width: 50%;
-        height: auto;
-    }
-
-    
-    .product-directions {
-        width: 40vw;
-    }
-    
-    .product-ingredient {
-        margin-left: 0;
-    }
-    .product-advice {
-        width: 45vw;
-    }
+.product-price {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 20px 0;
 }
-@media  screen and (min-width: 1201px) {
-    .product-name {
-        padding-top: 6rem;
-    }
+.product-directions {
+    width: 80vw;
 }
-@media  screen and (min-width: 1600px) {
-    .product-card,
-    .product-price,
-    .product-description,
-    .product-advice,
-    .product-storage,
-    .product-directions,
-    .servings-info {
-        width: 60%;
-        margin: auto;
-    }
-    .product-image-container {
-        padding-top: 40px;
-    }
-    .product-name {
-        margin-top: 6rem;
-    }
-    .product-ingredient {
-        margin-left: 470px;
-    }
+.product-directions h1 {
+    padding: 5px;
+    text-align: center; 
+    font-size: 1.5rem;
+}
+.product-directions p {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+
 }
