@@ -54,7 +54,7 @@ const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
                 </div>
 
                 <div className="product-card-info">
-                <div className="product-flavour flavour-blue-candy">
+                <div className="product-flavour flavour-blue-raspberry">
                         <p>{product.flavour}</p>
                     </div>
                     <div className="product-price">

@@ -17,14 +17,13 @@
     flex-direction: row;
     width: 80vw;
     margin: auto;
-    margin-bottom: 10px;
     background-color: rgb(245, 236, 223);
     border-radius: 2px;
 }
 .product-card-image {
     height: 19%;
-    margin-top: 20px;
     width: 50%;
+    margin: auto;
     transform: scale(0.9);
     padding-bottom: 10px;
 }
@@ -56,9 +55,10 @@
     font-size: 1.2rem;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
     padding: 4px 8px;
+    border-radius: 4px;
 }
 .servings-info {
-    padding: 10px;
+    padding: 14px;
     text-align: center;
     color: #131212;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
@@ -75,6 +75,7 @@
 .bullet-points-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 .hexagon-icon {
     align-self: flex-start;
@@ -218,3 +219,48 @@
 .flavour-apple:after {
     border-left: 20px solid rgb(10, 149, 10);
 }
+.flavour-blue-raspberry {
+    background: rgb(102, 162, 218) ;
+}
+
+.flavour-blue-raspberry:before {
+    border-right: 20px solid rgb(102, 162, 218);
+}
+
+.flavour-blue-raspberry:after {
+    border-left: 20px solid rgb(102, 162, 218);
+}
+.product-flavors-container {
+    display: flex;
+}
+.product-flavors {
+    margin: auto;
+}
+.flavor-label.flavor-Banana-Split {
+    background-color: #e4ef17;
+    padding: 0px 15px;
+    border-radius: 8px;
+    width: 50vw;
+}
+.flavor-label.flavor-Chocolate-Caramel {
+    background: linear-gradient(to top right, brown 50%, rgb(209, 141, 5) 50%);
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+.flavor-label.flavor-Strawberry-Cream {
+    background: linear-gradient(to top right, rgb(226, 26, 26) 50%, rgb(240, 228, 122) 50%);
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+.flavor-label.flavor-Clotted-Vanilla-Ice-Cream {
+    background: linear-gradient(to top right, rgb(226, 203, 26) 50%, rgb(241, 232, 156) 50%);
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+.flavor-label.flavor-Rhubarb-and-Custard {
+    background: linear-gradient(to top right, rgb(224, 90, 90) 50%, rgb(241, 222, 49) 50%);
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+
+
