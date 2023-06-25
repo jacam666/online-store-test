@@ -8,6 +8,7 @@
     }
 
     .basket-product-container {
+        display: flex;
         margin-top: 30px;
         display: flex;
     }
@@ -46,7 +47,8 @@
     }
 
     .basket-items-container {
-        width: auto;
+        margin: auto;
+        width: 85vw;
     }
 
     .basket-item-list {
@@ -68,6 +70,7 @@
 
     .basket-items-name {
         flex: 1;
+        width: 20vw;
         font-size: 11px;
         color: #0c0c0c;
         font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
@@ -88,22 +91,25 @@
     .basket-items-add,
     .basket-items-remove {
         width: auto;
-        /*margin-right: 15px;*/
         margin: auto;
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 700;
         border-radius: 3px;
         border: none;
         font-size: 16px;
-        color: #fff;
+        color: #101010;
     }
 
     .basket-items-add {
-        background-color: rgb(24, 37, 75);
+        /*background-color: rgb(24, 37, 75);*/
+        background-color: rgb(244, 229, 209);
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
     }
 
     .basket-items-remove {
-        background-color: rgb(39, 86, 86);
+        background-color: rgb(244, 229, 209);
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+
     }
 
     .basket-items-add:active {
@@ -178,7 +184,7 @@
 
     .basket-items-price {
         color: #0b0b0b;
-        margin-right: 0;
+        margin: auto;
         font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
     }
 
@@ -236,6 +242,7 @@
         text-transform: uppercase;
         margin: 15px auto;
         font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+        background-color: rgb(244, 229, 209);
     }
 
 
@@ -278,6 +285,7 @@
         text-transform: uppercase;
         margin: 15px auto;
         font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+        background-color: rgb(244, 229, 209);
 
     }
 

@@ -34,7 +34,7 @@ const data = {
         },
         {
             id: "5",
-            name: "AFTER TRAIN ADVANCED 2KG STRAWBERRY-LIME",
+            name: "AFTER TRAIN ADVANCED 2KG STRAWBERRY and LIME",
             price: 39.99,
             image: "./images/advanced-aftertrain-strawberrylime-300x300.png",
             to: "./AfterTrainAdvancedPage",
@@ -113,7 +113,7 @@ const data = {
         },
         {
             id: "16",
-            name: "AFTER TRAIN ADVANCED 2KG ORANGE/MANGO",
+            name: "AFTER TRAIN ADVANCED 2KG ORANGE and MANGO",
             price: 39.99,
             image: "./images/orange-mango-advanced-aftertrain-for-web-300x300.png",
             to: "./AfterAdvancedOrangePage",
