@@ -1,13 +1,15 @@
 import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
   const product = {
     id: "13",
-    image: "./images/cap-b4pre-blue-300x300.png",
+    image: "/images/cap-b4pre-blue-300x300.png",
     name: ["B4 EXTREME", <br />, "BLUE RASPBERRY FLAVOUR", <br />, "STRONG PRE-WORKOUT"],
     price: 24.99,
+    flavour: "Blue Raspberry",
     description:
       "B4 Train Extreme is a very powerful Pre-Workout with maximum stim this is for the more experienced taker. only 1 scoop is recommended. flavour: Blue Raspberry.",
     servings: "Serving size (5g)",
@@ -40,33 +42,62 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
   return (
     <div className="product-card">
       <div className="product-container">
-      <h2 className="product-name">{product.name}</h2>
         <div className="product-image-container">
-        <img
-          className="b4-extreme-product-card-image"
-          src={product.image}
-          alt={product.name}
-        />
-        <img className="b4-extreme-product-card-image-2" src="images/b4-extreme-intro.jpeg" alt="pre-workout" />
-        </div>
-        
-        <div className="product-card-info">
-        <div className="product-price">
-          <p>Price: {product.price}</p>
+          <div className="name-and-bullet-container">
+            <h2 className="product-name">{product.name}</h2>
+            <div className="bullet-points-container" >
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={18} />
+                <p className="product-bullet-points">250 grams of Caffeine Anhydrous per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <p className="product-bullet-points">2000mg of Beta-Alanine per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={13} />
+                <p className="product-bullet-points">500mg of L-Tyrosine per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={19} />
+                <p className="product-bullet-points">150g of Senegalia Berlandieri Extract per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={16} />
+                <p className="product-bullet-points">150g of Guarana Seed Extract per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={21} />
+                <p className="product-bullet-points">500g of Cytidine Diphoshocholine as Citicoline per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <p className="product-bullet-points">20g of B6 as Pyridoxine hcl per 5g serving</p>
+              </div>
+            </div>
+          </div>
+          <img
+            className="product-card-image"
+            src={product.image}
+            alt={product.name}
+          />
         </div>
 
-        <div className="product-description">
-          <p>{product.description}</p>
-        </div>
-        <div className="servings-info">
-          <h1>Servings:</h1>
-          <p>{product.servings}</p>
-        </div>
-        <div className="product-directions">
-          <h1>Directions:</h1>
-          <p>{product.directions}</p>
-        </div>
-        {/*<div className="product-advice">
+        <div className="product-card-info">
+          <div className="product-flavour flavour-blue-raspberry">
+            <p>{product.flavour}</p>
+          </div>
+          <div className="product-price">
+            <p>Price: {product.price}</p>
+          </div>
+
+          <div className="product-description">
+            <p>{product.description}</p>
+          </div>
+          <div className="servings-info">
+            <p>{product.servings}</p>
+          </div>
+          {/*<div className="product-advice">
           <h1>Advice:</h1>
           <p>{product.advice}</p>
         </div>
@@ -75,14 +106,14 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
           <p>{product.storage}</p>
   </div>*/}
 
-        {/*<p className="product-ingredient">{product.ingredients}</p>*/}
+          {/*<p className="product-ingredient">{product.ingredients}</p>*/}
         </div>
         <AddToCartButton
-                handleAddProduct={handleAddProduct}
-                productItem={product}
-            />
+          handleAddProduct={handleAddProduct}
+          productItem={product}
+        />
       </div>
-      
+
     </div>
   );
 }

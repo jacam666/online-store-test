@@ -10,6 +10,7 @@
     background-color: rgb(241, 242, 237);
     height: auto;
     margin-bottom: 10px;
+    border-radius: 4px;
 }
 .product-image-container {
     display: flex;
@@ -17,6 +18,7 @@
     flex-direction: row;
     width: 80vw;
     margin: auto;
+    margin-top: 10px;
     background-color: rgb(245, 236, 223);
     border-radius: 2px;
 }
@@ -240,6 +242,28 @@
 
 .flavour-cotton:after {
     border-left: 20px solid rgb(194, 15, 15);
+}
+.flavour-rio-berry {
+    background: rgb(176, 12, 168) ;
+}
+
+.flavour-rio-berry:before {
+    border-right: 20px solid rgb(176, 12, 168);
+}
+
+.flavour-rio-berry:after {
+    border-left: 20px solid rgb(176, 12, 168);
+}
+.flavour-tropical-gummy {
+    background: rgb(32, 145, 22) ;
+}
+
+.flavour-tropical-gummy:before {
+    border-right: 20px solid rgb(32, 145, 22);
+}
+
+.flavour-tropical-gummy:after {
+    border-left: 20px solid rgb(32, 145, 22);
 }
 .product-flavors-container {
     display: flex;

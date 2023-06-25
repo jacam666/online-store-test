@@ -63,7 +63,6 @@ const AfterTrainAdvanced = ({ productItem, handleAddProduct }) => {
           </div>
 
           <div className="product-description">
-            <h1>Description:</h1>
             <p>{product.description}</p>
           </div>
           <div className="servings-info">

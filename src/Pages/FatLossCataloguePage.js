@@ -36,10 +36,12 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
                                 </div>
                                 <div className="fat-loss-page-price">£{productItem.price}</div>
                             </Link>
+                            <div className='pre-workout-add-button'>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}
                             />
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -6,11 +6,11 @@
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.stage-ripped-product-container {
+.product-container {
     background-color: rgb(242, 244, 238);
     height: 100vh;
 }
-.stage-ripped-product-image-container {
+.product-image-container {
     display: flex;
     justify-content:center;
     width: 80vw;

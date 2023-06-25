@@ -1,6 +1,7 @@
 import React from "react";
 import "../StageRipped.css"
 import AddToCartButton from "./AddToCartButton";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const StageRipped = ({ productItem, handleAddProduct }) => {
   const product = {
@@ -16,30 +17,55 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
   };
 
   return (
-    <div className="stage-ripped-product-card">
-      <div className="stage-ripped-product-container">
-      <h1 className="stage-ripped-product-name">{product.name}</h1>
-        <div className="stage-ripped-product-image-container">
+    <div className="product-card">
+      <div className="product-container">
+        <div className="product-image-container">
+        <div className="name-and-bullet-container">
+            <h2 className="product-name">{product.name}</h2>
+            <div className="bullet-points-container" >
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                <p className="product-bullet-points">225g of Caffeine Anhydrous per capsule</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon"  size={17}/>
+                <p className="product-bullet-points">200mg of Kola Nut Extract (3% Caffeine, 2% Theobromine)</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                <p className="product-bullet-points">125g of Guarana Seed Extract per capsule</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <p className="product-bullet-points">75mg of 5-HTP 5-Hydroxytophan per capsule,</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                <p className="product-bullet-points">75mg 0f Hordenine HCL per capsule</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={18} />
+                <p className="product-bullet-points">40mg of Paradoxine Grains of paradise. Std. to 12.5% 6- paradol</p>
+              </div>
+            </div>
+          </div>
           <img
-            className="stage-ripped-product-card-image"
+            className="product-card-image"
             src={product.image}
             alt={product.name}
           />
-          <img className="stage-ripped-product-card-image-2" src="/images/staged-ripped-info.jpeg" alt="protein" />
         </div>
 
-        <div className="stage-ripped-product-card-info">
+        <div className="product-card-info">
           
-          <div className="stage-ripped-product-price">
+          <div className="product-price">
             <p>Price: {product.price}</p>
           </div>
 
-          <div className="stage-ripped-product-description">
-            <h1 className="product-description-heading">Description:</h1>
+          <div className="product-description">
             <p>{product.description}</p>
           </div>
-          <div className="stage-ripped-servings-info">
-            <h1>Servings:</h1>
+          <div className="servings-info">
             <p>{product.servings}</p>
           </div>
           <div className="stage-ripped-product-directions">
