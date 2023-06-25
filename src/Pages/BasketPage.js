@@ -24,8 +24,8 @@ const BasketPage = ({
   return (
     
     <div className="basket-items">
-      <div className="product-container">
-        <div className="product-card-info">
+      <div className="basket-product-container">
+        <div className="basket-product-card-info">
           <h2 className="basket-items-header">Basket Items</h2>
           <div className="clear-basket">
             {basketItems.length >= 1 && (
