@@ -63,18 +63,11 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct }) => {
                     </div>
 
                     <div className="product-description">
-                        <h1>Description:</h1>
                         <p>{product.description}</p>
                     </div>
                     <div className="servings-info">
-                        <h1>Servings:</h1>
                         <p>{product.servings}</p>
                     </div>
-                    <div className="product-directions">
-                        <h1>Directions:</h1>
-                        <p>{product.directions}</p>
-                    </div>
-
                     <p className="product-ingredient">{product.ingredients}</p>
                 </div>
                 <AddToCartButton

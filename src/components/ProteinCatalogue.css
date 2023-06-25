@@ -9,7 +9,8 @@
 
 .protein-page-card {
     width: 45vw;
-    background-color: rgb(233, 235, 225);
+    /*background-color: rgb(233, 235, 225);*/
+    background-color: rgb(245, 236, 223);
     margin: auto;
     margin-bottom: 10px;
     height: 40vh;

@@ -68,12 +68,7 @@ const AfterAdvancedOrange = ({ productItem, handleAddProduct }) => {
                         <p>{product.description}</p>
                     </div>
                     <div className="servings-info">
-                        <h1>Servings:</h1>
                         <p>{product.servings}</p>
-                    </div>
-                    <div className="product-directions">
-                        <h1>Directions:</h1>
-                        <p>{product.directions}</p>
                     </div>
                     {/*<div className="product-advice">
                     <h1>Advice:</h1>
