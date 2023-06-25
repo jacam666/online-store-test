@@ -243,22 +243,22 @@
     width: 50vw;
 }
 .flavor-label.flavor-Chocolate-Caramel {
-    background: linear-gradient(to top right, brown 50%, rgb(209, 141, 5) 50%);
+    background: linear-gradient(to top right, rgb(173, 86, 86) 20%, rgb(235, 183, 79) 50%);
     padding: 0px 15px;
     border-radius: 8px;
 }
 .flavor-label.flavor-Strawberry-Cream {
-    background: linear-gradient(to top right, rgb(226, 26, 26) 50%, rgb(240, 228, 122) 50%);
+    background: linear-gradient(to top right, rgb(226, 26, 26) 20%, rgb(240, 228, 122) 50%);
     padding: 0px 15px;
     border-radius: 8px;
 }
 .flavor-label.flavor-Clotted-Vanilla-Ice-Cream {
-    background: linear-gradient(to top right, rgb(226, 203, 26) 50%, rgb(241, 232, 156) 50%);
+    background: linear-gradient(to top right, rgb(226, 203, 26) 20%, rgb(241, 232, 156) 50%);
     padding: 0px 15px;
     border-radius: 8px;
 }
 .flavor-label.flavor-Rhubarb-and-Custard {
-    background: linear-gradient(to top right, rgb(224, 90, 90) 50%, rgb(241, 222, 49) 50%);
+    background: linear-gradient(to top right, rgb(224, 90, 90) 20%, rgb(241, 222, 49) 50%);
     padding: 0px 15px;
     border-radius: 8px;
 }
