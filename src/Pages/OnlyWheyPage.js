@@ -129,6 +129,7 @@ const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
           handleAddProduct={handleAddProduct}
           productItem={product}
         />
+        
       </div>
     </div>
   );

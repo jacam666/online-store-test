@@ -30,11 +30,11 @@ const AfterTrainFruit = ({ productItem, handleAddProduct }) => {
                 <p className="product-bullet-points">25g of protein to support growth and maintenance of muscle</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon"size={20}  />
+                <BsFillHexagonFill className="hexagon-icon" size={20} />
                 <p className="product-bullet-points">23.7g of of high-quality  carbohydrates to support your growth goals</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon"size={35}  />
+                <BsFillHexagonFill className="hexagon-icon" size={35} />
                 <p className="product-bullet-points">2.8g of Creatine Monohydrate to help build lean muscle mass, maximize performance, and increase strength. </p>
               </div>
               <div className="bullet-points">
@@ -52,9 +52,9 @@ const AfterTrainFruit = ({ productItem, handleAddProduct }) => {
         </div>
 
         <div className="product-card-info">
-        <div className="product-flavour flavour-fruit-punch">
-                        <p>{product.flavour}</p>
-                    </div>
+          <div className="product-flavour flavour-fruit-punch">
+            <p>{product.flavour}</p>
+          </div>
           <div className="product-price">
             <p>Price: {product.price}</p>
           </div>

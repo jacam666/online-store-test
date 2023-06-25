@@ -5,7 +5,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../PreWorkoutCatalogue.css"
 
 
-const PreWorkoutCataloguePage = ( { productItem, handleAddProduct}) => {
+const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
     const specificItemIds = ["9", "10", "11", "13", "14", "19"];
 
@@ -37,10 +37,12 @@ const PreWorkoutCataloguePage = ( { productItem, handleAddProduct}) => {
                                 </div>
                                 <div className="pre-workout-page-price">£{productItem.price}</div>
                             </Link>
-                            <AddToCartButton
-                                handleAddProduct={handleAddProduct}
-                                productItem={productItem}
-                            />
+                            <div className='pre-workout-add-button'>
+                                <AddToCartButton
+                                    handleAddProduct={handleAddProduct}
+                                    productItem={productItem}
+                                />
+                            </div>
                         </div>
                     </div>
                 ))}

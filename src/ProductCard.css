@@ -230,6 +230,17 @@
 .flavour-blue-raspberry:after {
     border-left: 20px solid rgb(102, 162, 218);
 }
+.flavour-cotton {
+    background: rgb(194, 15, 15) ;
+}
+
+.flavour-cotton:before {
+    border-right: 20px solid rgb(194, 15, 15);
+}
+
+.flavour-cotton:after {
+    border-left: 20px solid rgb(194, 15, 15);
+}
 .product-flavors-container {
     display: flex;
 }
@@ -266,3 +277,8 @@ input[type="checkbox"]:checked {
     background-color: rgb(114, 184, 102);
 }
 
+.caffeine-badge {
+    background-color: rgb(241, 242, 237);
+    width: 100px;
+    height: 100px;
+}

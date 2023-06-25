@@ -9,7 +9,7 @@
 
 .pre-workout-page-card {
     width: 45vw;
-    background-color: rgb(233, 235, 225);
+    background-color: rgb(244, 239, 233);
     margin: auto;
     margin-bottom: 10px;
     height: 40vh;
@@ -54,4 +54,7 @@
 .pre-workout-page-price {
     color: black;
     text-align: center;
+}
+.pre-workout-add-button .product-add-button {
+    background-color: rgb(235, 229, 220);
 }

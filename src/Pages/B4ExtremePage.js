@@ -1,13 +1,15 @@
 import React from "react";
 import "../ProductCard.css";
 import AddToCartButton from "../components/AddToCartButton";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const B4Extreme = ({ productItem, handleAddProduct }) => {
   const product = {
     id: "9",
-    image: "./images/b4-candy-extreme-300x300.png",
-    name: "B4 EXTREME CANDY STRONG PRE-WORKOUT",
+    image: "/images/b4-candy-extreme-300x300.png",
+    name: "B4 EXTREME STRONG PRE-WORKOUT",
     price: 24.99,
+    flavour: "Cotton Candy",
     description:
       "B4 Train Extreme is a very powerful Pre-Workout with maximum stim, this is for the more experienced taker. only 1 scoop is recommended. flavour cotton candy.",
     servings: "Serving size (5mg)",
@@ -32,40 +34,44 @@ const B4Extreme = ({ productItem, handleAddProduct }) => {
   return (
     <div className="product-card">
       <div className="product-container">
-      <h2 className="product-name">{product.name}</h2>
         <div className="product-image-container">
+        <div className="name-and-bullet-container">
+            <h2 className="product-name">{product.name}</h2>
+            <div className="bullet-points-container" >
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={19} />
+                <p className="product-bullet-points">250 grams of Caffeine Anhydrous per 5g serving</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" size={15} />
+                <p className="product-bullet-points">2000mg of Beta-Alanine per 5g serving</p>
+              </div>
+            </div>
+          </div>
         <img
-          className="b4-extreme-product-card-image"
+          className="product-card-image"
           src={product.image}
           alt={product.name}
         />
-        <img className="b4-extreme-product-card-image-2" src="images/b4-extreme-intro.jpeg" alt="pre-workout" />
         </div>
         
         <div className="product-card-info">
+        <div className="product-flavour flavour-cotton">
+            <p>{product.flavour}</p>
+          </div>
+          {/*<div className="caffeine-badge-container">
+            <img className="caffeine-badge" src="/images/caffeineBadge.png" alt="caffeine" />
+  </div>*/}
         <div className="product-price">
           <p>Price: {product.price}</p>
         </div>
 
         <div className="product-description">
-          <h1>Description:</h1>
           <p>{product.description}</p>
         </div>
         <div className="servings-info">
           <p>{product.servings}</p>
         </div>
-        <div className="product-directions">
-          <h1>Directions:</h1>
-          <p>{product.directions}</p>
-        </div>
-        {/*< div className="product-advice">
-          <h1>Advice:</h1>
-          <p>{product.advice}</p>
-        </div>
-        <div className="product-storage">
-          <h1>Storage:</h1>
-          <p>{product.storage}</p>
-  </div>*/}
 
         {/*<p className="product-ingredient">{product.ingredients}</p>*/}
         </div>

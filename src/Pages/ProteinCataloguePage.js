@@ -33,10 +33,13 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="protein-page-price">£{productItem.price}</div>
                             </Link>
+                            <div className='protein-add-button'>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}
                             />
+                            </div>
+                            
                         </div>
                     </div>
                 ))}
