@@ -41,7 +41,7 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct }) => {
                             </div>
                             <div className="bullet-points">
                                 <BsFillHexagonFill className="hexagon-icon" />
-                                <p className="product-bullet-points">25g of of high-quality  carbohydrates to support your growth goals</p>
+                                <p className="product-bullet-points">25g of high-quality  carbohydrates to support your growth goals</p>
                             </div>
                         </div>
                     </div>
@@ -74,14 +74,6 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct }) => {
                         <h1>Directions:</h1>
                         <p>{product.directions}</p>
                     </div>
-                    {/*<div className="product-advice">
-                    <h1>Advice:</h1>
-                    <p >{product.advice}</p>
-    </div>
-                <div className="product-storage">
-                    <h1>Storage:</h1>
-                    <p>{product.storage}</p>
-    </div>*/}
 
                     <p className="product-ingredient">{product.ingredients}</p>
                 </div>

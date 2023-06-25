@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 110vh;
+    height: auto;
     padding-bottom: 60px;
     padding-top: 60px;
 }
 .product-container {
     background-color: rgb(241, 242, 237);
-    height: 120vh;
+    height: auto;
     margin-bottom: 10px;
 }
 .product-image-container {
@@ -28,12 +28,12 @@
     transform: scale(0.9);
     padding-bottom: 10px;
 }
-.product-card-image-2 {
-    width: 50%;
-    height: 11vh;
-    border-radius: 5px;
+.after-train-image{
+    margin: auto;
 }
 .product-card-image-2 {
+    height: 11vh;
+    border-radius: 5px;
     width: auto;
     margin: auto;
 }
@@ -50,10 +50,12 @@
 }
 .product-description {
     width: 80%;
+    background-color: rgb(240, 228, 212);
     color: #131212;
     margin: auto;
     font-size: 1.2rem;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+    padding: 4px 8px;
 }
 .servings-info {
     padding: 10px;
@@ -70,19 +72,12 @@
     background-color: rgb(245, 236, 223);
     width: 80vw;
 }
-/*.product-name {
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px 0;
-    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
-}*/
 .bullet-points-container {
     display: flex;
     flex-direction: column;
 }
 .hexagon-icon {
     align-self: flex-start;
-    padding-top: 3px;
     margin-left: 2%;
 }
 .product-name {
@@ -178,4 +173,48 @@
 
 .flavour-strawberry-lime:after {
     border-left: 20px solid rgb(82, 209, 40);
+}
+.flavour-orange-mango {
+    background: linear-gradient(to top right, orange, rgb(255, 248, 52));
+}
+
+.flavour-orange-mango:before {
+    border-right: 20px solid orange;
+}
+
+.flavour-orange-mango:after {
+    border-left: 20px solid rgb(255, 248, 52);
+}
+.flavour-fruit-punch {
+    background: rgb(241, 124, 65) ;
+}
+
+.flavour-fruit-punch:before {
+    border-right: 20px solid rgb(241, 124, 65);
+}
+
+.flavour-fruit-punch:after {
+    border-left: 20px solid rgb(241, 124, 65);
+}
+.flavour-orange {
+    background: orange ;
+}
+
+.flavour-orange:before {
+    border-right: 20px solid orange;
+}
+
+.flavour-orange:after {
+    border-left: 20px solid orange;
+}
+.flavour-apple {
+    background: rgb(10, 149, 10) ;
+}
+
+.flavour-apple:before {
+    border-right: 20px solid rgb(10, 149, 10);
+}
+
+.flavour-apple:after {
+    border-left: 20px solid rgb(10, 149, 10);
 }

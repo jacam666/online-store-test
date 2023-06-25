@@ -1,15 +1,17 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "3",
-        image: "./images/2After_Train_Raspberry-1-300x300.png",
+        image: "/images/2After_Train_Raspberry-1-300x300.png",
         name: "AFTER TRAIN BLUE RASPBERRY POST WORKOUT",
         price: 24.99,
+        flavour: "Blue Raspberry",
         to: "",
         description:
-            "After Train has been specially formulated to aid recovery straight after a workout. with its 50/50 ratio of isolate and carbs combined with creatine and glutamine makes this a great all in one recovery drink. Easy to mix formula and superb flavours it is amazingly refreshing and easy to drink after them hard gruelling workouts. After Train is produced to iso 22000 standards, batch tested and made in an informed sport approved facility. Suitable for vegetarians",
+            "After Train has been specially formulated to aid recovery straight after a workout. with its 50/50 ratio of isolate and carbs combined with creatine and glutamine makes this a great all in one recovery drink. Easy to mix formula and superb flavours it is amazingly refreshing and easy to drink after them hard gruelling workouts", /*After Train is produced to iso 22000 standards, batch tested and made in an informed sport approved facility. Suitable for vegetarians",*/
         servings: "17 x 55g servings",
         directions:
             "2 x scoops with 400ml water. Consume within 20 minutes after training.",
@@ -22,50 +24,58 @@ const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
     return (
         <div className="product-card">
             <div className="product-container">
-            <h2 className="product-name">{product.name}</h2>
                 <div className="product-image-container">
+                    <div className="name-and-bullet-container">
+                        <h2 className="product-name">{product.name}</h2>
+                        <div className="bullet-points-container" >
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={20}  />
+                                <p className="product-bullet-points">25g of protein to support growth and maintenance of muscle</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={20}  />
+                                <p className="product-bullet-points">23.7g of of high-quality  carbohydrates to support your growth goals</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={35}  />
+                                <p className="product-bullet-points">2.8g of Creatine Monohydrate to help build lean muscle mass, maximize performance, and increase strength. </p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={25}  />
+                                <p className="product-bullet-points">3.7g of L-Glutamine helps enhance athletic performance and build muscle tissue</p>
+                            </div>
+                        </div>
+                    </div>
                     <img
-                        className="after-train-product-card-image"
+                        className="product-card-image after-train-image"
                         src={product.image}
                         alt={product.name}
                     />
-                    <img className="after-train-product-card-image-2" src="images/after-train-nutri-info.jpeg" alt="protein" />
                 </div>
 
                 <div className="product-card-info">
+                <div className="product-flavour flavour-blue-candy">
+                        <p>{product.flavour}</p>
+                    </div>
                     <div className="product-price">
                         <p>Price: {product.price}</p>
                     </div>
 
                     <div className="product-description">
-                        <h1>Description:</h1>
                         <p>{product.description}</p>
                     </div>
                     <div className="servings-info">
                         <h1>servings:</h1>
                         <p>{product.servings}</p>
                     </div>
-                    <div className="product-directions">
-                        <h1>Directions:</h1>
-                        <p>{product.directions}</p>
-                    </div>
-                    {/*<div className="product-advice">
-                        <h1>Advice:</h1>
-                        <p>{product.advice}</p>
-                    </div>
-                    <div className="product-storage">
-                        <h1>Storage:</h1>
-                        <p>{product.storage}</p>
-    </div>*/}
-
                     <p className="product-ingredient">{product.ingredients}</p>
                 </div>
                 <AddToCartButton
-                handleAddProduct={handleAddProduct}
-                productItem={product}
-            />
+                    handleAddProduct={handleAddProduct}
+                    productItem={product}
+                />
             </div>
-            
+
         </div>
     );
 };
