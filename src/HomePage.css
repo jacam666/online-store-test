@@ -109,7 +109,7 @@
     }
     .pre-workout-homePage-image {
         width: 49vw;
-        height: 30vh;
+        height: 20vh;
     }
     .fat-loss-homePage-image {
         width: 49vw;
@@ -118,7 +118,7 @@
         width: 49vw;
     }
     .homePage-studio-image {
-        height: 35vh;
+        height: 30vh;
         width: 40vw;
     }
 }
@@ -146,12 +146,12 @@
     }
     
     .homePage-image {
-        width: 49vw;
+        width: 38vw;
         height: 35vh;
     }
     .pre-workout-homePage-image {
-        width: 49vw;
-        height: 30vh;
+        width: 40vw;
+        height: 23vh;
     }
     .fat-loss-homePage-image {
         width: 49vw;
@@ -160,8 +160,8 @@
         width: 49vw;
     }
     .homePage-studio-image {
-        height: 35vh;
-        width: 40vw;
+        height: 30vh;
+        width: 30vw;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -188,11 +188,11 @@
     }
     
     .homePage-image {
-        width: 49vw;
-        height: 40vh;
+        width: 35vw;
+        height: 37vh;
     }
     .pre-workout-homePage-image {
-        width: 49vw;
+        width: 35vw;
         height: 30vh;
     }
     .fat-loss-homePage-image {
@@ -232,7 +232,7 @@
     
     .homePage-image {
         width: 49vw;
-        height: 55vh;
+        height: 50vh;
     }
     .pre-workout-homePage-image {
         width: 49vw;

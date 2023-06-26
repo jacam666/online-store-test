@@ -30,7 +30,7 @@ const DietPlan = ({productItem, handleAddProduct}) => {
                     Do you dream of transforming your body and feeling amazing?
                 </p>
                 <p className='diet-plan-text-2'>
-                    If so, you need Mark Etherdon, the level 4 nutritional coach who has helped hundreds of people achieve their goals.
+                    If so, you need Mark Etherden, the level 4 nutritional coach who has helped hundreds of people achieve their goals.
                 </p>
                 <p className='diet-plan-text-3'>
                     Mark has 30 years of experience in creating personalized diet plans that suit your lifestyle, preferences and needs.
