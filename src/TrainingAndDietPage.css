@@ -20,7 +20,7 @@
 }
 .training-page-card {
     width: 45vw;
-    background-color: rgb(233, 235, 225);
+    background-color: rgb(244, 239, 233);
     margin: auto;
     margin-bottom: 10px;
     height: 40vh;
@@ -65,7 +65,7 @@
     margin: auto;
     border-radius: 4px;
     width: 92vw;
-    background: rgb(233, 235, 225);
+    background-color: rgb(244, 239, 233);
     padding: 5px;
 }
 .training-studio,
@@ -86,7 +86,7 @@
     font-size: 1.2rem;
     padding: 5px;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
-    background : #e9e3e3;
+    background-color: rgb(240, 228, 212);
 }
 .training-image-container {
     position: relative;

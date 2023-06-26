@@ -38,10 +38,12 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                                     £{productItem.price}
                                 </div>
                             </Link>
+                            <div className='protein-add-button'>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}
                             />
+                            </div>
                         </div>
                     </div>
                 ))}

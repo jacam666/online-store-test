@@ -36,17 +36,20 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="training-page-price">£{productItem.price}</div>
                             </Link>
+                            <div className='protein-add-button'>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}
                             />
+                            </div>
+
                         </div>
                     </div>
                 ))}
                 <div className='training-image-container'>
                     <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
                     <div className='training-studio-text-container'>
-                    <p className='training-studio-text'>If you'd like to train face to face on a 1 to 1 basis or in small groups take a look at our state of the art SNC studio.</p>
+                        <p className='training-studio-text'>If you'd like to train face to face on a 1 to 1 basis or in small groups take a look at our state of the art SNC studio.</p>
                     </div>
                     <img className='training-studio' src={studioImage} alt='studio' />
                     <Link to="/TheStudioPage">
