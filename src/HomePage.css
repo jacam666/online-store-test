@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 1200px) {
     .homepage-snc-products {
-        margin-bottom: -5px;
+        margin-bottom: -4px;
     }
     .homePage-product-cards-container {
         height: 100%;
@@ -105,9 +105,11 @@
     
     .homePage-image {
         width: 49vw;
+        height: 35vh;
     }
     .pre-workout-homePage-image {
         width: 49vw;
+        height: 43vh;
     }
     .fat-loss-homePage-image {
         width: 49vw;
@@ -116,6 +118,8 @@
         width: 49vw;
     }
     .homePage-studio-image {
+        height: 40vh;
+        width: 50vw;
     }
     .text-overlay {
     }
