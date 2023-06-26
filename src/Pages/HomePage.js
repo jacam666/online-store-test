@@ -11,15 +11,17 @@ import "../HomePage.css";
 
 function HomePage() {
   return (
-    <div>
+    /*<div>
       <div className="homepage-body">
-        <div className="homePage-product-cards-container">
-          <div>
+      <div>
             <img
               className="homepage-snc-products"
               src={sncproducts}
               alt="supplements"
             />
+            <div>
+        <div className="homePage-product-cards-container">
+            </div>
             <div className="protein-product-card-container">
               <div className="image-container">
                 <img
@@ -27,10 +29,10 @@ function HomePage() {
                   src={afterTrainDisplayImage}
                   alt="protein"
                 />
-                <Link to= "/ProteinCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Proteins</p>
-                </div>
+                <Link to="/ProteinCataloguePage">
+                  <div className="text-overlay">
+                    <p className="image-text">Shop Proteins</p>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -42,9 +44,9 @@ function HomePage() {
                   alt="protein"
                 />
                 <Link to="/PreWorkoutCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Pre-Workouts</p>
-                </div>
+                  <div className="text-overlay">
+                    <p className="image-text">Shop Pre-Workouts</p>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -56,9 +58,9 @@ function HomePage() {
                   alt="protein"
                 />
                 <Link to="/FatLossCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Fat Loss Products</p>
-                </div>
+                  <div className="text-overlay">
+                    <p className="image-text">Shop Fat Loss Products</p>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -70,9 +72,9 @@ function HomePage() {
                   alt="protein"
                 />
                 <Link to="/WellBeingCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Wellbeing Products</p>
-                </div>
+                  <div className="text-overlay">
+                    <p className="image-text">Shop Wellbeing Products</p>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -83,7 +85,7 @@ function HomePage() {
                   src={homepageStudio}
                   alt="diet"
                 />
-                <Link to= "/TrainingAndDietPage">
+                <Link to="/TrainingAndDietPage">
                   <div className="text-overlay">
                     <p className="image-text">Shop Training and Diet Plans</p>
                   </div>
@@ -95,6 +97,90 @@ function HomePage() {
       </div>
     </div>
   );
+  */
+    <div>
+      <div className="homepage-body">
+        <img
+          className="homepage-snc-products"
+          src={sncproducts}
+          alt="supplements"
+        />
+        <div className="homePage-product-cards-container">
+          <div className="protein-product-card-container">
+            <div className="image-container">
+              <img
+                className="homePage-image"
+                src={afterTrainDisplayImage}
+                alt="protein"
+              />
+              <Link to="/ProteinCataloguePage">
+                <div className="text-overlay">
+                  <p className="image-text">Shop Proteins</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="pre-workout-product-card-container">
+            <div className="image-container">
+              <img
+                className="pre-workout-homePage-image"
+                src={b4Extreme}
+                alt="protein"
+              />
+              <Link to="/PreWorkoutCataloguePage">
+                <div className="text-overlay">
+                  <p className="image-text">Shop Pre-Workouts</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="fat-loss-product-card-container">
+            <div className="image-container">
+              <img
+                className="fat-loss-homePage-image"
+                src={FatLossImages}
+                alt="protein"
+              />
+              <Link to="/FatLossCataloguePage">
+                <div className="text-overlay">
+                  <p className="image-text">Shop Fat Loss Products</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="wellbeing-product-card-container">
+            <div className="image-container">
+              <img
+                className="wellbeing-homePage-image"
+                src={sncDisplayImage}
+                alt="protein"
+              />
+              <Link to="/WellBeingCataloguePage">
+                <div className="text-overlay">
+                  <p className="image-text">Shop Wellbeing Products</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="diet-product-card-container">
+            <div className="image-container">
+              <img
+                className="homePage-studio-image"
+                src={homepageStudio}
+                alt="diet"
+              />
+              <Link to="/TrainingAndDietPage">
+                <div className="text-overlay">
+                  <p className="image-text">Shop Training and Diet Plans</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
+
 
 export default HomePage;

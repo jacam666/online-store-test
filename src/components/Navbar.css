@@ -48,3 +48,9 @@
     transform: translate(-50%, -50%);
     color: rgb(243, 238, 238);
 }
+
+@media screen and (min-width: 1220px) {
+    .logo-image {
+        width: auto;
+    }
+}

@@ -1,19 +1,12 @@
 .homepage-body {
-    /*background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
     height: 100%;
     padding-bottom: 60px;
 }
 
-.test-product-card-container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    flex-direction: column;
-}
 .diet-product-card-container,
 .wellbeing-product-card-container,
 .fat-loss-product-card-container,
-.pre-workout-product-card-container
+.pre-workout-product-card-container 
 .protein-product-card-container {
     position: relative;
     display: flex;
@@ -38,9 +31,10 @@
     /*background-color: rgba(0, 0, 0, 0.1);*/
     cursor: pointer;
 }
+
 .image-text {
     color: rgb(2, 2, 2);
-    background : #e9e3e3;
+    background: #e9e3e3;
     background: #d0d0d0;
     font-size: 14px;
     text-align: center;
@@ -53,24 +47,25 @@
     margin-top: 20px;
 }
 
-
-
 .homePage-image {
     height: 22vh;
     width: 95%;
     padding: 10px;
     margin: auto;
 }
+
 .homePage-studio-image {
     width: 95%;
     padding: 0 10px 0 10px;
 }
+
 .pre-workout-homePage-image {
     height: 20vh;
     width: 95%;
     padding: 0 10px;
     margin: auto;
 }
+
 .fat-loss-homePage-image {
     height: 95%;
     width: 95%;
@@ -81,10 +76,47 @@
 .wellbeing-homePage-image {
     height: 95%;
     width: 95%;
-    padding:  0 10px;
+    padding: 0 10px;
     margin: auto;
     margin-top: 0;
 }
 
-
-
+@media screen and (min-width: 1200px) {
+    .homepage-snc-products {
+        margin-bottom: -5px;
+    }
+    .homePage-product-cards-container {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .diet-product-card-container,
+    .wellbeing-product-card-container,
+    .fat-loss-product-card-container,
+    .pre-workout-product-card-container,
+    .protein-product-card-container {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .homePage-image {
+        width: 49vw;
+    }
+    .pre-workout-homePage-image {
+        width: 49vw;
+    }
+    .fat-loss-homePage-image {
+        width: 49vw;
+    }
+    .wellbeing-homePage-image {
+        width: 49vw;
+    }
+    .homePage-studio-image {
+    }
+    .text-overlay {
+    }
+}
