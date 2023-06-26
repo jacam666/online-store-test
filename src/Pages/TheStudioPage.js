@@ -6,11 +6,12 @@ import image9 from "../components/StudioImages/studioPic9.jpg"
 function TheStudioPage() {
     return (
         <div className='studio-container'>
-            <div>
-                <h1 className='studio-heading'>SNC Studio</h1>
-            </div>
+            
             <div className='studio-image-and-text-container'>
                 <StudioCarousel />
+                <div>
+                <h1 className='studio-heading'>SNC Studio</h1>
+            </div>
                 <div className='studio-descriptions'>
                         <p className='studio-description-section-1'>
                             Are you looking for a personal trainer that can help you achieve your goals in a comfortable and private environment?
