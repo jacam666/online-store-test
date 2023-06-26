@@ -63,7 +63,7 @@ const AppRoutes = ({
             <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
             <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage handleAddProduct={handleAddProduct}/> } />
             <Route path="/WellBeingCataloguePage" element={ <WellBeingCataloguePage handleAddProduct={handleAddProduct} />} />
-            <Route path="/TrainingAndDietPage" element={ <TrainingAndDietPage /> } />
+            <Route path="/TrainingAndDietPage" element={ <TrainingAndDietPage handleAddProduct={handleAddProduct} /> } />
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />
@@ -118,13 +118,13 @@ const AppRoutes = ({
             <Route path="/WellBeingCataloguePage/Con-TestPage" element={<Contest handleAddProduct={handleAddProduct} />} />
             <Route path="/FatLossCataloguePage/StageExtremePage" element={<StageExtreme handleAddProduct={handleAddProduct} />} />
             <Route path="/PreWorkoutCataloguePage/StagePumpBluePage" element={<StagePumpBlue handleAddProduct={handleAddProduct} />} />
-            <Route path="/TraingPlanPage" element={<TrainingPlan handleAddProduct={handleAddProduct} />} />
+            <Route path="/TrainingAndDietPage/TraingPlanPage" element={<TrainingPlan handleAddProduct={handleAddProduct} />} />
             <Route path="/BundleDeal1Page" element={<BundleDeal1 handleAddProduct={handleAddProduct} />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle handleAddProduct={handleAddProduct} />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 handleAddProduct={handleAddProduct} />} />
             <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
             <Route path="/ContactPage" element={<ContactPage />} />
-            <Route path="/DietPlan" element={<DietPlan handleAddProduct={handleAddProduct}/>} />
+            <Route path="/TrainingAndDietPage/DietPlan" element={<DietPlan handleAddProduct={handleAddProduct}/>} />
         </Routes>
         //</div>
     );

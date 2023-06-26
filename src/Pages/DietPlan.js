@@ -41,11 +41,12 @@ const DietPlan = ({productItem, handleAddProduct}) => {
                 <p className='diet-plan-text-5'>
                     Don’t miss this opportunity to work with Mark and unleash your potential!
                 </p>
-            </div>
-            <AddToCartButton
+                <AddToCartButton
                 handleAddProduct={handleAddProduct}
                 productItem={product}
             />
+            </div>
+            
         </div>
 
     )

@@ -1,5 +1,10 @@
 .diet-plan-container {
     margin-bottom: 60px;
+    background-color: rgb(241, 242, 237);
+    padding-top: 50px;
+    padding-bottom: 60px;
+    height: 100vh;
+    overflow: auto;
 }
 
 /*.header-container {
@@ -21,7 +26,7 @@
 
 .header {
     display: flex;
-    color:#eee7e7;
+    color:#0c0c0c;
     text-align: center;
     font-size: 3rem;
     justify-content: center;
@@ -33,7 +38,7 @@
 
 .header-2 {
     display: flex;
-    color: #eee7e7;
+    color: #0a0a0a;
     text-align: center;
     font-size: 2rem;
     justify-content: center;
@@ -47,6 +52,8 @@
     display: flex;
     justify-content: center;
     gap: 5px;
+    background-color: rgb(245, 236, 223);
+    padding: 5px;
 }
 
 .certificate,
@@ -66,26 +73,20 @@
 }
 
 .diet-plan-text-container {
-    background: linear-gradient(to left,
-            rgb(26, 41, 85) 0%,
-            rgb(47, 82, 82) 100%);
+    background-color: rgb(245, 236, 223);
     width: 86vw;
     margin: auto;
-    margin-top: 20px;
     padding: 10px;
     border-radius: 4px;
 }
 
-/*.diet-plan-text-1,*/
+.diet-plan-text-1,
 .diet-plan-text-2,
 .diet-plan-text-3,
 .diet-plan-text-4,
 .diet-plan-text-5 {
-    color: #ede4e4;
-    /*background-color: rgb(218, 210, 203);*/
-    background: linear-gradient(to left,
-            rgb(42, 57, 101) 0%,
-            rgb(91, 103, 103) 100%);
+    color: #090808;
+    background-color: rgb(245, 236, 223);        
     text-align: flex-start;
     margin: auto;
     /*border: 0.1px solid #2c2929;*/
@@ -93,18 +94,7 @@
     padding: 10px;
     border-radius: 4px;
     font-size: large;
-}
-
-.diet-plan-text-1 {
-    color: #ede4e4;
-    text-align: flex-start;
-    background: linear-gradient(to left,
-            rgb(42, 57, 101) 0%,
-            rgb(91, 103, 103) 100%);
-    margin: auto;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: large;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 
 @media screen and (min-width: 492px) {
