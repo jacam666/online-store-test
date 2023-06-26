@@ -99,6 +99,7 @@
     .pre-workout-product-card-container,
     .protein-product-card-container {
         display: flex;
+        justify-content: center;
         width: 50%;
         margin: auto;
     }
@@ -118,8 +119,8 @@
         width: 49vw;
     }
     .homePage-studio-image {
-        height: 40vh;
-        width: 50vw;
+        height: 50vh;
+        width: 40vw;
     }
     .text-overlay {
     }
