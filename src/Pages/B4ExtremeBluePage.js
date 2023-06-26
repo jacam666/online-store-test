@@ -47,31 +47,31 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
             <h2 className="product-name">{product.name}</h2>
             <div className="bullet-points-container" >
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={18} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">250 grams of Caffeine Anhydrous per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">2000mg of Beta-Alanine per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={13} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">500mg of L-Tyrosine per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={19} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">150g of Senegalia Berlandieri Extract per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={16} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">150g of Guarana Seed Extract per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={21} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">500g of Cytidine Diphoshocholine as Citicoline per 5g serving</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">20g of B6 as Pyridoxine hcl per 5g serving</p>
               </div>
             </div>

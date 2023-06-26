@@ -23,31 +23,31 @@ const YearRound = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">175mg Echinacea (Echinacea Angustifolia) per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={20} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg of Astragalus Root (Astragalus membranaceus) per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg Olive Tree Extract per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={19} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">50mg of Beta Glucan 1,3/1,6 (from Saccharomyces Cerevisiae)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">50g of Garlic Extract per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">120mg of Vitamin C (Ascorbic Acid)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">10mg of Vitamin E (D-Alpha Tocophery)</p>
                             </div>
                         </div>

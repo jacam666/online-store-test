@@ -38,7 +38,7 @@
     margin: auto;
     margin-bottom: 10%;
 }
-.protein-page-product-name-1,
+/*.protein-page-product-name-1,*/
 .protein-page-product-name-8 {
     margin-bottom: 19%
 }
@@ -56,4 +56,56 @@
 }
 .protein-add-button .product-add-button {
     background-color: rgb(235, 229, 220);
+}
+@media screen and (min-width: 392px) and (max-width: 639px){
+    .protein-page-card {
+        height: 45vh;
+    }
+    .protein-page-cardImage {
+        height: 25vh;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .protein-page-card {
+        height: 45vh;
+        width: 30vw;
+    }
+    .protein-page-cardImage {
+        height: 25vh;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .protein-page-card {
+        height: 42vh;
+        width: 30vw;
+    }
+    .protein-page-cardImage {
+        height: 25vh;
+        margin: auto;
+    }
+    .protein-page-product-image-1 {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .protein-page-card {
+        height: 50vh;
+        width: 30vw;
+    }
+    .protein-page-cardImage {
+        height: 30vh;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .protein-page-card {
+        height: 60vh;
+        width: 30vw;
+    }
+    .protein-page-cardImage {
+        height: 35vh;
+        margin: auto;
+    }
 }

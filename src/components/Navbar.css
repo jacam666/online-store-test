@@ -13,7 +13,7 @@
 
 .navbar li:nth-child(1) a,
 .navbar li:nth-child(2) a,
-.navbar li:nth-child(3) a, 
+.navbar li:nth-child(3) a,
 .navbar li:nth-child(4) a {
     font-weight: bold;
     font-size: 16px;
@@ -44,23 +44,30 @@
     transform: translate(-50%, -50%);
     color: rgb(243, 238, 238);
 }
+
 @media screen and (min-width: 640px) and (max-width: 768px) {
     .logo-image {
         width: auto;
     }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .logo-image {
         width: auto;
     }
+
+
 }
+
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .logo-image {
         width: auto;
     }
 }
+
 @media screen and (min-width: 1201px) {
     .logo-image {
         width: auto;
     }
+
 }

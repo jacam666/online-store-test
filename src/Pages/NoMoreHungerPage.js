@@ -39,27 +39,27 @@ const NoMoreHunger = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">600mg of Fenugreek Seed Extract 4:1</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">450mg of Garcinia Cambogia Extract (st.to 60% HCA)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={16} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">300mg of 5-HTP (derived from Griffonia Simplicifolia Extract)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">300mg of Gymnema Sylvestre Extract (25% Gymnemic Acid),</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">255mg 0f Forskolin (Coleus Forskolii) (st.to to 20% Forskolin)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">150mg of Paradoxine (Grains of paradise)(st.to 12.6% 6-Paradol) </p>
                             </div>
                         </div>

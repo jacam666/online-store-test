@@ -29,19 +29,19 @@ const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={20}  />
+                                <BsFillHexagonFill className="hexagon-icon"   />
                                 <p className="product-bullet-points">25g of protein to support growth and maintenance of muscle</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={20}  />
+                                <BsFillHexagonFill className="hexagon-icon"   />
                                 <p className="product-bullet-points">23.7g of of high-quality  carbohydrates to support your growth goals</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={35}  />
+                                <BsFillHexagonFill className="hexagon-icon"   />
                                 <p className="product-bullet-points">2.8g of Creatine Monohydrate to help build lean muscle mass, maximize performance, and increase strength. </p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={25}  />
+                                <BsFillHexagonFill className="hexagon-icon"   />
                                 <p className="product-bullet-points">3.7g of L-Glutamine helps enhance athletic performance and build muscle tissue</p>
                             </div>
                         </div>

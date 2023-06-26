@@ -21,15 +21,15 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={9} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">1 Hour Online Training Plan</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={8} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">30 Years of Experience</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={22} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">Get Coaching from a Winner of over 30 Top Level Competitions</p>
                             </div>
                         </div>

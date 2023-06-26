@@ -22,27 +22,27 @@ const StageExtreme = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">300mg of Caffeine Anhydrous per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg of Theobroma Caceo (12% Theobromine, 9% Caffeine)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg of Guarana Seed Extract (St.to 22% Caffeine)</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={9} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">95mg Hordenine HCL per capsule</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">80mg 0f Aframomum Meleguata Extract </p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">40mg of Cayanne Pepper Extract as Capsicum Aunnuum (fruit)</p>
                             </div>
                         </div>

@@ -44,39 +44,39 @@ const Contest = ({ productItem, handleAddProduct }) => {
                         <h2 className="product-name">{product.name}</h2>
                         <div className="bullet-points-container" >
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">1400mg of D-Aspartic Acid</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={13} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">700mg of Conjugated Linoleic Acid</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">300mg of Bulbine Natalensis</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">250mg of Muccuna Pruriens</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">200mg of Ashwagandha Root Extract</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">150mg of Liquorice Root Extract</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">150mg of Tongkat Ali Extract</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={13} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg of Fenugreek Seed Extract</p>
                             </div>
                             <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <BsFillHexagonFill className="hexagon-icon"  />
                                 <p className="product-bullet-points">100mg 0f Avena Sativa (Derived from Oats)</p>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import "../ProductCard.css"
 
 const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
 
@@ -49,11 +50,11 @@ const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
           <div className="bullet-points-container" >
             <h2 className="product-name">{product.name}</h2>
             <div className="bullet-points">
-              <BsFillHexagonFill className="hexagon-icon" size={20} />
+              <BsFillHexagonFill className="hexagon-icon" />
               <p className="product-bullet-points">23.7g of protein to support growth and maintenance of muscle</p>
             </div>
             <div className="bullet-points">
-              <BsFillHexagonFill className="hexagon-icon" size={10} />
+              <BsFillHexagonFill className="hexagon-icon"  />
               <p className="product-bullet-points">Only 1.1g of sugar per serving.</p>
             </div>
           </div>

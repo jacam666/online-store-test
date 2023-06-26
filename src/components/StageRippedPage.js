@@ -24,27 +24,27 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
             <h2 className="product-name">{product.name}</h2>
             <div className="bullet-points-container" >
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">225g of Caffeine Anhydrous per capsule</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon"  size={17}/>
+                <BsFillHexagonFill className="hexagon-icon" />
                 <p className="product-bullet-points">200mg of Kola Nut Extract (3% Caffeine, 2% Theobromine)</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={12} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">125g of Guarana Seed Extract per capsule</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">75mg of 5-HTP 5-Hydroxytophan per capsule</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={11} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">75mg 0f Hordenine HCL per capsule</p>
               </div>
               <div className="bullet-points">
-                <BsFillHexagonFill className="hexagon-icon" size={18} />
+                <BsFillHexagonFill className="hexagon-icon"  />
                 <p className="product-bullet-points">40mg of Paradoxine Grains of paradise. Std. to 12.5% 6- paradol</p>
               </div>
             </div>
