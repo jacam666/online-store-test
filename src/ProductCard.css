@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: auto;
+    height: 100vh;
     padding-bottom: 60px;
     padding-top: 60px;
 }
 .product-container {
     background-color: rgb(241, 242, 237);
-    height: 100vh;
+    height: auto;
     margin-bottom: 10px;
     border-radius: 4px;
+    overflow: auto;
 }
 .product-image-container {
     display: flex;
@@ -21,6 +22,13 @@
     margin-top: 10px;
     background-color: rgb(245, 236, 223);
     border-radius: 2px;
+}
+.product-card-info {
+    margin-top: 10px;
+    height: auto;
+    margin: auto;
+    background-color: rgb(245, 236, 223);
+    width: 80vw;
 }
 .product-card-image {
     height: 19%;
@@ -68,13 +76,7 @@
 .servings-info h1 {
     font-size: 1.5rem;
 }
-.product-card-info {
-    margin-top: 10px;
-    height: auto;
-    margin: auto;
-    background-color: rgb(245, 236, 223);
-    width: 80vw;
-}
+
 .bullet-points-container {
     display: flex;
     flex-direction: column;

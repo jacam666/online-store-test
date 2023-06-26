@@ -11,7 +11,7 @@ const B4ExtremeBlue = ({ productItem, handleAddProduct }) => {
     price: 24.99,
     flavour: "Blue Raspberry",
     description:
-      "B4 Train Extreme is a very powerful Pre-Workout with maximum stim this is for the more experienced taker. only 1 scoop is recommended. flavour: Blue Raspberry.",
+      "B4 Extreme Blue Raspberry is a pre-workout supplement that delivers maximum stimulation, focus, and performance. It contains ingredients such as beta-alanine, L-tyrosine, citicoline, caffeine, guarana, vitamin B6, grains of paradise, and bioperine that work together to enhance your energy, mood, and blood flow. It has a very high caffeine content. You can take one scoop of B4 Extreme Blue Raspberry with 250ml of water 30 minutes before your workout. It has a delicious Blue Raspberry flavour that will refresh your senses.",
     servings: "Serving size (5g)",
     ingredients: [
       "INGREDIENTS:",
