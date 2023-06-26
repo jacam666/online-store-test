@@ -47,11 +47,6 @@ const AfterTrainAdvanced = ({ productItem, handleAddProduct }) => {
             src={product.image}
             alt={product.name}
           />
-          {/*<img
-            className="product-card-image-2"
-            src={product.image2}
-            alt={product.name}
-  />*/}
         </div>
 
         <div className="product-card-info">

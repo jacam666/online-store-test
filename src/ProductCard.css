@@ -8,7 +8,7 @@
 }
 .product-container {
     background-color: rgb(241, 242, 237);
-    height: auto;
+    height: 100vh;
     margin-bottom: 10px;
     border-radius: 4px;
 }
@@ -70,6 +70,7 @@
 }
 .product-card-info {
     margin-top: 10px;
+    height: auto;
     margin: auto;
     background-color: rgb(245, 236, 223);
     width: 80vw;

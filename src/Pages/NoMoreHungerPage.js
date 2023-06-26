@@ -1,14 +1,15 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
+import { BsFillHexagonFill } from "react-icons/bs";
 
 const NoMoreHunger = ({ productItem, handleAddProduct }) => {
     const product = {
         id: "15",
-        image: "./images/NO-HUNGER-300x300.png",
+        image: "/images/NO-HUNGER-300x300.png",
         name: "NO MORE HUNGER 90 caps",
         price: 29.99,
         description: [
-            "No more hunger has been especially formulated to suppress appetite, it doesn’t contain any form of stimulates so it can be taken later in the evening when food cravings are most likely to kick in. No more hunger is very effective when taken in conjunction with Stage Ripped, Stage Ripped is most effective if taken early in the day giving you energy and suppressing appetite throughout the day, once the Stage Ripped wears off you can take No more hunger keeping the fat burning process going in the evening and during the night.",
+            "No Hunger is an appetite suppressant supplement that helps you control your cravings and stick to your diet. It contains ingredients such as fenugreek, garcinia cambogia, 5-HTP, gymnema sylvestre, forskolin, alpha lipoic acid, and paradoxine that work together to reduce your hunger, improve your mood, and support your metabolism. It does not contain any stimulants, so you can take it in the evening without affecting your sleep. You can take No Hunger with Stage Ripped for a powerful fat-burning combo.",
         ],
         ingredients: [
             "Fenugreek Seed Extract 4:1 600MG",
@@ -33,27 +34,52 @@ const NoMoreHunger = ({ productItem, handleAddProduct }) => {
     return (
         <div className="product-card">
             <div className="product-container">
-            <h2 className="product-name">{product.name}</h2>
                 <div className="product-image-container">
-                <img
-                    className="no-more-hunger-product-card-image"
-                    src={product.image}
-                    alt={product.name}
-                />
-                <img className="no-more-hunger-product-card-image-2" src="images/no-more-hunger-nutri-info.jpeg" alt="supplement" />
+                    <div className="name-and-bullet-container">
+                        <h2 className="product-name">{product.name}</h2>
+                        <div className="bullet-points-container" >
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={10} />
+                                <p className="product-bullet-points">600mg of Fenugreek Seed Extract 4:1</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <p className="product-bullet-points">450mg of Garcinia Cambogia Extract (st.to 60% HCA)</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={16} />
+                                <p className="product-bullet-points">300mg of 5-HTP (derived from Griffonia Simplicifolia Extract)</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <p className="product-bullet-points">300mg of Gymnema Sylvestre Extract (25% Gymnemic Acid),</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={14} />
+                                <p className="product-bullet-points">255mg 0f Forskolin (Coleus Forskolii) (st.to to 20% Forskolin)</p>
+                            </div>
+                            <div className="bullet-points">
+                                <BsFillHexagonFill className="hexagon-icon" size={17} />
+                                <p className="product-bullet-points">150mg of Paradoxine (Grains of paradise)(st.to 12.6% 6-Paradol) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        className="product-card-image"
+                        src={product.image}
+                        alt={product.name}
+                    />
                 </div>
-                
+
                 <div className="product-card-info">
                     <div className="product-price">
                         <p>Price: {product.price}</p>
                     </div>
 
                     <div className="product-description">
-                        <h1>Description:</h1>
                         <p>{product.description}</p>
                     </div>
                     <div className="servings-info">
-                        <h1>Servings:</h1>
                         <p>{product.servings}</p>
                     </div>
                     <div className="product-directions">
@@ -69,11 +95,11 @@ const NoMoreHunger = ({ productItem, handleAddProduct }) => {
                     {/*<p className="product-ingredient">{product.ingredients}</p>*/}
                 </div>
                 <AddToCartButton
-                handleAddProduct={handleAddProduct}
-                productItem={product}
-            />
+                    handleAddProduct={handleAddProduct}
+                    productItem={product}
+                />
             </div>
-            
+
         </div>
     );
 };
