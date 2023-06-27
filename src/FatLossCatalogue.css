@@ -112,13 +112,13 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .protein-page-image-container {
+@media screen and (min-width: 1201px) {
+    .fat-loss-image-container {
         width: 33vw;
     }
 
-    .protein-page-card {
-        width: 33vw;
+    .fat-loss-page-card {
+        width: 32vw;
         height: auto;
     }
 }

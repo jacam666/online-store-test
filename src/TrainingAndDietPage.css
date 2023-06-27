@@ -1,51 +1,53 @@
 .training-page-card-container {
-    margin-top: 55px;
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     padding-bottom: 40px;
-}
-.training-text-1 {
-    font-size: 1rem;
-    background: #dcf3e5 ;
-    width: 85vw;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 15px 20px;
-    border: 1px solid black;
-}
-.training-text-2 {
-    color: #0d0d0d;
+    height: 100vh;
 }
 .training-page-card {
-    width: 45vw;
+    width: 48vw;
     background-color: rgb(244, 239, 233);
+    display: flex;
     margin: auto;
     margin-bottom: 10px;
-    height: 40vh;
     border-radius: 4px;
 }
+.training-page-image-container {
+    display: flex;
+    width: 48vw;
 
+}
 .training-page-cardImage {
-    margin: auto;
+    /*margin: auto;
     width: 100%;
+    height: auto;*/
+    margin: auto;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    
 }
 
 .training-page-product-image-24 {
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 .training-page-product-image-20 {
     transform: scale(0.7);
-    margin-top: 5%;
+    margin-top: 11%;
 }
 
 .training-page-product-name  {
     color: black;
     text-align: center;
-    width: 90%;
+    width: 60%;
     margin: auto;
     margin-bottom: 10%;
+}
+.training-page-name-container {
+    height: 60px;
 }
 .training-page-product-name-1,
 .training-page-product-name-8 {
@@ -107,4 +109,49 @@
     padding: 10px;
     border-radius: 4px;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 392px) {
+    .training-page-card-container {
+        padding-top: 0;
+    }
+    .certificate-and-text-container {
+        display: flex;
+    }
+    .training-image-container {
+        width: 95vw;
+    }
+    .training-certificate {
+        width: 47vw;
+        height: auto;
+    }
+    .training-studio-text {
+        width: 47vw;
+        height: auto;
+        margin: auto;
+    }
+    .training-studio {
+        display: block;
+        width: 60%;
+        height: 35vh;
+        margin-bottom: 10px;
+    }
+    .training-page-card {
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1201px) {
+    
 }
