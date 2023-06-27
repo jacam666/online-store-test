@@ -327,9 +327,6 @@ form.signUp-Form {
   border-radius: 5px;
   border: none;
   outline: none;
-  /*background: linear-gradient(to left,
-      rgb(26, 41, 85) 0%,
-      rgb(61, 69, 69) 100%);*/
   color: #090808;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.3),
     0px 2px 5px 0px rgba(0, 0, 0, 0.2),
@@ -344,6 +341,7 @@ form.signUp-Form {
   font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
   background-color: rgb(244, 229, 209);
 }
+
 
 .product-add-button:active {
   background: #fff;

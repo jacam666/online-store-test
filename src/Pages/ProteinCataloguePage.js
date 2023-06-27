@@ -18,14 +18,14 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="protein-page-card" key={productItem.id}>
                         <div>
                             <Link to={productItem.to} className='protein-page-link'>
-                                <div>
+                                <div className='protein-page-image-container'>
                                     <img
                                         className={`protein-page-cardImage protein-page-product-image-${productItem.id}`}
                                         src={productItem.image}
                                         alt={productItem.name}
                                     />
                                 </div>
-                                <div>
+                                <div className='protein-page-product-name-container'>
                                     <h2 className={`protein-page-product-name protein-page-product-name-${productItem.id}`}>
                                         {productItem.name}
                                     </h2>
@@ -39,10 +39,12 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 productItem={productItem}
                             />
                             </div>
-                            
                         </div>
+
                     </div>
+
                 ))}
+
             </div>
         </div>
     );
