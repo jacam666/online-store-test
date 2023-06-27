@@ -1,5 +1,5 @@
 .fat-loss-page-card-container {
-    margin-top: 55px;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,17 +19,23 @@
     color: #0d0d0d;
 }
 .fat-loss-page-card {
-    width: 45vw;
+    width: 90vw;
     background-color: rgb(244, 239, 233);
+    display: flex;
     margin: auto;
     margin-bottom: 10px;
-    height: 40vh;
     border-radius: 4px;
 }
-
+.fat-loss-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+}
 .fat-loss-page-cardImage {
     margin: auto;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
 .fat-loss-page-product-image-6 {
@@ -42,15 +48,19 @@
 }
 
 .fat-loss-page-product-name  {
-    color: black;
+    /*color: black;
     text-align: center;
     width: 90%;
     margin: auto;
-    margin-bottom: 10%;
+    margin-bottom: 10%;*/
+
+    color: black;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
-.fat-loss-page-product-name-1,
-.fat-loss-page-product-name-8 {
-    margin-bottom: 19%
+.fat-loss-product-name-container {
+    height: 60px;
 }
 
 .fat-loss-page-link {
@@ -60,4 +70,55 @@
 .fat-loss-page-price {
     color: black;
     text-align: center;
+}
+
+
+@media screen and (min-width: 392px) and (max-width: 639px) {
+    .protein-page-image-container {}
+
+    .protein-page-card {}
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .fat-loss-image-container {
+        width: 50vw;
+    }
+
+    .fat-loss-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .fat-loss-image-container {
+        width: 50vw;
+    }
+
+    .fat-loss-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .fat-loss-image-container {
+        width: 50vw;
+    }
+
+    .fat-loss-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .protein-page-image-container {
+        width: 33vw;
+    }
+
+    .protein-page-card {
+        width: 33vw;
+        height: auto;
+    }
 }

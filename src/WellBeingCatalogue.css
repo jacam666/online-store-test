@@ -1,5 +1,5 @@
 .well-being-page-card-container {
-    margin-top: 55px;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,17 +10,23 @@
     color: #0d0d0d;
 }
 .well-being-page-card {
-    width: 45vw;
+    display: flex;
+    width: 90vw;
     background-color: rgb(244, 239, 233);
     margin: auto;
     margin-bottom: 10px;
-    height: 40vh;
     border-radius: 4px;
 }
-
+.well-being-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+}
 .well-being-page-cardImage {
     margin: auto;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
 .well-being-page-product-image-12 {
@@ -30,18 +36,19 @@
     transform: scale(0.8);
     margin-top: 0;
 }
-
+.well-being-product-name-container {
+    height: 60px;
+}
 .well-being-page-product-name  {
     color: black;
     text-align: center;
-    width: 90%;
+    width: 60%;
     margin: auto;
-    margin-bottom: 10%;
 }
-.well-being-page-product-name-1,
+/*.well-being-page-product-name-1,
 .well-being-page-product-name-8 {
     margin-bottom: 19%
-}
+}*/
 
 .well-being-page-link {
     text-decoration: none;
@@ -51,9 +58,6 @@
     color: black;
     text-align: center;
 }
-.well-being-page-price-17 {
-    padding-bottom: 15px;
-}
 .stock-image-container {
     display: flex;
     margin: auto;
@@ -62,4 +66,55 @@
     width: 95vw;
     margin: auto;
     border-radius: 4px;
+}
+
+
+@media screen and (min-width: 392px) and (max-width: 639px) {
+    .protein-page-image-container {}
+
+    .protein-page-card {}
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .well-being-image-container {
+        width: 50vw;
+    }
+
+    .well-being-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .well-being-image-container {
+        width: 50vw;
+    }
+
+    .well-being-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .well-being-image-container {
+        width: 49vw;
+    }
+
+    .well-being-page-card {
+        width: 49vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .well-being-image-container {
+        width: 33vw;
+    }
+
+    .well-being-page-card {
+        width: 33vw;
+        height: auto;
+    }
 }

@@ -20,7 +20,7 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="well-being-page-card" key={productItem.id}>
                         <div>
                             <Link to={productItem.to} className='well-being-page-link'>
-                                <div>
+                                <div className='well-being-image-container'>
                                     <img
                                         className={`well-being-page-cardImage well-being-page-product-image-${productItem.id}`}
                                         src={productItem.image}
@@ -28,7 +28,7 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                                     />
                                 </div>
 
-                                <div>
+                                <div className='well-being-product-name-container'>
                                     <h2 className={`well-being-page-product-name well-being-page-product-name-${productItem.id}`}>
                                         {productItem.name}
                                     </h2>

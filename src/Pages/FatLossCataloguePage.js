@@ -20,7 +20,7 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
                     <div className="fat-loss-page-card" key={productItem.id}>
                         <div>
                             <Link to={productItem.to} className='fat-loss-page-link'>
-                                <div>
+                                <div className='fat-loss-image-container'>
                                     <img
                                         className={`fat-loss-page-cardImage fat-loss-page-product-image-${productItem.id}`}
                                         src={productItem.image}
@@ -28,7 +28,7 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
                                     />
                                 </div>
                                 
-                                <div>
+                                <div className='fat-loss-product-name-container'>
                                     <h2 className={`fat-loss-page-product-name fat-loss-page-product-name-${productItem.id}`}>
                                         {productItem.name}
                                     </h2>

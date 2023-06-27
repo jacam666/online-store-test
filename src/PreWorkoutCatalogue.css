@@ -113,12 +113,5 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .pre-workout-page-image-container {
-        width: 33vw;
-    }
-
-    .pre-workout-page-card {
-        width: 33vw;
-        height: auto;
-    }
+    
 }
