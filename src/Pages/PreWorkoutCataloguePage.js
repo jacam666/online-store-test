@@ -22,14 +22,14 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="pre-workout-page-card" key={productItem.id}>
                         <div>
                             <Link to={productItem.to} className='pre-workout-page-link'>
-                                <div>
+                                <div className='pre-workout-page-image-container'>
                                     <img
                                         className={`pre-workout-page-cardImage pre-workout-page-product-image-${productItem.id}`}
                                         src={productItem.image}
                                         alt={productItem.name}
                                     />
                                 </div>
-                                <div>
+                                <div className='pre-workout-page-product-name-container'>
                                     <h2 className={`pre-workout-page-product-name pre-workout-page-product-name-${productItem.id}`}>
                                         {productItem.name}
                                     </h2>
