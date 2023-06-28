@@ -17,7 +17,7 @@ const AfterAdvancedBlueCandy = ({ productItem, handleAddProduct }) => {
         flavour: "Blue Candy Flavour",
         price: 39.99,
         description:
-            "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after them hard gruelling workouts. Suitable for vegetarian’s.",
+            "After Train Advanced has been specially formulated to aid recovery straight after a workout. WIth the very best ingredients 100% whey protein isolate, cyclic dextrin, creatine and glutamine makes this one of the best all in one recovery drinks on the market. With it’s easy to mix formula and superb flavour it is amazingly refreshing and easy to drink after those hard gruelling workouts. Suitable for vegetarian’s.",
 
         servings: "30 x 65g servings",
         directions:
