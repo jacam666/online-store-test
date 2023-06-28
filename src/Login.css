@@ -1,0 +1,95 @@
+.login-container,
+.signUp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: auto;
+    width: 50vw;
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: rgb(246, 242, 238);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.signUp-Form,
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp-header,
+.login-header {
+    color: #0b0b0b;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.signUp-Email,
+.signUp-Password,
+.login-password,
+.login-email,
+.signUp-Name {
+    margin-bottom: 1rem;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-submit-button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: auto;
+    padding: 0.6rem 4.7em;
+    font-size: 1rem;
+    color: #0b0b0b;
+    background-color: rgb(245, 236, 223);
+}
+
+.signup-submit-button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: auto;
+    padding: 0.6rem 4em;
+    font-size: 1rem;
+    color: #100f0f;
+    background-color: rgb(245, 236, 223);
+}
+.login-text,
+.register-text {
+    color: #0a0909;
+    margin: 20px 0;;
+}
+
+.login-link,
+.signup-link {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.login-link-container {
+    width: auto;
+    text-align: center;
+    padding: 0.6rem 4.7em;
+    border-radius: 4px;
+    background-color: rgb(245, 236, 223);
+}
+
+.signup-link-container {
+    width: auto;
+    text-align: center;
+    padding: 0.6rem 4em;
+    border-radius: 4px;
+    color: #0b0b0b;
+    background-color: rgb(245, 236, 223);
+}

@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import "../Login.css";
 
 const LoginPage = ({ isLoggedIn }) => {
   const Navigate = useNavigate();
@@ -30,9 +31,9 @@ const LoginPage = ({ isLoggedIn }) => {
   }
 
   return (
-    <div className="login">
+    <div className="login-container">
       <div>
-      <div className="login-container">
+      <div className="login">
         <form className="login-form" action="POST">
           <h1 className="login-header">Login</h1>
           <input
@@ -53,7 +54,7 @@ const LoginPage = ({ isLoggedIn }) => {
           />
           {/*<input className="submit-button" type="submit" onClick={submit} />*/}
           <button className="login-submit-button" type="submit" onClick={submit}>Login</button>
-          <p className="or">or</p>
+          <p className="register-text">Haven't got an account? Please Register:</p>
           <div className="signup-link-container">
             <Link className="signup-link" to="/SignupPage">
               Register

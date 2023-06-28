@@ -64,7 +64,7 @@ function SignupPage( { setIsUserLoggedIn}) {
           />
           {/*<input className="submit-button" type="submit" onClick={submit} />*/}
           <button className="signup-submit-button" type="submit" onClick={submit}>Register</button>
-          <p className="or">or</p>
+          <p className="login-text">If you already have an account please Login:</p>
           <div className="login-link-container">
             <Link className="login-link" to="/LoginPage">
               Login
