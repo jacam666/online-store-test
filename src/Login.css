@@ -43,7 +43,6 @@
 }
 
 .login-submit-button {
-    padding: 0.5rem;
     border-radius: 4px;
     border: none;
     width: auto;
@@ -66,7 +65,12 @@
 .login-text,
 .register-text {
     color: #0a0909;
-    margin: 20px 0;;
+    margin: 20px 0;
+    text-align: center;
+}
+.login-text-container,
+.register-text-container {
+    width: 70%;
 }
 
 .login-link,

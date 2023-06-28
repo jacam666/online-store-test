@@ -54,7 +54,9 @@ const LoginPage = ({ isLoggedIn }) => {
           />
           {/*<input className="submit-button" type="submit" onClick={submit} />*/}
           <button className="login-submit-button" type="submit" onClick={submit}>Login</button>
+          <div className="register-text-container">
           <p className="register-text">Haven't got an account? Please Register:</p>
+          </div>
           <div className="signup-link-container">
             <Link className="signup-link" to="/SignupPage">
               Register

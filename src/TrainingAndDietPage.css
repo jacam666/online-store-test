@@ -12,7 +12,8 @@
     background-color: rgb(244, 239, 233);
     display: flex;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
     border-radius: 4px;
 }
 .training-page-image-container {
@@ -28,15 +29,8 @@
     width: 80%;
     height: auto;
     object-fit: cover;
+    margin-bottom: 20px;
     
-}
-
-.training-page-product-image-24 {
-    transform: scale(0.6);
-}
-.training-page-product-image-20 {
-    transform: scale(0.7);
-    margin-top: 11%;
 }
 
 .training-page-product-name  {
@@ -63,12 +57,13 @@
     text-align: center;
 }
 .training-image-container {
+    position: relative;
     display: block;
     margin: auto;
     border-radius: 4px;
-    width: 92vw;
+    width: 98vw;
     background-color: rgb(244, 239, 233);
-    padding: 5px;
+    margin-top: 0;
 }
 .training-studio,
 .training-certificate {
@@ -80,24 +75,28 @@
 .training-studio-text-container {
     display: flex;
     justify-content: center;
-    width: 85vw;
-    margin: 10px auto;
+    align-items: center;
+    width: 98vw;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .training-studio-text {
     text-align: center;
     font-size: 1.2rem;
-    padding: 5px;
+    width: 98vw;
+    padding: 10px 0;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
     background-color: rgb(240, 228, 212);
 }
-.training-image-container {
-    position: relative;
-}
+
 .training-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 95%);
+    transform: translate(-50%, 75%);
     width: 30%;
     height: 30%;
 }
@@ -106,45 +105,67 @@
     background : #e9e3e3;
     font-size: 14px;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0;
     border-radius: 4px;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
-
-@media screen and (min-width: 392px) {
-    .training-page-card-container {
-        padding-top: 0;
-    }
-    .certificate-and-text-container {
-        display: flex;
-    }
-    .training-image-container {
-        width: 95vw;
-    }
+@media screen and (min-width: 400px ) and (max-width: 768px ) {
+    .training-studio,
     .training-certificate {
-        width: 47vw;
-        height: auto;
-    }
-    .training-studio-text {
-        width: 47vw;
-        height: auto;
-        margin: auto;
-    }
-    .training-studio {
-        display: block;
-        width: 60%;
-        height: 35vh;
-        margin-bottom: 10px;
-    }
-    .training-page-card {
+        width: 50vw;
     }
 }
-
-@media screen and (min-width: 640px) and (max-width: 768px) {
-    
+@media screen and (min-width: 769px) {
+    .training-page-card {
+    }
+    .training-page-card-container {
+        padding-top: 50px;
+        padding-bottom: 60px;
+        overflow: auto;
+    }
+    .training-image-container {
+        display: flex;
+        height: auto;
+    }
+    .training-page-cardImage-24 {
+margin-top: 20px;
+    }
+    .training-certificate {
+        width: 50vw;
+        height: 40vh;
+    }
+    .training-studio {
+        margin: auto;
+        width: 50vw;
+        height: 40vh;
+    }
+    .training-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(190%, 15%);
+        width: 10%;
+        height: 30%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .training-page-product-image-24 {
+        transform: scale(0.7);
+    }
+    .training-page-product-image-20 {
+        transform: scale(0.7);
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .training-page-product-image-24 {
+        transform: scale(0.6);
+    }
+    .training-page-product-image-20 {
+        transform: scale(0.6);
+    }
     
 }
 
