@@ -11,7 +11,7 @@
     display: flex;
     width: 90vw;
     background-color: rgb(244, 239, 233);
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 4px;
 }
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) {
     .protein-page-image-container {
         width: 33vw;
     }
@@ -106,16 +106,6 @@
     .protein-page-card {
         width: 33vw;
         height: auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .protein-page-image-container {
-        width: 33vw;
-    }
-
-    .protein-page-card {
-        width: 33vw;
-        height: auto;
+        padding: 1px 0;
     }
 }
