@@ -37,6 +37,7 @@ import PreWorkoutCataloguePage from "../../../../Pages/PreWorkoutCataloguePage";
 import FatLossCataloguePage from "../../../../Pages/FatLossCataloguePage";
 import WellBeingCataloguePage from "../../../../Pages/WellBeingCataloguePage";
 import TrainingAndDietPage from "../../../../Pages/TrainingAndDietPage";
+import { click } from "@testing-library/user-event/dist/click";
 
 const AppRoutes = ({
     productItems,
@@ -60,7 +61,7 @@ const AppRoutes = ({
             <Route path="/HomePage" element={ <HomePage />}/>
             <Route path="/" element={ <HomePage /> } />
             <Route path="/ProteinCataloguePage" element={ <ProteinCataloguePage handleAddProduct={handleAddProduct} /> }/>
-            <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} />} />
+            <Route path="/PreWorkoutCataloguePage" element={ <PreWorkoutCataloguePage handleAddProduct={handleAddProduct} click={click} />} />
             <Route path="/FatLossCataloguePage" element={ <FatLossCataloguePage handleAddProduct={handleAddProduct}/> } />
             <Route path="/WellBeingCataloguePage" element={ <WellBeingCataloguePage handleAddProduct={handleAddProduct} />} />
             <Route path="/TrainingAndDietPage" element={ <TrainingAndDietPage handleAddProduct={handleAddProduct} /> } />

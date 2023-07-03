@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 //import data from "../components/back/Data/Data";
 import homepageStudio from "../components/images/HomePageImages/homepage-studio-image.jpg";
 import sncproducts from "../components/images/snc-products.jpg";
@@ -99,6 +99,7 @@ function HomePage() {
   );
   */
     <div>
+      
       <div className="homepage-body">
         <img
           className="homepage-snc-products"
@@ -113,11 +114,11 @@ function HomePage() {
                 src={afterTrainDisplayImage}
                 alt="protein"
               />
-              <Link to="/ProteinCataloguePage">
+              {/*<Link to="/ProteinCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Proteins</p>
                 </div>
-              </Link>
+  </Link>*/}
             </div>
           </div>
           <div className="pre-workout-product-card-container">
@@ -127,11 +128,11 @@ function HomePage() {
                 src={b4Extreme}
                 alt="protein"
               />
-              <Link to="/PreWorkoutCataloguePage">
+              {/*<Link to="/PreWorkoutCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Pre-Workouts</p>
                 </div>
-              </Link>
+</Link>*/}
             </div>
           </div>
           <div className="fat-loss-product-card-container">
@@ -141,11 +142,11 @@ function HomePage() {
                 src={FatLossImages}
                 alt="protein"
               />
-              <Link to="/FatLossCataloguePage">
+              {/*<Link to="/FatLossCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Fat Loss Products</p>
                 </div>
-              </Link>
+</Link>*/}
             </div>
           </div>
           <div className="wellbeing-product-card-container">
@@ -155,11 +156,11 @@ function HomePage() {
                 src={sncDisplayImage}
                 alt="protein"
               />
-              <Link to="/WellBeingCataloguePage">
+              {/*<Link to="/WellBeingCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Wellbeing Products</p>
                 </div>
-              </Link>
+</Link>*/}
             </div>
           </div>
           <div className="diet-product-card-container">
@@ -169,11 +170,11 @@ function HomePage() {
                 src={homepageStudio}
                 alt="diet"
               />
-              <Link to="/TrainingAndDietPage">
+              {/*<Link to="/TrainingAndDietPage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Training and Diet Plans</p>
                 </div>
-              </Link>
+</Link>*/}
             </div>
           </div>
         </div>

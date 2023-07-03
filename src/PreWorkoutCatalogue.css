@@ -1,10 +1,8 @@
 .pre-workout-page-card-container {
-    padding-top: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 40px;
     margin: auto;
 }
 
@@ -31,7 +29,7 @@
     object-fit: cover;
 }
 
-.pre-workout-page-product-image-9,
+/*.pre-workout-page-product-image-9,
 .pre-workout-page-product-image-13 {
     transform: scale(0.7);
 }
@@ -45,7 +43,19 @@
 .pre-workout-page-product-image-19 {
     transform: scale(0.7);
 }
-
+*/
+.pre-workout-page-product-image-9,
+.pre-workout-page-product-image-13 {
+    height: 150px;
+    width: auto;
+}
+.pre-workout-page-product-image-14,
+.pre-workout-page-product-image-19,
+.pre-workout-page-product-image-11,
+.pre-workout-page-product-image-10 {
+    height: 170px;
+    width: auto;
+}
 .pre-workout-page-product-name-container {
     height: 100px;
     margin-top: 0;

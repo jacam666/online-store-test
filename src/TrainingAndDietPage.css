@@ -1,11 +1,9 @@
 .training-page-card-container {
-    padding-top: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 40px;
-    height: 100vh;
+    height: 100%;
 }
 .training-page-card {
     width: 48vw;
@@ -57,7 +55,7 @@
     text-align: center;
 }
 .training-image-container {
-    position: relative;
+    /*position: relative;*/
     display: block;
     margin: auto;
     border-radius: 4px;
@@ -92,15 +90,15 @@
     background-color: rgb(240, 228, 212);
 }
 
-.training-text-overlay {
+/*.training-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 75%);
     width: 30%;
     height: 30%;
-}
-.training-image-text {
+}*/
+/*.training-image-text {
     color: rgb(2, 2, 2);
     background : #e9e3e3;
     font-size: 14px;
@@ -109,6 +107,7 @@
     border-radius: 4px;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
+*/
 @media screen and (min-width: 400px ) and (max-width: 768px ) {
     .training-studio,
     .training-certificate {
@@ -139,32 +138,44 @@ margin-top: 20px;
         width: 50vw;
         height: 40vh;
     }
-    .training-text-overlay {
+    /*.training-text-overlay {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(190%, 15%);
         width: 10%;
         height: 30%;
-    }
+    }*/
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .training-page-product-image-24 {
+    /*.training-page-product-image-24 {
         transform: scale(0.7);
+        
     }
     .training-page-product-image-20 {
         transform: scale(0.7);
-    }
+    }*/
+    
     
 }
 
 @media screen and (min-width: 1025px) {
-    .training-page-product-image-24 {
+    /*.training-page-product-image-24 {
         transform: scale(0.6);
     }
     .training-page-product-image-20 {
         transform: scale(0.6);
+    }*/
+    .training-page-product-image-24 {
+        height: 400px;
+        width: auto;
+        margin-top: 20px;
+    }
+    .training-page-product-image-20 {
+        height: 400px;
+        width: auto;
+        margin-top: 20px;
     }
     
 }

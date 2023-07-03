@@ -1,6 +1,5 @@
 .homepage-body {
     height: 100%;
-    padding-bottom: 60px;
 }
 
 .diet-product-card-container,
@@ -8,18 +7,17 @@
 .fat-loss-product-card-container,
 .pre-workout-product-card-container 
 .protein-product-card-container {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     margin: auto;
     width: 100%;
 }
-
+/*
 .image-container {
     position: relative;
-    /*display: inline-block;*/
 }
-
-.text-overlay {
+*/
+/*.text-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +26,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: rgba(0, 0, 0, 0.1);*/
     cursor: pointer;
 }
 
@@ -41,10 +38,9 @@
     padding: 10px;
     font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
-
+*/
 .homepage-snc-products {
     width: 100%;
-    margin-top: 20px;
 }
 
 .homePage-image {

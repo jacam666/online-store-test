@@ -52,11 +52,11 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                 <div className='training-image-container'>
                         <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
                     <img className='training-studio' src={studioImage} alt='studio' />
-                    <Link to="/TheStudioPage">
+                    {/*<Link to="/TheStudioPage">
                         <div className="training-text-overlay">
                             <p className="training-image-text">SNC Studio</p>
                         </div>
-                </Link>
+                </Link>*/}
                 </div>
             </div>
         </div>
