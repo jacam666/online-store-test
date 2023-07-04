@@ -3,6 +3,7 @@ import data from '../components/back/Data/Data';
 import "../components/ProteinCatalogue.css";
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
+import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "5", "2", "3", "4", "7", "8", "16"];
@@ -13,6 +14,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <img className='protein-banner' src={ProteinBanner}  alt="protein" />
             <div className="protein-page-card-container">
                 {filteredProducts.map((productItem) => (
                     <div className="protein-page-card" key={productItem.id}>

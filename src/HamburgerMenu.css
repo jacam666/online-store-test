@@ -20,8 +20,9 @@
     top: 0.2rem;
     right: 0.3rem;
     /*background-image: radial-gradient(#115b4c, #B6EDC8);*/
-    /*background-image: radial-gradient(#f1ecec, #1b1616);*/
-    background-image: radial-gradient(#050505, #1d1b1b);
+    /*background-image: radial-gradient(#fffefe, #202365);*/
+    /*background-image: radial-gradient(#050505, #1d1b1b);*/
+    background-image: radial-gradient(#ffffff, #fcfcfc);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -105,19 +106,20 @@
 
 .item-link {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     text-decoration: none;
     /*color: #B6EDC8;*/
-    color: #ffffff ;
+    color: #000000 ;
     padding: 1rem 2rem;
     background-image: linear-gradient(to right,
             transparent,
             transparent,
-            #ffffff,
-            #e2b3b3);
+            #6986a2,
+            #e9dfdf);
     background-size: 300%;
     transition: all .4s;
+    border-radius: 6px;
 }
 
 .item-link:hover,

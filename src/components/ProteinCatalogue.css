@@ -1,16 +1,19 @@
 .protein-page-card-container {
-    margin-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 40px;
+    margin-top: 10px;
 }
-
+.protein-banner {
+    height: 10vh;
+    width: 100vw;
+    margin-top: -10px;
+}
 .protein-page-card {
     display: flex;
-    width: 90vw;
-    background-color: rgb(244, 239, 233);
+    width: 100vw;
+    /*background-color: rgb(244, 239, 233);*/
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -22,7 +25,7 @@
     margin-bottom: 20px;*/
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100vw;
 }
 
 .protein-page-cardImage {
@@ -32,7 +35,6 @@
     margin: auto;
     width: 50%;
     height: auto;
-    object-fit: cover;
 }
 
 .protein-page-product-image-1 {
@@ -52,6 +54,7 @@
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    height: 2rem;
 }
 
 .protein-page-link {
@@ -61,6 +64,7 @@
 .protein-page-price {
     color: black;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 .protein-add-button .product-add-button {
@@ -107,5 +111,15 @@
         width: 33vw;
         height: auto;
         padding: 1px 0;
+    }
+    .protein-banner {
+        height: 30vh;
+        margin-top: -30px;
+    }
+    .protein-page-product-name {
+        font-size: 2rem;
+    }
+    .protein-page-product-name-container {
+        height: 7rem;
     }
 }

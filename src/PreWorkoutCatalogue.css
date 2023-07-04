@@ -5,12 +5,16 @@
     width: 100%;
     margin: auto;
 }
-
+.pre-workout-banner {
+    width: 100vw;
+    height: 15vh;
+}
 .pre-workout-page-card {
-    width: 90vw;
-    background-color: rgb(244, 239, 233);
+    width: 100vw;
+    /*background-color: rgb(244, 239, 233);*/
     margin: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
     height: auto;
     border-radius: 4px;
     align-items: center;
@@ -19,43 +23,28 @@
 .pre-workout-page-image-container {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100vw;
 }
 
 .pre-workout-page-cardImage {
     margin: auto;
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 170px;
     object-fit: cover;
 }
-
 /*.pre-workout-page-product-image-9,
 .pre-workout-page-product-image-13 {
-    transform: scale(0.7);
-}
-
-.pre-workout-page-product-image-10,
-.pre-workout-page-product-image-11 {
-    transform: scale(0.9);
-}
-
-.pre-workout-page-product-image-14,
-.pre-workout-page-product-image-19 {
-    transform: scale(0.7);
-}
-*/
-.pre-workout-page-product-image-9,
-.pre-workout-page-product-image-13 {
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 .pre-workout-page-product-image-14,
-.pre-workout-page-product-image-19,
 .pre-workout-page-product-image-11,
+.pre-workout-page-product-image-19,
 .pre-workout-page-product-image-10 {
     height: 170px;
     width: auto;
 }
+*/
 .pre-workout-page-product-name-container {
     height: 100px;
     margin-top: 0;
@@ -64,7 +53,7 @@
 .pre-workout-page-product-name {
     color: black;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: auto;
     width: 60%;
 }
@@ -82,6 +71,7 @@
 .pre-workout-page-price {
     color: black;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .pre-workout-add-button .product-add-button {
@@ -129,6 +119,13 @@
 
     .pre-workout-page-card {
         width: 33vw;
-        height: auto;
+        height: 50vh;
     }
+    .pre-workout-banner {
+        height: 50vh;
+    }
+    .pre-workout-page-cardImage {
+        height: 230px;
+    }
+    
 }
