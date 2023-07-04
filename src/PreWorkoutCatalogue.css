@@ -122,10 +122,14 @@
         height: 50vh;
     }
     .pre-workout-banner {
-        height: 50vh;
+        height: 70vh;
     }
     .pre-workout-page-cardImage {
         height: 230px;
     }
+    /*.pre-workout-page-product-image-9 {
+        height: 175px;
+        margin-top: 40px;
+    }*/
     
 }

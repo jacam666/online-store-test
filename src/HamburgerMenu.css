@@ -23,11 +23,11 @@
     /*background-image: radial-gradient(#fffefe, #202365);*/
     /*background-image: radial-gradient(#050505, #1d1b1b);*/
     background-image: radial-gradient(#ffffff, #fcfcfc);
-    height: 6rem;
-    width: 6rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     transform: scale(0);
-    transition: transform 0.8s;
+    transition: transform 1s;
 }
 
 .nav-background.clicked {

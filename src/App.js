@@ -7,6 +7,7 @@ import AppRoutes from "./components/front/Products/Routes/Routes";
 //import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import HamburgerMenu from "./HamburgerMenu";
+import BasketIcon from "./BasketIcon";
 //import HomePage from "./Pages/HomePage";
 
 const App = () => {
@@ -60,6 +61,7 @@ const App = () => {
       {/*} <Navbar basketItems={basketItems} />*/}
 
       {/*<Logo />*/}
+      <BasketIcon />
       <HamburgerMenu click={click} setClick={setClick} />
       <AppRoutes
         productItems={productItems}
