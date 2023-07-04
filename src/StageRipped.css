@@ -7,7 +7,7 @@
     padding-top: 60px;
 }
 .product-container {
-    background-color: rgb(242, 244, 238);
+    /*background-color: rgb(242, 244, 238);*/
     height: 100vh;
 }
 .product-image-container {
@@ -16,7 +16,7 @@
     width: 80vw;
     margin: auto;
     margin-top: 10px;
-    background-color: rgb(240, 230, 216);
+    /*background-color: rgb(240, 230, 216);*/
     border-radius: 2px;
 }
 .stage-ripped-product-card-image {

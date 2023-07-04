@@ -7,7 +7,7 @@
     padding-top: 60px;
 }
 .product-container {
-    background-color: rgb(241, 242, 237);
+    /*background-color: rgb(241, 242, 237);*/
     height: auto;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -20,21 +20,21 @@
     width: 80vw;
     margin: auto;
     margin-top: 10px;
-    background-color: rgb(245, 236, 223);
+    /*background-color: rgb(245, 236, 223);*/
     border-radius: 2px;
 }
 .product-card-info {
     margin-top: 10px;
     height: auto;
     margin: auto;
-    background-color: rgb(245, 236, 223);
+    /*background-color: rgb(245, 236, 223);*/
     width: 80vw;
 }
 .product-card-image {
     height: 19%;
     width: 50%;
     margin: auto;
-    transform: scale(0.9);
+    /*transform: scale(0.9);*/
     padding-bottom: 10px;
 }
 .after-train-image{
@@ -59,7 +59,7 @@
 }
 .product-description {
     width: 80%;
-    background-color: rgb(240, 228, 212);
+    /*background-color: rgb(240, 228, 212);*/
     color: #131212;
     margin: auto;
     font-size: 1.2rem;
@@ -132,22 +132,22 @@
 
 }
 .product-flavour {
-    position: relative;
-    /*background-color: rgb(59, 59, 248);*/
-    width: 40vw;
+    /*position: relative;*/
+    
     margin: auto;
     text-align: center;
     padding: 5px 0;
     color: #fff;
+    font-size: 1.5rem;
 }
-.product-flavour:before,
+/*.product-flavour:before,
 .product-flavour:after {
     content: "";
     position: absolute;
     top: 0;
     width: 0;
     height: 0;
-}
+}*/
 
 .product-flavour:before {
     left: -20px;
