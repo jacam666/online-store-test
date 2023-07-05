@@ -6,13 +6,18 @@
     width: 100%;
     padding-bottom: 40px;
 }
+.wellbeing-banner {
+    height: 10vh;
+    margin-top: -8px;
+    width: 100vw;
+}
 .well-being-text-2 {
     color: #0d0d0d;
 }
 .well-being-page-card {
     display: flex;
     width: 90vw;
-    background-color: rgb(244, 239, 233);
+    /*background-color: rgb(244, 239, 233);*/
     margin: auto;
     margin-bottom: 10px;
     border-radius: 4px;

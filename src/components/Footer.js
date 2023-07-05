@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import "../components/Footer.css"
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -38,3 +38,4 @@ const Footer = () => {
 }
 
 export default Footer;
+*/

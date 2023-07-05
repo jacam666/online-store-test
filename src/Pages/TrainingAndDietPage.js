@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../TrainingAndDietPage.css"
 import studioImage from "../components/StudioImages/studio-image.jpg"
+import BasketIcon from '../BasketIcon';
 
 const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
@@ -15,6 +16,7 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <BasketIcon className="training-basket-icon" />
             <div className="training-page-card-container">
                 {filteredProducts.map((productItem) => (
                     <div className="training-page-card" key={productItem.id}>
@@ -36,7 +38,7 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="training-page-price">£{productItem.price}</div>
                             </Link>
-                            <div className='protein-add-button'>
+                            <div className='product-add-button'>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

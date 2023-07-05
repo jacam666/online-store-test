@@ -68,7 +68,8 @@
 }
 
 .protein-add-button .product-add-button {
-    background-color: rgb(235, 229, 220);
+    /*background-color: rgb(235, 229, 220);*/
+    background-color: #ffffff;
 
     text-align: center;
     box-shadow: none;
