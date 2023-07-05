@@ -3,7 +3,8 @@ import data from '../components/back/Data/Data';
 import { Link } from "react-router-dom"
 import AddToCartButton from '../components/AddToCartButton';
 import "../PreWorkoutCatalogue.css"
-import preWorkoutBanner from "../components/CarouselImages/CarouselB4Extreme.jpg"
+import preWorkoutBanner from "../components/CarouselImages/B4ExtremeBanner.png"
+import BasketIcon from '../BasketIcon';
 
 const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -17,6 +18,7 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <BasketIcon className="pre-workout-basket-icon" />
             <img className='pre-workout-banner' src={preWorkoutBanner} alt='preWorkout' />
             <div className="pre-workout-page-card-container">
                 {filteredProducts.map((productItem) => (

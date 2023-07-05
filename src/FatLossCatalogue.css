@@ -1,10 +1,12 @@
 .fat-loss-page-card-container {
-    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    padding-bottom: 40px;
+    width: 100vw;
+}
+.fat-loss-banner {
+    height: 11vh;
+    margin-top: -6px;
 }
 .fat-loss-text-1 {
     font-size: 1rem;
@@ -19,8 +21,8 @@
     color: #0d0d0d;
 }
 .fat-loss-page-card {
-    width: 90vw;
-    background-color: rgb(244, 239, 233);
+    width: 100vw;
+    /*background-color: rgb(244, 239, 233);*/
     display: flex;
     margin: auto;
     margin-bottom: 10px;
@@ -29,7 +31,7 @@
 .fat-loss-image-container {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100vw;
 }
 .fat-loss-page-cardImage {
     margin: auto;

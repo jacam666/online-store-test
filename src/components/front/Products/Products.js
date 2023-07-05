@@ -8,6 +8,7 @@ const Products = ({ productItem, handleAddProduct }) => {
     return (
         <div>
             <ImageCarousel />
+
             <div className="card-container">
                 {data.productItems &&
                     data.productItems.map((productItem) => (

@@ -3,6 +3,7 @@ import data from '../components/back/Data/Data';
 import {Link} from "react-router-dom"
 import AddToCartButton from '../components/AddToCartButton';
 import "../FatLossCatalogue.css"
+import fatLossBanner from "../components/CarouselImages/FatBurnerBanner.png"
 
 const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
 
@@ -15,6 +16,7 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
 
     return (
         <div>
+            <img className='fat-loss-banner' src={fatLossBanner} alt='fatLoss' />
             <div className="fat-loss-page-card-container">
                 {filteredProducts.map((productItem) => (
                     <div className="fat-loss-page-card" key={productItem.id}>
