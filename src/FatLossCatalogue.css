@@ -7,6 +7,7 @@
 .fat-loss-banner {
     height: 11vh;
     margin-top: -6px;
+    width:   100vw;
 }
 .fat-loss-text-1 {
     font-size: 1rem;
@@ -23,7 +24,6 @@
 .fat-loss-page-card {
     width: 100vw;
     /*background-color: rgb(244, 239, 233);*/
-    display: flex;
     margin: auto;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -122,5 +122,10 @@
     .fat-loss-page-card {
         width: 32vw;
         height: auto;
+    }
+    .fat-loss-banner {
+        margin-top: -11px;
+        height: 22vh;
+        margin-bottom: 10%;
     }
 }
