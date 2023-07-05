@@ -5,7 +5,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../TrainingAndDietPage.css"
 //import studioImage from "../components/StudioImages/studio-image.jpg"
 import BasketIcon from '../BasketIcon';
-import textBorderImage from "../components/images/grunge-border_1048-7373.webp"
+//import textBorderImage from "../components/images/grunge-border_1048-7373.webp"
 
 const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
