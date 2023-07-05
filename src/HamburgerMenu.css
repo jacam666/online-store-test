@@ -1,5 +1,4 @@
 .menu-label {
-    /*background-color: #B6EDC8;*/
     background-color: #0c0c0c;
     position: fixed;
     top: 0.2rem;
@@ -15,13 +14,8 @@
 
 .nav-background {
     position: fixed;
-    /*top: 6.5rem;
-    right: 6.5rem;*/
     top: 0.2rem;
     right: 0.3rem;
-    /*background-image: radial-gradient(#115b4c, #B6EDC8);*/
-    /*background-image: radial-gradient(#fffefe, #202365);*/
-    /*background-image: radial-gradient(#050505, #1d1b1b);*/
     background-image: radial-gradient(#ffffff, #fcfcfc);
     height: 3rem;
     width: 3rem;
@@ -109,7 +103,6 @@
     font-size: 1.5rem;
     font-weight: 300;
     text-decoration: none;
-    /*color: #B6EDC8;*/
     color: #000000 ;
     padding: 1rem 2rem;
     background-image: linear-gradient(to right,

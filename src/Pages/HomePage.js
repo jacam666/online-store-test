@@ -8,6 +8,7 @@ import FatLossImages from "../components/images/HomePageImages/homepage-fatloss-
 import afterTrainDisplayImage from "../components/CarouselImages/CarouselAfterTrain.jpg";
 import b4Extreme from "../components/CarouselImages/CarouselB4Extreme.jpg";
 import "../HomePage.css";
+import BasketIcon from "../BasketIcon";
 
 function HomePage() {
   return (
@@ -99,7 +100,7 @@ function HomePage() {
   );
   */
     <div>
-      
+      <BasketIcon />
       <div className="homepage-body">
         <img
           className="homepage-snc-products"

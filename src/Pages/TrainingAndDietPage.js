@@ -3,8 +3,9 @@ import data from '../components/back/Data/Data';
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../TrainingAndDietPage.css"
-import studioImage from "../components/StudioImages/studio-image.jpg"
+//import studioImage from "../components/StudioImages/studio-image.jpg"
 import BasketIcon from '../BasketIcon';
+import textBorderImage from "../components/images/grunge-border_1048-7373.webp"
 
 const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
@@ -49,11 +50,12 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                     </div>
                 ))}
                 <div className='training-studio-text-container'>
+                    {/*<img className='studio-text-border' src={textBorderImage} alt='border' />*/}
                     <p className='training-studio-text'>If you'd like to train face to face on a 1 to 1 basis or in small groups take a look at our state of the art SNC studio.</p>
                 </div>
                 <div className='training-image-container'>
                         <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
-                    <img className='training-studio' src={studioImage} alt='studio' />
+                    {/*<img className='training-studio' src={studioImage} alt='studio' />*/}
                     {/*<Link to="/TheStudioPage">
                         <div className="training-text-overlay">
                             <p className="training-image-text">SNC Studio</p>

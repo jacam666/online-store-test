@@ -4,7 +4,7 @@ import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 //import Logo from "./components/Logo";
 //import Navbar from "./Navbar";
-//import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import HamburgerMenu from "./HamburgerMenu";
 //import BasketIcon from "./BasketIcon";
@@ -72,7 +72,7 @@ const App = () => {
         setIsUserLoggedIn={setIsUserLoggedIn}
         click={click}
       />
-      {/*<Footer />*/}
+      <Footer />
 
     </div>
   );

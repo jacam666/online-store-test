@@ -50,8 +50,8 @@ function HamburgerMenu({ click, setClick }) {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink onClick={handleClick} to="/ContactPage" className="item-link">
-                            Contact Us
+                        <NavLink onClick={handleClick} to="/TheStudioPage" className="item-link">
+                            The SNC Studio
                         </NavLink>
                     </li>
                 </ul>
