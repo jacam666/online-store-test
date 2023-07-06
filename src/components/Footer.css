@@ -1,44 +1,3 @@
-/*.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.connect {
-    display: flex;
-    flex-direction: column;
-}
-
-ul.connect-links {
-    display: flex;
-    justify-content: space-around;
-    border: none;
-    display: flex;
-    list-style: none;
-    width: 100vw;
-    padding: 10px;
-}
-
-.instagram-link a,
-.twitter-link a,
-.facebook-link a {
-    color: #0a0a0a;
-}
-
-.connect-header {
-    color: #080808;
-}
-
-.connect-links a {
-    color: #0c0c0c;
-    text-decoration: none;
-}
-
-*/
-
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -47,6 +6,10 @@ ul.connect-links {
     width: 100vw;
     margin: auto;
     height: 30vh;
+    /*min-height: calc(100% - 90%);*/
+    /*position: fixed;
+    left: 0;
+    bottom: 0;*/
 }
 .connect-header {
     background-color: rgb(11, 11, 11);
@@ -54,7 +17,6 @@ ul.connect-links {
     text-align: center;
     padding-top: 10px;
     font-size: 1.3rem;
-
 }
 .connect-links {
     display: flex;
@@ -89,73 +51,3 @@ ul.connect-links {
     margin: auto;
     font-size: 0.9rem;
 }
-/*
-@media screen and (min-width: 392px) and (max-width: 767px) {
-    .contact-container {
-        flex-direction: row;
-    }
-
-    .contact-address {
-        margin-left: 30px;
-        margin-top: 30px;
-    }
-
-    .contact-map {
-        margin-right: 10px;
-        width: 50vw;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .contact-container {
-        flex-direction: row;
-    }
-
-    .contact-address {
-        margin-left: 30px;
-        margin-top: 30px;
-    }
-
-    .contact-map {
-        margin-right: 10px;
-        width: 50vw;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .contact-map {
-        width: 50vw;
-    }
-
-    .contact-address {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;justify-content: center;
-    }
-
-    .contact-phone-email {
-        width: 30%;
-        margin-left: 20px;
-    }
-    .contact-heading {
-        margin-right: 20px;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .contact-map {
-        width: 45vw;
-    }
-
-    .contact-address {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;justify-content: center;
-    }
-
-    .contact-phone-email {
-        width: 30%;
-        margin-left: 20px;
-    }
-}
-*/

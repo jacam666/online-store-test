@@ -57,6 +57,9 @@ const LoginPage = ({ isLoggedIn }) => {
           <div className="register-text-container">
           <p className="register-text">Haven't got an account? Please Register:</p>
           </div>
+
+            
+
           <div className="signup-link-container">
             <Link className="signup-link" to="/SignupPage">
               Register

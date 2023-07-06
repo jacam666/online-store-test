@@ -230,7 +230,7 @@ form.signUp-Form {
   display: block;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 15px auto;
+  margin: 25px auto;
   font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
   /*background-color: rgb(244, 229, 209);*/
   background-color: #fff;
@@ -611,8 +611,8 @@ form.signUp-Form {
     width: 12vw;
   }
 
-  button.product-add-button {
-    width: auto;
+  .product-add-button {
+    width: 20vw;
     font-size: 10px;
   }
 

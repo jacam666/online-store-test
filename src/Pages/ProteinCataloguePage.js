@@ -37,7 +37,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="protein-page-price">£{productItem.price}</div>
                             </Link>
-                            <div className='protein-add-button'>
+                            <div className='product-add-button'>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

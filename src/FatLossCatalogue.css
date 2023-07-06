@@ -8,6 +8,7 @@
     height: 11vh;
     margin-top: -6px;
     width:   100vw;
+    margin-bottom: 20px;
 }
 .fat-loss-text-1 {
     font-size: 1rem;
@@ -26,7 +27,9 @@
     /*background-color: rgb(244, 239, 233);*/
     margin: auto;
     margin-bottom: 10px;
-    border-radius: 4px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 35px;
+
 }
 .fat-loss-image-container {
     display: flex;
@@ -55,7 +58,7 @@
     width: 90%;
     margin: auto;
     margin-bottom: 10%;*/
-
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     width: 60%;
@@ -72,6 +75,7 @@
 .fat-loss-page-price {
     color: black;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 
