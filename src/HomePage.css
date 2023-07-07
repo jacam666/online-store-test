@@ -45,21 +45,18 @@
 
 .homePage-image {
     height: 22vh;
-    width: 95%;
-    padding: 10px;
+    width: 100vw;
     margin: auto;
 }
 
 .homePage-studio-image {
-    width: 95vw;
-    padding: 0 10px 0 10px;
+    width: 100vw;
     height: 30vh;
 }
 
 .pre-workout-homePage-image {
     height: 20vh;
-    width: 95%;
-    padding: 0 10px;
+    width: 100vw;
     margin: auto;
     margin-bottom: 0;
 }
@@ -86,8 +83,7 @@
 }
 .wellbeing-homePage-image {
     height: 25vh;
-    width: 95vw;
-    padding: 8px 10px;
+    width: 100vw;
     margin: auto;
     margin-top: 0;
 }
