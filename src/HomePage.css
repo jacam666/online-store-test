@@ -51,8 +51,9 @@
 }
 
 .homePage-studio-image {
-    width: 95%;
+    width: 95vw;
     padding: 0 10px 0 10px;
+    height: 30vh;
 }
 
 .pre-workout-homePage-image {
@@ -60,6 +61,7 @@
     width: 95%;
     padding: 0 10px;
     margin: auto;
+    margin-bottom: 0;
 }
 
 .fat-loss-homePage-image {
@@ -68,11 +70,24 @@
     padding: 5px 10px 0 10px;
     margin-bottom: 0;
 }
-
+.homepage-info-text-image {    margin: auto;
+    height: 25vh;
+    width: 100vw;
+}
+.homepage-b4Train-text-image {
+    height: 30vh;
+    width: 100vw;
+    border: none;
+}
+.homepage-stage-ripped-text-image {
+    height: 20vh;
+    width: 100vw;
+    margin-top: 0;
+}
 .wellbeing-homePage-image {
-    height: 95%;
-    width: 95%;
-    padding: 0 10px;
+    height: 25vh;
+    width: 95vw;
+    padding: 8px 10px;
     margin: auto;
     margin-top: 0;
 }

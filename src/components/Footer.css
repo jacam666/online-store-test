@@ -5,11 +5,7 @@
     background-color: rgb(11, 11, 11);
     width: 100vw;
     margin: auto;
-    height: 30vh;
-    /*min-height: calc(100% - 90%);*/
-    /*position: fixed;
-    left: 0;
-    bottom: 0;*/
+    height: 25vh;
 }
 .connect-header {
     background-color: rgb(11, 11, 11);
@@ -24,6 +20,7 @@
     align-items: center; 
     background-color: rgb(11, 11, 11);
     padding: 12px 0;
+    border: none;
 }
 /*.instagram-link a,
 .twitter-link a,

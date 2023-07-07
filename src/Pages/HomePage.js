@@ -4,7 +4,7 @@ import React from "react";
 import homepageStudio from "../components/images/HomePageImages/homepage-studio-image.jpg";
 import sncproducts from "../components/images/snc-products.jpg";
 import sncDisplayImage from "../components/images/homepage-snc-display-image.jpg";
-import FatLossImages from "../components/images/HomePageImages/homepage-fatloss-image.jpg";
+//import FatLossImages from "../components/images/HomePageImages/homepage-fatloss-image.jpg";
 import afterTrainDisplayImage from "../components/CarouselImages/CarouselAfterTrain.jpg";
 import b4Extreme from "../components/CarouselImages/CarouselB4Extreme.jpg";
 import "../HomePage.css";
@@ -120,6 +120,9 @@ function HomePage() {
                   <p className="image-text">Shop Proteins</p>
                 </div>
   </Link>*/}
+              <div className="homepage-info-text-image-container">
+                <img className="homepage-info-text-image" src="/images/13759 copy.png" alt="description" />
+              </div>
             </div>
           </div>
           <div className="pre-workout-product-card-container">
@@ -129,6 +132,9 @@ function HomePage() {
                 src={b4Extreme}
                 alt="protein"
               />
+              <div className="homepage-info-text-image-container">
+                <img className="homepage-b4Train-text-image" src="images/13759 copy b4 train.png" alt="description" />
+              </div>
               {/*<Link to="/PreWorkoutCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Pre-Workouts</p>
@@ -136,20 +142,22 @@ function HomePage() {
 </Link>*/}
             </div>
           </div>
-          <div className="fat-loss-product-card-container">
+          {/*<div className="fat-loss-product-card-container">
             <div className="image-container">
               <img
                 className="fat-loss-homePage-image"
                 src={FatLossImages}
                 alt="protein"
-              />
-              {/*<Link to="/FatLossCataloguePage">
+/>*/}
+          {/*<Link to="/FatLossCataloguePage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Fat Loss Products</p>
                 </div>
 </Link>*/}
-            </div>
-          </div>
+          {/*}  </div>
+          </div>*/}
+
+
           <div className="wellbeing-product-card-container">
             <div className="image-container">
               <img
@@ -162,7 +170,11 @@ function HomePage() {
                   <p className="image-text">Shop Wellbeing Products</p>
                 </div>
 </Link>*/}
+              <div className="homepage-info-text-image-container">
+                <img className="homepage-stage-ripped-text-image" src="/images/13759 copy staged ripped.png" alt="description" />
+              </div>
             </div>
+
           </div>
           <div className="diet-product-card-container">
             <div className="image-container">
