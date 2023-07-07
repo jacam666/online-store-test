@@ -107,6 +107,9 @@ function HomePage() {
           src={sncproducts}
           alt="supplements"
         />
+        <div className="homepage-info-text-image-container">
+          <img className="homepage-info-text-image" src="/images/13759 copy.png" alt="description" />
+        </div>
         <div className="homePage-product-cards-container">
           <div className="protein-product-card-container">
             <div className="image-container">
@@ -121,8 +124,9 @@ function HomePage() {
                 </div>
   </Link>*/}
               <div className="homepage-info-text-image-container">
-                <img className="homepage-info-text-image" src="/images/13759 copy.png" alt="description" />
+                <img className="homepage-info-text-image" src="/images/13759 copy after train.png" alt="description" />
               </div>
+
             </div>
           </div>
           <div className="pre-workout-product-card-container">
@@ -133,7 +137,7 @@ function HomePage() {
                 alt="protein"
               />
               <div className="homepage-info-text-image-container">
-                <img className="homepage-b4Train-text-image" src="images/13759 copy b4 train.png" alt="description" />
+                <img className="homepage-b4Train-text-image" src="/images/13759 copy b4 train.png" alt="description" />
               </div>
               {/*<Link to="/PreWorkoutCataloguePage">
                 <div className="text-overlay">
