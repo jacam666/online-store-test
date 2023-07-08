@@ -1,7 +1,7 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 //import data from "../components/back/Data/Data";
-import homepageStudio from "../components/images/HomePageImages/homepage-studio-image.jpg";
+//import homepageStudio from "../components/images/HomePageImages/homepage-studio-image.jpg";
 import sncproducts from "../components/images/snc-products.jpg";
 import sncDisplayImage from "../components/images/homepage-snc-display-image.jpg";
 //import FatLossImages from "../components/images/HomePageImages/homepage-fatloss-image.jpg";
@@ -180,20 +180,20 @@ function HomePage() {
             </div>
 
           </div>
-          <div className="diet-product-card-container">
+          {/*<div className="diet-product-card-container">
             <div className="image-container">
               <img
                 className="homePage-studio-image"
                 src={homepageStudio}
                 alt="diet"
-              />
+/> */}
               {/*<Link to="/TrainingAndDietPage">
                 <div className="text-overlay">
                   <p className="image-text">Shop Training and Diet Plans</p>
                 </div>
 </Link>*/}
-            </div>
-          </div>
+            {/*</div>
+          </div>*/}
         </div>
       </div>
     </div>
