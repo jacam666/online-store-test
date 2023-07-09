@@ -390,8 +390,8 @@ form.signUp-Form {
     margin-top: 0;
   }
 
-  button.product-add-button {
-    width: auto;
+  .product-add-button {
+    width: 30vw;
   }
 
   .main-page-product-name {
@@ -436,8 +436,8 @@ form.signUp-Form {
     height: auto;
   }
 
-  button.product-add-button {
-    width: auto;
+  .product-add-button {
+    width: 30vw;
   }
 
   .login-container,
@@ -484,18 +484,17 @@ form.signUp-Form {
   .main-page-product-name {
     width: 20vw;
     font-size: 12px;
-    margin-top: 18px;
+    margin-top: 25px;
   }
 
-  button.product-add-button {
-    width: auto;
+  .product-add-button {
+    width: 20vw;
   }
 
   .login-container,
   .signUp-container {
     width: 30vw;
   }
-
 }
 
 

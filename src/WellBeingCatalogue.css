@@ -21,6 +21,8 @@
     margin: auto;
     margin-bottom: 10px;
     border-radius: 4px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+
 }
 .well-being-image-container {
     display: flex;
@@ -49,6 +51,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
+    font-size: 2rem;
 }
 /*.well-being-page-product-name-1,
 .well-being-page-product-name-8 {
@@ -58,10 +61,15 @@
 .well-being-page-link {
     text-decoration: none;
 }
+.well-being-product-name-container {
+    height: 60px;
+    margin-bottom: 80px;
+}
 
 .well-being-page-price {
     color: black;
     text-align: center;
+    font-size: 1.7rem;
 }
 .stock-image-container {
     display: flex;

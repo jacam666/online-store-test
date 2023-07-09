@@ -60,7 +60,7 @@
     width: 100vw;
 }
 
-@media screen and (min-width: 640px) and (max-width: 768px) {
+/*@media screen and (min-width: 640px) and (max-width: 768px) {
     .homepage-snc-products {
         margin-bottom: -4px;
     }
@@ -154,9 +154,9 @@
         width: 45vw;
     }
 }
-
+*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .homepage-snc-products {
+    /*.homepage-snc-products {
         margin-bottom: -4px;
     }
 
@@ -200,7 +200,7 @@
     .homePage-studio-image {
         height: 25vh;
         width: 50vw;
-    }
+    }*/
 }
 
 @media screen and (min-width: 1201px) {
