@@ -42,7 +42,7 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                                     £{productItem.price}
                                 </div>
                             </Link>
-                            <div className='product-add-button'>
+                            <div>
                             <AddToCartButton
                                 handleAddProduct={handleAddProduct}
                                 productItem={productItem}

@@ -77,11 +77,6 @@
     font-size: 1.6rem;
 }
 
-.pre-workout-add-button .product-add-button {
-    /*background-color: rgb(235, 229, 220);*/
-    background-color: #050505;
-}
-
 @media screen and (min-width: 445px) and (max-width: 639px) {
     .pre-workout-page-image-container {
         width: 50vw;
@@ -105,9 +100,8 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .pre-workout-page-product-name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
-   
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -127,12 +121,12 @@
     }
 
     .pre-workout-page-card {
-        width: 30vw;
+        width: 33vw;
         height: auto;
     }
     
     .pre-workout-banner {
-        height: 40vh;
+        height: auto;
         margin-top: -20px;
     }
     .pre-workout-page-cardImage {
@@ -145,5 +139,8 @@
         
         margin-bottom: 30px;
     }
-    
+    .pre-workout-page-product-image-9 {
+        height: 200px;
+        margin-top: 25px;
+    }
 }

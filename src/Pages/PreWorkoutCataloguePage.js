@@ -40,7 +40,7 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="pre-workout-page-price">£{productItem.price}</div>
                             </Link>
-                            <div className='pre-workout-add-button'>
+                            <div>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

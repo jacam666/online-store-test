@@ -39,7 +39,7 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                                 </div>
                                 <div className="training-page-price">£{productItem.price}</div>
                             </Link>
-                            <div className='product-add-button'>
+                            <div>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

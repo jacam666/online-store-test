@@ -48,3 +48,42 @@
     margin: auto;
     font-size: 0.9rem;
 }
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+    .contact-container {
+        height: 30vh;
+    }
+    .contact-map {
+        width: auto;
+        height: auto;
+    }
+    .contact-address {
+    font-size: 1.2rem;
+    }
+    .connect-links a,
+    .connect-header {
+        font-size: 1.8rem;
+    }
+    .connect-header {
+        padding: 20px 0;
+    }
+}
+@media screen and (min-width: 993px) {
+    .contact-map {
+        width: auto;
+        height: auto;
+    }
+    .contact-address {
+        font-size: 1.2rem;
+    }
+    .contact-container {
+        height: 35vh;
+    }
+    .connect-links a,
+    .connect-header {
+        font-size: 1.8rem;
+    }
+    .connect-header {
+        padding: 20px 0;
+    }
+}

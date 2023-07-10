@@ -225,23 +225,14 @@ form.signUp-Form {
     0px 2px 5px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.24);
   width: 40vw;
-  height: auto;
   display: block;
   cursor: pointer;
   text-transform: uppercase;
+  padding: 6px 0;
   margin: 25px auto;
   font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
   background-color: #000000;
 }
-
-
-/*.product-add-button:active {
-  background: #fff;
-  transform: translateY(2px);
-  box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
-  color: black;
-}
-*/
 .welcome-message {
   color: #fff;
   margin-top: 15px;
@@ -475,13 +466,12 @@ form.signUp-Form {
     margin-top: 25px;
   }
 
-  .product-add-button {
-    width: 20vw;
-  }
-
   .login-container,
   .signUp-container {
     width: 30vw;
+  }
+  .product-add-button {
+    width: 20vw;
   }
 }
 
@@ -599,7 +589,7 @@ form.signUp-Form {
   }
 
   .product-add-button {
-    width: 20vw;
+    width: 15vw;
     font-size: 1.2rem;
   }
 
