@@ -49,10 +49,7 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                         </div>
                     </div>
                 ))}
-                <div className='training-studio-text-container'>
-                    {/*<img className='studio-text-border' src={textBorderImage} alt='border' />*/}
-                    <p className='training-studio-text'>If you'd like to train face to face on a 1 to 1 basis or in small groups take a look at our state of the art SNC studio.</p>
-                </div>
+                    <img className='training-text' src="/images/13759 copystudiotext.png" alt='text' />
                 <div className='training-image-container'>
                         <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
                     {/*<img className='training-studio' src={studioImage} alt='studio' />*/}
