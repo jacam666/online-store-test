@@ -18,11 +18,10 @@ const BasketPage = ({
   const navigate = useNavigate();
 
   const handleCheckoutClick = () => {
-    navigate('/Checkout');
+    navigate("/Checkout");
   };
 
   return (
-    
     <div className="basket-items">
       <div className="basket-product-container">
         <div className="basket-product-card-info">
@@ -71,45 +70,50 @@ const BasketPage = ({
               </div>
             ))}
           </div>
-        
-        {basketItems.length > 0 && (
-          <div className="basket-totals">Basket Totals:</div>
-        )}
 
+          <div className="basket-totals-container">
+            {basketItems.length > 0 && (
+              <div className="basket-totals">Basket Totals:</div>
+            )}
 
-        {basketItems.length > 0 && (
-          <div className="basket-items-total-price-name">
-            <div>Subtotal :</div>
-            <div className="basket-subtotal">£{totalPrice.toFixed(2)}</div>
+            {basketItems.length > 0 && (
+              <div className="basket-items-total-price-name">
+                <div>Subtotal :</div>
+                <div className="basket-subtotal">£{totalPrice.toFixed(2)}</div>
+              </div>
+            )}
+
+            {basketItems.length > 0 && (
+              <div className="basket-shipping">
+                <h2 className="basket-shipping-header">Shipping :</h2>
+                <h2 className="basket-shipping-price">Flat rate : £3.99</h2>
+                <p className="basket-shipping-estimate">
+                  This is only an estimate. Prices will be updated during
+                  checkout.
+                </p>
+              </div>
+            )}
+
+            {basketItems.length > 0 && (
+              <div className="total-price-including-shipping">
+                <div className="total-price-including-shipping-header">
+                  Total price :
+                </div>
+                <div className="total-price-including-shipping-price">
+                  £{totalPriceIncludingShipping}
+                </div>
+              </div>
+            )}
           </div>
-        )}
 
-        {basketItems.length > 0 && (
-          <div className="basket-shipping">
-            <h2 className="basket-shipping-header">Shipping :</h2>
-            <h2 className="basket-shipping-price">Flat rate : £3.99</h2>
-            <p className="basket-shipping-estimate">This is only an estimate. Prices will be updated during checkout.</p>
-          </div>
-        )}
-
-
-
-        {basketItems.length > 0 && (
-          <div className="total-price-including-shipping">
-            <div className="total-price-including-shipping-header">Total price :</div>
-            <div className="total-price-including-shipping-price">£{totalPriceIncludingShipping}</div>
-          </div>
-        )}
-      
-
-      {basketItems.length > 0 && (
-        <div>
-          <button className="checkout-button" onClick={handleCheckoutClick}>
-            Proceed to checkout
-          </button>
+          {basketItems.length > 0 && (
+            <div>
+              <button className="checkout-button" onClick={handleCheckoutClick}>
+                Proceed to checkout
+              </button>
+            </div>
+          )}
         </div>
-      )}
-      </div>
       </div>
     </div>
   );
