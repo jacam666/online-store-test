@@ -10,11 +10,11 @@
 }
 
 .checkout-heading {
-    color: #f3efef;
+    color: #050505;
     display: block;
-    font-size: 28px;
+    font-size: 2.5rem;
     text-align: center;
-
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
     padding-top: 20px;
 }
 
@@ -56,20 +56,23 @@
 }
 
 .order-summary {
-    background: linear-gradient(to left,
+    /*background: linear-gradient(to left,
             rgb(24, 57, 57) 0%,
-            rgb(28, 41, 82) 100%);
+            rgb(28, 41, 82) 100%);*/
+    background-color:#fafdfa ;
     width: 80%;
     display: block;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 5px;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
+
 }
 
 .checkout-total,
 .order-summary-text {
-    color: #ffffff;
+    color: #0a0a0a;
 }
 .order-summary-heading {
     display: flex;
@@ -77,6 +80,9 @@
     padding: 10px;
     cursor: pointer;
     justify-content: space-between;
+    /*border: 1px solid black;
+    border-radius: 5px;*/
+
 }
 
 .accordion-content {
@@ -88,25 +94,26 @@
     display: block;
 }
 .checkout-basket-dropdown {
-    color: #ccc;
+    color: #090909;
     font-size: 10px;
     display: flex;
 }
 
 .arrow-icon {
     font-size: 10px;
-    color: #fff;
+    color: #090909;
 }
 
 .checkout-item-name {
-    color: #fff;
+    color: #080808;
     font-size: 12px;
     margin-left: 10px;
     width: 40vw;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 
 .checkout-item-quantity {
-    color: #fff;
+    color: #070707;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -114,7 +121,7 @@
     width: 30px;
 }
 .checkout-item-price {
-    color: #fff;
+    color: #040404;
     font-size: 12px;
     text-align: end;
     margin-left: 10px;
@@ -122,16 +129,16 @@
 .checkout-basket-item {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(9, 9, 9);
     padding: 5px 0;
 }
 
 
 .accordion-container {
-    border: 1px solid #ccc;
+    border: 1px solid #040404;
     border-radius: 5px;
     margin-right: 10px;
-    border: none;
+    
 }
 
 @media screen and (max-width: 391px) {
