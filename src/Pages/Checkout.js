@@ -32,7 +32,7 @@ const Checkout = ({ productItem, basketItems = [] }) => {
                     {isBasketOpen && <div className="checkout-basket-items">
                         {basketItems.map((item) => (
                             <div key={item.id} className="checkout-basket-item">
-                                <img className="checkout-item-image" src={item.image} alt={item.name}/> 
+                                <img className="checkout-item-image" src={item.image} alt={item.name} />
                                 <span className="checkout-item-name">{item.name}</span>
                                 <span className="checkout-item-quantity"> Quantity: {item.quantity}</span>
                                 <span className="checkout-item-price"> Price: {(item.quantity * item.price).toFixed(2)}</span>
@@ -41,8 +41,9 @@ const Checkout = ({ productItem, basketItems = [] }) => {
                     </div>}
 
                 </div>
-                <PayPalCheckout basketItems={basketItems} />
-
+                <div>
+                    <PayPalCheckout basketItems={basketItems} />
+                </div>
             </div>
         </div>
     );
