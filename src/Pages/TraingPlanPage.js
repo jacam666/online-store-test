@@ -1,6 +1,7 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const TrainingPlan = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -14,58 +15,61 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
     };
 
     return (
-        <div className="product-card">
-            <div className="product-container">
-                <div className="product-image-container">
-                    <div className="name-and-bullet-container">
-                        <h2 className="product-name">{product.name}</h2>
-                        <div className="bullet-points-container" >
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">1 Hour Online Training Plan</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">30 Years of Experience</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">Get Coaching from a Winner of over 30 Top Level Competitions</p>
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+            <div className="product-card">
+                <div className="product-container">
+                    <div className="product-image-container">
+                        <div className="name-and-bullet-container">
+                            <h2 className="product-name">{product.name}</h2>
+                            <div className="bullet-points-container" >
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">1 Hour Online Training Plan</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">30 Years of Experience</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">Get Coaching from a Winner of over 30 Top Level Competitions</p>
+                                </div>
                             </div>
                         </div>
+                        <img
+                            className="product-card-image"
+                            src={product.image}
+                            alt={product.name}
+                        />
                     </div>
-                    <img
-                        className="product-card-image"
-                        src={product.image}
-                        alt={product.name}
+                    <div className="product-card-info">
+                        <div className="product-price">
+                            <p>Price: £{product.price}</p>
+                        </div>
+
+                        <div className="product-description">
+                            <p>{product.description}</p>
+                        </div>
+                        <div className="servings-info">
+                            <p>{product.servings}</p>
+                        </div>
+                        <div className="product-directions">
+                            <p>{product.directions}</p>
+                        </div>
+                        <div className="product-advice">
+                            <p >{product.advice}</p>
+                        </div>
+                        <div className="product-storage">
+                            <p>{product.storage}</p>
+                        </div>
+                        <p className="product-ingredient">{product.ingredients}</p>
+                    </div>
+                    <AddToCartButton
+                        handleAddProduct={handleAddProduct}
+                        productItem={product}
                     />
                 </div>
-                <div className="product-card-info">
-                    <div className="product-price">
-                        <p>Price: £{product.price}</p>
-                    </div>
-
-                    <div className="product-description">
-                        <p>{product.description}</p>
-                    </div>
-                    <div className="servings-info">
-                        <p>{product.servings}</p>
-                    </div>
-                    <div className="product-directions">
-                        <p>{product.directions}</p>
-                    </div>
-                    <div className="product-advice">
-                        <p >{product.advice}</p>
-                    </div>
-                    <div className="product-storage">
-                        <p>{product.storage}</p>
-                    </div>
-                    <p className="product-ingredient">{product.ingredients}</p>
-                </div>
-                <AddToCartButton
-                handleAddProduct={handleAddProduct}
-                productItem={product}
-            />
             </div>
         </div>
     );

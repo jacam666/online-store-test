@@ -1,6 +1,7 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const Contest = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -37,84 +38,86 @@ const Contest = ({ productItem, handleAddProduct }) => {
     };
 
     return (
-        <div className="product-card">
-            <div className="product-container">
-                <div className="product-image-container">
-                    <div className="name-and-bullet-container">
-                        <h2 className="product-name">{product.name}</h2>
-                        <div className="bullet-points-container" >
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">1400mg of D-Aspartic Acid</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">700mg of Conjugated Linoleic Acid</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">300mg of Bulbine Natalensis</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">250mg of Muccuna Pruriens</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">200mg of Ashwagandha Root Extract</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">150mg of Liquorice Root Extract</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">150mg of Tongkat Ali Extract</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">100mg of Fenugreek Seed Extract</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">100mg 0f Avena Sativa (Derived from Oats)</p>
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+            <div className="product-card">
+                <div className="product-container">
+                    <div className="product-image-container">
+                        <div className="name-and-bullet-container">
+                            <h2 className="product-name">{product.name}</h2>
+                            <div className="bullet-points-container" >
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">1400mg of D-Aspartic Acid</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">700mg of Conjugated Linoleic Acid</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">300mg of Bulbine Natalensis</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">250mg of Muccuna Pruriens</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">200mg of Ashwagandha Root Extract</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">150mg of Liquorice Root Extract</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">150mg of Tongkat Ali Extract</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">100mg of Fenugreek Seed Extract</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">100mg 0f Avena Sativa (Derived from Oats)</p>
+                                </div>
                             </div>
                         </div>
+                        <img
+                            className="product-card-image"
+                            src={product.image}
+                            alt={product.name}
+                        />
                     </div>
-                    <img
-                        className="product-card-image"
-                        src={product.image}
-                        alt={product.name}
+
+                    <div className="product-card-info">
+                        <div className="product-price">
+                            <p>Price: {product.price}</p>
+                        </div>
+
+                        <div className="product-description">
+                            <p>{product.description}</p>
+                        </div>
+                        <div className="servings-info">
+                            <p>{product.servings}</p>
+                        </div>
+                        <div className="product-directions">
+                            <p>{product.directions}</p>
+                        </div>
+                        <div className="product-advice">
+                            <p>{product.advice}</p>
+                        </div>
+                        <div className="product-storage">
+                            <p>{product.storage}</p>
+                        </div>
+                    </div>
+                    <AddToCartButton
+                        handleAddProduct={handleAddProduct}
+                        productItem={product}
                     />
                 </div>
-
-                <div className="product-card-info">
-                    <div className="product-price">
-                        <p>Price: {product.price}</p>
-                    </div>
-
-                    <div className="product-description">
-                        <p>{product.description}</p>
-                    </div>
-                    <div className="servings-info">
-                        <p>{product.servings}</p>
-                    </div>
-                    <div className="product-directions">
-                        <p>{product.directions}</p>
-                    </div>
-                    <div className="product-advice">
-                        <p>{product.advice}</p>
-                    </div>
-                    <div className="product-storage">
-                        <p>{product.storage}</p>
-                    </div>
-                </div>
-                <AddToCartButton
-                    handleAddProduct={handleAddProduct}
-                    productItem={product}
-                />
             </div>
-
         </div>
     );
 };

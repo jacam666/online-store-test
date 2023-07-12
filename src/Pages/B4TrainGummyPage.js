@@ -2,6 +2,7 @@ import React from "react";
 import "../ProductCard.css";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const B4TrainGummy = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -19,72 +20,74 @@ const B4TrainGummy = ({ productItem, handleAddProduct }) => {
     };
 
     return (
-        <div className="product-card">
-            <div className="product-container">
-                <div className="product-image-container">
-                    <div className="name-and-bullet-container">
-                        <h2 className="product-name">{product.name}</h2>
-                        <div className="bullet-points-container" >
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">200 grams of Caffeine Anhydrous per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">3200mg of Beta-Alanine per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">1000mg of N-Acetyl L-Tyrosine per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">2500mg of Glycerol per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">150g of Guarana Seed Extract(22% Caffeine) per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">750g L-Taurine per 15g serving</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon"  />
-                                <p className="product-bullet-points">120g of Vitamin C (Ascorbic Acid) per 15g serving</p>
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+            <div className="product-card">
+                <div className="product-container">
+                    <div className="product-image-container">
+                        <div className="name-and-bullet-container">
+                            <h2 className="product-name">{product.name}</h2>
+                            <div className="bullet-points-container" >
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">200 grams of Caffeine Anhydrous per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">3200mg of Beta-Alanine per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">1000mg of N-Acetyl L-Tyrosine per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">2500mg of Glycerol per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">150g of Guarana Seed Extract(22% Caffeine) per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">750g L-Taurine per 15g serving</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">120g of Vitamin C (Ascorbic Acid) per 15g serving</p>
+                                </div>
                             </div>
                         </div>
+                        <img
+                            className="product-card-image"
+                            src={product.image}
+                            alt={product.name}
+                        />
                     </div>
-                    <img
-                        className="product-card-image"
-                        src={product.image}
-                        alt={product.name}
+
+                    <div className="product-card-info">
+                        <div className="product-flavour flavour-tropical-gummy">
+                            <p>{product.flavour}</p>
+                        </div>
+                        <div className="product-price">
+                            <p>Price: {product.price}</p>
+                        </div>
+
+                        <div className="product-description">
+                            <p>{product.description}</p>
+                        </div>
+                        <div className="servings-info">
+                            <p>{product.servings}</p>
+                        </div>
+
+                        <p className="product-ingredient">{product.ingredients}</p>
+                    </div>
+                    <AddToCartButton
+                        handleAddProduct={handleAddProduct}
+                        productItem={product}
                     />
                 </div>
-
-                <div className="product-card-info">
-                    <div className="product-flavour flavour-tropical-gummy">
-                        <p>{product.flavour}</p>
-                    </div>
-                    <div className="product-price">
-                        <p>Price: {product.price}</p>
-                    </div>
-
-                    <div className="product-description">
-                        <p>{product.description}</p>
-                    </div>
-                    <div className="servings-info">
-                        <p>{product.servings}</p>
-                    </div>
-
-                    <p className="product-ingredient">{product.ingredients}</p>
-                </div>
-                <AddToCartButton
-                    handleAddProduct={handleAddProduct}
-                    productItem={product}
-                />
             </div>
-
         </div>
     );
 }

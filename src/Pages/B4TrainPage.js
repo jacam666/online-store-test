@@ -2,6 +2,7 @@ import React from "react";
 import "../ProductCard.css"
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const B4Train = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -19,6 +20,9 @@ const B4Train = ({ productItem, handleAddProduct }) => {
     };
 
     return (
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+        
         <div className="product-card">
             <div className="product-container">
                 <div className="product-image-container">
@@ -85,7 +89,7 @@ const B4Train = ({ productItem, handleAddProduct }) => {
                     productItem={product}
                 />
             </div>
-
+        </div>
         </div>
     );
 }

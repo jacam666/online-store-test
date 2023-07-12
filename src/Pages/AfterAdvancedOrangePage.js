@@ -1,6 +1,7 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const AfterAdvancedOrange = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -26,51 +27,53 @@ const AfterAdvancedOrange = ({ productItem, handleAddProduct }) => {
     };
 
     return (
-        <div className="product-card">
-            <div className="product-container">
-                <div className="product-image-container">
-                    <div className="name-and-bullet-container">
-                        <h2 className="product-name">{product.name}</h2>
-                        <div className="bullet-points-container" >
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" />
-                                <p className="product-bullet-points">26g of protein to support growth and maintenance of muscle</p>
-                            </div>
-                            <div className="bullet-points">
-                                <BsFillHexagonFill className="hexagon-icon" />
-                                <p className="product-bullet-points">25g of of high-quality  carbohydrates to support your growth goals</p>
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+            <div className="product-card">
+                <div className="product-container">
+                    <div className="product-image-container">
+                        <div className="name-and-bullet-container">
+                            <h2 className="product-name">{product.name}</h2>
+                            <div className="bullet-points-container" >
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">26g of protein to support growth and maintenance of muscle</p>
+                                </div>
+                                <div className="bullet-points">
+                                    <BsFillHexagonFill className="hexagon-icon" />
+                                    <p className="product-bullet-points">25g of of high-quality  carbohydrates to support your growth goals</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <img
-                        className="product-card-image"
-                        src={product.image}
-                        alt={product.name}
-                    />
-                    {/*<img
+                        <img
+                            className="product-card-image"
+                            src={product.image}
+                            alt={product.name}
+                        />
+                        {/*<img
                         className="product-card-image-2"
                         src={product.image2}
                         alt={product.name}
                     />*/}
-                    {/*<img className="product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />*/}
-                </div>
-
-                <div className="product-card-info">
-                    <div className="product-flavour flavour-orange-mango">
-                        <p>{product.flavour}</p>
-                    </div>
-                    <div className="product-price">
-                        <p>Price: {product.price}</p>
+                        {/*<img className="product-image-2" src="images/after-advanced-nutri-info.jpeg" alt="protein" />*/}
                     </div>
 
-                    <div className="product-description">
-                        <h1>Description:</h1>
-                        <p>{product.description}</p>
-                    </div>
-                    <div className="servings-info">
-                        <p>{product.servings}</p>
-                    </div>
-                    {/*<div className="product-advice">
+                    <div className="product-card-info">
+                        <div className="product-flavour flavour-orange-mango">
+                            <p>{product.flavour}</p>
+                        </div>
+                        <div className="product-price">
+                            <p>Price: {product.price}</p>
+                        </div>
+
+                        <div className="product-description">
+                            <h1>Description:</h1>
+                            <p>{product.description}</p>
+                        </div>
+                        <div className="servings-info">
+                            <p>{product.servings}</p>
+                        </div>
+                        {/*<div className="product-advice">
                     <h1>Advice:</h1>
                     <p>{product.advice}</p>
                 </div>
@@ -79,14 +82,15 @@ const AfterAdvancedOrange = ({ productItem, handleAddProduct }) => {
                     <p>{product.storage}</p>
     </div>*/}
 
-                    <p className="product-ingredient">{product.ingredients}</p>
+                        <p className="product-ingredient">{product.ingredients}</p>
+                    </div>
+                    <AddToCartButton
+                        handleAddProduct={handleAddProduct}
+                        productItem={product}
+                    />
                 </div>
-                <AddToCartButton
-                    handleAddProduct={handleAddProduct}
-                    productItem={product}
-                />
-            </div>
 
+            </div>
         </div>
     );
 }

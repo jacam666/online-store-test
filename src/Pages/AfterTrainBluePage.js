@@ -1,6 +1,7 @@
 import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
+import BasketIcon from "../BasketIcon";
 
 const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -22,6 +23,9 @@ const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
     };
 
     return (
+        <div>
+            <BasketIcon className="product-page-basket-icon" />
+        
         <div className="product-card">
             <div className="product-container">
                 <div className="product-image-container">
@@ -74,7 +78,7 @@ const AfterTrainBlue = ({ productItem, handleAddProduct }) => {
                     productItem={product}
                 />
             </div>
-
+        </div>
         </div>
     );
 };

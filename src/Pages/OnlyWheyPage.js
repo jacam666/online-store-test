@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
 import "../ProductCard.css"
+import BasketIcon from "../BasketIcon";
 
 const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
 
@@ -44,49 +45,51 @@ const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
   };
 
   return (
-    <div className="product-card">
-      <div className="product-container">
-        <div className="product-image-container">
-          <div className="bullet-points-container" >
-            <h2 className="product-name">{product.name}</h2>
-            <div className="bullet-points">
-              <BsFillHexagonFill className="hexagon-icon" />
-              <p className="product-bullet-points">23.7g of protein to support growth and maintenance of muscle</p>
+    <div>
+      <BasketIcon className="product-page-basket-icon" />
+      <div className="product-card">
+        <div className="product-container">
+          <div className="product-image-container">
+            <div className="bullet-points-container" >
+              <h2 className="product-name">{product.name}</h2>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" />
+                <p className="product-bullet-points">23.7g of protein to support growth and maintenance of muscle</p>
+              </div>
+              <div className="bullet-points">
+                <BsFillHexagonFill className="hexagon-icon" />
+                <p className="product-bullet-points">Only 1.1g of sugar per serving.</p>
+              </div>
             </div>
-            <div className="bullet-points">
-              <BsFillHexagonFill className="hexagon-icon"  />
-              <p className="product-bullet-points">Only 1.1g of sugar per serving.</p>
-            </div>
+            <img
+              className="product-card-image"
+              src={product.image}
+              alt={product.name}
+            />
           </div>
-          <img
-            className="product-card-image"
-            src={product.image}
-            alt={product.name}
-          />
-        </div>
-        <div className="product-card-info">
+          <div className="product-card-info">
 
-          <div className="product-flavors-container">
-          <div className="product-flavors">
-  <label>Flavors:</label>
-  {product.flavors.map((flavor) => {
-    const flavorKey = flavor.replace(/ /g, "-");
-    return (
-      <div key={flavorKey} className="flavor-checkbox">
-        <input
-          type="checkbox"
-          id={flavorKey}
-          checked={selectedFlavor.includes(flavor)}
-          onChange={() => handleFlavorChange(flavor)}
-        />
-        <label htmlFor={flavorKey} className={`flavor-label flavor-${flavorKey}`}>
-          {flavor}
-        </label>
-      </div>
-    );
-  })}
-</div>
-            {/*<div className="product-flavors">
+            <div className="product-flavors-container">
+              <div className="product-flavors">
+                <label>Flavors:</label>
+                {product.flavors.map((flavor) => {
+                  const flavorKey = flavor.replace(/ /g, "-");
+                  return (
+                    <div key={flavorKey} className="flavor-checkbox">
+                      <input
+                        type="checkbox"
+                        id={flavorKey}
+                        checked={selectedFlavor.includes(flavor)}
+                        onChange={() => handleFlavorChange(flavor)}
+                      />
+                      <label htmlFor={flavorKey} className={`flavor-label flavor-${flavorKey}`}>
+                        {flavor}
+                      </label>
+                    </div>
+                  );
+                })}
+              </div>
+              {/*<div className="product-flavors">
               <label>Flavours:</label>
               {product.flavors.map((flavor) => (
                 <div
@@ -104,33 +107,33 @@ const OnlyWheyPage = ({ productItem, handleAddProduct }) => {
                 </div>
               ))}
               </div>*/}
-          </div>
+            </div>
 
-          <div className="product-price">
-            <p>Price: £{product.price}</p>
+            <div className="product-price">
+              <p>Price: £{product.price}</p>
+            </div>
+            <div className="product-description">
+              <p>{product.description}</p>
+            </div>
+            <div className="servings-info">
+              <p>{product.servings}</p>
+            </div>
+            <div className="product-directions">
+              <p>{product.directions}</p>
+            </div>
+            <div className="product-advice">
+              <p>{product.advice}</p>
+            </div>
+            <div className="product-storage">
+              <p>{product.storage}</p>
+            </div>
+            <p className="product-ingredient">{product.ingredients}</p>
           </div>
-          <div className="product-description">
-            <p>{product.description}</p>
-          </div>
-          <div className="servings-info">
-            <p>{product.servings}</p>
-          </div>
-          <div className="product-directions">
-            <p>{product.directions}</p>
-          </div>
-          <div className="product-advice">
-            <p>{product.advice}</p>
-          </div>
-          <div className="product-storage">
-            <p>{product.storage}</p>
-          </div>
-          <p className="product-ingredient">{product.ingredients}</p>
+          <AddToCartButton
+            handleAddProduct={handleAddProduct}
+            productItem={product}
+          />
         </div>
-        <AddToCartButton
-          handleAddProduct={handleAddProduct}
-          productItem={product}
-        />
-        
       </div>
     </div>
   );
