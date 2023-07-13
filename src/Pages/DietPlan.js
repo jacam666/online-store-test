@@ -2,6 +2,7 @@ import React from 'react'
 import "../components/DietPlan.css"
 import AddToCartButton from '../components/AddToCartButton'
 import BasketIcon from '../BasketIcon';
+//import dietText1 from "/images/brush_strokes text1.jpg"
 
 
 const DietPlan = ({ productItem, handleAddProduct }) => {
@@ -29,7 +30,12 @@ const DietPlan = ({ productItem, handleAddProduct }) => {
                     <p>Price: £{product.price}</p>
                 </div>
                 <div className='diet-plan-text-container'>
-                    <p className='diet-plan-text-1'>
+                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    {/*<p className='diet-plan-text-1'>
                         Do you dream of transforming your body and feeling amazing?
                     </p>
                     <p className='diet-plan-text-2'>
@@ -44,11 +50,12 @@ const DietPlan = ({ productItem, handleAddProduct }) => {
                     <p className='diet-plan-text-5'>
                         Don’t miss this opportunity to work with Mark and unleash your potential!
                     </p>
-                    <AddToCartButton
+    */}
+                </div>
+                <AddToCartButton
                         handleAddProduct={handleAddProduct}
                         productItem={product}
                     />
-                </div>
             </div>
         </div>
 
