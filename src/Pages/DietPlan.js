@@ -29,29 +29,30 @@ const DietPlan = ({ productItem, handleAddProduct }) => {
                 <div className="diet-plan-product-price">
                     <p>Price: £{product.price}</p>
                 </div>
-                <div className='diet-plan-text-container'>
+                {/*<div className='diet-plan-text-container'>*/}
+                    {/*<img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
+                    <img className='diet-text-1' src="/images/brush_strokes text2.jpg" alt='diet-text' />
                     <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
                     <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
-                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
-                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
-                    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />
-                    {/*<p className='diet-plan-text-1'>
-                        Do you dream of transforming your body and feeling amazing?
+    <img className='diet-text-1' src="/images/brush_strokes text1.jpg" alt='diet-text' />*/}
+                    {/*<img className='diet-text-1' src='/images/grunge-border_1048-7373 bulktext.jpg' alt='text' />*/}
+                    <p className='diet-plan-text-1'>
+                        <span className='text-capital'>D</span>o you dream of transforming your body and feeling amazing?
                     </p>
                     <p className='diet-plan-text-2'>
-                        If so, you need Mark Etherden, the level 4 nutritional coach who has helped hundreds of people achieve their goals.
+                    <span className='text-capital'>I</span>f so, you need Mark Etherden, the level 4 nutritional coach who has helped hundreds of people achieve their goals.
                     </p>
                     <p className='diet-plan-text-3'>
-                        Mark has 30 years of experience in creating personalized diet plans that suit your lifestyle, preferences and needs.
+                    <span className='text-capital'>M</span>ark has 30 years of experience in creating personalized diet plans that suit your lifestyle, preferences and needs.
                     </p>
                     <p className='diet-plan-text-4'>
-                        He will also guide you through an online session where he will share his tips and tricks, and answer any questions you have. And the best part is, he won’t leave you hanging after that. He will be there to support you, adjust your plan and celebrate your progress.
+                    <span className='text-capital'>H</span>e will also guide you through an online session where he will share his tips and tricks, and answer any questions you have. And the best part is, he won’t leave you hanging after that. He will be there to support you, adjust your plan and celebrate your progress.
                     </p>
                     <p className='diet-plan-text-5'>
-                        Don’t miss this opportunity to work with Mark and unleash your potential!
+                        <span className='text-capital'>D</span>on’t miss this opportunity to work with Mark and unleash your potential!
                     </p>
-    */}
-                </div>
+    
+                {/*</div>*/}
                 <AddToCartButton
                         handleAddProduct={handleAddProduct}
                         productItem={product}
