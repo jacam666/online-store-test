@@ -2,19 +2,17 @@ import React, { useState } from "react";
 import "./App.css";
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
-//import Logo from "./components/Logo";
-//import Navbar from "./Navbar";
 import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import HamburgerMenu from "./HamburgerMenu";
-//import BasketIcon from "./BasketIcon";
-//import HomePage from "./Pages/HomePage";
+//import PayPalCheckout from "./components/PayPalCheckout";
 
 const App = () => {
   const { productItems } = data;
   const [basketItems, setBasketItems] = useState([]);
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
   const [click, setClick] = useState(false);
+
 
 
 
@@ -54,14 +52,16 @@ const App = () => {
     setBasketItems([]);
   };
 
+  
+
   return (
     <div className="App">
       <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }} />
 
       {/*} <Navbar basketItems={basketItems} />*/}
-
       {/*<Logo />*/}
       <HamburgerMenu click={click} setClick={setClick} />
+
       <AppRoutes
         productItems={productItems}
         basketItems={basketItems}
@@ -73,7 +73,6 @@ const App = () => {
         click={click}
       />
       <Footer />
-
     </div>
   );
 };

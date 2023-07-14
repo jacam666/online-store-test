@@ -5,6 +5,7 @@
     background-color: aliceblue;
     padding-bottom: 60px;
     border-radius: 5px;
+    z-index: 600;
 }
 .App-header {
     color: #fff;
