@@ -127,7 +127,9 @@
 }
 
 @media screen and (min-width: 961px) {
-
+    .diet-plan-container {
+        overflow: auto;
+    }
     .certificate,
     .diet-image {
         width: 30vw;
@@ -136,6 +138,7 @@
     .diet-plan-text-container {
         width: 60vw;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
