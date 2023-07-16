@@ -3,16 +3,14 @@
     flex-direction: column;
     padding: 10px;
     height: 100vh;
-    padding-bottom: 60px;
-    padding-top: 60px;
 }
 .product-container {
     /*background-color: rgb(241, 242, 237);*/
     height: auto;
     /*height: 150vh;*/
+    padding-top: 60px;
     margin-bottom: 10px;
     border-radius: 4px;
-    overflow: auto;
 }
 .product-image-container {
     display: flex;
