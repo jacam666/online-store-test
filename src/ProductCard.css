@@ -162,7 +162,8 @@
     /*border-left: 20px solid rgb(59, 59, 248);*/
 }
 .flavour-blue-candy {
-    background: linear-gradient(to top right, rgb(76, 18, 223), rgb(105, 111, 225));
+    /*background: linear-gradient(to top right, rgb(76, 18, 223), rgb(105, 111, 225));*/
+    background:  rgb(15, 141, 182);
 }
 
 .flavour-blue-candy:before {
