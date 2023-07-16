@@ -9,6 +9,7 @@
 .product-container {
     /*background-color: rgb(241, 242, 237);*/
     height: auto;
+    /*height: 150vh;*/
     margin-bottom: 10px;
     border-radius: 4px;
     overflow: auto;

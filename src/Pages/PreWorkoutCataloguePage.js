@@ -5,6 +5,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../PreWorkoutCatalogue.css"
 import preWorkoutBanner from "../components/CarouselImages/B4ExtremeBanner.png"
 import BasketIcon from '../BasketIcon';
+import Footer from '../components/Footer';
 
 const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -50,6 +51,7 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     )
 }

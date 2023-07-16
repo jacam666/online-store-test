@@ -5,6 +5,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../FatLossCatalogue.css"
 import fatLossBanner from "../components/CarouselImages/FatBurnerBanner.png"
 import BasketIcon from '../BasketIcon';
+import Footer from '../components/Footer';
 
 const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
 
@@ -50,6 +51,7 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem}) => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     )
 }

@@ -6,6 +6,7 @@
     width: 100vw;
     margin: auto;
     height: 25vh;
+    z-index: 500;
 }
 .connect-header {
     background-color: rgb(11, 11, 11);

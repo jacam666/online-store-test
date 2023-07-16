@@ -6,10 +6,6 @@
     padding-bottom: 60px;
     padding-top: 60px;
 }
-.product-container {
-    /*background-color: rgb(242, 244, 238);*/
-    height: 100vh;
-}
 .product-image-container {
     display: flex;
     justify-content:center;

@@ -9,6 +9,7 @@ import afterTrainDisplayImage from "../components/CarouselImages/CarouselAfterTr
 import b4Extreme from "../components/CarouselImages/CarouselB4Extreme.jpg";
 import "../HomePage.css";
 import BasketIcon from "../BasketIcon";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (
@@ -196,6 +197,7 @@ function HomePage() {
           </div>*/}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
