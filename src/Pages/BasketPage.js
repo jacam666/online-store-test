@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/Basket.css";
 import { useNavigate } from "react-router-dom";
 
@@ -12,6 +12,23 @@ const BasketPage = ({
     (price, item) => price + item.quantity * item.price,
     0
   );
+
+  const [isPopupVisible, setPopupVisible] = useState(false);
+
+  const handleClick = () => {
+    setPopupVisible(true);
+  };
+
+
+  const handleConfirmClearance =() => {
+    handleBasketClearance();
+    setPopupVisible(false);
+  }
+
+  const handleCancelClearance = () => {
+    setPopupVisible(false);
+  }
+
   const shipping = 3.99;
   const totalPriceIncludingShipping = (totalPrice + shipping).toFixed(2);
 
@@ -30,11 +47,32 @@ const BasketPage = ({
             {basketItems.length >= 1 && (
               <button
                 className="clear-basket-button"
-                onClick={handleBasketClearance}
+                onClick={handleClick}
               >
                 Clear Basket
               </button>
             )}
+            
+            {isPopupVisible && (
+              <div className="basket-popup">
+                <div className="basket-popup-message">
+                Proceed?
+                </div>
+                <div className="popup-buttons">
+                    <button 
+                    className="popup-button confirm"
+                    onClick={handleConfirmClearance}>
+                      Yes
+                    </button>
+                    <button 
+                    className="popup-button cancel"
+                    onClick={handleCancelClearance}>
+                      No
+                    </button>
+                </div>
+              </div>
+            )}
+
           </div>
           {basketItems && basketItems.length === 0 && (
             <div className="basket-items-empty">No items are added.</div>
