@@ -50,4 +50,3 @@ const Checkout = ({ productItem, basketItems = [] }) => {
 };
 
 export default Checkout;
-
