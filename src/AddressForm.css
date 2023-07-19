@@ -1,0 +1,19 @@
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+
+}
+
+.form-check-label {
+    pointer-events: none;
+    /* Prevent the label from being clickable */
+}
+
+.form-control:hover {
+    border-bottom: 2px solid rgb(44, 42, 42);
+}
+
+.white-background {
+    background-color: white;
+}

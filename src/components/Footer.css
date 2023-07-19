@@ -13,14 +13,14 @@
     color: #ffffff;
     text-align: center;
     padding-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .connect-links {
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
     background-color: rgb(11, 11, 11);
-    padding: 12px 0;
+    padding: 12px;
     border: none;
 }
 /*.instagram-link a,
@@ -29,9 +29,9 @@
 }*/
 
 .connect-links a {
-    color: #fcfafa;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .contact-map {
     width: 45vw;
@@ -40,7 +40,7 @@
 }
 
 .contact-heading {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-bottom: 3px;
 }
 

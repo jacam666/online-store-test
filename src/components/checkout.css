@@ -142,6 +142,13 @@
     
 }
 
+.checkout-card {
+    width: auto;
+    margin: auto;
+    border: 1px solid  black  ;
+}
+
+
 @media screen and (max-width: 391px) {
     .checkout-item-price {
         margin-right: 5px;

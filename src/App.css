@@ -178,9 +178,6 @@ form.signUp-Form {
   height: auto;
   width: 25vw;
   margin: 20px 0 20px 0;
-  background: linear-gradient(to left,
-      rgb(16, 35, 93) 0%,
-      rgb(43, 103, 103) 100%);
   /*background: linear-gradient(to left,
       rgb(4, 4, 4) 0%,
       rgb(69, 68, 68) 100%);*/

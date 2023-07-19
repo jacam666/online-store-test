@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import "../components/checkout.css";
 import PayPalCheckout from "../components/PayPalCheckout";
 
@@ -50,3 +50,96 @@ const Checkout = ({ productItem, basketItems = [] }) => {
 };
 
 export default Checkout;
+*/
+
+
+import React from 'react';
+import AddressForm from './AddressForm';
+import PaymentForm from './PaymentForm';
+import "../components/checkout.css";
+
+
+const steps = ['Shipping address', 'Payment details', 'Review your order'];
+
+function getStepContent(step) {
+    switch (step) {
+        case 0:
+            return <AddressForm />;
+        case 1:
+            return <PaymentForm />;
+        /*case 2:
+            return <Review />;*/
+        default:
+            throw new Error('Unknown step');
+    }
+}
+
+export default function Checkout() {
+    const [activeStep, setActiveStep] = React.useState(0);
+
+    const handleNext = () => {
+        setActiveStep(activeStep + 1);
+    };
+
+    const handleBack = () => {
+        setActiveStep(activeStep - 1);
+    };
+
+    return (
+        <div>
+            <nav className="navbar navbar-light bg-light">
+                <span className="navbar-brand mb-0 h1">UKSNC</span>
+            </nav>
+            <div className="container mt-4">
+                <div className="checkout-card p-3 white-background">
+                    <h1 className="h4 text-center">Checkout</h1>
+                    <ul className="nav nav-pills nav-justified mb-4">
+                        {steps.map((label, index) => (
+                            <li key={index} className={`nav-item ${index === activeStep ? 'active' : ''}`}>
+                                <span className="nav-link">{label}</span>
+                            </li>
+                        ))}
+                    </ul>
+                    {activeStep === steps.length ? (
+                        <React.Fragment>
+                            <h5 className="mb-3 text-center">Thank you for your order.</h5>
+                            <p className="text-center">
+                                Your order number is #2001539. We have emailed your order
+                                confirmation, and will send you an update when your order has
+                                shipped.
+                            </p>
+                        </React.Fragment>
+                    ) : (
+                        <React.Fragment>
+                            {getStepContent(activeStep)}
+                            <div className="d-flex justify-content-end">
+                                {activeStep !== 0 && (
+                                    <button onClick={handleBack} className="btn btn-secondary mt-3 me-2">
+                                        Back
+                                    </button>
+                                )}
+                                <button
+                                    onClick={handleNext}
+                                    className="btn btn-primary mt-3"
+                                >
+                                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                                </button>
+                            </div>
+                        </React.Fragment>
+                    )}
+                </div>
+            </div>
+            <footer className="footer mt-auto py-3 bg-light">
+                <div className="container text-center">
+                    <p className="mb-0">
+                        {'Copyright © '}
+                        <a href="https://uksnc.netlify.app/" className="">
+                            UKSNC
+                        </a>
+                        {' ' + new Date().getFullYear() + '.'}
+                    </p>
+                </div>
+            </footer>
+        </div>
+    );
+}
