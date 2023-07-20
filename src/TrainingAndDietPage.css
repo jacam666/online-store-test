@@ -46,17 +46,18 @@
     text-align: center;
     width: 60%;
     margin: auto;
-    margin-bottom: 10%;
+    font-weight: 400;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 
 .training-page-name-container {
-    height: 60px;
+    height: 12vh;
 }
 
-.training-page-product-name-1,
+/*.training-page-product-name-1,
 .training-page-product-name-8 {
     margin-bottom: 19%
-}
+}*/
 
 .training-page-link {
     text-decoration: none;
@@ -65,6 +66,7 @@
 .training-page-price {
     color: black;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .training-image-container {

@@ -169,7 +169,7 @@ const data = {
         },
         {
             id: "24",
-            name: "Diet Plan",
+            name: "DIET PLAN WITH 1 HOUR ONLINE CONSULTATION.",
             price: 30.00,
             image: "./images/personal-training-image-1.jpg ",
             to: "./DietPlan",

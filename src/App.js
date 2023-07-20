@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 //import Footer from "./components/Footer";

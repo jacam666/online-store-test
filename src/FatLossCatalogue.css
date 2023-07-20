@@ -53,19 +53,16 @@
 }
 
 .fat-loss-page-product-name  {
-    /*color: black;
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10%;*/
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: black;
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    font-weight: 400;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 .fat-loss-product-name-container {
-    height: 60px;
+    height: 10vh;
 }
 
 .fat-loss-page-link {
@@ -75,7 +72,7 @@
 .fat-loss-page-price {
     color: black;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -93,6 +90,9 @@
     .fat-loss-page-card {
         width: 49vw;
         height: auto;
+    }
+    .fat-loss-product-name-container {
+        height: 12vh;
     }
 }
 

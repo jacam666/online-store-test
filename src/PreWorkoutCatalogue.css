@@ -12,7 +12,6 @@
 }
 .pre-workout-page-card {
     width: 100vw;
-    /*background-color: rgb(244, 239, 233);*/
     margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -49,7 +48,7 @@
 }
 */
 .pre-workout-page-product-name-container {
-    height: 100px;
+    height: 12vh;
     margin-top: 0;
 }
 
@@ -59,13 +58,15 @@
     font-size: 1.5rem;
     margin: auto;
     width: 60%;
+    font-weight: 400;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 
-.pre-workout-page-product-name-11,
+/*.pre-workout-page-product-name-11,
 .pre-workout-page-product-name-13,
 .pre-workout-page-product-name-19 {
     margin-bottom: 19%
-}
+}*/
 
 .pre-workout-page-link {
     text-decoration: none;
@@ -75,13 +76,16 @@
     color: black;
     text-align: center;
     font-size: 1.6rem;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 445px) and (max-width: 639px) {
     .pre-workout-page-image-container {
         width: 50vw;
     }
-
+    .pre-workout-page-product-name-container {
+        height: 15vh;
+    }
     .pre-workout-page-card {
         width: 49vw;
     }
@@ -137,7 +141,7 @@
     }
     .pre-workout-page-product-name-container {
         
-        margin-bottom: 30px;
+        height: 15vh;
     }
     .pre-workout-page-product-image-9 {
         height: 200px;

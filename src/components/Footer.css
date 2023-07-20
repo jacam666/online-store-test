@@ -12,7 +12,8 @@
     background-color: rgb(11, 11, 11);
     color: #ffffff;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+    margin: auto;
     font-size: 1.5rem;
 }
 .connect-links {
@@ -22,6 +23,7 @@
     background-color: rgb(11, 11, 11);
     padding: 12px;
     border: none;
+    margin: auto;
 }
 /*.instagram-link a,
 .twitter-link a,
@@ -83,9 +85,6 @@
     .connect-links a,
     .connect-header {
         font-size: 1.8rem;
-    }
-    .connect-header {
-        padding: 20px 0;
     }
 }
 @media screen and (min-width: 1025px) {

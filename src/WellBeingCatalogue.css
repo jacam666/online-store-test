@@ -44,14 +44,15 @@
     margin-top: 0;
 }
 .well-being-product-name-container {
-    height: 60px;
 }
 .well-being-page-product-name  {
     color: black;
     text-align: center;
-    width: 60%;
+    width: 65%;
     margin: auto;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 /*.well-being-page-product-name-1,
 .well-being-page-product-name-8 {
@@ -62,8 +63,7 @@
     text-decoration: none;
 }
 .well-being-product-name-container {
-    height: 60px;
-    margin-bottom: 80px;
+    height: 12vh;
 }
 
 .well-being-page-price {

@@ -49,15 +49,17 @@
     margin-top: 0;
 }*/
 .protein-page-product-name-container {
-    height: 60px;
+    height: 12vh;
 }
 
 .protein-page-product-name {
     color: black;
     text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    height: 2rem;
+    width: 65%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
 
 .protein-page-link {
@@ -80,6 +82,9 @@
     .protein-page-image-container {
         width: 50vw;
     }
+    .protein-page-product-name-container {
+        height: 14vh;
+    }
 
     .protein-page-card {
         width: 49vw;
@@ -95,6 +100,9 @@
     .protein-page-card {
         width: 49vw;
         height: auto;
+    }
+    .protein-page-product-name-container {
+        height: 14vh;
     }
 }
 
@@ -116,7 +124,7 @@
         font-size: 1.8rem;
     }
     .protein-page-product-name-container {
-        height: 7rem;
+        height: 8rem;
         margin-bottom: 20px;
     }
     .protein-page-price {

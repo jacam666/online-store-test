@@ -67,6 +67,7 @@ function getStepContent(step) {
             return <AddressForm />;
         case 1:
             return <PaymentForm />;
+            
         /*case 2:
             return <Review />;*/
         default:
@@ -129,7 +130,7 @@ export default function Checkout() {
                     )}
                 </div>
             </div>
-            <footer className="footer mt-auto py-3 bg-light">
+            <footer className="checkout-footer mt-auto py-3 bg-light">
                 <div className="container text-center">
                     <p className="mb-0">
                         {'Copyright © '}
