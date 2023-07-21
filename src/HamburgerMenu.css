@@ -124,3 +124,15 @@
     background-position: 100%;
     color: #115b4c;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media  screen and (orientation: landscape) {
+        .navigation.clicked {
+            height: 100vh;
+        }
+        .item-link {
+            padding: 0.5rem 2rem;
+        }
+        
+    }
+}

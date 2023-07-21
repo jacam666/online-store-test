@@ -104,6 +104,15 @@
     .protein-page-product-name-container {
         height: 14vh;
     }
+    @media  screen and (orientation: landscape) {
+        .protein-page-product-name-container {
+            height: 30vh;
+        }
+        .protein-banner {
+            height: 25vh;
+        }
+        
+    }
 }
 
 @media screen and (min-width: 1025px) {
