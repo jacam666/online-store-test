@@ -65,8 +65,7 @@ const data = {
             id: "9",
             name: "B4 EXTREME STRONG PRE WORKOUT",
             price: 24.99,
-            //image: "./images/b4-candy-extreme-300x300.png",
-            image: "./images/b4-cap-extreme-150x150.png", 
+            image: "./images/b4-candy-extreme-small.png", 
             to: "./B4ExtremePage",
         },
         {
@@ -94,7 +93,7 @@ const data = {
             id: "13",
             name: "B4 EXTREME STRONG PRE-WORKOUT",
             price: 24.99,
-            image: "./images/cap-b4pre-blue-300x300.png",
+            image: "./images/cap-b4pre-blue-300x300 copy1.png",
             to: "./B4ExtremeBluePage",
         },
         {

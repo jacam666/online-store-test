@@ -7,7 +7,8 @@ import BasketIcon from "../BasketIcon";
 const B4Extreme = ({ productItem, handleAddProduct }) => {
   const product = {
     id: "9",
-    image: "/images/b4-candy-extreme-300x300.png",
+    //image: "/images/b4-candy-extreme-300x300.png",
+    image: "/images/b4-candy-extreme-small.png",
     name: "B4 EXTREME STRONG PRE-WORKOUT",
     price: 24.99,
     flavour: "Cotton Candy",
