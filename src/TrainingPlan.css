@@ -1,0 +1,11 @@
+.training-plan-product-image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: auto;
+}
+.training-plan-product-card-image {
+    height: 180px;
+    width: 150px;
+    margin: auto;
+}

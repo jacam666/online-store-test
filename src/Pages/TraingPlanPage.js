@@ -2,6 +2,7 @@ import React from "react";
 import AddToCartButton from "../components/AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
 import BasketIcon from "../BasketIcon";
+import "../TrainingPlan.css"
 
 const TrainingPlan = ({ productItem, handleAddProduct }) => {
     const product = {
@@ -19,7 +20,7 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
             <BasketIcon className="product-page-basket-icon" />
             <div className="product-card">
                 <div className="product-container">
-                    <div className="product-image-container">
+                    <div className="training-plan-product-image-container">
                         <div className="name-and-bullet-container">
                             <h2 className="product-name">{product.name}</h2>
                             <div className="bullet-points-container" >
@@ -38,7 +39,7 @@ const TrainingPlan = ({ productItem, handleAddProduct }) => {
                             </div>
                         </div>
                         <img
-                            className="product-card-image"
+                            className="training-plan-product-card-image"
                             src={product.image}
                             alt={product.name}
                         />
