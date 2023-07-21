@@ -107,100 +107,16 @@
         width: 40vw;
     }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .homepage-snc-products {
-        margin-bottom: -4px;
-    }
-
-    .homePage-product-cards-container {
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: black;
-    }
-
-    .diet-product-card-container,
-    .wellbeing-product-card-container,
-    .fat-loss-product-card-container,
-    .pre-workout-product-card-container,
-    .protein-product-card-container {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        margin: auto;
-    }
-
-    .homePage-image {
-        width: 50vw;
-        height: 30vh;
-    }
-
-    .pre-workout-homePage-image {
-        width: 49vw;
-        height: 20vh;
-    }
-
-    .fat-loss-homePage-image {
-        width: 49vw;
-    }
-
-    .wellbeing-homePage-image {
-        width: 49vw;
-    }
-
-    .homePage-studio-image {
-        height: 25vh;
-        width: 45vw;
-    }
-}
 */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-    /*.homepage-snc-products {
-        margin-bottom: -4px;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media  screen and (orientation: landscape) {
+        .homepage-b4Train-text-image,
+        .homepage-stage-ripped-text-image,
+        .homepage-info-text-image {
+            height: 50vh;
+        }
+        
     }
-
-    .homePage-product-cards-container {
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        background-color: black;
-    }
-
-    .diet-product-card-container,
-    .wellbeing-product-card-container,
-    .fat-loss-product-card-container,
-    .pre-workout-product-card-container,
-    .protein-product-card-container {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        margin: auto;
-    }
-
-    .homePage-image {
-        width: 45vw;
-        height: 25vh;
-    }
-
-    .pre-workout-homePage-image {
-        width: 45vw;
-        height: 20vh;
-    }
-
-    .fat-loss-homePage-image {
-        width: 49vw;
-    }
-
-    .wellbeing-homePage-image {
-        width: 49vw;
-    }
-
-    .homePage-studio-image {
-        height: 25vh;
-        width: 50vw;
-    }*/
 }
 
 @media screen and (min-width: 1201px) {

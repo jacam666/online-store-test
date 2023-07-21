@@ -105,6 +105,17 @@
         width: 49vw;
         height: auto;
     }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        @media  screen and (orientation: landscape) {
+            .fat-loss-product-name-container {
+                height: 25vh;
+            }
+            .fat-loss-banner {
+                height: 25vh;
+            }
+            
+        }
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {

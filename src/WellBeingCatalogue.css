@@ -108,6 +108,15 @@
         width: 49vw;
         height: auto;
     }
+    @media  screen and (orientation: landscape) {
+        .well-being-product-name-container {
+            height: 25vh;
+        }
+        .wellbeing-banner {
+            height: 25vh;
+        }
+        
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {

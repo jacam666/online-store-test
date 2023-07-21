@@ -120,25 +120,6 @@
         height: 300px;
         width: auto;
     }
-    /*.training-image-container {
-        display: flex;
-        height: auto;
-    }
-
-    .training-page-cardImage-24 {
-        margin-top: 20px;
-    }
-
-    .training-certificate {
-        width: 70vw;
-    }
-
-    .training-studio {
-        margin: auto;
-        width: 50vw;
-        height: 40vh;
-    }
-    */
 
     .training-text {
         height: auto;
@@ -147,6 +128,12 @@
         width: auto;
         height: 60vh;
         margin-bottom: 20px;
+    }
+    @media  screen and (orientation: landscape) {
+        .training-page-name-container {
+            height: 25vh;
+        }
+        
     }
 }
 

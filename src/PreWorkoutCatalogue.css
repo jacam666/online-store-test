@@ -106,6 +106,17 @@
     .pre-workout-page-product-name {
         font-size: 1.6rem;
     }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        @media  screen and (orientation: landscape) {
+            .pre-workout-page-product-name-container {
+                height: 25vh;
+            }
+            .pre-workout-banner {
+                height: 25vh;
+            }
+            
+        }
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
