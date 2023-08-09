@@ -94,7 +94,7 @@ export default function Footer() {
                                 UKSNC Supplements
                             </h6>
                             <p>
-                            SNC SUPPLEMENTS has been established since 2017 The products we produce are designed and used by experienced Bodybuilders. We aim at producing the highest quality products.
+                                SNC SUPPLEMENTS has been established since 2017 The products we produce are designed and used by experienced Bodybuilders. We aim at producing the highest quality products.
                             </p>
                         </MDBCol>
 
@@ -116,33 +116,6 @@ export default function Footer() {
                                 </a>
                             </p>
                         </MDBCol>
-{/*
-                        <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Pricing
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Settings
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Orders
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Help
-                                </a>
-                            </p>
-                        </MDBCol>
-
-    */}
-
                         <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                             <p>
@@ -156,7 +129,6 @@ export default function Footer() {
                             <p>
                                 <MDBIcon icon="phone" className="me-3" /> 01525 211127
                             </p>
-                            
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>

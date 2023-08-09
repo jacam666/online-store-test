@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
-//import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 //import HamburgerMenu from "./HamburgerMenu";
 import MyNavbar from "./Navbar";
@@ -16,8 +13,6 @@ const App = () => {
   const [basketItems, setBasketItems] = useState([]);
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
   //const [click, setClick] = useState(false);
-
-
 
 
   const handleAddProduct = (product) => {

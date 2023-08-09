@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../WellBeingCatalogue.css";
 import wellBeingBanner from "../components/CarouselImages/after_train_banner_test_01_2545px.png-1.png"
-import BasketIcon from '../BasketIcon';
-import Footer from '../components/Footer';
+//import BasketIcon from '../BasketIcon';
+//import Footer from '../components/Footer';
 
 const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -18,7 +18,6 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
-            <BasketIcon />
             <img className='wellbeing-banner' src={wellBeingBanner} alt='wellbeing' />
             <div className="well-being-page-card-container">
                 {filteredProducts.map((productItem) => (
@@ -56,7 +55,6 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                     <img className='more-stock-image' src='/images/more-stock copy.jpg' alt='more stock coming' />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

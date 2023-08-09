@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import "../components/CarouselImages.css"
 import image1 from "../components/CarouselImages/CarouselfullRange.jpg"
-/*import image2 from "../components/CarouselImages/CarouselAfterTrain.jpg"
-import image3 from "../components/CarouselImages/CarouselB4Extreme.jpg"
-import image4 from "../components/CarouselImages/CarouselOnlyWheyPromotion.jpg"
-import image5 from "../components/CarouselImages/CarouselStageB4Pump.jpg"*/
 import image6 from "../components/CarouselImages/FatBurnerBanner.png"
 import image7 from "../components/CarouselImages/OnlyWheYBanner.png"
 import image8 from "../components/CarouselImages/after_train_banner_test_01_2545px.png-1.png"
 import image9 from "../components/CarouselImages/B4ExtremeBanner.png"
 
-const images = [image1,/* image2, image3, image4, image5,*/ image6, image7, image8, image9];
+const images = [image1, image6, image7, image8, image9];
 
 const ImageCarousel = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -48,4 +44,4 @@ const ImageCarousel = () => {
 
 };
 export default ImageCarousel;
-
+*/

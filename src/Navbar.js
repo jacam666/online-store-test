@@ -47,16 +47,16 @@ function MyNavbar() {
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">UKSNC Supplements</Navbar.Brand>
+        <Navbar.Brand as={Link} to='/'>UKSNC Supplements</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
                         <Nav.Link as={Link} to='/' className="text-dark mr-5">Home</Nav.Link>
-                        <Nav.Link as={Link} to='/ProteinPage' className="text-dark mr-5">Proteins</Nav.Link>
-                        <Nav.Link as={ Link } to='/PreWorkoutPage' className="text-dark mr-5">Pre-Workouts</Nav.Link>
-                        <Nav.Link as={ Link } to='/FatLossPage' className="text-dark mr-5">Fat Loss</Nav.Link>
-                        <Nav.Link as={ Link } to='/GeneralWellBeingPage' className="text-dark mr-5">General Wellbeing</Nav.Link>
-                        <Nav.Link as={ Link } to='/TrainingDietPlanPage' className="text-dark mr-5">Training and Diet Plans</Nav.Link>
+                        <Nav.Link as={Link} to='/ProteinCataloguePage' className="text-dark mr-5">Proteins</Nav.Link>
+                        <Nav.Link as={ Link } to='/PreWorkoutCataloguePage' className="text-dark mr-5">Pre-Workouts</Nav.Link>
+                        <Nav.Link as={ Link } to='/FatLossCataloguePage' className="text-dark mr-5">Fat Loss</Nav.Link>
+                        <Nav.Link as={ Link } to='/WellBeingCataloguePage' className="text-dark mr-5">General Wellbeing</Nav.Link>
+                        <Nav.Link as={ Link } to='/TrainingAndDietPage' className="text-dark mr-5">Training and Diet Plans</Nav.Link>
                     </Nav>
         </Navbar.Collapse>
       </Container>
@@ -65,3 +65,4 @@ function MyNavbar() {
 }
 
 export default MyNavbar;
+

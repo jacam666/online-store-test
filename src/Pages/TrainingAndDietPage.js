@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../TrainingAndDietPage.css"
 //import studioImage from "../components/StudioImages/studio-image.jpg"
-import BasketIcon from '../BasketIcon';
-import Footer from '../components/Footer';
+//import BasketIcon from '../BasketIcon';
+//import Footer from '../components/Footer';
 //import textBorderImage from "../components/images/grunge-border_1048-7373.webp"
 
 const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
@@ -18,7 +18,6 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
-            <BasketIcon className="training-basket-icon" />
             <div className="training-page-card-container">
                 {filteredProducts.map((productItem) => (
                     <div className="training-page-card" key={productItem.id}>
@@ -61,7 +60,6 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                 </Link>*/}
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

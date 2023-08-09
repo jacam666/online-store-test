@@ -1,4 +1,4 @@
-.menu-label {
+/*.menu-label {
     background-color: #0c0c0c;
     position: fixed;
     top: 0.2rem;
@@ -77,7 +77,6 @@
     position: fixed;
     top: 0;
     right: 0;
-    /*z-index: 600;*/
     z-index: 600;
     width: 0;
     opacity: 0;
@@ -90,10 +89,8 @@
 }
 
 .list {
-    /*position: absolute;*/
     position: relative;
     z-index: 2100;
-    /*z-index: 1000;*/
     list-style: none;
     top: 50%;
     left: 50%;
@@ -136,3 +133,4 @@
         
     }
 }
+*/

@@ -4,8 +4,6 @@ import "../components/ProteinCatalogue.css";
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
-import BasketIcon from '../BasketIcon';
-import Footer from '../components/Footer';
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "5", "2", "3", "4", "7", "8", "16"];
@@ -16,7 +14,6 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
-            <BasketIcon className="product-page-card-basket-icon" />
             <img className='protein-banner' src={ProteinBanner} alt="protein" />
             <div className="protein-page-card-container">
                 {filteredProducts.map((productItem) => (
@@ -49,7 +46,6 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                     </div>
                 ))}
             </div>
-            <Footer />
         </div>
     );
 };
