@@ -126,7 +126,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    @media  screen and (orientation: landscape) {
+    @media  (orientation: landscape) {
         .navigation.clicked {
             height: 100vh;
         }

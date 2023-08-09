@@ -1,206 +1,94 @@
-import React from "react";
-//import { Link } from "react-router-dom";
-//import data from "../components/back/Data/Data";
-//import homepageStudio from "../components/images/HomePageImages/homepage-studio-image.jpg";
-import sncproducts from "../components/images/snc-products.jpg";
-import sncDisplayImage from "../components/images/homepage-snc-display-image.jpg";
-//import FatLossImages from "../components/images/HomePageImages/homepage-fatloss-image.jpg";
-import afterTrainDisplayImage from "../components/CarouselImages/CarouselAfterTrain.jpg";
-import b4Extreme from "../components/CarouselImages/CarouselB4Extreme.jpg";
-import "../HomePage.css";
-import BasketIcon from "../BasketIcon";
-import Footer from "../components/Footer";
+import React from 'react';
+import '../HomePage.css'
+import HomePageBanner from '../components/images/HomePageImages/CarouselfullRange.jpg'
+//import SncDescriptionImage from '../images/13759 copy.png" alt="description'
+import AfterTrainImage from '../components/CarouselImages/CarouselAfterTrain.jpg'
+//import AfterTrainText from '../Images/13759 copy after train.png'
+import B4ExtremeImage from '../components/CarouselImages/CarouselB4Extreme.jpg'
+//import B4ExtremeText from '../Images/13759 copy b4 train.png'
+import ProductBanner from '../components/images/HomePageImages/homepage-snc-display-image3.jpg'
+//import StageRippedText from '../Images/13759 copy staged ripped.png'
+
+
+
+
 
 function HomePage() {
   return (
-    /*<div>
-      <div className="homepage-body">
-      <div>
-            <img
-              className="homepage-snc-products"
-              src={sncproducts}
-              alt="supplements"
-            />
-            <div>
-        <div className="homePage-product-cards-container">
-            </div>
-            <div className="protein-product-card-container">
-              <div className="image-container">
-                <img
-                  className="homePage-image"
-                  src={afterTrainDisplayImage}
-                  alt="protein"
-                />
-                <Link to="/ProteinCataloguePage">
-                  <div className="text-overlay">
-                    <p className="image-text">Shop Proteins</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="pre-workout-product-card-container">
-              <div className="image-container">
-                <img
-                  className="pre-workout-homePage-image"
-                  src={b4Extreme}
-                  alt="protein"
-                />
-                <Link to="/PreWorkoutCataloguePage">
-                  <div className="text-overlay">
-                    <p className="image-text">Shop Pre-Workouts</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="fat-loss-product-card-container">
-              <div className="image-container">
-                <img
-                  className="fat-loss-homePage-image"
-                  src={FatLossImages}
-                  alt="protein"
-                />
-                <Link to="/FatLossCataloguePage">
-                  <div className="text-overlay">
-                    <p className="image-text">Shop Fat Loss Products</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="wellbeing-product-card-container">
-              <div className="image-container">
-                <img
-                  className="wellbeing-homePage-image"
-                  src={sncDisplayImage}
-                  alt="protein"
-                />
-                <Link to="/WellBeingCataloguePage">
-                  <div className="text-overlay">
-                    <p className="image-text">Shop Wellbeing Products</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="diet-product-card-container">
-              <div className="image-container">
-                <img
-                  className="homePage-studio-image"
-                  src={homepageStudio}
-                  alt="diet"
-                />
-                <Link to="/TrainingAndDietPage">
-                  <div className="text-overlay">
-                    <p className="image-text">Shop Training and Diet Plans</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
+    <div className="homepage-container">
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <img
+            src={HomePageBanner}
+            alt="home page banner"
+            className="img-fluid"
+          />
+        </div>
+        <div className="col-12 col-md-6">
+          <img
+                        src='/images/13759 copy.png'
+                        alt="snc text"
+                        className="img-fluid"
+    />
+          {/*<h4 className='text-center  fw-light homepage-text'>SNC Supplements are a range of products designed to help you achieve your fitness goals, whether you want to build muscle,
+            lose fat, improve performance or boost your immune system.
+  </h4>*/}
         </div>
       </div>
-    </div>
-  );
-  */
-    <div>
-      <BasketIcon />
-      <div className="homepage-body">
-        <img
-          className="homepage-snc-products"
-          src={sncproducts}
-          alt="supplements"
-        />
-        <div className="homepage-info-text-image-container">
-          <img className="homepage-info-text-image" src="/images/13759 copy.png" alt="description" />
+
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <img
+            src={AfterTrainImage}
+            alt="protein"
+            className="img-fluid"
+          />
         </div>
-        <div className="homePage-product-cards-container">
-          <div className="protein-product-card-container">
-            <div className="image-container">
-              <img
-                className="homePage-image"
-                src={afterTrainDisplayImage}
-                alt="protein"
-              />
-              {/*<Link to="/ProteinCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Proteins</p>
-                </div>
-  </Link>*/}
-              <div className="homepage-info-text-image-container">
-                <img className="homepage-info-text-image" src="/images/13759 copy after train.png" alt="description" />
-              </div>
-
-            </div>
-          </div>
-          <div className="pre-workout-product-card-container">
-            <div className="image-container">
-              <img
-                className="pre-workout-homePage-image"
-                src={b4Extreme}
-                alt="protein"
-              />
-              <div className="homepage-info-text-image-container">
-                <img className="homepage-b4Train-text-image" src="/images/13759 copy b4 train.png" alt="description" />
-              </div>
-              {/*<Link to="/PreWorkoutCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Pre-Workouts</p>
-                </div>
-</Link>*/}
-            </div>
-          </div>
-          {/*<div className="fat-loss-product-card-container">
-            <div className="image-container">
-              <img
-                className="fat-loss-homePage-image"
-                src={FatLossImages}
-                alt="protein"
-/>*/}
-          {/*<Link to="/FatLossCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Fat Loss Products</p>
-                </div>
-</Link>*/}
-          {/*}  </div>
-          </div>*/}
-
-
-          <div className="wellbeing-product-card-container">
-            <div className="image-container">
-              <img
-                className="wellbeing-homePage-image"
-                src={sncDisplayImage}
-                alt="protein"
-              />
-              {/*<Link to="/WellBeingCataloguePage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Wellbeing Products</p>
-                </div>
-</Link>*/}
-              <div className="homepage-info-text-image-container">
-                <img className="homepage-stage-ripped-text-image" src="/images/13759 copy staged ripped.png" alt="description" />
-              </div>
-            </div>
-
-          </div>
-          {/*<div className="diet-product-card-container">
-            <div className="image-container">
-              <img
-                className="homePage-studio-image"
-                src={homepageStudio}
-                alt="diet"
-/> */}
-              {/*<Link to="/TrainingAndDietPage">
-                <div className="text-overlay">
-                  <p className="image-text">Shop Training and Diet Plans</p>
-                </div>
-</Link>*/}
-            {/*</div>
-          </div>*/}
+        <div className="col-12 col-md-6 ">
+          <img
+            src='/images/13759 copy after train.png'
+            alt="after train text"
+            className="img-fluid"
+          />
         </div>
       </div>
-      <Footer />
+
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <img
+            src={B4ExtremeImage}
+            alt="b4 extreme"
+            className="img-fluid"
+          />
+        </div>
+        <div className="col-12 col-md-6">
+          <img
+            src='/images/13759 copy b4 train.png'
+            alt="b4 train text"
+            className="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-12 col-md-6">
+          <img
+            src={ProductBanner}
+            alt="products"
+            className="img-fluid"
+          />
+        </div>
+        <div className="col-12 col-md-6">
+          <img
+            src='/images/13759 copy staged ripped.png'
+            alt="stage ripped text"
+            className="img-fluid"
+          />
+        </div>
+      </div>
     </div>
   );
 }
 
-
 export default HomePage;
+

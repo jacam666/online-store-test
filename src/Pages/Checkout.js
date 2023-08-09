@@ -53,7 +53,7 @@ export default Checkout;
 */
 
 
-import React from 'react';
+/*import React from 'react';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import "../components/checkout.css";
@@ -68,8 +68,7 @@ function getStepContent(step) {
         case 1:
             return <PaymentForm />;
             
-        /*case 2:
-            return <Review />;*/
+        
         default:
             throw new Error('Unknown step');
     }
@@ -144,3 +143,5 @@ export default function Checkout() {
         </div>
     );
 }
+
+*/

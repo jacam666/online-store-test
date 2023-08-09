@@ -6,14 +6,16 @@ import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 //import Footer from "./components/Footer";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-import HamburgerMenu from "./HamburgerMenu";
+//import HamburgerMenu from "./HamburgerMenu";
+import MyNavbar from "./Navbar";
+import Footer from "./components/Footer";
 //import PayPalCheckout from "./components/PayPalCheckout";
 
 const App = () => {
   const { productItems } = data;
   const [basketItems, setBasketItems] = useState([]);
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
-  const [click, setClick] = useState(false);
+  //const [click, setClick] = useState(false);
 
 
 
@@ -59,10 +61,10 @@ const App = () => {
   return (
     <div className="App">
       <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }} />
-
+      <MyNavbar />
       {/*} <Navbar basketItems={basketItems} />*/}
       {/*<Logo />*/}
-      <HamburgerMenu click={click} setClick={setClick} />
+      {/*<HamburgerMenu click={click} setClick={setClick} />*/}
 
       <AppRoutes
         productItems={productItems}
@@ -72,9 +74,9 @@ const App = () => {
         handleBasketClearance={handleBasketClearance}
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
-        click={click}
+        //click={click}
       />
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 };

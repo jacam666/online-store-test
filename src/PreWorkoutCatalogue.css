@@ -7,8 +7,8 @@
 }
 .pre-workout-banner {
     width: 100vw;
-    height: 11vh;
-    margin-top: -6px;
+    height: auto;
+    margin-top: -9px;
 }
 .pre-workout-page-card {
     width: 100vw;
@@ -100,6 +100,9 @@
         width: 49vw;
         height: auto;
     }
+    .pre-workout-banner {
+        margin-top: -12px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -127,6 +130,9 @@
     .pre-workout-page-card {
         width: 33vw;
         height: auto;
+    }
+    .pre-workout-banner {
+        margin-top: -15px;
     }
 }
 

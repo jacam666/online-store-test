@@ -5,7 +5,7 @@
     width: 100vw;
 }
 .fat-loss-banner {
-    height: 11vh;
+    height: auto;
     margin-top: -6px;
     width:   100vw;
     margin-bottom: 20px;
@@ -77,9 +77,9 @@
 
 
 @media screen and (min-width: 392px) and (max-width: 639px) {
-    .protein-page-image-container {}
-
-    .protein-page-card {}
+    .fat-loss-banner {
+        margin-top: -10px;
+    }
 }
 
 @media screen and (min-width: 640px) and (max-width: 768px) {
@@ -94,6 +94,9 @@
     .fat-loss-product-name-container {
         height: 12vh;
     }
+    .fat-loss-banner {
+        margin-top: -10px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -105,13 +108,17 @@
         width: 49vw;
         height: auto;
     }
+    .fat-loss-banner {
+        margin-top: -20px;
+    }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
         @media  screen and (orientation: landscape) {
             .fat-loss-product-name-container {
                 height: 25vh;
             }
             .fat-loss-banner {
-                height: 25vh;
+                height: auto;
+                margin-top: -20px;
             }
             
         }
@@ -126,6 +133,10 @@
     .fat-loss-page-card {
         width: 49vw;
         height: auto;
+        
+    }
+    .fat-loss-banner {
+        margin-top: -20px;
     }
 }
 
@@ -139,8 +150,8 @@
         height: auto;
     }
     .fat-loss-banner {
-        margin-top: -11px;
-        height: 22vh;
+        margin-top: -21px;
+        height: auto;
         margin-bottom: 10%;
     }
 }
