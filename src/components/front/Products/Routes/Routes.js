@@ -123,7 +123,7 @@ const AppRoutes = ({
             <Route path="/BundleDeal1Page" element={<BundleDeal1 handleAddProduct={handleAddProduct} />} />
             <Route path="/FatBurnerBundlePage" element={<FatBurnerBundle handleAddProduct={handleAddProduct} />} />
             <Route path="/BundleDeal2Page" element={<BundleDeal2 handleAddProduct={handleAddProduct} />} />
-            <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
+            {/*<Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>*/}
             <Route path="/ContactPage" element={<ContactPage />} />
             <Route path="/TrainingAndDietPage/DietPlan" element={<DietPlan handleAddProduct={handleAddProduct}/>} />
         </Routes>
