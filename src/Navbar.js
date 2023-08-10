@@ -42,6 +42,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import "./components/Navbar.css"
+import BasketIcon from './BasketIcon';
 
 function MyNavbar() {
     return (
@@ -57,6 +58,7 @@ function MyNavbar() {
                         <Nav.Link as={ Link } to='/FatLossCataloguePage' className="text-dark mr-5">Fat Loss</Nav.Link>
                         <Nav.Link as={ Link } to='/WellBeingCataloguePage' className="text-dark mr-5">General Wellbeing</Nav.Link>
                         <Nav.Link as={ Link } to='/TrainingAndDietPage' className="text-dark mr-5">Training and Diet Plans</Nav.Link>
+                        <Nav.Link as={ Link } to='/BasketPage' className="text-dark mr-5"><BasketIcon /></Nav.Link>
                     </Nav>
         </Navbar.Collapse>
       </Container>

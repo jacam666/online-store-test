@@ -4,6 +4,8 @@ import "../components/ProteinCatalogue.css";
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
+//import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "5", "2", "3", "4", "7", "8", "16"];
@@ -14,6 +16,31 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <img className='protein-banner' src={ProteinBanner} alt="protein" />
+            <div className="row">
+                {filteredProducts.map(productItem => (
+                    <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
+                        <Card>
+                            <Link to={productItem.to}>
+                                <Card.Img variant="top" src={productItem.image} />
+                            </Link>
+                            <Card.Body>
+                                <Card.Title className='card-header'>{productItem.name}</Card.Title>
+                                <Card.Text>{productItem.description}</Card.Text>
+                                {/*<Button variant="primary">Add To Basket</Button>*/}
+                                <AddToCartButton
+                                    handleAddProduct={handleAddProduct}
+                                    productItem={productItem}
+                                />
+                            </Card.Body>
+                        </Card>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+
+        /*<div>
             <img className='protein-banner' src={ProteinBanner} alt="protein" />
             <div className="protein-page-card-container">
                 {filteredProducts.map((productItem) => (
@@ -46,8 +73,11 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div> */
     );
+
+
+
 };
 
 export default ProteinCataloguePage
