@@ -25,7 +25,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 <Card.Img variant="top" src={productItem.image} />
                             </Link>
                             <Card.Body>
-                                <Card.Title className='card-header'>{productItem.name}</Card.Title>
+                                <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>
                                 <Card.Text>{productItem.description}</Card.Text>
                                 <Card.Text className='text-center'>
                                     <span className="font-weight-bold">Price: </span>
