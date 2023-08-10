@@ -27,7 +27,10 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                             <Card.Body>
                                 <Card.Title className='card-header'>{productItem.name}</Card.Title>
                                 <Card.Text>{productItem.description}</Card.Text>
-                                {/*<Button variant="primary">Add To Basket</Button>*/}
+                                <Card.Text className='text-center'>
+                                    <span className="font-weight-bold">Price: </span>
+                                    £{productItem.price}
+                                    </Card.Text>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

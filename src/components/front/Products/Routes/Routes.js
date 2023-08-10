@@ -27,7 +27,7 @@ import TrainingPlan from "../../../.././Pages/TraingPlanPage";
 import BundleDeal1 from "../../../.././Pages/BundleDeal1Page";
 import FatBurnerBundle from "../../../.././Pages/FatBurnerBundlePage";
 import BundleDeal2 from "../../../.././Pages/BundleDeal2Page.js";
-import Checkout from "../../../../Pages/Checkout";
+//import Checkout from "../../../../Pages/Checkout";
 import ContactPage from "../../../../Pages/ContactPage";
 import TheStudioPage from "../../../../Pages/TheStudioPage";
 import DietPlan from "../../../../Pages/DietPlan";

@@ -167,7 +167,9 @@ form.signUp-Form {
   margin-bottom: 50px;
   margin-top: 0;
 }
-
+.card-header  {
+  border: none !important;
+}
 
 /*.card {
   display: flex;

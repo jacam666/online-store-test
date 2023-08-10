@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import "../WellBeingCatalogue.css";
 import wellBeingBanner from "../components/CarouselImages/after_train_banner_test_01_2545px.png-1.png"
+import Card from 'react-bootstrap/Card';
 //import BasketIcon from '../BasketIcon';
 //import Footer from '../components/Footer';
 
@@ -17,7 +18,34 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
     );
 
     return (
+
         <div>
+        <img className='protein-banner' src={wellBeingBanner} alt="protein" />
+        <div className="row">
+            {filteredProducts.map(productItem => (
+                <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
+                    <Card>
+                        <Link to={productItem.to}>
+                            <Card.Img variant="top" src={productItem.image} />
+                        </Link>
+                        <Card.Body>
+                            <Card.Title className='card-header'>{productItem.name}</Card.Title>
+                            <Card.Text>{productItem.description}</Card.Text>
+                            <Card.Text className='text-center'>
+                                    <span className="font-weight-bold">Price: </span>
+                                    £{productItem.price}
+                                    </Card.Text>
+                            <AddToCartButton
+                                handleAddProduct={handleAddProduct}
+                                productItem={productItem}
+                            />
+                        </Card.Body>
+                    </Card>
+                </div>
+            ))}
+        </div>
+    </div>
+        /*<div>
             <img className='wellbeing-banner' src={wellBeingBanner} alt='wellbeing' />
             <div className="well-being-page-card-container">
                 {filteredProducts.map((productItem) => (
@@ -56,6 +84,7 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                 </div>
             </div>
         </div>
+        */
     )
 }
 
