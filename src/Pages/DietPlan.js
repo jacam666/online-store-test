@@ -1,7 +1,6 @@
 import React from 'react'
 import "../components/DietPlan.css"
 import AddToCartButton from '../components/AddToCartButton'
-import BasketIcon from '../BasketIcon';
 //import dietText1 from "/images/brush_strokes text1.jpg"
 
 
@@ -16,7 +15,6 @@ const DietPlan = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
-            <BasketIcon className="product-page-basket-icon" />
             <div className='diet-plan-container'>
                 <div className='header-container'>
                     <div className='header'>Diet Plan</div>

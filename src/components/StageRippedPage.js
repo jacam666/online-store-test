@@ -2,7 +2,6 @@ import React from "react";
 import "../StageRipped.css"
 import AddToCartButton from "./AddToCartButton";
 import { BsFillHexagonFill } from "react-icons/bs";
-import BasketIcon from "../BasketIcon";
 
 const StageRipped = ({ productItem, handleAddProduct }) => {
   const product = {
@@ -19,7 +18,6 @@ const StageRipped = ({ productItem, handleAddProduct }) => {
 
   return (
     <div>
-      <BasketIcon className="product-page-basket-icon" />
       <div className="product-card">
         <div className="product-container">
           <div className="product-image-container">
