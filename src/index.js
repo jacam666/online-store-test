@@ -7,12 +7,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyNavbar from "./Navbar";
+import Footer from "./components/Footer";
 //import HomePage from "./Pages/HomePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-  <App />
+    <MyNavbar />
+    <App />
+    <Footer />
   </BrowserRouter>
 );
 

@@ -3,9 +3,10 @@ import "./App.css";
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+//import { BasketProvider } from "./BasketContext";
 //import HamburgerMenu from "./HamburgerMenu";
-import MyNavbar from "./Navbar";
-import Footer from "./components/Footer";
+//import MyNavbar from "./Navbar";
+//import Footer from "./components/Footer";
 //import PayPalCheckout from "./components/PayPalCheckout";
 
 const App = () => {
@@ -56,11 +57,6 @@ const App = () => {
   return (
     <div className="App">
       <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }} />
-      <MyNavbar />
-      {/*} <Navbar basketItems={basketItems} />*/}
-      {/*<Logo />*/}
-      {/*<HamburgerMenu click={click} setClick={setClick} />*/}
-
       <AppRoutes
         productItems={productItems}
         basketItems={basketItems}
@@ -71,7 +67,8 @@ const App = () => {
         setIsUserLoggedIn={setIsUserLoggedIn}
         //click={click}
       />
-      <Footer />
+      
+      
     </div>
   );
 };

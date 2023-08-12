@@ -63,13 +63,11 @@ function StudioCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-
                 <Image src={image2} alt="Second slide" fluid style={{ height: `${imageHeight}px`, width: `${imageWidth}%` }} />
                 <Carousel.Caption>
                     <h3>The Studio</h3>
                 </Carousel.Caption>
             </Carousel.Item>
-
             <Carousel.Item>
                 <Image src={image3} alt="Third slide" fluid style={{ height: `${imageHeight}px`, width: `${imageWidth}%` }} />
                 <Carousel.Caption>

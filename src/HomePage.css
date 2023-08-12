@@ -54,10 +54,13 @@
 }
 
 */
-.row {
-    padding: 5px 10px;
+.homepage-text {
+    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
 }
-
-a {
-    margin-right: 2.2rem;
+.homepage-heading {
+    font-size: 1.1rem ;
+    font-style: italic;
+}
+.custom-card-image {
+    height: auto;
 }

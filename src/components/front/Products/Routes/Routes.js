@@ -38,6 +38,8 @@ import FatLossCataloguePage from "../../../../Pages/FatLossCataloguePage";
 import WellBeingCataloguePage from "../../../../Pages/WellBeingCataloguePage";
 import TrainingAndDietPage from "../../../../Pages/TrainingAndDietPage";
 import { click } from "@testing-library/user-event/dist/click";
+import AddressForm from "../../../../Pages/AddressForm";
+import PaymentForm from "../../../../Pages/PaymentForm";
 
 const AppRoutes = ({
     productItems,
@@ -68,6 +70,8 @@ const AppRoutes = ({
             <Route path="/LoginPage" element={<LoginPage isLoggedIn={handleLogin} />} />
             <Route path="/SignupPage" element={<SignupPage setIsUserLoggedIn={setIsUserLoggedIn}/>} />
             <Route path="/TheStudioPage" element={<TheStudioPage />} />
+            <Route path="/AddressPage" element={<AddressForm />} />
+            <Route path="/PaymentForm" element={<PaymentForm />} />
             <Route
                 path="/BasketPage"
                 element={
