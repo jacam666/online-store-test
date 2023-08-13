@@ -26,7 +26,6 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                                         alt={productItem.name}
                                     />
                                 </div>
-
                                 <div className='training-page-name-container'>
                                     <h2 className={`training-page-product-name training-page-product-name-${productItem.id}`}>
                                         {productItem.name}
@@ -41,19 +40,12 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                                     productItem={productItem}
                                 />
                             </div>
-
                         </div>
                     </div>
                 ))}
                     <img className='training-text' src="/images/13759 copystudiotext.png" alt='text' />
                 <div className='training-image-container'>
                         <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
-                    {/*<img className='training-studio' src={studioImage} alt='studio' />*/}
-                    {/*<Link to="/TheStudioPage">
-                        <div className="training-text-overlay">
-                            <p className="training-image-text">SNC Studio</p>
-                        </div>
-                </Link>*/}
                 </div>
             </div>
         </div>

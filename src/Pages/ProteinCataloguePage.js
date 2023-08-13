@@ -4,7 +4,6 @@ import "../components/ProteinCatalogue.css";
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
-//import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
@@ -28,7 +27,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 <Card.Title className={`card-header text-center product-name-${productItem.id}`}>{productItem.name}</Card.Title>
                                 <Card.Text>{productItem.description}</Card.Text>
                                 <Card.Text className='text-center'>
-                                    <span className="font-weight-bold">Price: </span>
+                                    <span className="font-weight-bold"></span>
                                     £{productItem.price}
                                     </Card.Text>
                                 <AddToCartButton

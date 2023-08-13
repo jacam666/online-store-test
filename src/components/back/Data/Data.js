@@ -84,7 +84,7 @@ const data = {
         },
         {
             id: "12",
-            name: "YEAR ROUND IMMUNITY SUPPORT 60 caps",
+            name: "YEAR ROUND IMMUNITY SUPPORT",
             price: 19.99,
             image: "./images/Year-round-300x300.png",
             to: "./YearRoundPage",
@@ -126,7 +126,7 @@ const data = {
         },
         {
             id: "18",
-            name: "STAGE RIPPED EXTREME 60 caps",
+            name: "STAGE RIPPED EXTREME",
             price: 34.99,
             image: "./images/RIPPED-EXTREME-300x300.png",
             to: "./StageExtremePage",
