@@ -6,3 +6,9 @@
 .wellbeing-image {
     transform: scale(0.8);
 }
+
+@media (min-width: 992px) {
+    .wellbeing-image {
+        transform: scale(0.7);
+    }
+}

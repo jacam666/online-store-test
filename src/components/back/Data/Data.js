@@ -84,7 +84,7 @@ const data = {
         },
         {
             id: "12",
-            name: "YEAR ROUND IMMUNITY SUPPORT",
+            name: ["YEAR ROUND IMMUNITY", <br/> ,  "SUPPORT"],
             price: 19.99,
             image: "./images/Year-round-300x300.png",
             to: "./YearRoundPage",
@@ -119,7 +119,7 @@ const data = {
         },
         {
             id: "17",
-            name: "CON-TEST P.C.T 240 caps",
+            name: ["CON-TEST P.C.T", <br/> , "240 caps"],
             price: 29.99,
             image: "./images/PCT-NEW-300x300.png",
             to: "./Con-TestPage",
