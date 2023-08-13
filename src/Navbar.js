@@ -13,7 +13,7 @@ function MyNavbar() {
         <Navbar.Brand as={Link} to='/'>UKSNC Supplements</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+        <Nav className="me-auto d-flex justify-content-center align-items-center">
                         <Nav.Link as={Link} to='/' className="text-dark mr-5">Home</Nav.Link>
                         <Nav.Link as={Link} to='/ProteinCataloguePage' className="text-dark mr-5">Proteins</Nav.Link>
                         <Nav.Link as={ Link } to='/PreWorkoutCataloguePage' className="text-dark mr-5">Pre-Workouts</Nav.Link>
@@ -21,7 +21,7 @@ function MyNavbar() {
                         <Nav.Link as={ Link } to='/WellBeingCataloguePage' className="text-dark mr-5">General Wellbeing</Nav.Link>
                         <Nav.Link as={ Link } to='/TrainingAndDietPage' className="text-dark mr-5">Training and Diet Plans</Nav.Link>
                         <Nav.Link as={ Link } to='/TheStudioPage' className="text-dark mr-5">The Studio</Nav.Link>
-                        <Nav.Link as={ Link } to='/BasketPage' className="text-dark mr-5"><BasketIcon /></Nav.Link>
+                        <Nav.Link as={ Link } to='/BasketPage' className="text-dark mr-5 "><BasketIcon /></Nav.Link>
                     </Nav>
         </Navbar.Collapse>
       </Container>
