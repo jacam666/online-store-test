@@ -4,8 +4,8 @@ import '../HomePage.css'
 import HomePageBanner from '../components/images/HomePageImages/snc-products-3.jpg'
 import AfterTrainImage from '../components/CarouselImages/CarouselAfterTrain.jpg'
 import B4ExtremeImage from '../components/CarouselImages/CarouselB4Extreme.jpg'
-//import ProductBanner from '../components/images/HomePageImages/homepage-snc-display-image3.jpg'
 import studioImage from '../components/StudioImages/homepage-studio-image-3.jpg'
+import { Link } from 'react-router-dom';
 
 
 function HomePage() {
@@ -15,7 +15,10 @@ function HomePage() {
       <div className="row">
         <div className="col-12 col-md-6">
           <Card>
+            <Link to='/ProteinCataloguePage'>
             <Card.Img variant="bottom" src={HomePageBanner} />
+            </Link>
+            
             <Card.Body>
               <Card.Text className='homepage-text'>
                 <p className='mb-0'>
@@ -28,7 +31,9 @@ function HomePage() {
         
         <div className='col-12 col-md-6'>
           <Card>
+            <Link to='/ProteinCataloguePage'>
             <Card.Img variant="bottom" src={AfterTrainImage} />
+            </Link>
             <Card.Body>
               <Card.Text className='homepage-text'>
                 <p className='mb-0'>
@@ -44,7 +49,9 @@ function HomePage() {
       <div className="row">
         <div className="col-12 col-md-6">
           <Card>
+            <Link to='/PreWorkoutCataloguePage'>
             <Card.Img variant="bottom" src={B4ExtremeImage} />
+            </Link>
             <Card.Body>
               <Card.Text className='homepage-text'>
                 <p className='mb-0'>
@@ -57,7 +64,9 @@ function HomePage() {
         <br />
         <div className="col-12 col-md-6">
           <Card>
+            <Link to='/TheStudioPage'>
             <Card.Img variant="bottom" src={studioImage} className='custom-card-image' />
+            </Link>
             <Card.Body>
               <Card.Text className='homepage-text'>
                 <p className='mb-0'>
@@ -71,92 +80,5 @@ function HomePage() {
     </>
   );
 }
-/*
-
-
-
-function HomePage() {
-  return (
-    <div className="homepage-container">
-      <div className="row">
-        <div className="col-12 col-md-6">
-          <img
-            src={HomePageBanner}
-            alt="home page banner"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6 mt-2 mt-md-0">
-          <img
-            src={AfterTrainImage}
-            alt="protein"
-            className="img-fluid"
-          />
-          <img
-                        src='/images/13759 copy.png'
-                        alt="snc text"
-                        className="img-fluid"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-12 col-md-6">
-          <img
-            src={AfterTrainImage}
-            alt="protein"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6 ">
-          <img
-            src='/images/13759 copy after train.png'
-            alt="after train text"
-            className="img-fluid"
-          />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col-12 col-md-6">
-          <img
-            src={B4ExtremeImage}
-            alt="b4 extreme"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6 mt-2 mt-md-0">
-        <img
-            src={ProductBanner}
-            alt="products"
-            className="img-fluid"
-          />
-          {/*<img
-            src='/images/13759 copy b4 train.png'
-            alt="b4 train text"
-            className="img-fluid"
-/>
-        </div>
-      </div>
-      {/*<div className="row">
-        <div className="col-12 col-md-6">
-          <img
-            src={ProductBanner}
-            alt="products"
-            className="img-fluid"
-          />
-        </div>
-        <div className="col-12 col-md-6">
-          <img
-            src='/images/13759 copy staged ripped.png'
-            alt="stage ripped text"
-            className="img-fluid"
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-*/
 export default HomePage;
 
