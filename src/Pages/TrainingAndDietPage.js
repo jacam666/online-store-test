@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../components/back/Data/Data';
 import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
+import Card from 'react-bootstrap/Card';
 import "../TrainingAndDietPage.css"
 
 const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
@@ -14,6 +15,31 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <div className='row'>
+                {filteredProducts.map(productItem => (
+                    <div className="col-12 col-md-6" key={productItem.id}>
+                        <Card>
+                            <Link to={productItem.to}>
+                                <Card.Img variant="top" src={productItem.image} className={`training-image-${productItem.id}`} />
+                            </Link>
+                            <Card.Body>
+                                <Card.Title className={`card-header text-center training-product-name-${productItem.id}`}>{productItem.name}</Card.Title>
+                                <Card.Text>{productItem.description}</Card.Text>
+                                <Card.Text className='text-center'>
+                                    <span className="font-weight-bold"></span>
+                                    £{productItem.price}
+                                    </Card.Text>
+                                <AddToCartButton
+                                    handleAddProduct={handleAddProduct}
+                                    productItem={productItem}
+                                />
+                            </Card.Body>
+                        </Card>
+                    </div>
+                ))}
+            </div>
+        </div>
+        /*<div>
             <div className="training-page-card-container">
                 {filteredProducts.map((productItem) => (
                     <div className="training-page-card" key={productItem.id}>
@@ -49,6 +75,7 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                 </div>
             </div>
         </div>
+        */
     )
 }
 

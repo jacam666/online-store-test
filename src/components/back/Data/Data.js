@@ -140,7 +140,7 @@ const data = {
         },
         {
             id: "20",
-            name: "TRAINING PLAN 1-HOUR ONLINE",
+            name: "TRAINING PLAN WITH 1-HOUR ONLINE CONSULTATION",
             price: 30,
             image: "./images/620-620-traininngplan-1-300x300.jpg",
             to: "./TraingPlanPage",
@@ -168,7 +168,7 @@ const data = {
         },
         {
             id: "24",
-            name: "DIET PLAN WITH 1 HOUR ONLINE CONSULTATION.",
+            name: "DIET PLAN WITH 1 HOUR ONLINE CONSULTATION",
             price: 30.00,
             image: "./images/personal-training-image-1.jpg ",
             to: "./DietPlan",
