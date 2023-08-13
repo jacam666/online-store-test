@@ -2,7 +2,7 @@ const data = {
     productItems: [
         {
             id: "1",
-            name: "THE ONLY WHEY 2.2KG 74 servings",
+            name: "THE ONLY WHEY PROTEIN 2.2KG 74 servings",
             price: 39.99,
             image: "./images/only-whey-final-300x300.png",
             image2: "./images/only-whey-nutritional-info.jpeg",
@@ -77,7 +77,7 @@ const data = {
         },
         {
             id: "11",
-            name: "B4 TRAIN PRE WORKOUT",
+            name: "B4 TRAIN TROPICAL GUMMY PRE WORKOUT",
             price: 24.99,
             image: "./images/B4-tropical-gummy-300x300.png",
             to: "./B4TrainGummyPage",

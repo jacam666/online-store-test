@@ -5,8 +5,6 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../WellBeingCatalogue.css";
 import wellBeingBanner from "../components/CarouselImages/after_train_banner_test_01_2545px.png-1.png"
 import Card from 'react-bootstrap/Card';
-//import BasketIcon from '../BasketIcon';
-//import Footer from '../components/Footer';
 
 const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -18,15 +16,14 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
     );
 
     return (
-
         <div>
-        <img className='protein-banner' src={wellBeingBanner} alt="protein" />
+        <img className='wellbeing-banner' src={wellBeingBanner} alt="protein" />
         <div className="row">
             {filteredProducts.map(productItem => (
-                <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
+                <div className="col-12 col-md-6 col-lg-6" key={productItem.id}>
                     <Card>
                         <Link to={productItem.to}>
-                            <Card.Img variant="top" src={productItem.image} />
+                            <Card.Img variant="top" src={productItem.image} className='wellbeing-image' />
                         </Link>
                         <Card.Body>
                             <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>
