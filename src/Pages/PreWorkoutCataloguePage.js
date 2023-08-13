@@ -27,7 +27,7 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} />
+                                <Card.Img variant="top" src={productItem.image} className={`pre-workout-image-${productItem.id}`} />
                             </Link>
                             <Card.Body>
                                 <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>

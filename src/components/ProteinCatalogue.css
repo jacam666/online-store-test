@@ -13,3 +13,11 @@
 .protein-image {
     transform: scale(0.8);
 }
+.protein-image-1 {
+    transform: scale(0.95);
+}
+@media (min-width: 992px) {
+    .card-header.product-name-1 {
+        margin-bottom: 40px;
+    }
+}

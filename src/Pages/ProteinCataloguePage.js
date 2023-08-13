@@ -8,7 +8,7 @@ import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
 import Card from 'react-bootstrap/Card';
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
-    const specificItemIds = ["1", "5", "2", "3", "4", "7", "8", "16"];
+    const specificItemIds = ["1", "16", "2", "3", "4", "7", "8", "5"];
 
     const filteredProducts = data.productItems.filter((productItem) =>
         specificItemIds.includes(productItem.id)
@@ -19,13 +19,13 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
             <img className='protein-banner' src={ProteinBanner} alt="protein" />
             <div className="row">
                 {filteredProducts.map(productItem => (
-                    <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
+                    <div className="col-12 col-md-6 col-lg-3" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} className='protein-image' />
+                                <Card.Img variant="top" src={productItem.image} className={`protein-image-${productItem.id}`} />
                             </Link>
                             <Card.Body>
-                                <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>
+                                <Card.Title className={`card-header text-center product-name-${productItem.id}`}>{productItem.name}</Card.Title>
                                 <Card.Text>{productItem.description}</Card.Text>
                                 <Card.Text className='text-center'>
                                     <span className="font-weight-bold">Price: </span>
