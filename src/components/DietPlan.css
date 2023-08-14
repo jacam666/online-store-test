@@ -1,41 +1,20 @@
 
-.header-container {
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.header {
-    display: flex;
-    color:#0c0c0c;
-    text-align: center;
-    font-size: 3rem;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    border-radius: 4px;
-    padding: 5px;
-}
-
-.header-2 {
-    display: flex;
-    color: #0a0a0a;
-    text-align: center;
+.diet-header {
     font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 4px;
-    padding: 5px;
+}
+
+.diet-sub-header {
+    font-size: 1.5rem;
 }
 .diet-plan-product-price {
-    width: 100vw;
     color: #000000;
     display: flex;
     justify-content: center;
     margin: 10px auto;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .diet-plan-image {
-    height: 250px;
+    height: 200px;
 }

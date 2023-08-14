@@ -40,46 +40,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                 ))}
             </div>
         </div>
-
-
-        /*<div>
-            <img className='protein-banner' src={ProteinBanner} alt="protein" />
-            <div className="protein-page-card-container">
-                {filteredProducts.map((productItem) => (
-                    <div className="protein-page-card" key={productItem.id}>
-                        <div>
-                            <Link to={productItem.to} className='protein-page-link'>
-                                <div className='protein-page-image-container'>
-                                    <img
-                                        className={`protein-page-cardImage protein-page-product-image-${productItem.id}`}
-                                        src={productItem.image}
-                                        alt={productItem.name}
-                                    />
-                                </div>
-                                <div className='protein-page-product-name-container'>
-                                    <h2 className={`protein-page-product-name protein-page-product-name-${productItem.id}`}>
-                                        {productItem.name}
-                                    </h2>
-
-                                </div>
-                                <div className="protein-page-price">£{productItem.price}</div>
-                            </Link>
-                            <div>
-                                <AddToCartButton
-                                    handleAddProduct={handleAddProduct}
-                                    productItem={productItem}
-                                />
-                            </div>
-                        </div>
-
-                    </div>
-                ))}
-            </div>
-        </div> */
     );
-
-
-
 };
 
 export default ProteinCataloguePage

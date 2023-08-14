@@ -39,43 +39,6 @@ const TrainingAndDietPage = ({ productItem, handleAddProduct }) => {
                 ))}
             </div>
         </div>
-        /*<div>
-            <div className="training-page-card-container">
-                {filteredProducts.map((productItem) => (
-                    <div className="training-page-card" key={productItem.id}>
-                        <div>
-                            <Link to={productItem.to} className='training-page-link'>
-                                <div className='training-page-image-container'>
-                                    <img
-                                        className={`training-page-cardImage training-page-product-image-${productItem.id}`}
-                                        src={productItem.image}
-                                        alt={productItem.name}
-                                    />
-                                </div>
-                                <div className='training-page-name-container'>
-                                    <h2 className={`training-page-product-name training-page-product-name-${productItem.id}`}>
-                                        {productItem.name}
-                                    </h2>
-
-                                </div>
-                                <div className="training-page-price">£{productItem.price}</div>
-                            </Link>
-                            <div>
-                                <AddToCartButton
-                                    handleAddProduct={handleAddProduct}
-                                    productItem={productItem}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                ))}
-                    <img className='training-text' src="/images/13759 copystudiotext.png" alt='text' />
-                <div className='training-image-container'>
-                        <img className='training-certificate' src='/images/nutritionCertificate.jpg' alt='certificate' />
-                </div>
-            </div>
-        </div>
-        */
     )
 }
 

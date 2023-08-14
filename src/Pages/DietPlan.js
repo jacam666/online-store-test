@@ -16,11 +16,17 @@ const DietPlan = ({ productItem, handleAddProduct }) => {
 
     return (
         <div>
+            <div className=' row d-flex justify-content-center align-items-center mx-auto'>
+            <Card.Text className='text-center text-lg mt-3 diet-header' >Diet Plan</Card.Text>
+            <Card.Text className='text-center text-md mb-3 diet-sub-header'>With 1 hour online consultation</Card.Text>
+            </div>
+            
             <div className='diet-plan-container'>
-                <div className='header-container'>
+                {/*<div className='header-container'>
                     <div className='header'>Diet Plan</div>
                     <p className='header-2'>With 1 hour online consultation</p>
                 </div>
+                */}
                 <div className='row d-flex'>
                     <div className='col-12 col-md-8 mx-auto'>
                         <Card className=''>
