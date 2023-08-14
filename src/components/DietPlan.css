@@ -1,12 +1,4 @@
-.diet-plan-container {
-    margin-bottom: 60px;
-    background-color: rgb(255, 255, 255);
-    padding-top: 50px;
-    padding-bottom: 80px;
-    height: 100vh;    
-    /*overflow: auto;*/
 
-}
 .header-container {
     margin: auto;
     margin-bottom: 20px;
@@ -35,25 +27,6 @@
     border-radius: 4px;
     padding: 5px;
 }
-
-.diet-plan-image-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-}
-
-.certificate,
-.diet-image {
-    width: 45vw;
-    height: 20vh;
-    border-radius: 3px;
-}
-.certificate {
-    border: 1px solid black;
-}
 .diet-plan-product-price {
     width: 100vw;
     color: #000000;
@@ -63,98 +36,6 @@
     font-size: 1.2rem;
 }
 
-.diet-plan-text-container {
-    background-color: rgb(255, 255, 255);
-    width: 100vw;
-    margin: auto;
-    padding: 10px;
-    border-radius: 4px;
-}
-.diet-text-1 {
-    width: 100vw;
-    height: 140vh;
-}
-.text-capital {
-    font-size: 1.5rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.diet-plan-text-1,
-.diet-plan-text-2,
-.diet-plan-text-3,
-.diet-plan-text-4,
-.diet-plan-text-5 {
-    color: #090808;
-    width: 80vw;
-    background-color: rgb(255, 255, 255);        
-    text-align: flex-start;
-    margin: auto;
-    /*border: 0.1px solid #2c2929;*/
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: large;
-    font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
-}
-
-@media screen and (min-width: 492px) {
-
-    .certificate,
-    .diet-image {
-        width: 40vw;
-    }
-
-    .diet-plan-text-container {
-        width: 80vw;
-    }
-}
-@media screen and (min-width: 768px) {
-
-    .certificate,
-    .diet-image {
-        width: 35vw;
-    }
-
-    .diet-plan-text-container {
-        width: 70vw;
-    }
-    @media screen and (orientation: landscape) {
-        .certificate,
-        .diet-image {
-            width: 35vw;
-            height: auto;
-        }
-    }
-}
-
-@media screen and (min-width: 961px) {
-    .diet-plan-container {
-        overflow: auto;
-    }
-    .certificate,
-    .diet-image {
-        width: 30vw;
-    }
-
-    .diet-plan-text-container {
-        width: 60vw;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    .header-container {
-        width: 50vw;
-    }
-    .certificate,
-    .diet-image {
-        width: 25vw;
-    }
-
-    .diet-plan-text-container {
-        width: 50vw;
-    }
-
-    .header-container {
-        width: 50vw;
-    }
+.diet-plan-image {
+    height: 250px;
 }
