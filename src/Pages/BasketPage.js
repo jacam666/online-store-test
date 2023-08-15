@@ -217,7 +217,7 @@ const BasketPage = ({
                   <MDBRow className="justify-content-between align-items-center">
                     <MDBCol md="2" lg="2" xl="2">
                       <MDBCardImage
-                        className="rounded-3"
+                        className="rounded-3 item-image "
                         style={{ backgroundColor: COLORS.background }}
                         fluid
                         src={item.image}
@@ -225,7 +225,7 @@ const BasketPage = ({
                       />
                     </MDBCol>
                     <MDBCol md="3" lg="3" xl="3">
-                      <p className="lead fw-normal mb-2">{item.name}</p>
+                      <p className="lead fw-normal mb-3 mt-3">{item.name}</p>
                     </MDBCol>
                     <MDBCol
                       md="3"
@@ -261,46 +261,54 @@ const BasketPage = ({
                         <MDBIcon fas icon="plus" />
                       </MDBBtn>
                     </MDBCol>
-                    <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
-                      <MDBTypography tag="h5" className="mb-0">
-                        £{totalItemPrice[index]}
-                      </MDBTypography>
+                    <MDBCol md="3" lg="2" xl="2" className="offset-lg-1 ">
+                      <div className="d-flex justify-content-between align-items-center">
+                        <MDBTypography tag="h5" className="mb-0 mt-3">
+                          £{totalItemPrice[index]}
+                        </MDBTypography>
+                        {basketItems.length >= 1 && (
+                          <a href="#!" className="text-danger mt-3" onClick={handleAddProduct}>
+                            <MDBIcon fas icon="trash text-danger" size="lg" />
+                          </a>
+                        )}
+                      </div>
+
+
                     </MDBCol>
                     <MDBCol md="1" lg="1" xl="1" className="text-end">
-                      {basketItems.length >= 1 && (
-                        <a href="#!" className="text-danger" onClick={ handleAddProduct}>
-                          <MDBIcon fas icon="trash text-danger" size="lg" />
-                        </a>
-                      )}
+
+
+
+
                     </MDBCol>
                   </MDBRow>
-                  
+
                 </MDBCardBody>
-                
+
               </MDBCard>
-              
+
             ))}
-            <MDBCard className="d-flex">
+            <MDBCard>
               <MDBCardBody>
                 <MDBRow>
-                <MDBCol md="3" lg="2" xl="2" className="offset-lg-1 d-flex justify-content-between">
-            <MDBTypography tag="h4" className="mb-0">
-              Total Price: 
-            </MDBTypography>
-            <MDBTypography  tag="h4" className="mb-0">
-              £{totalPrice}
-              </MDBTypography>
-          </MDBCol>
+                  <MDBCol md="12" lg="12" xl="12" className="d-flex justify-content-between">
+                    <MDBTypography tag="h4" className="mb-0">
+                      Total Price:
+                    </MDBTypography>
+                    <MDBTypography tag="h4" className="mb-0">
+                      £{totalPrice}
+                    </MDBTypography>
+                  </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-          {basketItems.length > 0 && (
+            {basketItems.length > 0 && (
               <div>
                 <div className="d-grid gap-2 col-6 mx-auto mt-4" onClick={handleCheckoutClick}>
                   <MDBBtn>Proceed to checkout</MDBBtn>
                 </div>
               </div>
-            )} 
+            )}
             {/* ... */}
           </MDBCol>
         </MDBRow>
