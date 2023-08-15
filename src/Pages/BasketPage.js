@@ -280,11 +280,20 @@ const BasketPage = ({
               </MDBCard>
               
             ))}
-            <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
-            <MDBTypography tag="h5" className="mb-0">
-              Total Price: £{totalPrice}
+            <MDBCard className="d-flex">
+              <MDBCardBody>
+                <MDBRow>
+                <MDBCol md="3" lg="2" xl="2" className="offset-lg-1 d-flex justify-content-between">
+            <MDBTypography tag="h4" className="mb-0">
+              Total Price: 
             </MDBTypography>
+            <MDBTypography  tag="h4" className="mb-0">
+              £{totalPrice}
+              </MDBTypography>
           </MDBCol>
+                </MDBRow>
+              </MDBCardBody>
+            </MDBCard>
           {basketItems.length > 0 && (
               <div>
                 <div className="d-grid gap-2 col-6 mx-auto mt-4" onClick={handleCheckoutClick}>
