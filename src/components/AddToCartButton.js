@@ -13,11 +13,14 @@ const AddToCartButton = ({ handleAddProduct, productItem }) => {
     };
     return (
         <div>
+            <div className="row">
             {isPopupVisible && (
-                <div className="popup">
+                <div className="col-6 popup">
                     Item Added To Basket!
                 </div>
             )}
+            </div>
+            
             <button
                 className="product-add-button"
                 onClick={handleClick}

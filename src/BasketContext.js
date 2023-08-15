@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+/*import React, { createContext, useContext, useState } from 'react';
 
 const BasketContext = createContext();
 
@@ -15,3 +15,4 @@ export function BasketProvider({ children }) {
 export function useBasket() {
     return useContext(BasketContext);
 }
+*/

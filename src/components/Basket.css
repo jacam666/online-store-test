@@ -1,8 +1,7 @@
-    .basket-items {
+    /*.basket-items {
         margin: auto;
         height: 100vh;
         border-radius: 5px;
-        /*border: 2px solid rgb(251, 248, 248);*/
     }
 
     .basket-product-container {
@@ -96,7 +95,6 @@
     }
 
     .basket-items-add {
-        /*background-color: rgb(24, 37, 75);*/
         background-color: rgb(8, 8, 8);
         box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
         margin-right: 10px;
@@ -144,9 +142,6 @@
         font-size: 20px;
         color: #040404;
         font-family: CriqueGrotesk, Helvetica, Arial, sans-serif;
-        /*width: 40%;
-        margin-left: auto;
-        margin-right: auto;*/
     }
 
     .basket-shipping-header {
@@ -263,23 +258,6 @@
     }
 
     .checkout-button {
-        /*display: flex;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 10px;
-        background: linear-gradient(to left,
-                rgb(16, 35, 93) 0%,
-                rgb(9, 66, 66) 100%);
-        border: none;
-        box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.3),
-            0px 2px 5px 0px rgba(0, 0, 0, 0.2),
-            0px 1px 1px 0px rgba(0, 0, 0, 0.24);
-        border-radius: 4px;
-        color: #ffffff;
-        padding: 6px 15px;
-        cursor: pointer;
-        font-size: 15px;
-        margin-top: 10px;*/
         font-weight: 500;
         font-size: 1rem;
         border-radius: 5px;
@@ -301,7 +279,6 @@
 
     }
 
-
     @media screen and (max-width: 391px) {
         .basket-items {
             display: flex;
@@ -314,12 +291,6 @@
             padding: 20px;
             font-size: 30px;
         }
-
-        /*img.basket-items-image {
-            display: block;
-            margin: 0 auto;
-            
-        }*/
 
         .basket-item-list {
             width: 90%;
@@ -443,7 +414,6 @@
         }
 
         .basket-items-total-price {
-            /*padding-left: 75%;*/
             margin: auto;
         }
         .basket-items-function {
@@ -502,9 +472,6 @@
         .checkout-button {
             margin: auto;
             margin-bottom: 20px;
-            /*background: linear-gradient(to left,
-                    rgb(16, 35, 93) 0%,
-                    rgb(9, 66, 66) 100%);*/
             background-color: #080808;
             border: none;
             padding: 6px 18px;
@@ -517,3 +484,4 @@
             margin: auto;
         }
     }
+*/

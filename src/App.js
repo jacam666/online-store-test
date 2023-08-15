@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+//import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 //import { BasketProvider } from "./BasketContext";
 //import HamburgerMenu from "./HamburgerMenu";
 //import MyNavbar from "./Navbar";
@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }} />
+      {/*<PayPalScriptProvider options={{ "client-id": "ARMfiWZxzTjnLoyw6u70AQxSHCxXrQENQS7TZSxYqY8X4AP0yZ-8aqmLyqTYPRDOWcQ3_Zglufer9ZiL" }} />*/}
       <AppRoutes
         productItems={productItems}
         basketItems={basketItems}
