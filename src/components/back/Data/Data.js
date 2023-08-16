@@ -2,7 +2,9 @@ const data = {
     productItems: [
         {
             id: "1",
-            name: "THE ONLY WHEY PROTEIN 2.2KG 74 servings",
+            name: [<span key="1">THE ONLY WHEY PROTEIN</span>,
+            <br key="2" />,
+            <span key="3">2.2KG 74 servings</span>],
             price: 39.99,
             image: "./images/only-whey-final-300x300.png",
             image2: "./images/only-whey-nutritional-info.jpeg",
@@ -11,14 +13,14 @@ const data = {
         },
         {
             id: "2",
-            name: "AFTER TRAIN ADVANCED 2KG STRAWBERRY and LIME",
+            name: "AFTER TRAIN ADVANCED STRAWBERRY-LIME",
             price: 39.99,
             image: "./images/advanced-aftertrain-strawberrylime-300x300.png",
             to: "./AfterTrainAdvancedPage",
         },
         {
             id: "3",
-            name: "AFTER TRAIN ADVANCED 2KG BLUE CANDY FLAVOUR",
+            name: "AFTER TRAIN ADVANCED 2KG BLUE CANDY",
             price: 39.99,
             image: "./images/AFTER-TRAIN-ADVANCED-300x300.png",
             to: "./AfterAdvancedBlueCandyPage",
@@ -26,7 +28,7 @@ const data = {
         },
         {
             id: "4",
-            name: "AFTER TRAIN ADVANCED 2KG ORANGE and MANGO",
+            name: "AFTER TRAIN ADVANCED ORANGE-MANGO",
             price: 39.99,
             image: "./images/orange-mango-advanced-aftertrain-for-web-300x300.png",
             to: "./AfterAdvancedOrangePage",
@@ -48,7 +50,7 @@ const data = {
         },
         {
             id: "7",
-            name: "AFTER TRAIN BLUE RASPBERRY POST WORKOUT",
+            name: "AFTER TRAIN RASPBERRY POST WORKOUT",
             price: 24.99,
             image: "./images/2After_Train_Raspberry-1-300x300.png",
             to: "./AfterTrainBluePage",
@@ -65,7 +67,7 @@ const data = {
             id: "9",
             name: "B4 EXTREME STRONG PRE WORKOUT",
             price: 24.99,
-            image: "./images/b4-candy-extreme-small.png", 
+            image: "./images/b4-candy-extreme-small.png",
             to: "./B4ExtremePage",
         },
         {
@@ -84,7 +86,11 @@ const data = {
         },
         {
             id: "12",
-            name: ["YEAR ROUND IMMUNITY", <br/> ,  "SUPPORT"],
+            name: [
+                <span key="1">YEAR ROUND IMMUNITY</span >,
+                <br key="2" />,
+                <span key="3">SUPPORT</span>
+            ],
             price: 19.99,
             image: "./images/Year-round-300x300.png",
             to: "./YearRoundPage",
@@ -119,7 +125,12 @@ const data = {
         },
         {
             id: "17",
-            name: ["CON-TEST P.C.T", <br/> , "240 caps"],
+            //name: ["CON-TEST P.C.T", <br />, "240 caps"],
+            name: [
+                <span key="1">CON-TEST P.C.T</span>,
+                <br key="2" />,
+                <span key="3">240 caps</span>,
+            ],
             price: 29.99,
             image: "./images/PCT-NEW-300x300.png",
             to: "./Con-TestPage",

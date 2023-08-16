@@ -79,7 +79,7 @@ const AppRoutes = ({
                         basketItems={basketItems}
                         handleAddProduct={handleAddProduct}
                         handleRemoveProduct={handleRemoveProduct}
-                        handleBasketClearance={handleBasketClearance}
+                        //handleBasketClearance={handleBasketClearance}
                     />
                 }
             />

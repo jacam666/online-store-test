@@ -6,9 +6,6 @@ import "../PreWorkoutCatalogue.css"
 import preWorkoutBanner from "../components/CarouselImages/B4ExtremeBanner.png"
 import Card from 'react-bootstrap/Card';
 
-//import BasketIcon from '../BasketIcon';
-//import Footer from '../components/Footer';
-
 const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
     const specificItemIds = ["9", "10", "11", "13", "14", "19"];

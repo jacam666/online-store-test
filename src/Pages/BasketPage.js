@@ -158,6 +158,7 @@ const BasketPage = ({
 
 export default BasketPage;
 */
+
 import React /*{ useState } */ from "react";
 import "../components/Basket.css";
 import { useNavigate } from "react-router-dom";
@@ -191,7 +192,12 @@ const BasketPage = ({
   */
   const totalItemPrice = basketItems.map(item => (item.quantity * item.price).toFixed(2));
 
+  const handleRemoveItem = (itemToRemove) => {
+    const updatedBasket = basketItems.filter((item) => item.id !== itemToRemove.id);
+    handleRemoveProduct(updatedBasket);
+  };
 
+  
   const navigate = useNavigate();
 
   const handleCheckoutClick = () => {
@@ -267,7 +273,9 @@ const BasketPage = ({
                           £{totalItemPrice[index]}
                         </MDBTypography>
                         {basketItems.length >= 1 && (
-                          <a href="#!" className="text-danger mt-3" onClick={handleRemoveProduct}>
+                          <a href="#!" 
+                            className="text-danger mt-3" 
+                            onClick={() => handleRemoveItem(item)}>
                             <MDBIcon fas icon="trash text-danger" size="lg" />
                           </a>
                         )}

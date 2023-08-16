@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import data from "./components/back/Data/Data";
 import AppRoutes from "./components/front/Products/Routes/Routes";
-//import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-//import { BasketProvider } from "./BasketContext";
-//import HamburgerMenu from "./HamburgerMenu";
-//import MyNavbar from "./Navbar";
-//import Footer from "./components/Footer";
-//import PayPalCheckout from "./components/PayPalCheckout";
 
 const App = () => {
   const { productItems } = data;
@@ -31,8 +25,7 @@ const App = () => {
     }
   };
 
-
-  const handleRemoveProduct = (product) => {
+  /*const handleRemoveProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist.quantity === 1) {
       setBasketItems(basketItems.filter((item) => item.id !== product.id));
@@ -46,7 +39,27 @@ const App = () => {
       );
     }
   };
-
+  */
+  const handleRemoveProduct = (product) => {
+    const productIndex = basketItems.findIndex((item) => item.id === product.id);
+  
+    if (productIndex !== -1) {
+      const updatedBasket = [...basketItems];
+      const productToRemove = updatedBasket[productIndex];
+  
+      if (productToRemove.quantity === 1) {
+        updatedBasket.splice(productIndex, 1);
+      } else {
+        updatedBasket[productIndex] = {
+          ...productToRemove,
+          quantity: productToRemove.quantity - 1,
+        };
+      }
+  
+      setBasketItems(updatedBasket);
+    }
+  };
+  
 
   const handleBasketClearance = () => {
     setBasketItems([]);
@@ -67,8 +80,6 @@ const App = () => {
         setIsUserLoggedIn={setIsUserLoggedIn}
         //click={click}
       />
-      
-      
     </div>
   );
 };

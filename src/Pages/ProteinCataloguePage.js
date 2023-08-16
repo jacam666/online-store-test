@@ -6,7 +6,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
 import Card from 'react-bootstrap/Card';
 
-const ProteinCataloguePage = ({  handleAddProduct }) => {
+const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "16", "2", "3", "4", "7", "8", "5"];
 
     const filteredProducts = data.productItems.filter((productItem) =>
