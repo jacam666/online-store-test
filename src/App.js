@@ -51,7 +51,7 @@ const App = () => {
   const handleBasketClearance = () => {
     setBasketItems([]);
   };
-
+  
   
 
   return (

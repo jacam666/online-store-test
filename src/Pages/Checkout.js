@@ -53,7 +53,7 @@ export default Checkout;
 */
 
 
-/*import React from 'react';
+import React from 'react';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import "../components/checkout.css";
@@ -87,9 +87,7 @@ export default function Checkout() {
 
     return (
         <div>
-            <nav className="navbar navbar-light bg-light">
-                <span className="navbar-brand mb-0 h1">UKSNC</span>
-            </nav>
+            
             <div className="container mt-4">
                 <div className="checkout-card p-3 white-background">
                     <h1 className="h4 text-center">Checkout</h1>
@@ -129,19 +127,7 @@ export default function Checkout() {
                     )}
                 </div>
             </div>
-            <footer className="checkout-footer mt-auto py-3 bg-light">
-                <div className="container text-center">
-                    <p className="mb-0">
-                        {'Copyright © '}
-                        <a href="https://uksnc.netlify.app/" className="">
-                            UKSNC
-                        </a>
-                        {' ' + new Date().getFullYear() + '.'}
-                    </p>
-                </div>
-            </footer>
+        
         </div>
     );
 }
-
-*/

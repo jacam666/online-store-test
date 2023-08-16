@@ -212,7 +212,7 @@ const BasketPage = ({
               </MDBTypography>
             </div>
             {basketItems.map((item, index) => (
-              <MDBCard key={item.id} className="rounded-3 mb-4">
+              <MDBCard key={`${item.id}-${index}`} className="rounded-3 mb-4">
                 <MDBCardBody className="p-4">
                   <MDBRow className="justify-content-between align-items-center">
                     <MDBCol md="2" lg="2" xl="2">
@@ -267,26 +267,15 @@ const BasketPage = ({
                           £{totalItemPrice[index]}
                         </MDBTypography>
                         {basketItems.length >= 1 && (
-                          <a href="#!" className="text-danger mt-3" onClick={handleAddProduct}>
+                          <a href="#!" className="text-danger mt-3" onClick={handleRemoveProduct}>
                             <MDBIcon fas icon="trash text-danger" size="lg" />
                           </a>
                         )}
                       </div>
-
-
-                    </MDBCol>
-                    <MDBCol md="1" lg="1" xl="1" className="text-end">
-
-
-
-
                     </MDBCol>
                   </MDBRow>
-
                 </MDBCardBody>
-
               </MDBCard>
-
             ))}
             <MDBCard>
               <MDBCardBody>
