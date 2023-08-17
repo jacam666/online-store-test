@@ -179,6 +179,7 @@ const BasketPage = ({
   basketItems,
   handleAddProduct,
   handleRemoveProduct,
+  handleRemoveItem,
   //handleBasketClearance,
 }) => {
   const totalPrice = basketItems.reduce(
@@ -192,12 +193,6 @@ const BasketPage = ({
   */
   const totalItemPrice = basketItems.map(item => (item.quantity * item.price).toFixed(2));
 
-  const handleRemoveItem = (itemToRemove) => {
-    const updatedBasket = basketItems.filter((item) => item.id !== itemToRemove.id);
-    handleRemoveProduct(updatedBasket);
-  };
-
-  
   const navigate = useNavigate();
 
   const handleCheckoutClick = () => {
@@ -276,6 +271,7 @@ const BasketPage = ({
                           <a href="#!" 
                             className="text-danger mt-3" 
                             onClick={() => handleRemoveItem(item)}>
+                              
                             <MDBIcon fas icon="trash text-danger" size="lg" />
                           </a>
                         )}

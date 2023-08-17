@@ -57,6 +57,7 @@ import React from 'react';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import "../components/checkout.css";
+import ReviewPage from './ReviewPage';
 
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
@@ -67,8 +68,8 @@ function getStepContent(step) {
             return <AddressForm />;
         case 1:
             return <PaymentForm />;
-            
-        
+        case 2:
+            return <ReviewPage />;
         default:
             throw new Error('Unknown step');
     }

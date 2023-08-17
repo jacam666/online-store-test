@@ -40,15 +40,17 @@ import TrainingAndDietPage from "../../../../Pages/TrainingAndDietPage";
 import { click } from "@testing-library/user-event/dist/click";
 import AddressForm from "../../../../Pages/AddressForm";
 import PaymentForm from "../../../../Pages/PaymentForm";
+import ReviewPage from "../../../../Pages/ReviewPage";
 
 const AppRoutes = ({
     productItems,
     basketItems,
     handleAddProduct,
     handleRemoveProduct,
-    handleBasketClearance,
+    //handleBasketClearance,
     isUserLoggedIn,
     setIsUserLoggedIn,
+    handleRemoveItem,
 }) => {
 
     const location = useLocation();
@@ -79,6 +81,8 @@ const AppRoutes = ({
                         basketItems={basketItems}
                         handleAddProduct={handleAddProduct}
                         handleRemoveProduct={handleRemoveProduct}
+                        handleRemoveItem={handleRemoveItem}
+                        
                         //handleBasketClearance={handleBasketClearance}
                     />
                 }
@@ -130,6 +134,7 @@ const AppRoutes = ({
             <Route path="/Checkout" element={<Checkout basketItems={basketItems} />}/>
             <Route path="/ContactPage" element={<ContactPage />} />
             <Route path="/TrainingAndDietPage/DietPlan" element={<DietPlan handleAddProduct={handleAddProduct}/>} />
+            <Route path="/ReviewPage" element={<ReviewPage basketItems={basketItems} />} />
         </Routes>
         //</div>
     );
