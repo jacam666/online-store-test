@@ -9,7 +9,6 @@ const App = () => {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
   //const [click, setClick] = useState(false);
 
-
   const handleAddProduct = (product) => {
     const ProductExist = basketItems.find((item) => item.id === product.id);
     if (ProductExist) {
@@ -25,6 +24,7 @@ const App = () => {
     }
   };
 
+  
   const handleRemoveProduct = (product) => {
     const productIndex = basketItems.findIndex((item) => item.id === product.id);
 
@@ -44,39 +44,15 @@ const App = () => {
       setBasketItems(updatedBasket);
     }
   };
-
-  /*const handleRemoveItem = (itemToRemove) => {
-    const updatedBasket = basketItems.filter((item) => item.id !== itemToRemove.id);
-    setBasketItems(updatedBasket);
-  };
-  */
+  
   const handleRemoveItem = (product) => {
     const updatedBasket = basketItems.filter(item => item.id !== product.id);
     setBasketItems(updatedBasket);
   };
   
-  /*
-  const handleRemoveItem = (itemToRemove) => {
-    const itemsToKeep = basketItems.filter((item) => item.id !== itemToRemove.id);
-    setBasketItems(itemsToKeep);
-  }; */
-  
-  /*const handleRemoveItem = (itemToRemove) => {
-    const itemsToRemove = basketItems.filter((item) => item.id === itemToRemove.id);
-    handleRemoveProduct(itemsToRemove);
-    setBasketItems([0])
-  };
-  */
-  
-
-  
-  
-
   const handleBasketClearance = () => {
     setBasketItems([]);
   };
-
-
 
   return (
     <div className="App">

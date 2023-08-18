@@ -5,6 +5,8 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../WellBeingCatalogue.css";
 import wellBeingBanner from "../components/CarouselImages/after_train_banner_test_01_2545px.png-1.png"
 import Card from 'react-bootstrap/Card';
+import COLORS from '../Styles.js'
+
 
 const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -23,7 +25,11 @@ const WellBeingCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="col-12 col-md-6 col-lg-6" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} className='wellbeing-image' />
+                                <Card.Img variant="top" 
+                                src={productItem.image} 
+                                className='wellbeing-image'
+                                style={{background: COLORS.background}}
+                                />
                             </Link>
                             <Card.Body>
                                 <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>

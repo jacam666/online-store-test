@@ -5,6 +5,8 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../FatLossCatalogue.css"
 import fatLossBanner from "../components/CarouselImages/FatBurnerBanner.png"
 import Card from 'react-bootstrap/Card';
+import COLORS from '../Styles.js'
+
 
 const FatLossCataloguePage = ({ handleAddProduct, productItem }) => {
 
@@ -22,7 +24,11 @@ const FatLossCataloguePage = ({ handleAddProduct, productItem }) => {
                     <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} className='fat-loss-image' />
+                                <Card.Img variant="top" 
+                                src={productItem.image} 
+                                className='fat-loss-image'
+                                style={{backgroundColor: COLORS.background}}
+                                />
                             </Link>
                             <Card.Body>
                                 <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>

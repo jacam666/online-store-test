@@ -5,6 +5,7 @@ import AddToCartButton from '../components/AddToCartButton';
 import "../PreWorkoutCatalogue.css"
 import preWorkoutBanner from "../components/CarouselImages/B4ExtremeBanner.png"
 import Card from 'react-bootstrap/Card';
+import COLORS from '../Styles.js'
 
 const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
 
@@ -15,7 +16,6 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
     );
 
 
-
     return (
         <div>
             <img className='pre-workout-banner' src={preWorkoutBanner} alt="protein" />
@@ -24,7 +24,10 @@ const PreWorkoutCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="col-12 col-md-6 col-lg-4" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} className={`pre-workout-image-${productItem.id}`} />
+                                <Card.Img variant="top" src={productItem.image} 
+                                className={`pre-workout-image-${productItem.id}`}
+                                style={{backgroundColor: COLORS.background}}
+                                />
                             </Link>
                             <Card.Body>
                                 <Card.Title className='card-header text-center'>{productItem.name}</Card.Title>

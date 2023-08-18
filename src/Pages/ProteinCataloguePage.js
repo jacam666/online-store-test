@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import AddToCartButton from '../components/AddToCartButton';
 import ProteinBanner from "../components/CarouselImages/OnlyWheYBanner.png"
 import Card from 'react-bootstrap/Card';
+import COLORS from '../Styles.js'
+
 
 const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
     const specificItemIds = ["1", "16", "2", "3", "4", "7", "8", "5"];
@@ -21,7 +23,13 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                     <div className="col-12 col-md-6 col-lg-3" key={productItem.id}>
                         <Card>
                             <Link to={productItem.to}>
-                                <Card.Img variant="top" src={productItem.image} className={`protein-image-${productItem.id}`} />
+                                <Card.Img variant="top"
+                                    src={productItem.image}
+                                    className={`protein-image-${productItem.id}`}
+                                    style={{
+                                        backgroundColor: COLORS.background,
+                                    }}
+                                />
                             </Link>
                             <Card.Body>
                                 <Card.Title className={`card-header text-center product-name-${productItem.id}`}>{productItem.name}</Card.Title>
@@ -29,7 +37,7 @@ const ProteinCataloguePage = ({ productItem, handleAddProduct }) => {
                                 <Card.Text className='text-center'>
                                     <span className="font-weight-bold"></span>
                                     £{productItem.price}
-                                    </Card.Text>
+                                </Card.Text>
                                 <AddToCartButton
                                     handleAddProduct={handleAddProduct}
                                     productItem={productItem}

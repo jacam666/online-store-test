@@ -11,8 +11,7 @@ function ReviewPage({ basketItems }) {
     const COLORS = {
         background: '#e1dddd',
     }
-
-
+    
     return (
         <section className="h-100" style={{ backgroundColor: "#eee" }}>
             <div className="container py-5 h-100">
